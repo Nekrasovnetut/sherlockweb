@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Главная";
+<? 	$pageTitle = "Главная 2";
 	
 	include "includes/header.php" ?>
 
