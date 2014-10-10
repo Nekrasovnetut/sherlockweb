@@ -1,0 +1,38 @@
+//////////////////////////////
+//
+// 	Базовые стили:
+//
+/////////////////////////////
+
+html {
+	height: 100%;
+	background: white;
+}
+
+.aligner, %aligner {
+//	padding: 0 40px;
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.page {
+	position: relative;
+	z-index: 1;
+}
+
+.logo {
+	display: block;
+	
+	&--big {
+		padding: 25px 0 50px;
+	}
+}
+
+#lpckWarningOverlay, #lpckLagWarningOverlay {
+	display: none !important;
+}
+
+.inverted, %inverted {
+	background: $main-color;
+	color: white;
+}

@@ -1,0 +1,51 @@
+.dropdown {
+	position: relative;
+	text-transform: none;
+	
+	&-toggle {
+		cursor: pointer;
+	}
+	
+	&-block {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		text-align: left;
+		//min-width: 100%;
+		min-width: 160px;
+		line-height: normal;
+		
+		transition: all .3s;
+		padding: 0 1.5em .5em;
+		
+		background: inherit;
+		
+		&--right {
+			right: 0;
+			left: auto;
+		}
+		
+		li {
+			padding: .5em 0;
+		}
+	}
+	
+	&:hover &-block {
+		display: block;
+		
+		transform-origin: top center;
+		
+		animation: dropdown-open .4s $ease-out-back forwards;
+	}
+}
+
+@keyframes dropdown-open {
+	from {
+		transform: scaleY(0);
+	}
+	
+	to {
+		transform: scale(1);
+	}
+}

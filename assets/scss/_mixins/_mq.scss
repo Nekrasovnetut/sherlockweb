@@ -1,0 +1,26 @@
+$MQs: true !default;
+
+@mixin mq($point) {
+	@if ($MQs) {
+		@if $point == medium {
+			@media (max-width: 950px) { @content; }
+		}
+		@else if $point == normal {
+			@media (max-width: 1150px) { @content; }
+		}
+		@else if $point == ipad {
+			@media (min-width: 949px) and (max-width: 1150px) { @content; }
+		}
+		@else if $point == big {
+			@media (min-width: 1150px) { @content; }
+		}
+		@else if $point == ultrabig {
+			@media (min-width: 1250px) { @content; }
+		}
+		@else if $point == small {
+			@media (max-width: 650px)  { @content; }
+		} @else if $point == to-small {
+			@media (max-width: 400px) { @content; }
+		}
+	}
+}

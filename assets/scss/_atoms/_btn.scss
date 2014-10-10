@@ -1,0 +1,51 @@
+/*! Страница Обратной связи */
+// Developer: John Grishin
+
+%btn-base {
+	display: inline-block;
+	font-size: 10px;
+	line-height: 1;
+	text-transform: uppercase;
+	
+	i:first-child {
+		margin-right: 3px;
+	}
+}
+
+.btn {
+	@extend %reset-appearance;
+	@extend %btn-base;
+	
+	background: $main-color;
+	color: #fff;
+
+	padding: .75em 2.25em;
+	
+	font-weight: bold;
+	border-radius: 40px;
+	
+	&-simple {
+		@extend %reset-appearance;
+		@extend %btn-base;
+		
+		color: inherit;
+		background: transparent;
+	}
+	
+	&-to-center {
+		display: table;
+		margin: 1em auto 2em;
+	}
+	
+	&-link {
+		@extend %reset-appearance;
+		@extend %btn-base;
+		
+		text-decoration: underline;
+	}
+	
+	&-white {
+		background: white;
+		color: $main-color;
+	}
+}

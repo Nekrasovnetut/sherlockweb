@@ -1,0 +1,21 @@
+@mixin sticky-footer($footer-height) {
+/*
+	======= Футер всегда внизу сайта: =======
+*/
+
+	html, body {
+		height: 100%;
+	}
+	
+	.page {
+		height: auto; 
+		min-height: 100%;
+		padding-bottom: $footer-height;
+	}
+	
+	.footer {
+		height: $footer-height;
+		margin-top: -$footer-height;
+	}
+}
+

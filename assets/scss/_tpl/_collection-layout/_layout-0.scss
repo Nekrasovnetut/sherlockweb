@@ -1,0 +1,73 @@
+/* -------------------------
+	Расположение 1: 
+		
+---	*/
+	
+.collection--layout-0 {
+	
+	.collection-item {
+		
+		&:nth-of-type(1) {
+			left: 17.5%;
+			top: 100px;
+			
+			@include mq(normal) {
+				left: 12%;
+			}
+		}
+		
+		&:nth-of-type(2) {
+			left: 70%;
+			left: calc(90% - 290px);
+			top: 190px;
+			
+			@include mq(normal) {
+				left: calc(95% - 290px);
+			}
+		}
+		
+		&:nth-of-type(3) {
+			left: 30%;
+			top: 380px;
+		}
+		
+	}
+	
+	.collection-path {
+				
+		&:first-of-type {
+			right: 85%;
+			top: 40px;
+			
+			@include mq(normal) {
+				right: 92%;
+			}
+		}
+	
+		&:nth-of-type(2) {
+			right: 35%;
+			left: calc(17.5% + 310px);
+			top: 90px;
+			
+			@include mq(normal) {
+				left: calc(8.5% + 310px);
+			}
+		}
+		
+		&:nth-of-type(3) {
+			left: 30%;
+			left: calc(30% + 310px);
+			top: 420px;
+			
+			@include mq(normal) {
+				left: calc(28% + 310px);
+			}
+		}
+		
+		&:last-of-type {
+			right: 65%;
+			bottom: -40px;
+		}
+		
+	}
+}

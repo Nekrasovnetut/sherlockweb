@@ -1,0 +1,128 @@
+// Полезные стили
+
+/* ----- Состояния ------ */
+
+.is-disabled { pointer-events: none; }
+
+.is-hidden { display: none !important; }
+
+.is-faded-out { opacity: 0 }
+
+
+/* ----- Несколько вариантов скрытие контента: ----- */
+
+// Замена картинок
+.ir, %ir {
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden; }
+
+// Скрытие текста:
+.hide-text, %hide-text {
+    font: 0/0 a !important;
+    color: transparent !important; }
+
+// Скрытие элемента:
+.throw-el, %throw-el {
+	position: absolute !important;
+	left: -9999px !important;
+	top: -9999px !important; }
+
+// For Screen readers
+.sr-only, %screen-readers, 
+.visuallyhidden, %visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* ----- Активация BFC ----- */
+
+/* Супер маленький clearfix для BFC: */
+
+.mcf {
+	@extend %mcf;
+}
+
+/* 	Magic ***
+	http://www.fionachan.net/talks/block-formatting-context/#/
+*/
+
+%bfc {
+	display: table-cell;
+	width: 9999px;
+	vertical-align: top;
+	
+	zoom: 1;
+}
+
+/* Самый простой способ включить BFC: */
+
+%ocf {
+    overflow: hidden;
+    *zoom: 1; }
+
+%sizer {
+	overflow: hidden;
+	display: block; }
+
+
+
+/* ----- Выравнивание и позиционирование: ----- */
+
+.to-right, .float--right { float:right !important; }
+.to-left, .float--left { float:left !important; }
+
+.to-center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto; }
+
+%justify-items {
+	text-align: justify;
+
+	&:after {
+		content: '';
+	    display: inline-block;
+	    width: 100%;
+    }
+}
+
+
+/* ------- Заполнение -------- */
+
+%img-fill {
+	position: absolute;
+			
+	left: -9999px; right: -9999px; top: -9999px; bottom: -9999px; margin: auto;
+	
+	width: 100%;
+	height: auto;
+	
+	&.wide {
+		width: auto;
+		height: 100%;
+	}
+	
+	&.tall {
+		width: 100%;
+		height: auto;
+	}
+}
+
+%img-fit {
+  display: block;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+%fill {
+	@include fill;
+}

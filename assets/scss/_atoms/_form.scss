@@ -1,0 +1,36 @@
+.form {
+	&-item {
+		white-space: nowrap;
+	}
+	
+	&-row {
+		@extend %mcf;
+		
+		.form-item + .form-item {
+//			margin-left: 1em;
+		}
+	}
+}
+
+.label {
+	font-size: 12px;
+	
+	i {
+		margin-right: .5em;
+	}
+	
+	+ .input {
+		margin-left: 1em;
+	}
+	
+	.checkbox {
+		margin-right: .5em;
+	}
+}
+
+.input {
+	@extend %reset-appearance;
+	
+	padding-bottom: 3px;
+	border-bottom: 1px solid $main-color;
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="9px" viewBox="0 0 8 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>cross</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Главная" sketch:type="MSArtboardGroup" transform="translate(-1122.000000, -161.000000)" fill="#2C3236">
+            <g id="enter_hover" sketch:type="MSLayerGroup" transform="translate(1076.000000, 38.000000)">
+                <g id="Group" transform="translate(46.000000, 124.000000)" sketch:type="MSShapeGroup">
+                    <path d="M8.05601709,0.251072405 L7.34398291,-0.451072405 L3.79398291,3.14892759 L4.50601709,3.14892759 L0.956017087,-0.451072405 L0.243982913,0.251072405 L3.79398291,3.85107241 L4.15,4.21210382 L4.50601709,3.85107241 L8.05601709,0.251072405 Z M4.50601709,3.14892759 L0.956017087,-0.451072405 L0.243982913,0.251072405 L3.79398291,3.85107241 L4.15,4.21210382 L4.50601709,3.85107241 L8.05601709,0.251072405 L7.34398291,-0.451072405 L3.79398291,3.14892759 L4.50601709,3.14892759 Z M0.243982913,6.74892759 L0.956017087,7.45107241 L4.50601709,3.85107241 L3.79398291,3.85107241 L7.34398291,7.45107241 L8.05601709,6.74892759 L4.50601709,3.14892759 L4.15,2.78789618 L3.79398291,3.14892759 L0.243982913,6.74892759 Z M3.79398291,3.85107241 L7.34398291,7.45107241 L8.05601709,6.74892759 L4.50601709,3.14892759 L4.15,2.78789618 L3.79398291,3.14892759 L0.243982913,6.74892759 L0.956017087,7.45107241 L4.50601709,3.85107241 L3.79398291,3.85107241 Z" id="cross"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

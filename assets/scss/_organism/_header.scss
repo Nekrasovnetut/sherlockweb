@@ -1,0 +1,58 @@
+$header-height: 40px;
+
+.header {
+	position: fixed; z-index: 100; left: 0; top: 0;
+	background: $main-color;
+	color: white;
+	
+	width: 100%;
+
+	// Vertical centering: 
+	height: $header-height;
+	line-height: $header-height;
+	
+	&-logo {
+		float: left;
+		padding-top: 3px; // <- small alignment fix
+		padding-left: 40px;
+	}
+	
+	&-nav {
+		position: relative;
+		@extend %bfc; // http://www.fionachan.net/talks/block-formatting-context/#/
+		
+		@include mq(small) {
+			display: none !important;
+		}
+		
+		.nav-item {
+			background: $main-color;
+			color: #fff;
+			height: $header-height;
+		}
+		
+		&-triangle {
+			position: absolute;
+			bottom: -1px; left: 9999px;
+			display: none;
+			
+			transition: left .15s;
+			transform: translateZ(0);
+			
+			.header:hover & {
+				transition: none;
+				display: block;
+			}
+			
+			@include triangle(12px, white, up);
+		}
+	}
+	
+	+ .page {
+		padding-top: $header-height;
+	}
+}
+
+.nav-item.current ~ .header-nav-triangle {
+	display: block;
+}

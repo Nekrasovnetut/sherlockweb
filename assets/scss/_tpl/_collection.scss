@@ -1,0 +1,114 @@
+.collection {
+	color: white;
+	overflow: hidden;
+	
+	&-content {
+		position: relative;
+	}
+	
+	&--preview {
+		.collection-content {
+			height: 650px;
+			
+			@include mq(medium) {
+				height: auto;
+			}
+		}
+	}
+	
+	&-item {
+		width: 285px;
+		margin-bottom: 2em;
+		
+		&-heading {
+			font-size: 21px;
+			width: 115px;
+			margin-bottom: .75em;
+			color: #444;
+			color: rgba(black, .7);
+		}
+		
+		.btn {
+			margin-top: 3em;
+		}
+		
+		@include mq(medium) {
+			position: relative !important;
+			left: 30px !important; right: auto !important; top:  auto !important; bottom: auto !important; // <- Hard Core
+			margin: 50px auto;
+			width: auto;
+			max-width: 60%;
+		}
+		
+		@include mq(small) {
+			max-width: 85%;
+			left: auto !important;
+			
+			.collection-item-icons {
+				display: none;
+			}
+		}
+		
+		/* ---
+			Типичные варианты расположения иконок:
+			
+		---	*/
+		
+		&-icons {
+			img { position: absolute; }
+			
+			.after-title {
+				top: 0;
+				margin-top: -40px;
+				left: 130px;
+			}	
+			
+			.left {
+				&-bottom {
+					right: 100%;
+					margin-right: 20px;
+					bottom: 0;
+				}
+				
+				&-top {
+					right: 100%;
+					bottom: 105%;
+					margin-right: -20px;
+				}
+				
+				&-center {
+					right: 100%;
+					margin-right: 20px;
+					top: 35%;
+				}
+			}
+			
+			.right {
+				&-bottom {
+					right: 10%;
+					top: 100%;
+					margin-top: -40px;
+				}
+				
+				&-center {
+					left: 100%;
+					bottom: 60px;
+				}
+			}
+		}
+		
+		position: absolute; z-index: 1; // <- Основные стили
+	}
+	
+	&-path {
+		position: absolute; z-index: 2; // <- Основные стили
+		
+		@include mq(medium) {
+			display: none;
+		}
+	}
+}
+
+@import "_collection-layout/layout-0";
+@import "_collection-layout/layout-1";
+@import "_collection-layout/layout-1-2";

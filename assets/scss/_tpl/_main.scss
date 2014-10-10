@@ -1,0 +1,22 @@
+// :(
+	
+._sherlock-about {
+	text-align: center; 
+	position: fixed; 
+	z-index: 0;
+	top: 40px;
+	width: 100%;
+	
+	@include mq(small) {
+		.description {
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+		}
+		
+		br { display: none; }
+	}
+	
+	.royalSlider {
+		height: 155px;
+	}
+}

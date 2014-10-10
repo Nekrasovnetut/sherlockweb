@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>instagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Главная" sketch:type="MSArtboardGroup" transform="translate(-675.000000, -2228.000000)" fill="#848484">
+            <g id="bottom" sketch:type="MSLayerGroup" transform="translate(-2.000000, 2109.000000)">
+                <path d="M688.4,119.3 L679.1,119.3 C678.3,119.3 677.7,119.9 677.7,120.7 L677.7,130 C677.7,130.8 678.3,131.4 679.1,131.4 L688.4,131.4 C689.2,131.4 689.8,130.8 689.8,130 L689.8,120.7 C689.8,119.9 689.1,119.3 688.4,119.3 L688.4,119.3 Z M683.7,123 C685,123 686,124 686,125.3 C686,126.6 685,127.6 683.7,127.6 C682.4,127.6 681.4,126.6 681.4,125.3 C681.4,124 682.4,123 683.7,123 L683.7,123 Z M688.4,129.5 C688.4,129.8 688.2,130 687.9,130 L679.6,130 C679.3,130 679.1,129.8 679.1,129.5 L679.1,124.4 L680.2,124.4 C680.1,124.7 680.1,125 680.1,125.3 C680.1,127.4 681.8,129 683.8,129 C685.8,129 687.5,127.3 687.5,125.3 C687.5,125 687.5,124.7 687.4,124.4 L688.5,124.4 L688.5,129.5 L688.4,129.5 Z M688.4,122.5 C688.4,122.8 688.2,123 687.9,123 L686.5,123 C686.2,123 686,122.8 686,122.5 L686,121.1 C686,120.8 686.2,120.6 686.5,120.6 L687.9,120.6 C688.2,120.6 688.4,120.8 688.4,121.1 L688.4,122.5 L688.4,122.5 Z" id="instagram" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

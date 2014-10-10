@@ -1,0 +1,90 @@
+html {
+	font: normal #{$base-font-size}/1em "Bliss Pro", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+	text-rendering: optimizeLegibility;
+	font-feature-settings: "kern" 1;
+	font-kerning: normal;
+	color: #222;
+}
+
+a { color: inherit; }
+
+h1, h2, h3, h4, h5 {
+	-webkit-font-smoothing: antialiased;
+	line-height: 1.25em;
+}
+
+h2 {
+	font-size: 1.571428571em;
+	margin-bottom: .5em;
+}
+
+h3 { 
+	font-size: 32px; 
+	margin-bottom:.75em; 
+}
+
+h4 { 
+	font-size: 18px; 
+	line-height: 1.25em;
+	margin-bottom: 1.4em;
+	
+	.section-heading &, .footer & {
+		text-transform: uppercase;
+		margin-bottom: 2em;
+	}
+}
+
+small {
+	font-size: 11px;
+}
+
+
+header p, .subheading { // Subheading
+	font-size: 1.285714286em; //18px
+	color: #555;
+	color: rgba(black, .5);
+	
+	a & {
+		text-decoration: underline;
+	}
+}
+
+header a p {
+	text-decoration: underline;
+}
+
+/* Articles */
+
+/*
+article {
+	p {
+		line-height: 1.75em;
+	}
+	
+}
+*/
+
+p {
+	line-height: 1.75em;
+
+	& + &, & + .btn {
+		margin-top: 1em;
+	}
+}
+
+
+/* 
+ * Custom elements:
+ */
+ 
+
+.link-dotted {
+	border-bottom: 1px dotted #555;
+}
+
+
+.faded {
+	color: lighten($color-text, 50%);
+}
+
+.dark { color: #404040; }

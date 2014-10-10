@@ -1,0 +1,72 @@
+@mixin arrow($direction, $width, $bg-color, $border-color: none, $border-width: none) {
+	position: relative;
+  
+	&:after, &:before {
+	
+		@if $direction == top {
+			bottom: 100%;
+		} @else if $direction == right {
+			left: 100%;
+		} @else if $direction == left {
+			right: 100%;
+		} @else if $direction == bottom {
+			top: 100%;
+		}
+		
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+
+	&:after {
+		border-color: rgba($bg-color, 0);
+		border-width: $width;
+		
+		@if $direction == top {
+			left: 50%;
+			margin-left: -$width;
+			border-bottom-color: $bg-color;
+		} @else if $direction == right {
+			top: 50%;
+			margin-top: -$width;
+			border-left-color: $bg-color;
+		} @else if $direction == left {
+			top: 50%;
+			margin-top: -$width;
+			border-right-color: $bg-color;
+		} @else if $direction == bottom {
+			left: 50%;
+			margin-left: -$width;
+			border-top-color: $bg-color;
+		}	
+
+	}
+	
+	@if ($border-color != none) or ($border-width != none) {
+		
+		&:before {
+			border-color: rgba($border-color, 0);
+			border-width: $width + round($border-width * 1.41421356);
+
+			@if $direction == top {
+
+				border-bottom-color: $border-color;
+			} @else if $direction == right {
+				top: 50%;
+				margin-top: -($width + round($border-width * 1.41421356));
+				border-left-color: $border-color;
+			} @else if $direction == left {
+				top: 50%;
+				margin-top: -($width + round($border-width * 1.41421356));
+				border-right-color: $border-color;
+			} @else if $direction == bottom {
+				left: 50%;
+				margin-left: -($width + round($border-width * 1.41421356));
+				border-top-color: $border-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,36 @@
+%content {
+	margin: 0 auto;
+	max-width: $main-width;
+	padding: 0 2em;
+}
+
+%mcf {
+	*zoom: 1;
+	
+	&:after {
+	    content: "";
+	    display: table;
+	    clear: both; }
+}
+
+%section {
+	@extend %mcf;
+		
+	& + & {
+		margin-top: 1em;
+	}
+}
+
+%reset-appearance {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	
+	border: none;
+	border-radius: 0;
+	background: none;
+	padding: 0;
+	
+	color: inherit;
+	font-weight: inherit;
+	outline: none;
+}

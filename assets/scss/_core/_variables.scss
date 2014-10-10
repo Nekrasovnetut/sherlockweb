@@ -1,0 +1,30 @@
+//////////////////////////////
+//
+// 	Настройки:
+//
+/////////////////////////////
+
+// ------ База: ---------
+
+$magic-number: 15px;
+$base-font-size: $magic-number;
+$gap: 20px;
+
+$main-width: 1024px;
+
+
+// ------ Цвета: ---------
+
+$main-color: #2C3236;
+$accent-color: #BC6F00;
+
+$light-grey: #EAEAEA;
+$dark-grey: #505050;
+
+$color-text: #000;
+$color-link: #222;
+
+
+
+
+@mixin fm-radius { border-radius: 4px; }

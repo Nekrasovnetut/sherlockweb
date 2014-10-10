@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="65px" height="72px" viewBox="0 0 65 72" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-paper</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Главная" sketch:type="MSArtboardGroup" transform="translate(-1130.000000, -643.000000)">
+            <g id="Icons" sketch:type="MSLayerGroup" transform="translate(169.000000, 499.000000)">
+                <g id="icon-paper" transform="translate(961.000000, 145.000000)" sketch:type="MSShapeGroup">
+                    <path d="M0.2,71.1 L0.2,21.6 C0.2,8.6 4.5,1.5 8.9,0.1 C9.4,-0.1 9.8,-0.2 10.3,-0.2 L54.2,-0.2 C61,-0.2 64.6,10.7 64.6,21.5 C64.6,32.3 61,43.2 54.2,43.2 L49.8,43.2 L49.8,70.9 L0.2,70.9 L0.2,71.1 Z" id="Shape" fill="#FFFFFF"></path>
+                    <path d="M10.3,2.9 L54.2,2.9 L54.2,40.4 L10.3,40.4 C8.1,40.4 6.3,32 6.3,21.7 C6.3,11.3 8.1,2.9 10.3,2.9 L10.3,2.9 Z" id="Shape" fill="#FFFFFF"></path>
+                    <ellipse id="Oval" fill="#E0E0E0" cx="54.4" cy="21.7" rx="7.4" ry="18.7"></ellipse>
+                    <ellipse id="Oval" fill="#000000" cx="54.8" cy="21.5" rx="0.8" ry="3.5"></ellipse>
+                    <ellipse id="Oval" fill="#04363B" cx="54.4" cy="21.4" rx="1.4" ry="4.4"></ellipse>
+                    <ellipse id="Oval" fill="#FFFFFF" cx="10.4" cy="21.7" rx="7.4" ry="18.7"></ellipse>
+                    <path d="M58.3,23.9 L58.3,19.3 L54.4,19.3 C54.2,19.3 54,20.3 54,21.6 C54,22.9 54.2,23.9 54.4,23.9 L54.4,23.9 L58.3,23.9 L58.3,23.9 Z" id="Shape" fill="#F57C4F"></path>
+                    <path d="M58.3,23.9 L58.3,19.3 L54.3,19.3 C54.1,19.3 53.9,20.3 53.9,21.6 C53.9,22.9 54.1,23.9 54.3,23.9 L54.3,23.9 L58.3,23.9 L58.3,23.9 Z" id="Shape" stroke="#04363B" stroke-width="0.968"></path>
+                    <rect id="Rectangle-path" fill="#FFFFFF" x="3" y="22" width="43.6" height="46.5"></rect>
+                    <path d="M54.3,2.9 L10.4,2.9 C10.3,2.9 10.1,2.9 10,3 C6.3,4 3.3,11.9 3.3,21.6 L3.3,68.1 L46.9,68.1 L46.9,40.4 L54.3,40.4 C58.4,40.4 61.7,32 61.7,21.7 C61.7,11.3 58.3,2.9 54.3,2.9 L54.3,2.9 Z" id="Shape" stroke="#04363B" stroke-width="1.9359"></path>
+                    <ellipse id="Oval" stroke="#04363B" stroke-width="0.968" cx="53.6" cy="21.7" rx="7.6" ry="18.7"></ellipse>
+                    <path d="M55.1,6.9 C51.9,6.9 49.3,13.2 49.3,21.1" id="Shape" stroke="#04363B" stroke-width="0.968"></path>
+                    <path d="M46.4,20.6 L46.4,67.7" id="Shape" stroke="#04363B" stroke-width="0.968"></path>
+                    <ellipse id="Oval" fill="#F57C4F" cx="58.8" cy="21.3" rx="0.8" ry="2.3"></ellipse>
+                    <ellipse id="Oval" stroke="#04363B" stroke-width="0.968" cx="58.8" cy="21.3" rx="0.8" ry="2.3"></ellipse>
+                    <path d="M7.4,63.9 L7.4,33.9" id="Shape" stroke="#04363B" stroke-width="0.968"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,44 @@
+.nav {
+	text-align: center;
+	
+	&-item {
+		display: inline-block;
+		vertical-align: top;
+		padding: 0 1.5em;
+		
+		@include mq(small) {
+			padding: 0 .75em;
+		}
+		
+		&-btn.nav-item-btn {
+			background-color: $light-grey;
+			color: $dark-grey;
+		}
+		
+		> a, > span {
+			text-transform: uppercase;
+			font-weight: bold;
+			font-size: 11px;
+			
+			i { margin-right: 2px; }
+		}
+	}
+}
+
+.section-nav {
+	line-height: 50px;
+	border-top: 1px solid #C4C4C4;
+	border-top-color: rgba(black, .1);
+	margin-top: -1px;
+	background: white;
+	
+	.current {
+		color: $accent-color;
+	}
+}
+
+.sticky {
+	position: sticky; 
+	top: 40px; 
+	z-index: 99;
+}
