@@ -24,6 +24,12 @@
 	font-weight: bold;
 	border-radius: 40px;
 	
+	&--big {
+		font-size: 14px;
+		display: block;
+		text-align: center;
+	}
+	
 	&-simple {
 		@extend %reset-appearance;
 		@extend %btn-base;
