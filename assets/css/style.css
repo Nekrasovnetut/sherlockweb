@@ -824,6 +824,10 @@ img.rsImg {
 /*------------------------------------*\
 	Базовые стили:
 \*------------------------------------*/
+html, body {
+  height: 100%;
+}
+
 html {
   height: 100%;
   background: white;
@@ -837,6 +841,7 @@ html {
 .page {
   position: relative;
   z-index: 1;
+  min-height: 100%;
 }
 
 .logo {
@@ -1012,7 +1017,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-size: 32px;
-  margin-bottom: .75em;
+  margin-bottom: .25em;
 }
 
 h3 {
@@ -1045,6 +1050,18 @@ a header p, a .subheading {
 
 header a p {
   text-decoration: underline;
+}
+
+.page-heading {
+  padding: 50px 0 40px;
+  text-align: center;
+}
+.page-heading h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.page-heading p {
+  color: black;
 }
 
 /* Articles */
@@ -1400,6 +1417,10 @@ p + p, p + .btn {
   .collection-path {
     display: none;
   }
+}
+
+.page-collection-1 .page-heading h2 {
+  color: #26C0D5;
 }
 
 /* -------------------------
