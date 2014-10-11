@@ -1,0 +1,81 @@
+.quest {
+	.section {
+		@extend %mcf;
+		
+		padding: 80px 8% 50px;
+	}
+	
+	&-article {
+		float: left;
+		width: 66%;
+		
+		&-heading {
+			padding-bottom: 2em;
+			
+			&-collection {
+				text-align: right;
+				margin-top: -2em;
+				
+				.label {
+					font-size: 15px;
+					margin-right: 1em;
+					color: $medium-grey;
+				}
+				
+				.link {
+					font-size: 19px;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	
+	&-aside {
+		width: 26%;
+		float: right;
+		position: relative;
+		
+		.btn {
+			margin-bottom: 2em;
+			margin-top: .75em;
+		}
+		
+		.plus18 {
+			position: absolute;
+			right: 0;
+			bottom: .25em;
+		}
+	}
+	
+	&-info {
+		width: 48%;
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 2.5em;
+			
+		&-label {
+			@extend %mcf;
+			color: $accent-color;
+			margin-bottom: 2em;
+			font-size: 11px;
+			
+			i {
+				font-size: 24px;
+				float: left;
+				margin-right: .25em;
+			}
+			
+			span {
+				overflow: hidden;
+				display: block;
+				line-height: 12px;
+				margin-top: 3px;
+			}
+		}
+	}
+	
+	&-contacts {
+		margin-top: 2.5em;
+		line-height: 1.5em;
+	}
+}

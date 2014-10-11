@@ -72,6 +72,18 @@
   content: "\e00a";
 }
 
+.icon-clock:before {
+  content: "\e00b";
+}
+
+.icon-qmark-left:before {
+  content: "\e00c";
+}
+
+.icon-qmark-right:before {
+  content: "\e00d";
+}
+
 /*------------------------------------*\
 	Resets:
 \*------------------------------------*/
@@ -530,10 +542,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .mcf {
+.form-row, .quest .section, .quest-info-label, .mcf {
   *zoom: 1;
 }
-.form-row:after, .mcf:after {
+.form-row:after, .quest .section:after, .quest-info-label:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -870,6 +882,11 @@ html {
   font-weight: bold;
   border-radius: 40px;
 }
+.btn--big {
+  font-size: 14px;
+  display: block;
+  text-align: center;
+}
 .btn-simple {
   color: inherit;
   background: transparent;
@@ -1048,6 +1065,11 @@ p + p, p + .btn {
   margin-top: 1em;
 }
 
+hr {
+  border: none;
+  border-bottom: 1px solid #EAEAEA;
+}
+
 /* 
  * Custom elements:
  */
@@ -1160,6 +1182,24 @@ p + p, p + .btn {
 /*------------------------------------*\
 	Организмы:
 \*------------------------------------*/
+/*
+	======= Футер всегда внизу сайта: =======
+*/
+html, body {
+  height: 100%;
+}
+
+.page {
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 210px;
+}
+
+.footer {
+  height: 210px;
+  margin-top: -210px;
+}
+
 .footer {
   background: #2C3236;
   color: white;
@@ -1628,6 +1668,9 @@ p + p, p + .btn {
 .page-collection-1 .link {
   color: #26C0D5;
 }
+.page-collection-1 .quest-info-label {
+  color: #26C0D5;
+}
 
 ._login-dropdown {
   padding: 18px  40px 30px;
@@ -1661,6 +1704,70 @@ p + p, p + .btn {
 }
 ._sherlock-about .royalSlider {
   height: 155px;
+}
+
+.quest .section {
+  padding: 80px 8% 50px;
+}
+.quest-article {
+  float: left;
+  width: 66%;
+}
+.quest-article-heading {
+  padding-bottom: 2em;
+}
+.quest-article-heading-collection {
+  text-align: right;
+  margin-top: -2em;
+}
+.quest-article-heading-collection .label {
+  font-size: 15px;
+  margin-right: 1em;
+  color: #7F7F7F;
+}
+.quest-article-heading-collection .link {
+  font-size: 19px;
+  text-decoration: underline;
+}
+.quest-aside {
+  width: 26%;
+  float: right;
+  position: relative;
+}
+.quest-aside .btn {
+  margin-bottom: 2em;
+  margin-top: .75em;
+}
+.quest-aside .plus18 {
+  position: absolute;
+  right: 0;
+  bottom: .25em;
+}
+.quest-info {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2.5em;
+}
+.quest-info-label {
+  color: #BC6F00;
+  margin-bottom: 2em;
+  font-size: 11px;
+}
+.quest-info-label i {
+  font-size: 24px;
+  float: left;
+  margin-right: .25em;
+}
+.quest-info-label span {
+  overflow: hidden;
+  display: block;
+  line-height: 12px;
+  margin-top: 3px;
+}
+.quest-contacts {
+  margin-top: 2.5em;
+  line-height: 1.5em;
 }
 
 /*------------------------------------*\

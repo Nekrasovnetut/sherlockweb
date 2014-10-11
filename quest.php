@@ -4,7 +4,7 @@
 	include "includes/header.php" ?>
 
 
-<div class="page <?= $pageClass ?>">
+<div class="page <?= $pageClass ?> quest">
 	<header class="page-cover">
 		<img src="example-images/example-cover.jpg" alt="" />
 	</header>
@@ -13,8 +13,10 @@
 			
 			<header class="quest-article-heading">
 				<h2> Пещера Майя </h2>
-				<span class="label">Серия</span>
-				<a href="collection.php" class="link"> Путешествия </a>
+				<div class="quest-article-heading-collection">
+					<span class="label">Серия</span>
+					<a href="collection.php" class="link"> Путешествия </a>
+				</div>
 			</header>
 			
 			<div class="quest-article-description">
@@ -23,7 +25,25 @@
 		</article>
 		<aside class="quest-aside">
 			<a href="quest-winners.php" class="btn btn--big"> Лучшие игроки</a>
+			<dl class="quest-info">
+				<dt class="quest-info-label">
+					<i class="icon-user"></i> 
+					<span>Количество человек</span>
+				</dt>
+				<dd class="quest-info-content">2-4 человек</dd>
+			</dl>
+			<dl class="quest-info">
+				<dt class="quest-info-label">
+					<i class="icon-clock"></i> 
+					<span>Время прохождения</span>
+				</dt>
+				<dd class="quest-info-content">60 минут</dd>
+			</dl>
 			<hr />
+			<ul class="quest-contacts">
+				<li> 906 456-34-34</li>
+				<li>tequila@sherlockgame.com</li>
+			</ul>
 			<img src="assets/images/icons/18plus.svg" 
 				 onerror="this.onerror=null; this.src='assets/images/icons/18plus.png'"
 				 class="plus18" />
