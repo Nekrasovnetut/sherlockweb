@@ -14,16 +14,8 @@ html {
 }
 
 .aligner, %aligner {
-//	padding: 0 40px;
 	max-width: 1400px;
 	margin: 0 auto;
-}
-
-.page {
-	position: relative;
-	z-index: 1;
-	
-	min-height: 100%;
 }
 
 .logo {
@@ -36,9 +28,4 @@ html {
 
 #lpckWarningOverlay, #lpckLagWarningOverlay {
 	display: none !important;
-}
-
-.inverted, %inverted {
-	background: $main-color;
-	color: white;
 }
