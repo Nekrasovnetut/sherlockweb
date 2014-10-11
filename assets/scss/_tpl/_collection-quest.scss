@@ -9,9 +9,18 @@
 		font-size: 20px;
 	}
 	
+	.section-map {
+		background: $accent-color;
+		color: white;
+		text-align: center;
+		font-size: 20px; font-weight: bold;
+		padding: 40px 0 50px;
+	}
+	
 	&-article {
 		float: left;
 		width: 66%;
+		margin-bottom: 2em;
 		
 		&-heading {
 			padding-bottom: 2em;
@@ -32,12 +41,23 @@
 				}
 			}
 		}
+		
+		@include mq(medium){
+			float: none;
+			
+			width: auto;
+		}
 	}
 	
 	&-aside {
 		width: 26%;
 		float: right;
 		position: relative;
+		
+		@include mq(medium){
+			float: none;
+			width: auto;
+		}
 		
 		.btn {
 			margin-bottom: 2em;
