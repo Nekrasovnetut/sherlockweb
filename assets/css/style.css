@@ -838,12 +838,6 @@ html {
   margin: 0 auto;
 }
 
-.page {
-  position: relative;
-  z-index: 1;
-  min-height: 100%;
-}
-
 .logo {
   display: block;
 }
@@ -853,11 +847,6 @@ html {
 
 #lpckWarningOverlay, #lpckLagWarningOverlay {
   display: none !important;
-}
-
-.inverted {
-  background: #2C3236;
-  color: white;
 }
 
 /*------------------------------------*\
@@ -1016,7 +1005,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: .25em;
 }
 
@@ -1039,40 +1028,19 @@ small {
   font-size: 11px;
 }
 
-header p, .subheading {
-  font-size: 1.285714286em;
+.page-heading, .section-heading {
+  text-align: center;
+}
+.page-heading p, .section-heading p {
+  font-size: 18px;
   color: #555;
   color: rgba(0, 0, 0, 0.5);
 }
-a header p, a .subheading {
+a .page-heading p, a .section-heading p {
   text-decoration: underline;
-}
-
-header a p {
-  text-decoration: underline;
-}
-
-.page-heading {
-  padding: 50px 0 40px;
-  text-align: center;
-}
-.page-heading h2 {
-  font-size: 32px;
-  text-transform: uppercase;
-}
-.page-heading p {
-  color: black;
 }
 
 /* Articles */
-/*
-article {
-	p {
-		line-height: 1.75em;
-	}
-	
-}
-*/
 p {
   line-height: 1.75em;
 }
@@ -1083,6 +1051,10 @@ p + p, p + .btn {
 /* 
  * Custom elements:
  */
+.link {
+  color: #2C3236;
+}
+
 .link-dotted {
   border-bottom: 1px dotted #555;
 }
@@ -1185,14 +1157,6 @@ p + p, p + .btn {
             transform: scale(1);
   }
 }
-.section {
-  padding: 35px 0 50px;
-  background: white;
-}
-.section-heading {
-  text-align: center;
-}
-
 /*------------------------------------*\
 	Организмы:
 \*------------------------------------*/
@@ -1318,6 +1282,40 @@ p + p, p + .btn {
   z-index: 99;
 }
 
+.page {
+  position: relative;
+  z-index: 1;
+  min-height: 100%;
+}
+.page-heading {
+  padding: 50px 0 40px;
+}
+.page-heading h3 {
+  text-transform: uppercase;
+}
+.page-heading p {
+  color: black;
+}
+.page-cover {
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.page-cover img {
+  width: 100%;
+  position: absolute;
+  left: -9999px;
+  right: -9999px;
+  top: -9999px;
+  bottom: -9999px;
+  margin: auto;
+}
+
+.section {
+  padding: 35px 0 50px;
+  background: white;
+}
+
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
@@ -1417,10 +1415,6 @@ p + p, p + .btn {
   .collection-path {
     display: none;
   }
-}
-
-.page-collection-1 .page-heading h2 {
-  color: #26C0D5;
 }
 
 /* -------------------------
@@ -1620,6 +1614,19 @@ p + p, p + .btn {
 .collection--layout-1-2 .collection-item:nth-of-type(3) {
   left: 680px;
   top: 120px;
+}
+
+.page-collection-1 .page-heading h3, .page-collection-1 .page-heading h2 {
+  color: #26C0D5;
+}
+.page-collection-1 .btn {
+  background-color: #26C0D5;
+}
+.page-collection-1 .btn-white {
+  color: #26C0D5;
+}
+.page-collection-1 .link {
+  color: #26C0D5;
 }
 
 ._login-dropdown {
