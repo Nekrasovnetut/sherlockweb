@@ -6,7 +6,7 @@
 	
 	&-text {
 		max-width: 490px;
-		padding: 0 50px;
+		padding: 0 30px;
 		display: inline-block; vertical-align: middle;
 		
 		text-align: left;
@@ -20,31 +20,37 @@
 		overflow: hidden;
 		
 		&:before, &:after {
-			content: "";
+			//content: "";
+			@extend %icon;
+			
+			color: $accent-color;
+			
 			display: block;
 			position: absolute;
-			top: 0;
-			width: 27px; height: 100%;
+			width: 27px; //height: 20px;
 		}
 		
 		&:before {
+			top: .25em;
 			left: 0;
 			
-			background: url('../images/icons/mark-left.png') no-repeat left center;
+			@extend %icon-qmark-left;
+			
+			/*
+background: url('../images/icons/mark-left.png') no-repeat left center;
 			
 			@include hidpi {
 				background-image: url('../images/icons/mark-left.svg');
 			}
+*/
 		}
 		
 		&:after {
 			right: 0; 
+			bottom: 1.75em; top: auto;
 			
-			background: url('../images/icons/mark-right.png') no-repeat right center;
+			@extend %icon-qmark-right;
 			
-			@include hidpi {
-				background-image: url('../images/icons/mark-right.svg');
-			}
 		}
 	}
 	
@@ -61,6 +67,7 @@
 	&-author {
 		display: block;
 		text-align: right;
+		font-size: .71em;
 		color: $accent-color;
 		font-style: normal;
 	}

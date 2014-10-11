@@ -10,7 +10,7 @@
 }
 
 [class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class*=" icon-"]:before, %icon {
 	font-family: "sherlock" !important;
 	font-style: normal !important;
 	font-weight: normal !important;

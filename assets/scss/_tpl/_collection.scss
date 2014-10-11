@@ -126,6 +126,12 @@
 		.quest-info-label {
 			color: $color;
 		}
+		
+		.quote {
+			&-text:before, &-text:after, &-author {
+				color: $color;
+			}
+		}
 	}
 }
 

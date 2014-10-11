@@ -2,7 +2,11 @@
 	.section {
 		@extend %mcf;
 		
-		padding: 80px 8% 50px;
+		padding: 70px 8% 50px;
+	}
+	
+	.quote {
+		font-size: 20px;
 	}
 	
 	&-article {

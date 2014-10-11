@@ -8,7 +8,7 @@
 	<header class="page-cover">
 		<img src="example-images/example-cover.jpg" alt="" />
 	</header>
-	<div class="section">
+	<section class="section">
 		<article class="quest-article">
 			
 			<header class="quest-article-heading">
@@ -48,7 +48,18 @@
 				 onerror="this.onerror=null; this.src='assets/images/icons/18plus.png'"
 				 class="plus18" />
 		</aside>
-	</div>
+	</section>
+	<section>
+		<div class="quote">
+			<img 	src="example-images/pic-quote.png" alt="Автор" class="quote-image"
+					srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x"  />
+			<q class="quote-text">Этот квест завёл меня быстрее моего парня и я ещё долго 
+буду вспоминать бесконечные минуты проведённые 
+в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
+		</div>
+	</section>
+	<section class="section section-map">
+	</section>
 </div>
 
 <? include "includes/scripts.php" ?>

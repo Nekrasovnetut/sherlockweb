@@ -7,7 +7,7 @@
   font-style: normal;
 }
 [class^="icon-"]:before,
-[class*=" icon-"]:before {
+[class*=" icon-"]:before, .quote-text:before, .quote-text:after {
   font-family: "sherlock" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -76,11 +76,11 @@
   content: "\e00b";
 }
 
-.icon-qmark-left:before {
+.icon-qmark-left:before, .quote-text:before {
   content: "\e00c";
 }
 
-.icon-qmark-right:before {
+.icon-qmark-right:before, .quote-text:after {
   content: "\e00d";
 }
 
@@ -947,7 +947,7 @@ html {
 }
 .quote-text {
   max-width: 490px;
-  padding: 0 50px;
+  padding: 0 30px;
   display: inline-block;
   vertical-align: middle;
   text-align: left;
@@ -958,30 +958,26 @@ html {
   overflow: hidden;
 }
 .quote-text:before, .quote-text:after {
-  content: "";
+  color: #BC6F00;
   display: block;
   position: absolute;
-  top: 0;
   width: 27px;
-  height: 100%;
 }
 .quote-text:before {
+  top: .25em;
   left: 0;
-  background: url("../images/icons/mark-left.png") no-repeat left center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-  .quote-text:before {
-    background-image: url("../images/icons/mark-left.svg");
-  }
+  			/*
+  background: url('../images/icons/mark-left.png') no-repeat left center;
+  			
+  			@include hidpi {
+  				background-image: url('../images/icons/mark-left.svg');
+  			}
+  */
 }
 .quote-text:after {
   right: 0;
-  background: url("../images/icons/mark-right.png") no-repeat right center;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-  .quote-text:after {
-    background-image: url("../images/icons/mark-right.svg");
-  }
+  bottom: 1.75em;
+  top: auto;
 }
 .quote-image {
   margin-right: 3em;
@@ -996,6 +992,7 @@ html {
 .quote-author {
   display: block;
   text-align: right;
+  font-size: .71em;
   color: #BC6F00;
   font-style: normal;
 }
@@ -1671,6 +1668,9 @@ html, body {
 .page-collection-1 .quest-info-label {
   color: #26C0D5;
 }
+.page-collection-1 .quote-text:before, .page-collection-1 .quote-text:after, .page-collection-1 .quote-author {
+  color: #26C0D5;
+}
 
 ._login-dropdown {
   padding: 18px  40px 30px;
@@ -1707,7 +1707,10 @@ html, body {
 }
 
 .quest .section {
-  padding: 80px 8% 50px;
+  padding: 70px 8% 50px;
+}
+.quest .quote {
+  font-size: 20px;
 }
 .quest-article {
   float: left;
