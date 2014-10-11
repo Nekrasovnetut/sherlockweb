@@ -23,6 +23,7 @@
 		</article>
 		<aside class="quest-aside">
 			<a href="quest-winners.php" class="btn btn--big"> Лучшие игроки</a>
+			<hr />
 		</aside>
 	</div>
 </div>
