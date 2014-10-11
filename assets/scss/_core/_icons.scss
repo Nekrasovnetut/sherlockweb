@@ -33,36 +33,45 @@
 	  display: inline-block;
   }
 }
-.icon-star:before {
+.icon-star:before, %icon-star {
   content: "\e001";
 }
-.icon-circle:before {
+.icon-circle:before, %icon-circle {
   content: "\e002";
 }
-.icon-city-perm:before {
+.icon-city-perm:before, %icon-city-perm {
   content: "\e003";
 }
-.icon-cross:before {
+.icon-cross:before, %icon-cross {
   content: "\e004";
 }
-.icon-facebook:before {
+.icon-facebook:before, %icon-facebook {
   content: "\e005";
 }
-.icon-instagram:before {
+.icon-instagram:before, %icon-instagram {
   content: "\e006";
 }
-.icon-key:before {
+.icon-key:before, %icon-key {
   content: "\e007";
   font-size: 13px;
   top: 2px; // <- small fix
 }
 
-.icon-lock:before {
+.icon-lock:before, %icon-lock {
   content: "\e008";
 }
-.icon-twitter:before {
+.icon-twitter:before, %icon-twitter {
   content: "\e009";
 }
-.icon-user:before {
+.icon-user:before, %icon-user {
   content: "\e00a";
+}
+.icon-clock:before, %icon-clock {
+  content: "\e00b";
+}
+.icon-qmark-left:before, %icon-qmark-left {
+  content: "\e00c";
+}
+.icon-qmark-right:before, %icon-qmark-right {
+  content: "\e00d";
 }
