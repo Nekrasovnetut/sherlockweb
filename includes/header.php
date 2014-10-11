@@ -19,7 +19,7 @@
 		<script src="assets/js/lib/jquery-1.11.1.min.js"></script> 
 		<script src="assets/js/lib/selectivizr.min.js"></script> 
 	<![endif]-->
-</head><body ontouchstart="" class="page-<?= $pageClass ?>">
+</head><body ontouchstart="">
 
 <header class="header">
 	<a href="index.php" class="header-logo logo logo--sm">

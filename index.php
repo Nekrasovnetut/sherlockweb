@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Главная 2";
+<? 	$pageTitle = "Главная";
 	
 	include "includes/header.php" ?>
 
@@ -64,7 +64,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Текила Бум </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="left-bottom" src="series-icons/icon-drink.svg" onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
@@ -78,7 +78,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Сибирский цирюльник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="left-center" src="series-icons/icon-snake.svg" onerror="this.onerror=null; this.src='series-icons/icon-snake.png'" />
@@ -92,7 +92,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Бермудский треугольник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="left-center" src="series-icons/icon-fire-extinguisher.svg" onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
@@ -120,7 +120,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Сибирский цирюльник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="left-center" src="series-icons/icon-snake.svg" onerror="this.onerror=null; this.src='series-icons/icon-snake.png'" />
@@ -134,7 +134,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Бермудский треугольник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="left-center" src="series-icons/icon-fire-extinguisher.svg" onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
@@ -146,7 +146,7 @@
 			<article class="collection-item">
 				<h4 class="collection-item-heading"> Текила Бум </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img class="right-center" src="series-icons/icon-drink.svg" onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
@@ -169,7 +169,7 @@
 			<article class="collection-item layer">
 				<h4 class="collection-item-heading"> Сибирский цирюльник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-snake.svg" 
@@ -186,7 +186,7 @@
 			<article class="collection-item layer">
 				<h4 class="collection-item-heading"> Бермудский треугольник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-fire-extinguisher.svg" 
@@ -201,7 +201,7 @@
 			<article class="collection-item layer">
 				<h4 class="collection-item-heading"> Текила Бум </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-drink.svg" 
@@ -228,7 +228,7 @@
 			<article class="collection-item layer" data-depth="0.10">
 				<h4 class="collection-item-heading"> Сибирский цирюльник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-snake.svg" 
@@ -245,7 +245,7 @@
 			<article class="collection-item layer" data-depth="0.10">
 				<h4 class="collection-item-heading"> Бермудский треугольник </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-fire-extinguisher.svg" 
@@ -260,7 +260,7 @@
 			<article class="collection-item layer" data-depth="0.10">
 				<h4 class="collection-item-heading"> Текила Бум </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
-				<a href="collection.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
+				<a href="quest.php" class="btn btn-white">Записаться <i class="icon-arrow-right"></i></a>
 				
 				<div class="collection-item-icons">
 					<img src="series-icons/icon-drink.svg" 
