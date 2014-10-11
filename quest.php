@@ -24,6 +24,9 @@
 		<aside class="quest-aside">
 			<a href="quest-winners.php" class="btn btn--big"> Лучшие игроки</a>
 			<hr />
+			<img src="assets/images/icons/18plus.svg" 
+				 onerror="this.onerror=null; this.src='assets/images/icons/18plus.png'"
+				 class="plus18" />
 		</aside>
 	</div>
 </div>
