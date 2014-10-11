@@ -132,6 +132,14 @@
 				color: $color;
 			}
 		}
+		
+		.section-map {
+			background: $color;
+			
+			&:after {
+				border-top-color: $color;
+			}
+		}
 	}
 }
 

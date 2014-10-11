@@ -28,14 +28,14 @@
 			<dl class="quest-info">
 				<dt class="quest-info-label">
 					<i class="icon-user"></i> 
-					<span>Количество человек</span>
+					<span>Количество <br /> человек</span>
 				</dt>
 				<dd class="quest-info-content">2-4 человек</dd>
 			</dl>
 			<dl class="quest-info">
 				<dt class="quest-info-label">
 					<i class="icon-clock"></i> 
-					<span>Время прохождения</span>
+					<span>Время <br /> прохождения</span>
 				</dt>
 				<dd class="quest-info-content">60 минут</dd>
 			</dl>
@@ -58,8 +58,26 @@
 в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
 		</div>
 	</section>
-	<section class="section section-map">
+	<section class="section-map">
+		<p>м. Кропоткинская, Большой Афанасьевский пер., 15, стр. 1 </p>
+		<button class="btn-simple js-btn-toggly" data-toggly-target=".js-map"> На карте </button>
 	</section>
+	<div id="map-canvas" class="js-map" data-toggly-height="400" data-toggly-is-map="true"></div>
+	
+	<script type="text/javascript"
+    		src="https://maps.googleapis.com/maps/api/js"></script>
+    		
+    <script type="text/javascript">
+		function startGoogleMap() {
+			var mapOptions = {
+				center: { lat: -34.397, lng: 150.644},
+				zoom: 8
+			};
+
+			var map = new google.maps.Map(document.getElementById('map-canvas'),
+			    mapOptions);
+		}
+    </script>
 </div>
 
 <? include "includes/scripts.php" ?>

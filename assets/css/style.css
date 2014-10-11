@@ -946,7 +946,9 @@ html {
   text-align: center;
 }
 .quote-text {
-  max-width: 490px;
+  max-width: 610px;
+  min-width: 320px;
+  width: 50%;
   padding: 0 30px;
   display: inline-block;
   vertical-align: middle;
@@ -1356,6 +1358,134 @@ html, body {
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
+.quest .section {
+  padding: 70px 8% 50px;
+}
+.quest .quote {
+  font-size: 20px;
+}
+.quest .section-map {
+  background: #BC6F00;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 40px 0 50px;
+  position: relative;
+}
+.quest .section-map .js-btn-toggly {
+  position: absolute;
+  bottom: -1.5em;
+  width: 60px;
+  height: 60px;
+  left: 50%;
+  margin-left: -30px;
+}
+.quest .section-map + .js-map {
+  margin-bottom: 60px;
+}
+.quest .section-map:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -25px;
+  content: "";
+  display: block;
+  top: 100%;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 15px solid #BC6F00;
+}
+.quest .section-map:before {
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  content: "";
+  display: block;
+  top: 100%;
+  z-index: 2;
+  height: 0;
+  width: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 5px solid white;
+}
+.quest-article {
+  float: left;
+  width: 66%;
+  margin-bottom: 2em;
+}
+.quest-article-heading {
+  padding-bottom: 2em;
+}
+.quest-article-heading-collection {
+  text-align: right;
+  margin-top: -2em;
+}
+.quest-article-heading-collection .label {
+  font-size: 15px;
+  margin-right: 1em;
+  color: #7F7F7F;
+}
+.quest-article-heading-collection .link {
+  font-size: 19px;
+  text-decoration: underline;
+}
+@media (max-width: 950px) {
+  .quest-article {
+    float: none;
+    width: auto;
+  }
+}
+.quest-aside {
+  width: 26%;
+  float: right;
+  position: relative;
+}
+@media (max-width: 950px) {
+  .quest-aside {
+    float: none;
+    width: auto;
+  }
+}
+.quest-aside .btn {
+  margin-bottom: 2em;
+  margin-top: .75em;
+}
+.quest-aside .plus18 {
+  position: absolute;
+  right: 0;
+  bottom: .25em;
+}
+.quest-info {
+  width: 48%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2.5em;
+}
+.quest-info-label {
+  color: #BC6F00;
+  margin-bottom: 2em;
+  font-size: 11px;
+}
+.quest-info-label i {
+  font-size: 24px;
+  float: left;
+  margin-right: .25em;
+}
+.quest-info-label span {
+  overflow: hidden;
+  display: block;
+  line-height: 12px;
+  margin-top: 3px;
+}
+.quest-contacts {
+  margin-top: 2.5em;
+  line-height: 1.5em;
+}
+
 .collection {
   color: white;
   overflow: hidden;
@@ -1671,6 +1801,12 @@ html, body {
 .page-collection-1 .quote-text:before, .page-collection-1 .quote-text:after, .page-collection-1 .quote-author {
   color: #26C0D5;
 }
+.page-collection-1 .section-map {
+  background: #26C0D5;
+}
+.page-collection-1 .section-map:after {
+  border-top-color: #26C0D5;
+}
 
 ._login-dropdown {
   padding: 18px  40px 30px;
@@ -1704,73 +1840,6 @@ html, body {
 }
 ._sherlock-about .royalSlider {
   height: 155px;
-}
-
-.quest .section {
-  padding: 70px 8% 50px;
-}
-.quest .quote {
-  font-size: 20px;
-}
-.quest-article {
-  float: left;
-  width: 66%;
-}
-.quest-article-heading {
-  padding-bottom: 2em;
-}
-.quest-article-heading-collection {
-  text-align: right;
-  margin-top: -2em;
-}
-.quest-article-heading-collection .label {
-  font-size: 15px;
-  margin-right: 1em;
-  color: #7F7F7F;
-}
-.quest-article-heading-collection .link {
-  font-size: 19px;
-  text-decoration: underline;
-}
-.quest-aside {
-  width: 26%;
-  float: right;
-  position: relative;
-}
-.quest-aside .btn {
-  margin-bottom: 2em;
-  margin-top: .75em;
-}
-.quest-aside .plus18 {
-  position: absolute;
-  right: 0;
-  bottom: .25em;
-}
-.quest-info {
-  width: 48%;
-  display: inline-block;
-  vertical-align: top;
-  margin-bottom: 2.5em;
-}
-.quest-info-label {
-  color: #BC6F00;
-  margin-bottom: 2em;
-  font-size: 11px;
-}
-.quest-info-label i {
-  font-size: 24px;
-  float: left;
-  margin-right: .25em;
-}
-.quest-info-label span {
-  overflow: hidden;
-  display: block;
-  line-height: 12px;
-  margin-top: 3px;
-}
-.quest-contacts {
-  margin-top: 2.5em;
-  line-height: 1.5em;
 }
 
 /*------------------------------------*\
