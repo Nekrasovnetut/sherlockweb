@@ -1,0 +1,4 @@
+$collection-1-color: #26C0D5;
+
+@include collection-page-color(1, $collection-1-color);
+

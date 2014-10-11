@@ -1,12 +1,12 @@
-<? 	$pageTitle = "Главная 2";
-	$pageClass = "collection-1";
+<? 	$pageTitle = "Лучшая команда в квесте";
+	$pageClass = "page-collection-1";
 	
 	include "includes/header.php" ?>
 
 
-<div class="page">
+<div class="page <?= $pageClass ?>">
 	<header class="page-heading">
-		<h2>Лучшая команда</h2>
+		<h3>Лучшая команда</h3>
 		<p>В квесте &laquo;Диплодоки в ловушке&raquo;</p>
 	</header>
 	<div class="section">

@@ -2,9 +2,7 @@
 	color: white;
 	overflow: hidden;
 	
-	&-content {
-		position: relative;
-	}
+	&-content { position: relative; }
 	
 	&--preview {
 		.collection-content {
@@ -109,15 +107,29 @@
 	}
 }
 
-
-$accent-color-collection-1: #26C0D5;
-
-.page-collection-1 {
-	.page-heading h2 {
-		color: $accent-color-collection-1;
+@mixin collection-page-color($n, $color) {
+	.page-collection-#{$n} {
+		.page-heading h3, .page-heading h2 { color: $color; }
+		
+		.btn {
+			background-color: $color;
+			
+			&-white {
+				color: $color;
+			}
+		}
+		
+		.link {
+			color: $color;
+		}
 	}
 }
+
+// Это я потом уберу:
 
 @import "_collection-layout/layout-0";
 @import "_collection-layout/layout-1";
 @import "_collection-layout/layout-1-2";
+
+// Новый стиль:
+@import "_collections/collection-1";
