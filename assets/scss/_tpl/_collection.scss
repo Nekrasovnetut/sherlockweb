@@ -140,6 +140,20 @@
 				border-top-color: $color;
 			}
 		}
+		
+		.schedule {
+			&-time th {
+				color: $color;
+			}
+			
+			&-cost td {
+				color: $color;
+				
+				hr {
+					border-bottom-color: $color;
+				}
+			}
+		}
 	}
 }
 

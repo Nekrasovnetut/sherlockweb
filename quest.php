@@ -1,5 +1,6 @@
 <? 	$pageTitle = "Квест";
 	$pageClass = "page-collection-1";
+	$collection1color = '#26C0D5';
 	
 	include "includes/header.php" ?>
 
@@ -62,6 +63,8 @@
 		<p>м. Кропоткинская, Большой Афанасьевский пер., 15, стр. 1 </p>
 		<button class="btn-simple js-btn-toggly" data-toggly-target=".js-map"> На карте </button>
 	</section>
+	
+	<!-- Google maps -->
 	<div id="map-canvas" class="js-map" data-toggly-height="400" data-toggly-is-map="true"></div>
 	
 	<script type="text/javascript"
@@ -71,13 +74,223 @@
 		function startGoogleMap() {
 			var mapOptions = {
 				center: { lat: -34.397, lng: 150.644},
-				zoom: 8
+				zoom: 8,
+				scrollwheel: false
 			};
+			
+			var sherlockMarker = {
+				path: 'M47.7,23.6 C47.7,10.6 37.1,0 24.1,0 C11.1,0 0.5,10.6 0.5,23.6 L0.5,25 C1.4,47.3 24.1,66.7 24.1,66.7 C24.1,66.7 46.7,47.3 47.7,25 L47.7,23.6 L47.7,23.6 Z',
+				fillColor: '#26C0D5',
+				fillOpacity: 1,
+				strokeWeight: 0,
+				scale: 1,
+				anchor: new google.maps.Point(23, 67) // center, bottom
+			}
+			
+			var sherlockLogo = {
+				path: 'M33.6,17.7 L30.3,17.7 C30.2,17.7 30.1,17.8 30.1,17.9 L30.1,28.8 C30.1,28.9 30.1,29 30,29.1 C29.6,29.5 27.6,31.5 27.6,31.5 L26.9,32.2 C26.8,32.3 26.7,32.3 26.6,32.2 C26.4,32 26.2,31.8 26.1,31.7 C26,31.6 25.9,31.4 25.9,31.2 L25.9,17.8 C25.9,17.6 25.8,17.6 25.7,17.6 L22.4,17.6 C22.3,17.6 22.2,17.7 22.2,17.8 L22.2,28.8 C22.2,28.9 22.2,28.9 22.1,29 C20.7,30.4 19,32.1 18.9,32.2 C18.8,32.3 18.7,32.3 18.6,32.2 C18.4,32 18.2,31.8 18.1,31.7 C18,31.6 17.9,31.4 17.9,31.2 L17.9,20.2 C17.9,20 17.8,19.9 17.7,19.7 C17.6,19.6 15.8,17.8 15.2,17.2 C15.1,17.1 15,17.1 14.8,17.2 L12.5,19.4 C12.4,19.5 12.4,19.7 12.5,19.8 C12.9,20.2 13.8,21.1 13.9,21.2 C14,21.3 14.1,21.5 14.1,21.7 L14.1,32.7 C14.1,32.9 14.2,33 14.3,33.2 C14.4,33.3 16.2,35.1 16.8,35.7 C16.9,35.8 17.1,35.8 17.2,35.7 L21.9,31 C22,30.9 22.1,31 22.1,31.1 L22.1,32.8 C22.1,33 22.2,33.1 22.3,33.3 C22.4,33.4 24.2,35.2 24.8,35.8 C24.9,35.9 25.1,35.9 25.2,35.8 L30,31.1 C30.1,31.1 30.1,31.1 30.1,31.2 L30.1,35.4 C30.1,35.6 30.2,35.6 30.3,35.6 L33.6,35.6 C33.7,35.6 33.8,35.5 33.8,35.4 L33.8,18 C33.8,17.7 33.8,17.7 33.6,17.7 L33.6,17.7 Z',
+				fillColor: 'white',
+				fillOpacity: 1,
+				strokeWeight: 0,
+				scale: 1
+// 				origin: new google.maps.Point(10, 10)
+			}
 
 			var map = new google.maps.Map(document.getElementById('map-canvas'),
 			    mapOptions);
+			    
+			var marker = new google.maps.Marker({
+			    position: map.getCenter(),
+			    icon: sherlockMarker,
+			    map: map
+			});
 		}
     </script>
+    <!-- /Google maps -->
+    
+    <section class="section">
+	    <header class="schedule-heading">
+		    <h4>Записаться</h4>
+		    <ul class="schedule-heading-month">
+			    <li><a href="#september-2014">Сентябрь 2014</a></li>
+			    <li><a href="#october-2014">Октябрь 2014</a></li>
+			    <li><a href="#november-2014">Ноябрь 2014</a></li>
+			    <li><a href="#december-2014">Декабрь 2014</a></li>
+		    </ul>
+	    </header>
+	    <div class="schedule-overflow">
+		    <table class="schedule">
+			    <tr class="schedule-time">
+				    <th>23 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="quest-order.php">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="quest-order.php">22:30</a></td>
+				    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">23:45</a></td>
+				    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Вторник</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+			    <tr class="schedule-time">
+				    <th>24 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="quest-order.php">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">22:30</a></td>
+				    <td><a href="quest-order.php">23:45</a></td>
+				    <td><a href="quest-order.php">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Среда</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+			    <tr class="schedule-time">
+				    <th>25 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="quest-order.php">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="quest-order.php">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="quest-order.php">22:30</a></td>
+				    <td><a href="quest-order.php">23:45</a></td>
+				    <td><a href="quest-order.php">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Четверг</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+			    <tr class="schedule-time">
+				    <th>26 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="quest-order.php">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="quest-order.php">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="quest-order.php">22:30</a></td>
+				    <td><a href="quest-order.php">23:45</a></td>
+				    <td><a href="quest-order.php">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Пятница</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+			    <tr class="schedule-time">
+				    <th>27 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="quest-order.php">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="quest-order.php">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="quest-order.php">22:30</a></td>
+				    <td><a href="quest-order.php">23:45</a></td>
+				    <td><a href="quest-order.php">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Суббота</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+			    <tr class="schedule-time">
+				    <th>28 Сентября</th>
+				    <td><a href="quest-order.php">06:00</a></td>
+				    <td><a href="quest-order.php">07:15</a></td>
+				    <td><a href="quest-order.php">08:30</a></td>
+				    <td><a href="quest-order.php">09:45</a></td>
+				    <td><a href="quest-order.php">11:00</a></td>
+				    <td><a href="quest-order.php">12:14</a></td>
+				    <td><a href="quest-order.php">13:30</a></td>
+				    <td><a href="quest-order.php">14:45</a></td>
+				    <td><a href="quest-order.php">16:00</a></td>
+				    <td><a href="quest-order.php">17:15</a></td>
+				    <td><a href="quest-order.php">18:30</a></td>
+				    <td><a href="quest-order.php">19:45</a></td>
+				    <td><a href="quest-order.php">21:00</a></td>
+				    <td><a href="quest-order.php">22:15</a></td>
+				    <td><a href="quest-order.php">22:30</a></td>
+				    <td><a href="quest-order.php">23:45</a></td>
+				    <td><a href="quest-order.php">01:00</a></td>
+				    <td><a href="quest-order.php">02:15</a></td>
+				    <td><a href="quest-order.php">03:30</a></td>
+				    <td><a href="quest-order.php">04:45</a></td>
+			    </tr>
+			    <tr class="schedule-cost">
+				    <th>Воскресенье</th>
+				    <td colspan="12"> 2000 Р <hr /> </td>
+				    <td colspan="8"> 3000 Р <hr /> </td>
+			    </tr>
+		    </table>
+		   </div>
+    </section>
 </div>
 
 <? include "includes/scripts.php" ?>

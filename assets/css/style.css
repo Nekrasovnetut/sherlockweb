@@ -542,10 +542,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .quest .section, .quest-info-label, .mcf {
+.form-row, .schedule-heading, .quest .section, .quest-info-label, .mcf {
   *zoom: 1;
 }
-.form-row:after, .quest .section:after, .quest-info-label:after, .mcf:after {
+.form-row:after, .schedule-heading:after, .quest .section:after, .quest-info-label:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1066,7 +1066,7 @@ p + p, p + .btn {
 
 hr {
   border: none;
-  border-bottom: 1px solid #EAEAEA;
+  border-bottom: 1px solid #B2B2B2;
 }
 
 /* 
@@ -1178,6 +1178,79 @@ hr {
             transform: scale(1);
   }
 }
+.schedule {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 14px;
+  min-width: 900px;
+}
+.schedule-heading h4 {
+  float: left;
+  font-size: 24px;
+  line-height: 24px;
+}
+.schedule-heading-month {
+  float: right;
+  line-height: 28px;
+}
+.schedule-heading-month li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.schedule-heading-month li a {
+  text-decoration: underline;
+  color: #7F7F7F;
+}
+.schedule a:hover {
+  text-decoration: underline;
+}
+.schedule .disabled {
+  color: #B2B2B2;
+  cursor: default;
+}
+.schedule .disabled:hover {
+  text-decoration: none;
+}
+.schedule th {
+  width: 10%;
+  text-align: left;
+}
+.schedule td {
+  width: 4.5%;
+  padding: .5em 0 .25em 10px;
+}
+.schedule-time th {
+  font-weight: bold;
+  color: #BC6F00;
+  padding-top: 1.5em;
+}
+.schedule-time td {
+  padding-top: 1.5em;
+}
+.schedule-cost th {
+  color: #7F7F7F;
+  font-size: .928571429em;
+  font-weight: normal;
+}
+.schedule-cost td {
+  color: #BC6F00;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.schedule-cost td hr {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin-left: 10px;
+  border-bottom-color: #BC6F00;
+}
+.schedule-overflow {
+  overflow-y: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 20px;
+}
+
 /*------------------------------------*\
 	Организмы:
 \*------------------------------------*/
@@ -1291,7 +1364,7 @@ html, body {
   }
 }
 .nav-item-btn.nav-item-btn {
-  background-color: #EAEAEA;
+  background-color: #B2B2B2;
   color: #505050;
 }
 .nav-item > a, .nav-item > span {
@@ -1382,7 +1455,7 @@ html, body {
   margin-left: -30px;
 }
 .quest .section-map + .js-map {
-  margin-bottom: 60px;
+  background-color: #B2B2B2;
 }
 .quest .section-map:after {
   position: absolute;
@@ -1807,11 +1880,20 @@ html, body {
 .page-collection-1 .section-map:after {
   border-top-color: #26C0D5;
 }
+.page-collection-1 .schedule-time th {
+  color: #26C0D5;
+}
+.page-collection-1 .schedule-cost td {
+  color: #26C0D5;
+}
+.page-collection-1 .schedule-cost td hr {
+  border-bottom-color: #26C0D5;
+}
 
 ._login-dropdown {
   padding: 18px  40px 30px;
   line-height: 40px;
-  background-color: #EAEAEA;
+  background-color: #B2B2B2;
   color: #505050;
 }
 ._login-dropdown ._login-label {
@@ -1894,7 +1976,7 @@ html, body {
 /* 	Magic ***
 	http://www.fionachan.net/talks/block-formatting-context/#/
 */
-.header-nav {
+.header-nav, .bfc {
   display: table-cell;
   width: 9999px;
   vertical-align: top;

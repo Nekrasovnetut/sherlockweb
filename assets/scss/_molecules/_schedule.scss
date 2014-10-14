@@ -1,0 +1,97 @@
+.schedule {
+	width: 100%;
+	table-layout: fixed;
+	font-size: 14px;
+	min-width: 900px;
+	
+	&-heading {
+		@extend %mcf;
+		
+		h4 {
+			float: left;
+			font-size: 24px;
+			line-height: 24px;
+		}
+		
+		&-month {
+			float: right;
+			line-height: 28px; // + 4 мистических пикселя
+			
+			li {
+				display: inline-block;
+				
+				margin-left: 1em;
+				
+				a {
+					text-decoration: underline;
+					color: $medium-grey;
+				}
+			}
+		}
+	}
+	
+	a:hover {
+		text-decoration: underline;
+	}
+	
+	.disabled {
+		color: $light-grey;
+		cursor: default;
+		
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	
+	th {
+		width: 10%;
+		text-align: left;
+	}
+	
+	td {
+		width: 4.5%;
+		padding: .5em 0 .25em 10px;
+	}
+	
+	&-time {
+		
+		th {
+			font-weight: bold;
+			color: $accent-color;
+			padding-top: 1.5em;
+		}
+		
+		td {
+			padding-top: 1.5em;
+		}
+	}
+	
+	&-cost {
+		th {
+			color: $medium-grey;
+			font-size: .928571429em; // 13px
+			font-weight: normal;
+		}
+		
+		td {
+			color: $accent-color;
+			white-space: nowrap;
+			overflow: hidden;
+			
+			hr {
+				display: inline-block;
+				vertical-align: middle;
+				width: 100%;
+				margin-left: 10px;
+				border-bottom-color: $accent-color;
+			}
+		}
+	}
+	
+	&-overflow {
+		overflow-y: hidden;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		padding-bottom: 20px;
+	}
+}
