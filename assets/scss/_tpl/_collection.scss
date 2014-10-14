@@ -142,6 +142,10 @@
 		}
 		
 		.schedule {
+			&-heading-month li.is-active a {
+				color: $color;
+			}
+			
 			&-time th {
 				color: $color;
 			}

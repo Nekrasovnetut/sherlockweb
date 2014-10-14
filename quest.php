@@ -111,16 +111,18 @@
     <section class="section">
 	    <header class="schedule-heading">
 		    <h4>Записаться</h4>
-		    <ul class="schedule-heading-month">
-			    <li><a href="#september-2014">Сентябрь 2014</a></li>
-			    <li><a href="#october-2014">Октябрь 2014</a></li>
-			    <li><a href="#november-2014">Ноябрь 2014</a></li>
-			    <li><a href="#december-2014">Декабрь 2014</a></li>
+		    <ul class="schedule-heading-month tabs">
+			    <li class="tabs-item is-active"><a href="#september-2014">Сентябрь 2014</a></li>
+			    <li class="tabs-item"><a href="#october-2014">Октябрь 2014</a></li>
+			    <li class="tabs-item"><a href="#november-2014">Ноябрь 2014</a></li>
+			    <li class="tabs-item"><a href="#december-2014">Декабрь 2014</a></li>
 		    </ul>
 	    </header>
-		<div class="schedule-overflow">
-			<div id="september-2014"><? include "includes/misc/schedule.php" ?></div>
-
+		<div class="schedule-overflow tabs-content">
+			<div id="september-2014" class="tabs-content-item is-active"><? include "includes/misc/schedule.php" ?></div>
+			<div id="october-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
+			<div id="november-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
+			<div id="december-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
 		</div>
     </section>
 </div>

@@ -1184,6 +1184,11 @@ hr {
   font-size: 14px;
   min-width: 900px;
 }
+@media (min-width: 1250px) {
+  .schedule {
+    font-size: 16px;
+  }
+}
 .schedule-heading h4 {
   float: left;
   font-size: 24px;
@@ -1200,6 +1205,10 @@ hr {
 .schedule-heading-month li a {
   text-decoration: underline;
   color: #7F7F7F;
+}
+.schedule-heading-month li.is-active a {
+  text-decoration: none;
+  color: #BC6F00;
 }
 .schedule a:hover {
   text-decoration: underline;
@@ -1249,6 +1258,15 @@ hr {
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   padding-bottom: 20px;
+}
+
+.tabs-content-item {
+  display: none;
+  opacity: 0;
+}
+.tabs-content-item.is-active {
+  display: block;
+  opacity: 1;
 }
 
 /*------------------------------------*\
@@ -1879,6 +1897,9 @@ html, body {
 }
 .page-collection-1 .section-map:after {
   border-top-color: #26C0D5;
+}
+.page-collection-1 .schedule-heading-month li.is-active a {
+  color: #26C0D5;
 }
 .page-collection-1 .schedule-time th {
   color: #26C0D5;

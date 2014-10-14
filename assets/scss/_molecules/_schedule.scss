@@ -2,7 +2,12 @@
 	width: 100%;
 	table-layout: fixed;
 	font-size: 14px;
+//	font-size: 1.2vw;
 	min-width: 900px;
+	
+	@include mq(ultrabig) {
+		font-size: 16px;
+	}
 	
 	&-heading {
 		@extend %mcf;
@@ -25,6 +30,11 @@
 				a {
 					text-decoration: underline;
 					color: $medium-grey;
+				}
+				
+				&.is-active a {
+					text-decoration: none;
+					color: $accent-color;
 				}
 			}
 		}
