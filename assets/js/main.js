@@ -55,10 +55,7 @@
 			$target.velocity('reverse').removeClass('is-opened');
 		} else {
 			$target.velocity({ height: targetHeight }, {complete: function(){
-				if ($target.data('toggly-is-map')){
-					console.log('start');
-					startGoogleMap();
-				}
+				if ($target.data('toggly-is-map')){ startGoogleMap(); }
 			}}).addClass('is-opened');
 		}
 	});
