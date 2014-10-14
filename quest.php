@@ -135,7 +135,11 @@
 		    </ul>
 	    </header>
 		<div class="schedule-overflow tabs-content">
-			<div id="september-2014" class="tabs-content-item is-active"><? include "includes/misc/schedule.php" ?></div>
+			<!-- Открытая вкладка: -->
+			<div id="september-2014" class="tabs-content-item is-active">
+				<? include "includes/misc/schedule.php" ?>
+			</div>
+			<!-- Другие вкладки: -->
 			<div id="october-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
 			<div id="november-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
 			<div id="december-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
