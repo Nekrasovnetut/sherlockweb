@@ -51,6 +51,10 @@
 		&:hover {
 			text-decoration: none;
 		}
+		
+		.collection & {
+			color: rgba(black, .25);
+		}
 	}
 	
 	th {
@@ -69,6 +73,12 @@
 			font-weight: bold;
 			color: $accent-color;
 			padding-top: 1.5em;
+			vertical-align: top;
+			line-height: 1.3125em;
+			
+			.collection & { 
+				color: white;
+			}
 		}
 		
 		td {
@@ -88,12 +98,22 @@
 			white-space: nowrap;
 			overflow: hidden;
 			
+			.collection & {
+				color: #333;
+				color: rgba(black, .75);
+			}
+			
 			hr {
 				display: inline-block;
 				vertical-align: middle;
 				width: 100%;
 				margin-left: 10px;
 				border-bottom-color: $accent-color;
+				
+				.collection & {
+					border-bottom-color: #333;
+					border-bottom-color: rgba(black, .75);
+				}
 			}
 		}
 	}

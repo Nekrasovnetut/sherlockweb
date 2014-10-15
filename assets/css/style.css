@@ -1220,6 +1220,9 @@ hr {
 .schedule .disabled:hover {
   text-decoration: none;
 }
+.collection .schedule .disabled {
+  color: rgba(0, 0, 0, 0.25);
+}
 .schedule th {
   width: 10%;
   text-align: left;
@@ -1232,6 +1235,11 @@ hr {
   font-weight: bold;
   color: #BC6F00;
   padding-top: 1.5em;
+  vertical-align: top;
+  line-height: 1.3125em;
+}
+.collection .schedule-time th {
+  color: white;
 }
 .schedule-time td {
   padding-top: 1.5em;
@@ -1246,12 +1254,20 @@ hr {
   white-space: nowrap;
   overflow: hidden;
 }
+.collection .schedule-cost td {
+  color: #333;
+  color: rgba(0, 0, 0, 0.75);
+}
 .schedule-cost td hr {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
   margin-left: 10px;
   border-bottom-color: #BC6F00;
+}
+.collection .schedule-cost td hr {
+  border-bottom-color: #333;
+  border-bottom-color: rgba(0, 0, 0, 0.75);
 }
 .schedule-overflow {
   overflow-y: hidden;
