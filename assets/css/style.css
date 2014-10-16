@@ -550,10 +550,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .schedule-heading, .quest .section, .quest-info-label, .mcf {
+.form-row, .schedule-heading, .winners .section, .quest .section, .quest-info-label, .mcf {
   *zoom: 1;
 }
-.form-row:after, .schedule-heading:after, .quest .section:after, .quest-info-label:after, .mcf:after {
+.form-row:after, .schedule-heading:after, .winners .section:after, .quest .section:after, .quest-info-label:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1294,6 +1294,26 @@ hr {
 .tabs-content-item.is-active {
   display: block;
   opacity: 1;
+}
+
+.winners .section {
+  padding: 70px 8% 50px;
+}
+
+table.winners {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 14px;
+  min-width: 900px;
+}
+table.winners-header {
+  color: #2C3236;
+}
+table.winners-userteam {
+  background-color: #B2B2B2;
+}
+table.winners tr:hover {
+  background-color: #B2B2B2;
 }
 
 /*------------------------------------*\

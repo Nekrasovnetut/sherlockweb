@@ -1,4 +1,6 @@
 <? 	$pageTitle = "Главная";
+	$pageClass = "page-collection-1";
+	$collection1color = '#26C0D5';
 	
 	include "includes/header.php" ?>
 

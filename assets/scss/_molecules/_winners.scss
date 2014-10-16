@@ -1,0 +1,29 @@
+.winners {
+	.section{
+		@extend %mcf;
+		padding: 70px 8% 50px;
+	}
+}
+
+table.winners {
+	width: 100%;
+	table-layout: fixed;
+	font-size: 14px;
+//	font-size: 1.2vw;
+	min-width: 900px;
+	
+	&-header {
+		color: $main-color;
+	}
+	
+	&-userteam {
+		background-color: $light-grey;
+	}
+	
+	tr {
+		&:hover{
+			background-color: $light-grey;
+		}
+	}
+	
+}
