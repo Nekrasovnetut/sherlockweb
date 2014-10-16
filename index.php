@@ -46,10 +46,10 @@
 	<nav class="section-nav nav sticky" >
 		<!-- @todo: Сделать второй элемент прилипающим -->
 		<ul>
-			<li class="nav-item"><a href="index-reserve.php">Забронировать</a></li> 
+			<li class="nav-item"><a href="index-reserve.php"><i class="icon-clock"></i> Забронировать</a></li> 
 			
-			<li class="nav-item current"><a href="index.php">Квесты</a></li>
-			<li class="nav-item"><a href="index-map.php">Карта</a></li>
+			<li class="nav-item current"><a href="index.php"><i class="icon-quest"></i> Квесты</a></li>
+			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
 		</ul>
 	</nav>
 	<section class="section collection collection--preview collection--layout-0" style="background-color: #26C0D5;">

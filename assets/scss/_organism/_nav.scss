@@ -35,6 +35,17 @@
 	.current {
 		color: $accent-color;
 	}
+	
+	i {
+		font-size: 17px;
+		
+		vertical-align: middle;
+		margin-right: 7px !important;
+	}
+	
+	.icon-quest {
+		font-size: 19px;
+	}
 }
 
 .sticky {

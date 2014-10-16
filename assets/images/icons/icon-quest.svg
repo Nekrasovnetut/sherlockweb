@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="21px" viewBox="0 0 19 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-quest</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="main_top" sketch:type="MSLayerGroup" transform="translate(-488.000000, -731.000000)" fill="#505050">
+            <g id="Layer_5" transform="translate(297.000000, 731.000000)" sketch:type="MSShapeGroup">
+                <g id="Group">
+                    <g id="icon-quest" transform="translate(191.000000, 0.000000)">
+                        <path d="M4,5.3 C4.1,5.4 4.3,5.5 4.5,5.5 C4.7,5.5 4.8,5.4 5,5.3 C5.3,5 5.3,4.6 5,4.4 L3.6,3 L5,1.6 C5.3,1.3 5.3,0.9 5,0.7 C4.7,0.4 4.3,0.4 4.1,0.7 L2.7,2.1 L1.3,0.7 C1,0.4 0.6,0.4 0.4,0.7 C0.2,1 0.1,1.4 0.4,1.6 L1.8,3 L0.4,4.4 C0.1,4.7 0.1,5.1 0.4,5.3 C0.5,5.4 0.7,5.5 0.9,5.5 C1.1,5.5 1.2,5.4 1.4,5.3 L2.8,3.9 L4,5.3 L4,5.3 Z" id="Shape"></path>
+                        <path d="M17,18.3 L18.4,16.9 C18.7,16.6 18.7,16.2 18.4,16 C18.1,15.7 17.7,15.7 17.5,16 L16.1,17.4 L14.7,16 C14.4,15.7 14,15.7 13.8,16 C13.5,16.3 13.5,16.7 13.8,16.9 L15.2,18.3 L13.8,19.7 C13.5,20 13.5,20.4 13.8,20.6 C13.9,20.7 14.1,20.8 14.3,20.8 C14.5,20.8 14.6,20.7 14.8,20.6 L16.2,19.2 L17.6,20.6 C17.7,20.7 17.9,20.8 18.1,20.8 C18.3,20.8 18.4,20.7 18.6,20.6 C18.9,20.3 18.9,19.9 18.6,19.7 L17,18.3 L17,18.3 Z" id="Shape"></path>
+                        <circle id="Oval" cx="10.9" cy="2.9" r="0.9"></circle>
+                        <circle id="Oval" cx="7.9" cy="2.9" r="0.9"></circle>
+                        <circle id="Oval" cx="13.9" cy="3.9" r="0.9"></circle>
+                        <circle id="Oval" cx="15.9" cy="6.9" r="0.9"></circle>
+                        <circle id="Oval" cx="14.9" cy="9.9" r="0.9"></circle>
+                        <circle id="Oval" cx="10.9" cy="10.9" r="0.9"></circle>
+                        <circle id="Oval" cx="7.9" cy="10.9" r="0.9"></circle>
+                        <circle id="Oval" cx="3.9" cy="11.9" r="0.9"></circle>
+                        <circle id="Oval" cx="2.9" cy="14.9" r="0.9"></circle>
+                        <circle id="Oval" cx="3.9" cy="17.9" r="0.9"></circle>
+                        <circle id="Oval" cx="7.9" cy="17.9" r="0.9"></circle>
+                        <circle id="Oval" cx="10.9" cy="17.9" r="0.9"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
