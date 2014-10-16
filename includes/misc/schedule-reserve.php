@@ -1,6 +1,6 @@
 <table class="schedule">
 	<tr class="schedule-time">
-	    <th rowspan="2">Диплодоки в ловушке</th>
+	    <th rowspan="2"><a href="quest.php">Диплодоки в ловушке</a></th>
 	    <td><a href="quest-order.php">06:00</a></td>
 	    <td><a href="quest-order.php">07:15</a></td>
 	    <td><a href="quest-order.php">08:30</a></td>
@@ -27,7 +27,7 @@
 	    <td colspan="8"> 3000 Р <hr /> </td>
 	</tr>
 	<tr class="schedule-time">
-		<th rowspan="2">Текила Бум</th>
+		<th rowspan="2"><a href="quest.php">Текила Бум</a></th>
 	    <td><a href="quest-order.php">06:00</a></td>
 	    <td><a href="quest-order.php">07:15</a></td>
 	    <td><a href="quest-order.php">08:30</a></td>
@@ -54,7 +54,7 @@
 	    <td colspan="8"> 3000 Р <hr /> </td>
 	</tr>
 	<tr class="schedule-time">
-	    <th rowspan="2">Пещера Майа</th>
+	    <th rowspan="2"><a href="quest.php">Пещера Майа</a></th>
 	    <td><a href="quest-order.php">06:00</a></td>
 	    <td><a href="quest-order.php">07:15</a></td>
 	    <td><a href="quest-order.php">08:30</a></td>
@@ -81,7 +81,7 @@
 	    <td colspan="8"> 3000 Р <hr /> </td>
 	</tr>
 	<tr class="schedule-time">
-	    <th rowspan="2">Сибирский бункер</th>
+	    <th rowspan="2"><a href="quest.php">Сибирский бункер</a></th>
 	    <td><a href="quest-order.php">06:00</a></td>
 	    <td><a href="quest-order.php">07:15</a></td>
 	    <td><a href="quest-order.php">08:30</a></td>

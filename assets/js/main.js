@@ -17,6 +17,7 @@
     	}
 	});
 	
+/*
 	var $triangle = $('.header-nav-triangle'),
 		$headerNav = $('.header-nav .to-right'),
 		$navItemCurrent = $('.header .nav-item.current');
@@ -44,6 +45,7 @@
 			});
 		});
 	}
+*/
 	
 	$(window).scroll(function (event) {
 	    var scroll = $(window).scrollTop();
