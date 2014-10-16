@@ -54,7 +54,7 @@
 			
 			<div class="header-nav-triangle"></div>
 			
-			<li class="nav-item nav-item-btn dropdown"> 
+			<li class="nav-item dropdown"> 
 				<span class="dropdown-toggle">
 					<i class="icon-key"></i> Вход
 				</span>
@@ -84,7 +84,7 @@
 								<button class="btn-link" type="submit" value="signup"> Зарегистрироваться </button>
 							</div>
 							<div class="form-item to-right">
-								<button class="btn" type="submit" value="login"> Войти </button>
+								<button class="btn btn-white" type="submit" value="login"> Войти </button>
 							</div>
 						</div>
 					</form>

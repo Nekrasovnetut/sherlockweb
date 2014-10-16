@@ -1,8 +1,8 @@
 ._login-dropdown {
 	padding: 18px  40px 30px;
 	line-height: 40px;
-	background-color: $light-grey;
-	color: $dark-grey;
+	background-color: $main-color;
+	color: white;
 	
 	._login-label {
 		width: 60px;
@@ -10,6 +10,7 @@
 		
 		+ .input {
 			width: 200px;
+			border-bottom-color: white;
 		}
 	}
 }

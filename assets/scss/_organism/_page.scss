@@ -16,15 +16,23 @@
 	
 	&-cover {
 		height: 350px;
+//		height: 100%;
 		overflow: hidden;
 		position: relative;
 		
-		img {
-			width: 100%;
+		&-bg {
+			img {
+				width: 100%;
+				
+				position: absolute;
+				left: -9999px; right: -9999px; top: 0; //top: -9999px; bottom: -9999px;
+				margin: auto;
+				z-index: -1;
+			}
 			
-			position: absolute;
-			left: -9999px; right: -9999px; top: -9999px; bottom: -9999px;
-			margin: auto;
+			+ .page-cover-content {
+				color: white;
+			}
 		}
 	}
 }

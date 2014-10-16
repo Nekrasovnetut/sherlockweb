@@ -5,10 +5,15 @@
 	include "includes/header.php" ?>
 
 
-<div class="page <?= $pageClass ?> quest">
-	<header class="page-cover">
+<header class="page-cover">
+	<div class="page-cover-bg">
 		<img src="example-images/example-cover.jpg" alt="" />
-	</header>
+	</div>
+	<div class="page-cover-content">
+	
+	</div>
+</header>
+<div class="page <?= $pageClass ?> quest">
 	<section class="section">
 		<article class="quest-article">
 			

@@ -14,6 +14,12 @@
 		}
 	}
 	
+	&--schedule {
+		.schedule-overflow {
+			padding: 0 50px 20px;
+		}
+	}
+	
 	&-item {
 		width: 285px;
 		margin-bottom: 2em;

@@ -57,16 +57,20 @@
 		<header class="section-heading"><a href="collection.php">
 			<h3> Путешествия </h3> 
 		</a></header>
-		<div class="collection-content aligner" style="padding: 0 100px">
-			<? include "includes/misc/schedule-reserve.php" ?>
+		<div class="collection-content aligner">
+			<div class="schedule-overflow">
+				<? include "includes/misc/schedule-reserve.php" ?>
+			</div>
 		</div>
 	</section>
 	<section class="section collection collection--schedule" style="background-color: #89CC32;">
 		<header class="section-heading"><a href="collection.php">
 			<h3> Сериалы </h3> 
 		</a></header>
-		<div class="collection-content aligner" style="padding: 0 100px">
-			<? include "includes/misc/schedule-reserve.php" ?>
+		<div class="collection-content aligner">
+			<div class="schedule-overflow">
+				<? include "includes/misc/schedule-reserve.php" ?>
+			</div>
 		</div>
 	</section>
 </div>

@@ -3,6 +3,7 @@ $header-height: 40px;
 .header {
 	position: fixed; z-index: 100; left: 0; top: 0;
 	background: $main-color;
+	background: rgba(#232323, 0);
 	color: white;
 	
 	width: 100%;
@@ -10,6 +11,12 @@ $header-height: 40px;
 	// Vertical centering: 
 	height: $header-height;
 	line-height: $header-height;
+	
+	transition: background .2s;
+	
+	&:hover, &.is-visible {
+		background: rgba(#232323, .95);
+	}
 	
 	&-logo {
 		float: left;
@@ -25,8 +32,13 @@ $header-height: 40px;
 			display: none !important;
 		}
 		
-		.nav-item {
+		.dropdown-block {
 			background: $main-color;
+			background: rgba(#232323, .95);
+		}
+		
+		.nav-item {
+//			background: $main-color;
 			color: #fff;
 			height: $header-height;
 		}
@@ -49,7 +61,7 @@ $header-height: 40px;
 	}
 	
 	+ .page {
-		padding-top: $header-height;
+//		padding-top: $header-height;
 	}
 }
 

@@ -2,14 +2,18 @@
 	
 	include "includes/header.php" ?>
 
-<section class="section _sherlock-about">
-	<article>
-		<header><a class="section-logo logo logo--big" href="index.php">
+
+<header class="page-cover _sherlock-about">
+	<div class="page-cover-bg">
+		<img src="example-images/example-cover.png" alt="" />
+	</div>
+	<div class="page-cover-content">
+		<a class="section-logo logo logo--big" href="index.php">
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<img src="assets/images/logo.svg" 
+			<img src="assets/images/logo-white.svg" 
 				 onerror="this.onerror=null; 
-				 this.src='assets/images/logo.png'" width="274" height="87" alt="Логотип Шерлок" />
-		</a></header>
+				 this.src='assets/images/logo-white.png'" width="350" height="111" alt="Логотип Шерлок" />
+		</a>
 		
 		<div class="royalSlider js-about-slider">
 			<div class="rsContent">
@@ -20,6 +24,7 @@
 				</div>
 			</div>
 			
+<!--
 			<div class="rsContent">
 				<div class="quote">
 					<img 	src="example-images/pic-quote.png" alt="Автор" class="quote-image"
@@ -29,7 +34,9 @@
 		в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
 				</div>
 			</div>
+-->
 			
+<!--
 			<div class="rsContent">
 				<div class="quote">
 					<img 	src="example-images/al-capone.png" alt="Автор" class="quote-image"  />
@@ -38,9 +45,11 @@
 		в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
 				</div>
 			</div>
+-->
 		</div>
-	</article>
-</section><div class="js-ghost" style="position: relative; z-index: -2;"></div>
+	</div>
+</header><div class="js-ghost" style="position: relative; z-index: -2;"></div>
+
 
 <div class="page">
 	<nav class="section-nav nav sticky" >

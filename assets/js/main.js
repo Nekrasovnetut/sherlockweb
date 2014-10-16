@@ -45,7 +45,17 @@
 		});
 	}
 	
-	$("._parallax-test").parallax();
+	$(window).scroll(function (event) {
+	    var scroll = $(window).scrollTop();
+	    
+	    if (scroll > 0) {
+		    $('.header').addClass('is-visible');
+	    } else {
+		    $('.header').removeClass('is-visible');
+	    }
+	});
+	
+	$('._parallax-test').parallax();
 	
 	$('.js-btn-toggly').on('click', function(){
 		$target = $($(this).data('toggly-target'));
