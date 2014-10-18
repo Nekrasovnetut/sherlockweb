@@ -1,0 +1,30 @@
+.collection-list{
+	.section {
+		@extend %mcf;
+		padding: 70px 8% 50px;
+	}
+	
+	&-item{
+		&-img{
+			width: 300px;
+		}
+		&-content{
+			width: 600px;
+			&-top{
+				&-info{	
+				}
+			}
+			&-middle{
+			}
+			&-bottom{
+				&-adress{
+					i {
+						font-size: 2em;
+					}
+				}
+			}
+
+		}
+	}
+}
+
