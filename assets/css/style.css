@@ -550,10 +550,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .schedule-heading, .winners .section, .quest .section, .quest-info-label, .mcf {
+.form-row, .schedule-heading, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .mcf {
   *zoom: 1;
 }
-.form-row:after, .schedule-heading:after, .winners .section:after, .quest .section:after, .quest-info-label:after, .mcf:after {
+.form-row:after, .schedule-heading:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1129,6 +1129,20 @@ hr {
   }
 }
 
+.covermini {
+  width: 400px;
+  position: relative;
+}
+.covermini img {
+  border-radius: 10px;
+  width: 100%;
+}
+.covermini-age {
+  position: absolute;
+  color: white;
+  margin: 2em 0 0 1.5em;
+}
+
 .dropdown {
   position: relative;
   text-transform: none;
@@ -1294,70 +1308,6 @@ hr {
 .tabs-content-item.is-active {
   display: block;
   opacity: 1;
-}
-
-.winners .section {
-  padding: 0px 8% 50px;
-}
-@media (max-width: 650px) {
-  .winners .section {
-    padding: 0px 0px 50px;
-  }
-}
-.winners-table {
-  width: 100%;
-  table-layout: fixed;
-  font-size: 17px;
-  min-width: 320px;
-}
-@media (max-width: 650px) {
-  .winners-table {
-    font-size: 12px;
-  }
-}
-.winners-table td {
-  padding: 1em;
-}
-@media (max-width: 650px) {
-  .winners-table td {
-    padding: 0.6em;
-  }
-}
-.winners-table-header {
-  color: #26C0D5;
-  font-size: 0.8em;
-  height: 3em;
-}
-.winners-table-team {
-  height: 3em;
-}
-.winners-table-team:hover {
-  background-color: #ebebeb;
-}
-.winners-table-userteam {
-  background-color: #26C0D5;
-  color: white;
-  height: 3em;
-}
-.winners-table-mesto {
-  width: 6%;
-}
-.winners-table-comanda {
-  width: 40%;
-}
-@media (max-width: 650px) {
-  .winners-table-comanda {
-    width: 30%;
-  }
-}
-.winners-table-vremya {
-  width: 16%;
-}
-.winners-table-data {
-  width: 16%;
-}
-.winners-table-photo {
-  width: 10%;
 }
 
 /*------------------------------------*\
@@ -1557,6 +1507,19 @@ html, body {
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
+.collection-list .section {
+  padding: 70px 8% 50px;
+}
+.collection-list-item-img {
+  width: 300px;
+}
+.collection-list-item-content {
+  width: 600px;
+}
+.collection-list-item-content-bottom-adress i {
+  font-size: 2em;
+}
+
 .quest .section {
   padding: 70px 8% 50px;
 }
@@ -1683,6 +1646,70 @@ html, body {
 .quest-contacts {
   margin-top: 2.5em;
   line-height: 1.5em;
+}
+
+.winners .section {
+  padding: 0px 8% 50px;
+}
+@media (max-width: 650px) {
+  .winners .section {
+    padding: 0px 0px 50px;
+  }
+}
+.winners-table {
+  width: 100%;
+  table-layout: fixed;
+  font-size: 17px;
+  min-width: 320px;
+}
+@media (max-width: 650px) {
+  .winners-table {
+    font-size: 12px;
+  }
+}
+.winners-table td {
+  padding: 1em;
+}
+@media (max-width: 650px) {
+  .winners-table td {
+    padding: 0.6em;
+  }
+}
+.winners-table-header {
+  color: #26C0D5;
+  font-size: 0.8em;
+  height: 3em;
+}
+.winners-table-team {
+  height: 3em;
+}
+.winners-table-team:hover {
+  background-color: #ebebeb;
+}
+.winners-table-userteam {
+  background-color: #26C0D5;
+  color: white;
+  height: 3em;
+}
+.winners-table-mesto {
+  width: 6%;
+}
+.winners-table-comanda {
+  width: 40%;
+}
+@media (max-width: 650px) {
+  .winners-table-comanda {
+    width: 30%;
+  }
+}
+.winners-table-vremya {
+  width: 16%;
+}
+.winners-table-data {
+  width: 16%;
+}
+.winners-table-photo {
+  width: 10%;
 }
 
 .collection {
@@ -2138,5 +2165,4 @@ html, body {
 }
 
 /* ------- Заполнение -------- */
-
 /*# sourceMappingURL=style.css.map */
