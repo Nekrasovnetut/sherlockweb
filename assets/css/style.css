@@ -1137,7 +1137,8 @@ hr {
 }
 
 .covermini {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
   position: relative;
 }
 .covermini img {
@@ -1529,12 +1530,15 @@ html, body {
   padding: 70px 8% 50px;
 }
 .collection-list-item-img {
-  width: 300px;
+  width: 40%;
 }
 .collection-list-item-content {
-  width: 600px;
+  width: 58%;
 }
-.collection-list-item-content-bottom-adress i {
+.collection-list-item-content-bottom {
+  color: #BC6F00;
+}
+.collection-list-item-content-bottom i {
   font-size: 2em;
 }
 
@@ -1859,6 +1863,9 @@ html, body {
 .collection-0 .schedule-cost td hr {
   border-bottom-color: #26C0D5;
 }
+.collection-0 .collection-list-item-content-bottom {
+  color: #26C0D5;
+}
 
 .collection-0 .aligner {
   max-width: 1050px;
@@ -1987,6 +1994,9 @@ html, body {
 }
 .collection-1 .schedule-cost td hr {
   border-bottom-color: #89CC32;
+}
+.collection-1 .collection-list-item-content-bottom {
+  color: #89CC32;
 }
 
 .collection-1 .aligner {

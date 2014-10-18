@@ -6,10 +6,10 @@
 	
 	&-item{
 		&-img{
-			width: 300px;
-		}
+			width: 40%;
+			}
 		&-content{
-			width: 600px;
+			width: 58%;
 			&-top{
 				&-info{	
 				}
@@ -17,11 +17,12 @@
 			&-middle{
 			}
 			&-bottom{
-				&-adress{
+				color: $accent-color;
+				
 					i {
 						font-size: 2em;
 					}
-				}
+				
 			}
 
 		}
