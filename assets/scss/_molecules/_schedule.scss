@@ -4,34 +4,34 @@
 	font-size: 14px;
 //	font-size: 1.2vw;
 	min-width: 900px;
-	
+
 	@include mq(ultrabig) {
 		font-size: 16px;
 	}
-	
+
 	&-heading {
 		@extend %mcf;
-		
+
 		h4 {
 			float: left;
 			font-size: 24px;
 			line-height: 24px;
 		}
-		
+
 		&-month {
 			float: right;
 			line-height: 28px; // + 4 мистических пикселя
-			
+
 			li {
 				display: inline-block;
-				
+
 				margin-left: 1em;
-				
+
 				a {
 					text-decoration: underline;
 					color: $medium-grey;
 				}
-				
+
 				&.is-active a {
 					text-decoration: none;
 					color: $accent-color;
@@ -39,88 +39,88 @@
 			}
 		}
 	}
-	
+
 	a:hover {
 		text-decoration: underline;
 	}
-	
+
 	.disabled {
 		color: $light-grey;
 		cursor: default;
-		
+
 		&:hover {
 			text-decoration: none;
 		}
-		
-		.collection & {
+
+		.collection-schedule & {
 			color: rgba(black, .25);
 		}
 	}
-	
+
 	th {
 		width: 10%;
 		text-align: left;
 	}
-	
+
 	td {
 		width: 4.5%;
 		padding: .5em 0 .25em 10px;
 	}
-	
+
 	&-time {
-		
+
 		th {
 			font-weight: bold;
 			color: $accent-color;
 			padding-top: 1.5em;
 			vertical-align: top;
 			line-height: 1.3125em;
-			
-			.collection & { 
+
+			.collection-schedule & {
 				color: white;
 				font-size: 1.066666667em; // 16px
 				padding-top: 1.1em;
 				line-height: 1.7em;
 			}
 		}
-		
+
 		td {
 			padding-top: 1.5em;
 		}
 	}
-	
+
 	&-cost {
 		th {
 			color: $medium-grey;
 			font-size: .928571429em; // 13px
 			font-weight: normal;
 		}
-		
+
 		td {
 			color: $accent-color;
 			white-space: nowrap;
 			overflow: hidden;
-			
-			.collection & {
+
+			.collection-schedule & {
 				color: #333;
 				color: rgba(black, .75);
 			}
-			
+
 			hr {
 				display: inline-block;
 				vertical-align: middle;
 				width: 100%;
 				margin-left: 10px;
 				border-bottom-color: $accent-color;
-				
-				.collection & {
+
+				.collection-schedule & {
 					border-bottom-color: #333;
 					border-bottom-color: rgba(black, .75);
 				}
 			}
 		}
 	}
-	
+
 	&-overflow {
 		overflow-y: hidden;
 		overflow-x: auto;

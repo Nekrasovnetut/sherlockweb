@@ -1,38 +1,45 @@
 .page {
 	position: relative;
 	z-index: 1;
-	
+
 	min-height: 100%;
-	
+	background: white;
+
 	&-heading {
 		@extend %heading;
-		
+
 		padding: 50px 0 40px;
-		
+
 		h3 { text-transform: uppercase; }
-		
+
 		p {  color: black; }
 	}
-	
+
 	&-cover {
 		height: 350px;
 //		height: 100%;
 		overflow: hidden;
 		position: relative;
-		
+
 		&-bg {
 			img {
 				width: 100%;
-				
+
 				position: absolute;
 				left: -9999px; right: -9999px; top: 0; //top: -9999px; bottom: -9999px;
 				margin: auto;
 				z-index: -1;
 			}
-			
+
 			+ .page-cover-content {
 				color: white;
 			}
 		}
 	}
+}
+
+.fixed-top {
+	position: fixed;
+	z-index: 0;
+	width: 100%;
 }

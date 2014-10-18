@@ -1,29 +1,22 @@
 // :(
-	
+
 ._sherlock-about {
-	text-align: center; 
-	position: fixed; 
-	z-index: 0;
+	text-align: center;
 	padding-top: 160px; padding-bottom: 160px;
 	width: 100%;
-	
+
 	height: auto;
-//	height: 600px;
 
 	.description {
 		font-size: 1.5em; // 24px 1.6em
 	}
-	
+
 	@include mq(small) {
 		.description {
 			padding-left: 1.5em;
 			padding-right: 1.5em;
 		}
-		
+
 		br { display: none; }
-	}
-	
-	.royalSlider {
-		height: 155px;
 	}
 }

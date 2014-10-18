@@ -1,8 +1,8 @@
-$collection-1: #89CC32;
+$collection-0: #26C0D5;
 
-@include collection-page-color(1, $collection-1);
+@include collection-page-color(0, $collection-0);
 
-.collection-1 {
+.collection-0 {
 	.aligner {
 		max-width: 1050px;
 		transform-origin: top center;

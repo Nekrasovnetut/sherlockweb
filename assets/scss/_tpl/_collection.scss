@@ -1,164 +1,175 @@
 .collection {
-	color: white;
-	overflow: hidden;
-	
-	&-content { position: relative; }
-	
-	&--preview {
-		.collection-content {
+	&-map, &-schedule {
+		color: white;
+		overflow: hidden;
+	}
+
+	&-map {
+		.aligner {
+			position: relative;
 			height: 650px;
-			
+
 			@include mq(medium) {
 				height: auto;
 			}
 		}
+
+		.btn {
+			border-color: white;
+		}
+
+		&-item {
+			width: 285px;
+			margin-bottom: 2em;
+
+			&-heading {
+				font-size: 21px;
+				width: 115px;
+				margin-bottom: .75em;
+				color: #444;
+				color: rgba(black, .7);
+			}
+
+			.btn {
+				margin-top: 3em;
+			}
+
+			@include mq(medium) {
+				position: relative !important;
+				left: 30px !important; right: auto !important; top:  auto !important; bottom: auto !important; // <- Hard Core
+				margin: 50px auto;
+				width: auto;
+				max-width: 60%;
+			}
+
+			@include mq(small) {
+				max-width: 85%;
+				left: auto !important;
+
+				.collection-item-icons {
+					display: none;
+				}
+			}
+
+			/* ---
+				Типичные варианты расположения иконок:
+
+			---	*/
+
+			&-icons {
+				img { position: absolute; }
+			}
+
+			position: absolute; z-index: 1; // <- Основные стили
+		}
+
+		&-path {
+			position: absolute; z-index: 2; // <- Основные стили
+
+			@include mq(medium) {
+				display: none;
+			}
+		}
 	}
-	
-	&--schedule {
+
+	&-schedule {
 		.schedule-overflow {
 			padding: 0 50px 20px;
 		}
 	}
-	
-	&-item {
-		width: 285px;
-		margin-bottom: 2em;
-		
-		&-heading {
-			font-size: 21px;
-			width: 115px;
-			margin-bottom: .75em;
-			color: #444;
-			color: rgba(black, .7);
-		}
-		
-		.btn {
-			margin-top: 3em;
-		}
-		
-		@include mq(medium) {
-			position: relative !important;
-			left: 30px !important; right: auto !important; top:  auto !important; bottom: auto !important; // <- Hard Core
-			margin: 50px auto;
-			width: auto;
-			max-width: 60%;
-		}
-		
-		@include mq(small) {
-			max-width: 85%;
-			left: auto !important;
-			
-			.collection-item-icons {
-				display: none;
-			}
-		}
-		
-		/* ---
-			Типичные варианты расположения иконок:
-			
-		---	*/
-		
-		&-icons {
-			img { position: absolute; }
-			
-			.after-title {
-				top: 0;
-				margin-top: -40px;
-				left: 130px;
-			}	
-			
-			.left {
-				&-bottom {
-					right: 100%;
-					margin-right: 20px;
-					bottom: 0;
-				}
-				
-				&-top {
-					right: 100%;
-					bottom: 105%;
-					margin-right: -20px;
-				}
-				
-				&-center {
-					right: 100%;
-					margin-right: 20px;
-					top: 35%;
-				}
-			}
-			
-			.right {
-				&-bottom {
-					right: 10%;
-					top: 100%;
-					margin-top: -40px;
-				}
-				
-				&-center {
-					left: 100%;
-					bottom: 60px;
-				}
-			}
-		}
-		
-		position: absolute; z-index: 1; // <- Основные стили
+}
+
+%icon-after-title {
+	top: 0;
+	margin-top: -40px;
+	left: 130px;
+}
+
+%icon-left {
+	&-bottom {
+		right: 100%;
+		margin-right: 20px;
+		bottom: 0;
 	}
-	
-	&-path {
-		position: absolute; z-index: 2; // <- Основные стили
-		
-		@include mq(medium) {
-			display: none;
-		}
+
+	&-top {
+		right: 100%;
+		bottom: 105%;
+		margin-right: -20px;
+	}
+
+	&-center {
+		right: 100%;
+		margin-right: 20px;
+		top: 35%;
 	}
 }
 
+%icon-right {
+	&-bottom {
+		right: 10%;
+		top: 100%;
+		margin-top: -40px;
+	}
+
+	&-center {
+		left: 100%;
+		bottom: 60px;
+	}
+}
+
+// Назначение цветов для разных:
+
 @mixin collection-page-color($n, $color) {
-	.page-collection-#{$n} {
+	.collection-#{$n} {
 		.page-heading h3, .page-heading h2 { color: $color; }
-		
+
+		&.section {
+			background: $color;
+		}
+
 		.btn {
 			background-color: $color;
-			
+
 			&-white {
 				color: $color;
 			}
 		}
-		
+
 		.link {
 			color: $color;
 		}
-		
+
 		.quest-info-label {
 			color: $color;
 		}
-		
+
 		.quote {
 			&-text:before, &-text:after, &-author {
 				color: $color;
 			}
 		}
-		
+
 		.section-map {
 			background: $color;
-			
+
 			&:after {
 				border-top-color: $color;
 			}
 		}
-		
+
 		.schedule {
 			&-heading-month li.is-active a {
 				color: $color;
 			}
-			
+
 			&-time th {
 				color: $color;
 			}
-			
+
 			&-cost td {
 				color: $color;
-				
+
 				hr {
 					border-bottom-color: $color;
 				}
@@ -167,11 +178,7 @@
 	}
 }
 
-// Это я потом уберу:
+// Стили расположения коллекций:
 
-@import "_collection-layout/layout-0";
-@import "_collection-layout/layout-1";
-@import "_collection-layout/layout-1-2";
-
-// Новый стиль:
+@import "_collections/collection-0";
 @import "_collections/collection-1";

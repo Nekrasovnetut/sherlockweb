@@ -1,7 +1,7 @@
 <? 	$pageTitle = "Лучшая команда в квесте";
-	$pageClass = "page-collection-1";
-	$collection1color = '#26C0D5';
-	
+	$pageClass = "collection-0";
+	$collection0 = '#26C0D5';
+
 	include "includes/header.php" ?>
 
 
@@ -20,6 +20,7 @@
 	</header>
 	<div><a href="quest.php">Квест</a></div>
 	<div class="winners">
+<<<<<<< Updated upstream
 		<section class="section">	
 			<table class="winners-table">
 				
@@ -46,26 +47,59 @@
 				</tr>
 				
 				<tr class="winners-table-userteam">
+=======
+		<section class="section">
+			<table>
+
+				<tr class="winners-header">
+					<td>
+						Место
+					</td>
+
+					<td>
+						Команда
+					</td>
+
+					<td>
+						Время
+					</td>
+
+					<td>
+						Дата
+					</td>
+
+					<td>
+						Фото
+					</td>
+				</tr>
+
+				<tr class="winners-userteam">
+>>>>>>> Stashed changes
 					<td>
 						256
 					</td>
-					
+
 					<td>
+<<<<<<< Updated upstream
 						Убойный, Петров, Обоев 
+=======
+						Александр Убойный, Иван Петров,  Рулон Обоев
+>>>>>>> Stashed changes
 					</td>
-					
+
 					<td>
 						23:45
 					</td>
-					
+
 					<td>
 						21.09.2012
 					</td>
-					
+
 					<td>
 						Фото
 					</td>
 				</tr>
+<<<<<<< Updated upstream
 				
 				<tr class="winners-table-team">
 					<td>
@@ -112,50 +146,63 @@
 				</tr>
 				
 				<tr class="winners-table-team">
+=======
+
+				<tr>
+>>>>>>> Stashed changes
 					<td>
 						2
 					</td>
-					
+
 					<td>
 						Петров, Обоев, Убойный
 					</td>
-					
+
 					<td>
 						27:55
 					</td>
-					
+
 					<td>
 						22.09.2012
 					</td>
-					
+
 					<td>
 						Фото
 					</td>
 				</tr>
+<<<<<<< Updated upstream
 				
 				<tr class="winners-table-team">
+=======
+
+				<tr>
+>>>>>>> Stashed changes
 					<td>
 						3
 					</td>
-					
+
 					<td>
+<<<<<<< Updated upstream
 						Петров, Обоев, Убойный, 
+=======
+						Петр Петров,  Рулон Обоев, Александр Убойный,
+>>>>>>> Stashed changes
 					</td>
-					
+
 					<td>
 						34:15
 					</td>
-					
+
 					<td>
 						22.09.2012
 					</td>
-					
+
 					<td>
 						Фото
 					</td>
 				</tr>
-				
-			</table>	
+
+			</table>
 		</section>
 	</div>
 </div>
