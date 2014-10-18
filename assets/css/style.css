@@ -1478,6 +1478,65 @@ html, body {
   z-index: 99;
 }
 
+.nav-days {
+  border-top: 1px solid #C4C4C4;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  padding: 0 50px;
+}
+.nav-days ul {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  min-width: 900px;
+}
+.nav-days .nav-item {
+  display: table-cell;
+  text-align: center;
+  padding: 1em 0;
+  width: 3%;
+  color: #7F7F7F;
+  position: relative;
+}
+.nav-days .nav-item:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  content: "";
+  display: block;
+  bottom: -20px;
+  z-index: 1;
+  height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 5px solid #BC6F00;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+}
+.nav-days .nav-item > a {
+  font-weight: normal;
+  font-size: 13px;
+  display: block;
+  width: 100%;
+}
+.nav-days .nav-item-heading {
+  font-size: 14px;
+  color: black;
+  width: 10%;
+  text-align: left;
+  vertical-align: bottom;
+}
+.nav-days .nav-item-heading span {
+  font-size: 21px;
+  font-weight: bold;
+}
+.nav-days .is-active {
+  color: #505050;
+}
+.nav-days .is-active:after {
+  bottom: 0;
+}
+
 .page {
   position: relative;
   z-index: 1;
@@ -1859,6 +1918,9 @@ html, body {
 .collection-0 .schedule-cost td hr {
   border-bottom-color: #26C0D5;
 }
+.collection-0 .nav-days .nav-item:after {
+  border-bottom-color: #26C0D5;
+}
 
 .collection-0 .aligner {
   max-width: 1050px;
@@ -1986,6 +2048,9 @@ html, body {
   color: #89CC32;
 }
 .collection-1 .schedule-cost td hr {
+  border-bottom-color: #89CC32;
+}
+.collection-1 .nav-days .nav-item:after {
   border-bottom-color: #89CC32;
 }
 

@@ -1,25 +1,25 @@
 .nav {
 	text-align: center;
-	
+
 	&-item {
 		display: inline-block;
 		vertical-align: top;
 		padding: 0 1.5em;
-		
+
 		@include mq(small) {
 			padding: 0 .75em;
 		}
-		
+
 		&-btn.nav-item-btn {
 			background-color: $light-grey;
 			color: $dark-grey;
 		}
-		
+
 		> a, > span {
 			text-transform: uppercase;
 			font-weight: bold;
 			font-size: 11px;
-			
+
 			i { margin-right: 2px; }
 		}
 	}
@@ -31,25 +31,87 @@
 	border-top-color: rgba(black, .1);
 	margin-top: -1px;
 	background: white;
-	
+
 	.current {
 		color: $accent-color;
 	}
-	
+
 	i {
 		font-size: 17px;
-		
+
 		vertical-align: middle;
 		margin-right: 7px !important;
 	}
-	
+
 	.icon-quest {
 		font-size: 19px;
 	}
 }
 
 .sticky {
-	position: sticky; 
-	top: 40px; 
+	position: sticky;
+	top: 40px;
 	z-index: 99;
+}
+
+.nav-days {
+	border-top: 1px solid #C4C4C4;
+	border-top-color: rgba(black, .1);
+	padding: 0 50px;
+
+	ul {
+		display: table; table-layout: fixed;
+		width: 100%;
+		min-width: 900px;
+	}
+
+	.nav-item {
+		display: table-cell;
+		text-align: center;
+		padding: 1em 0;
+		width: 3%;
+
+		color: $medium-grey;
+		position: relative;
+
+		&:after {
+			position: absolute;
+			left: 50%; margin-left: -10px;
+			content: "";
+			display: block;
+			bottom: -20px; z-index: 1;
+			@include triangle(20px 5px, $accent-color, up);
+
+			transition: all .3s;
+		}
+
+		> a {
+			font-weight: normal;
+			font-size: 13px;
+
+			display: block;
+			width: 100%;
+		}
+
+		&-heading {
+			font-size: 14px;
+			color: black;
+			width: 10%;
+			text-align: left;
+			vertical-align: bottom;
+
+			span {
+				font-size: 21px;
+				font-weight: bold;
+			}
+		}
+	}
+
+	.is-active {
+		color: $dark-grey;
+
+		&:after {
+			bottom: 0;
+		}
+	}
 }
