@@ -23,62 +23,37 @@
 		<section class="section">
 			<table class="winners-table">
 
+						
+
 				<tr class="winners-table-header">
-					<td class="winners-table-mesto">
+					<td>
 						Место
 					</td>
 
-					<td class="winners-table-comanda">
+					<td>
 						Команда
 					</td>
 
-					<td class="winners-table-vremya">
+					<td>
 						Время
 					</td>
 
-					<td class="winners-table-data">
+					<td>
 						Дата
 					</td>
 
-					<td class="winners-table-photo">
+					<td>
 						Фото
 					</td>
 				</tr>
 
 				<tr class="winners-table-userteam">
-		<section class="section">
-			<table>
-
-				<tr class="winners-header">
-					<td>
-						Место
-					</td>
-
-					<td>
-						Команда
-					</td>
-
-					<td>
-						Время
-					</td>
-
-					<td>
-						Дата
-					</td>
-
-					<td>
-						Фото
-					</td>
-				</tr>
-
-				<tr class="winners-userteam">
 					<td>
 						256
 					</td>
 
 					<td>
-						Убойный, Петров, Обоев
-						Александр Убойный, Иван Петров,  Рулон Обоев
+						Петров, Обоев, Убойный
 					</td>
 
 					<td>
@@ -137,41 +112,14 @@
 						Фото
 					</td>
 				</tr>
-
+				
 				<tr class="winners-table-team">
-
-				<tr>
-					<td>
-						2
-					</td>
-
-					<td>
-						Петров, Обоев, Убойный
-					</td>
-
-					<td>
-						27:55
-					</td>
-
-					<td>
-						22.09.2012
-					</td>
-
-					<td>
-						Фото
-					</td>
-				</tr>
-
-				<tr class="winners-table-team">
-
-				<tr>
 					<td>
 						3
 					</td>
 
 					<td>
 						Петров, Обоев, Убойный,
-						Петр Петров,  Рулон Обоев, Александр Убойный,
 					</td>
 
 					<td>
@@ -186,6 +134,33 @@
 						Фото
 					</td>
 				</tr>
+				
+				<tr class="winners-table-team">
+					<td>
+						3
+					</td>
+
+					<td>
+						Петров, Обоев, Убойный,
+					</td>
+
+					<td>
+						34:15
+					</td>
+
+					<td>
+						22.09.2012
+					</td>
+
+					<td>
+						Фото
+					</td>
+				</tr>
+
+				
+	
+
+				
 
 			</table>
 		</section>
