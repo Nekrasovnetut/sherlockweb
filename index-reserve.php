@@ -37,10 +37,10 @@
 	<div class="collection-0"> <!-- @todo <- fix this -->
 	<nav class="tabs nav-days">
 		<ul>
-			<li class="nav-item nav-item-heading"><span>12</span> Cентября</li>
+			<li class="nav-item nav-item-heading js-date-switch"><span>1</span> Cентября</li>
 
 			<? for ($i = 1; $i <= 30; $i++) { ?>
-				<li class="tabs-item nav-item <?= ($i == 1) ? "is-active" : "" ?> "><a href="#day-<?= $i ?>"> <?= $i ?> </a></li>
+				<li class="tabs-item nav-item <?= ($i == 1) ? "is-active" : "" ?> "><a href="#day-<?= $i ?>" data-date="<?= $i ?> Сентября"> <?= $i ?> </a></li>
 			<? } ?>
 		</ul>
 	</nav></div>
@@ -74,4 +74,13 @@
 </div>
 
 <? include "includes/scripts.php" ?>
+
+<script type="text/javascript">
+	$('.nav-days').on('click', '.nav-item a', function(){
+		date = $(this).data('date').split(" ");
+
+		$('.js-date-switch').html('<span>'+date[0]+'</span> '+date[1]);
+	});
+</script>
+
 <? include "includes/footer.php" ?>
