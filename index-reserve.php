@@ -35,7 +35,7 @@
 		</ul>
 	</nav>
 	<section class="section collection-schedule" style="background-color: #26C0D5;">
-		<header class="section-heading"><a href="collection.php">
+		<header class="section-heading"><a href="collection-list.php">
 			<h3> Путешествия </h3>
 		</a></header>
 		<div class="collection-content aligner">
@@ -45,7 +45,7 @@
 		</div>
 	</section>
 	<section class="section collection-schedule" style="background-color: #89CC32;">
-		<header class="section-heading"><a href="collection.php">
+		<header class="section-heading"><a href="collection-list.php">
 			<h3> Сериалы </h3>
 		</a></header>
 		<div class="collection-content aligner">

@@ -56,7 +56,7 @@
 		</ul>
 	</nav>
 	<section class="section collection-map collection-0">
-		<header class="section-heading"><a href="collection.php">
+		<header class="section-heading"><a href="collection-list.php">
 			<h3> Путешествия </h3>
 			<p> Все 10 квестов </p>
 		</a></header>
@@ -115,7 +115,7 @@
 		</div>
 	</section>
 	<section class="section collection-map collection-1">
-		<header class="section-heading"><a href="collection.php">
+		<header class="section-heading"><a href="collection-list.php">
 			<h3> Сериалы </h3>
 			<p> Все 10 квестов </p>
 		</a></header>
