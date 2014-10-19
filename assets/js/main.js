@@ -5,9 +5,9 @@
 
 (function($){
 
-	sliderHeight = $('.js-about-slider .rsContent').height();
+	textSliderHeight = $('.js-text-slider .rsContent').height();
 
-	$('.js-about-slider').height(sliderHeight).royalSlider({
+	$('.js-text-slider').height(textSliderHeight).royalSlider({
 		loop: true,
 		autoPlay: {
     		enabled: true,
@@ -23,6 +23,18 @@
 		$ghost.height($ghost.prev().innerHeight() - 10);
 	});
 
+	$linksSlider = $('.js-links-slider');
+
+	$linksSlider.royalSlider({
+		imageScaleMode: 'fill',
+		slidesSpacing: 0,
+		globalCaption: true,
+		arrowsNavAutoHide: false
+	});
+
+	if ($linksSlider.length) {
+		$('.rsGCaption').wrap('<div class="rsGCaption-helper"></div>');
+	}
 /*
 	var $triangle = $('.header-nav-triangle'),
 		$headerNav = $('.header-nav .to-right'),

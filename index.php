@@ -24,7 +24,7 @@
 		</div>
 	</div>
 </header>
-<div class="royalSlider js-about-slider">
+<div class="royalSlider js-text-slider">
 	<div class="rsContent">
 		<div class="quote">
 			<img 	src="example-images/pic-quote.png" alt="Автор" class="quote-image"
@@ -43,7 +43,7 @@
 в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
 		</div>
 	</div>
-	</div>
+</div>
 </div><div class="js-ghost" style="position: relative; z-index: -2;"></div>
 
 <div class="page">

@@ -7,7 +7,7 @@
   font-style: normal;
 }
 [class^="icon-"]:before,
-[class*=" icon-"]:before, .quote-text:before, .quote-text:after {
+[class*=" icon-"]:before, .quote-text:before, .quote-text:after, .js-links-slider .rsArrowLeft .rsArrowIcn:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
   font-family: "sherlock" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -90,6 +90,14 @@
 
 .icon-quest:before {
   content: "\e00f";
+}
+
+.icon-arrow-right:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
+  content: "\e010";
+}
+
+.icon-arrow-left:before, .js-links-slider .rsArrowLeft .rsArrowIcn:before {
+  content: "\e011";
 }
 
 /*------------------------------------*\
@@ -1228,6 +1236,68 @@ hr {
             transform: scale(1);
   }
 }
+.js-links-slider {
+  background: black;
+  height: 330px;
+}
+.js-links-slider .rsImg {
+  opacity: .6;
+}
+.js-links-slider .rsGCaption {
+  display: table-cell;
+  vertical-align: middle;
+  float: none !important;
+  color: white;
+  font-weight: bold;
+  font-size: 53px;
+  line-height: 1.1em;
+}
+.js-links-slider .rsGCaption-helper {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 460px;
+  margin-left: -230px;
+  height: 100%;
+  pointer-events: none;
+  display: table;
+}
+.js-links-slider .rsBullets {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 45px;
+  text-align: center;
+}
+.js-links-slider .rsBullet {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid white;
+  margin: 0 3px;
+  cursor: pointer;
+}
+.js-links-slider .rsBullet.rsNavSelected {
+  background: white;
+}
+.js-links-slider .rsArrow {
+  position: absolute;
+  top: 42px;
+  right: 52px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid white;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  line-height: 21px;
+}
+.js-links-slider .rsArrowLeft {
+  right: 80px;
+}
+
 .schedule {
   width: 100%;
   table-layout: fixed;

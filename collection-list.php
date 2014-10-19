@@ -38,7 +38,7 @@
 
 				<div class="collection-list-item-content-bottom">
 					<div class="to-left">
-						<i class="icon-user"></i>
+						<i class="icon-marker"></i>
 					</div>
 					<div class="to-left">
 						<ul>
