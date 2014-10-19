@@ -139,6 +139,7 @@
 	    <div class="royalSlider js-links-slider">
 			<a href="quest.php?quest=1"><img class="rsImg" src="example-images/slide-1.jpg" alt="Летучий Голландец" /></a>
 			<a href="quest.php?quest=2"><img class="rsImg" src="example-images/slide-2.jpg" alt="Диплодоки в ловушке" /></a>
+			<a href="quest.php?quest=3"><img class="rsImg" src="example-images/example-cover.png" alt="Пещера Майя" /></a>
 		</div>
     </section>
 </div>

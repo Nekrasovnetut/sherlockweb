@@ -32,6 +32,13 @@
 			<li class="nav-item current"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
 		</ul>
 	</nav>
+	<nav class="section-nav nav" >
+		<ul>
+			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="0" checked /> Путешествия </label></li>
+			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="1" checked /> Сериалы </label></li>
+			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="43" checked /> 43 </label></li>
+		</ul>
+	</nav>
 	<section>
 		<!-- Google maps -->
 		<div id="map-canvas" class="js-map" style="height: 700px; height: 85vh"></div>
@@ -44,8 +51,8 @@
 
 			function startGoogleMap() {
 				var mapOptions = {
-					center: { lat: -34.397, lng: 150.644},
-					zoom: 8,
+					center: { lat: 55.75576, lng: 37.617671},
+					zoom: 12,
 					panControl: false,
 					scrollwheel: false
 				};
@@ -58,7 +65,9 @@
 
 				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
-			    placeMarker = function(pos, markerColor){
+				markers = {};
+
+			    placeMarker = function(pos, markerColor, id){
 				    var sherlockMarker = {
 						path: sherlockMarkerPath,
 						fillColor: markerColor,
@@ -75,7 +84,7 @@
 		 				anchor: new google.maps.Point(23, 67)
 					}
 
-					var marker = new google.maps.Marker({
+					var markerShape = new google.maps.Marker({
 						    position: pos,
 						    icon: sherlockMarker,
 						    map: map }),
@@ -84,12 +93,20 @@
 						    icon: sherlockLogo,
 						    map: map
 						});
+
+					if (markers[id.toString()]) {
+						markers[id.toString()].push([markerShape, markerLogo]);
+					} else {
+						markers[id.toString()] = [[markerShape, markerLogo]];
+					}
 			    }
 
-			    // Нужно только прописать координату и цвет:
-			    placeMarker(map.getCenter(), '#26C0D5');
-			    placeMarker({lat: -34.497, lng: 150.844}, '#89CC32');
-			     placeMarker({lat: -34.697, lng: 150.844}, '#FF7D53;');
+			    // Нужно только прописать координату, цвет и id:
+			    placeMarker(map.getCenter(), '#26C0D5', 0);
+			    placeMarker({lat: 55.76576, lng: 37.627671}, '#89CC32', 1);
+			    placeMarker({lat: 55.73576, lng: 37.597671}, '#89CC32', 1);
+			    placeMarker({lat: 55.76476, lng: 37.637671}, '#FF7D53', 43);
+			    placeMarker({lat: 55.74576, lng: 37.537671}, '#FF7D53', 43);
 			}
 
 			startGoogleMap();
@@ -99,4 +116,24 @@
 </div>
 
 <? include "includes/scripts.php" ?>
+
+<script type="text/javascript">
+	$('.page').on('change', 'input[name="map-filter"]', function(){
+		var id = this.value,
+			markersObj = markers[id];
+
+		if (this.checked) {
+			$.each(markersObj, function(i, v){
+				v[0].setVisible(true);
+				v[1].setVisible(true);
+			});
+		} else {
+			$.each(markersObj, function(i, v){
+				v[0].setVisible(false);
+				v[1].setVisible(false);
+			});
+		}
+	});
+</script>
+
 <? include "includes/footer.php" ?>
