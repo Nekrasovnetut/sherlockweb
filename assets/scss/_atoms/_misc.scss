@@ -1,0 +1,7 @@
+.js-ghost {
+	position: relative; z-index: -2;
+}
+
+[id^="lpck"] { // Codekit error message id
+	display: none !important;
+}

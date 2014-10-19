@@ -865,10 +865,6 @@ html {
   padding: 25px 0 50px;
 }
 
-#lpckWarningOverlay, #lpckLagWarningOverlay {
-  display: none !important;
-}
-
 /*------------------------------------*\
 	Атомы:
 \*------------------------------------*/
@@ -950,12 +946,22 @@ html {
   }
 }
 
+.js-ghost {
+  position: relative;
+  z-index: -2;
+}
+
+[id^="lpck"] {
+  display: none !important;
+}
+
 .quote {
   position: relative;
   margin: 0 auto;
   height: 155px;
   line-height: 155px;
   text-align: center;
+  background: white;
 }
 .quote-text {
   max-width: 610px;
@@ -982,7 +988,7 @@ html {
   left: 0;
   			/*
   background: url('../images/icons/mark-left.png') no-repeat left center;
-  			
+  
   			@include hidpi {
   				background-image: url('../images/icons/mark-left.svg');
   			}
@@ -1377,9 +1383,36 @@ html, body {
   line-height: 40px;
   -webkit-transition: background .2s;
           transition: background .2s;
+  	/*
+  &:before {
+  		content: "";
+  		display: block;
+  		position: absolute;
+  		left: 0;
+  		top: 0;
+  		width: 100%;
+  		height: 100%;
+  		background: $main-color;
+  		z-index: -100;
+  	}
+  */
 }
 .header:hover, .header.is-visible {
   background: rgba(35, 35, 35, 0.95);
+}
+.header-ghost {
+  position: fixed;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  background: #2C3236;
+  background: rgba(35, 35, 35, 0.95);
+  color: white;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  -webkit-transition: background .2s;
+          transition: background .2s;
 }
 .header-logo {
   float: left;
@@ -1483,6 +1516,7 @@ html, body {
   border-top: 1px solid #C4C4C4;
   border-top-color: rgba(0, 0, 0, 0.1);
   padding: 0 50px;
+  background: white;
 }
 .nav-days ul {
   display: table;
@@ -1540,9 +1574,19 @@ html, body {
 
 .page {
   position: relative;
-  z-index: 1;
+  z-index: 0;
   min-height: 100%;
-  background: white;
+  /*
+  	&:after {
+  		content: "";
+  		display: block;
+  		background: white;
+  		position: absolute;
+  		z-index: -1;
+  		left: 0; top: 0;
+  		width: 100%; height: 100%;
+  	}
+  */
 }
 .page-heading {
   padding: 50px 0 40px;
@@ -1557,6 +1601,7 @@ html, body {
   height: 350px;
   overflow: hidden;
   position: relative;
+  z-index: 0;
 }
 .page-cover-bg img {
   width: 100%;

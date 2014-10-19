@@ -20,12 +20,8 @@ html {
 
 .logo {
 	display: block;
-	
+
 	&--big {
 		padding: 25px 0 50px;
 	}
-}
-
-#lpckWarningOverlay, #lpckLagWarningOverlay {
-	display: none !important;
 }

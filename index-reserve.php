@@ -21,17 +21,15 @@
 		</div>
 	</div>
 </header>
-</div><div class="js-ghost" style="position: relative; z-index: -2;"></div>
+</div><div class="js-ghost"></div>
 
 <div class="page">
 	<nav class="section-nav nav sticky" >
-		<!-- @todo: Сделать второй элемент прилипающим -->
 		<ul>
-			<!-- На самом деле это не current, но это для того чтобы показать как будет выглядит: -->
-			<li class="nav-item current"><a href="index-reserve.php">Забронировать</a></li>
+			<li class="nav-item current"><a href="index-reserve.php"><i class="icon-clock"></i> Забронировать</a></li>
 
-			<li class="nav-item"><a href="index.php">Квесты</a></li>
-			<li class="nav-item"><a href="index-map.php">Карта</a></li>
+			<li class="nav-item"><a href="index.php"><i class="icon-quest"></i> Квесты</a></li>
+			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
 		</ul>
 	</nav>
 	<div class="collection-0"> <!-- @todo <- fix this -->
@@ -39,14 +37,16 @@
 		<ul>
 			<li class="nav-item nav-item-heading js-date-switch"><span>1</span> Cентября</li>
 
-			<? for ($i = 1; $i <= 30; $i++) { ?>
-				<li class="tabs-item nav-item <?= ($i == 1) ? "is-active" : "" ?> "><a href="#day-<?= $i ?>" data-date="<?= $i ?> Сентября"> <?= $i ?> </a></li>
+			<? for ($i = 1; $i <= 31; $i++) { ?>
+				<li class="tabs-item nav-item <?= ($i == 1) ? "is-active" : "" ?> ">
+					<a href="#day-<?= $i ?>" data-date="<?= $i ?> Сентября"> <?= $i ?> </a>
+				</li>
 			<? } ?>
 		</ul>
 	</nav></div>
 	<div class="tabs-content" style="background-color: #26C0D5;">
 
-		<? for ($i = 1; $i <= 30; $i++) { ?>
+		<? for ($i = 1; $i <= 31; $i++) { ?>
 			<div id="day-<?= $i ?>" class="tabs-content-item <?= ($i == 1) ? "is-active" : "" ?> ">
 				<section class="section collection-schedule" style="background-color: #26C0D5;">
 					<header class="section-heading"><a href="collection-list.php">

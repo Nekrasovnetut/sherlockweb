@@ -21,16 +21,15 @@
 		</div>
 	</div>
 </header>
-</div><div class="js-ghost" style="position: relative; z-index: -2;"></div>
+</div><div class="js-ghost"></div>
 
 <div class="page">
 	<nav class="section-nav nav sticky" >
-		<!-- @todo: Сделать второй элемент прилипающим -->
 		<ul>
-			<li class="nav-item"><a href="index-reserve.php">Забронировать</a></li>
+			<li class="nav-item"><a href="index-reserve.php"><i class="icon-clock"></i> Забронировать</a></li>
 
-			<li class="nav-item"><a href="index.php">Квесты</a></li>
-			<li class="nav-item current"><a href="index-map.php">Карта</a></li>
+			<li class="nav-item"><a href="index.php"><i class="icon-quest"></i> Квесты</a></li>
+			<li class="nav-item current"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
 		</ul>
 	</nav>
 	<section>

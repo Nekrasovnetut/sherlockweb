@@ -19,6 +19,10 @@
 	$ghost = $('.js-ghost');
 	$ghost.height($ghost.prev().innerHeight() - 10);
 
+	$(window).resize(function(){
+		$ghost.height($ghost.prev().innerHeight() - 10);
+	});
+
 /*
 	var $triangle = $('.header-nav-triangle'),
 		$headerNav = $('.header-nav .to-right'),

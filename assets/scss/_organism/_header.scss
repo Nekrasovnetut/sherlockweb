@@ -5,61 +5,90 @@ $header-height: 40px;
 	background: $main-color;
 	background: rgba(#232323, 0);
 	color: white;
-	
+
 	width: 100%;
 
-	// Vertical centering: 
+	// Vertical centering:
 	height: $header-height;
 	line-height: $header-height;
-	
+
 	transition: background .2s;
-	
+
 	&:hover, &.is-visible {
 		background: rgba(#232323, .95);
 	}
-	
+
+	&-ghost {
+		position: fixed; z-index: 0; left: 0; top: 0;
+		background: $main-color;
+		background: rgba(#232323, .95);
+		color: white;
+
+		width: 100%;
+
+		// Vertical centering:
+		height: $header-height;
+		line-height: $header-height;
+
+		transition: background .2s;
+	}
+
+	/*
+&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: $main-color;
+		z-index: -100;
+	}
+*/
+
 	&-logo {
 		float: left;
 		padding-top: 3px; // <- small alignment fix
 		padding-left: 40px;
 	}
-	
+
 	&-nav {
 		position: relative;
 		@extend %bfc; // http://www.fionachan.net/talks/block-formatting-context/#/
-		
+
 		@include mq(small) {
 			display: none !important;
 		}
-		
+
 		.dropdown-block {
 			background: $main-color;
 			background: rgba(#232323, .95);
 		}
-		
+
 		.nav-item {
 //			background: $main-color;
 			color: #fff;
 			height: $header-height;
 		}
-		
+
 		&-triangle {
 			position: absolute;
 			bottom: -1px; left: 9999px;
 			display: none;
-			
+
 			transition: left .15s;
 			transform: translateZ(0);
-			
+
 			.header:hover & {
 				transition: none;
 				display: block;
 			}
-			
+
 			@include triangle(12px, white, up);
 		}
 	}
-	
+
 	+ .page {
 //		padding-top: $header-height;
 	}

@@ -1,7 +1,7 @@
 .section {
 	padding: 35px 0 50px;
-	background: white;
-	
+	background: white; // @hack
+
 	&-heading {
 		@extend %heading;
 	}
