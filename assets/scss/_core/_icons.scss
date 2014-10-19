@@ -26,7 +26,7 @@
 
 .icon-arrow-right:before {
   content: "\e000";
-  
+
   .btn & {
 	  left: 5px;
 	  width: 0;
@@ -80,4 +80,11 @@
 }
 .icon-quest:before {
   content: "\e00f";
+}
+
+.icon-arrow-right:before, %icon-arrow-right {
+  content: "\e010";
+}
+.icon-arrow-left:before, %icon-arrow-left {
+  content: "\e011";
 }

@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="6px" height="9px" viewBox="0 0 6 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <!-- Generator: Sketch 3.1 (8751) - http://www.bohemiancoding.com/sketch -->
+<svg width="4px" height="10px" viewBox="0 0 4 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
     <title>arrow-right</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <g id="arrow-right" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" fill="#000000">
-            <g id="Page-1" sketch:type="MSShapeGroup">
-                <g id="Главная">
-                    <g id="button_hover">
-                        <g id="Group">
-                            <path d="M3.22097051,4.97902949 L3.22097051,4.02097051 L-0.379029489,7.62097051 L0.579029489,8.57902949 L4.17902949,4.97902949 L4.65805898,4.5 L4.17902949,4.02097051 L0.579029489,0.420970511 L-0.379029489,1.37902949 L3.22097051,4.97902949 Z" id="arrow-right"></path>
-                        </g>
-                    </g>
-                </g>
-            </g>
+        <g id="Group" sketch:type="MSLayerGroup" transform="translate(-8.000000, -5.000000)" fill="#FFFFFF">
+            <path d="M11.20346,11.30346 L11.2696,11.2272 C11.6405079,10.7326562 11.812,10.2867767 11.812,9.8 C11.812,9.31322335 11.6405079,8.86734385 11.2696,8.3728 L10.7,8.8 L11.3368322,8.48158392 C11.158208,8.12433561 9.33869241,5.23177235 9.10346003,4.99653997 L8.09653997,6.00346003 C8.1960902,6.10301026 9.948042,8.88816439 10.0631678,9.11841608 L10.1304,9.2272 C10.3279132,9.49055089 10.388,9.64677665 10.388,9.8 C10.388,9.95322335 10.3279132,10.1094491 10.1304,10.3728 L10.7,10.8 L10.19654,10.29654 C9.96130759,10.5317723 8.141792,13.4243356 7.96316784,13.7815839 L9.23683216,14.4184161 C9.351958,14.1881644 11.1039098,11.4030103 11.20346,11.30346 Z" id="arrow-right" sketch:type="MSShapeGroup"></path>
         </g>
     </g>
 </svg>
