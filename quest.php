@@ -37,9 +37,7 @@
 				<li> 906 456-34-34</li>
 				<li>tequila@sherlockgame.com</li>
 			</ul>
-			<img src="assets/images/icons/18plus.svg"
-				 onerror="this.onerror=null; this.src='assets/images/icons/18plus.png'"
-				 class="plus18" />
+			<div class="age age--circle"> 18+ </div>
 		</aside>
 	</section>
 	<section>

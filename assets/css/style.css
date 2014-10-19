@@ -868,6 +868,20 @@ html {
 /*------------------------------------*\
 	Атомы:
 \*------------------------------------*/
+.age {
+  font-weight: bold;
+}
+.age--circle {
+  color: #BC6F00;
+  border: 2px solid;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 38px;
+  vertical-align: middle;
+}
+
 /*! Страница Обратной связи */
 .btn, .btn-simple, .btn-link {
   display: inline-block;
@@ -1151,10 +1165,10 @@ hr {
   border-radius: 10px;
   width: 100%;
 }
-.covermini-age {
+.covermini .age {
   position: absolute;
   color: white;
-  margin: 2em 0 0 1.5em;
+  margin: 1em 0 0 1em;
 }
 
 .dropdown {
@@ -1742,7 +1756,7 @@ html, body {
   margin-bottom: 2em;
   margin-top: .75em;
 }
-.quest-aside .plus18 {
+.quest-aside .age {
   position: absolute;
   right: 0;
   bottom: .25em;
@@ -1973,6 +1987,9 @@ html, body {
 .collection-0 .nav-days .nav-item:after {
   border-bottom-color: #26C0D5;
 }
+.collection-0 .age--circle {
+  color: #26C0D5;
+}
 
 .collection-0 .aligner {
   max-width: 1050px;
@@ -2107,6 +2124,9 @@ html, body {
 }
 .collection-1 .nav-days .nav-item:after {
   border-bottom-color: #89CC32;
+}
+.collection-1 .age--circle {
+  color: #89CC32;
 }
 
 .collection-1 .aligner {

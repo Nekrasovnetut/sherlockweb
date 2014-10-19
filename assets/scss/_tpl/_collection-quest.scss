@@ -1,14 +1,14 @@
 .quest {
 	.section {
 		@extend %mcf;
-		
+
 		padding: 70px 8% 50px;
 	}
-	
+
 	.quote {
 		font-size: 20px;
 	}
-	
+
 	.section-map {
 		background: $accent-color;
 		color: white;
@@ -16,111 +16,111 @@
 		font-size: 20px; font-weight: bold;
 		padding: 40px 0 50px;
 		position: relative;
-		
+
 		.js-btn-toggly {
 			position: absolute;
 			bottom: -1.5em;
 			width: 60px; height: 60px;
 			left: 50%; margin-left: -30px;
 		}
-		
+
 		+ .js-map {
 			background-color: $light-grey;
 		}
-		
+
 		&:after {
 			position: absolute;
 			left: 50%; margin-left: -25px;
 			content: "";
 			display: block;
 			top: 100%; z-index: 1;
-			
+
 			@include triangle(50px 15px, $accent-color, down);
 		}
-		
+
 		&:before {
 			position: absolute;
 			left: 50%; margin-left: -9px;
 			content: "";
 			display: block;
 			top: 100%; z-index: 2;
-			
+
 			@include triangle(18px 5px, white, down);
 		}
 	}
-	
+
 	&-article {
 		float: left;
 		width: 66%;
 		margin-bottom: 2em;
-		
+
 		&-heading {
 			padding-bottom: 2em;
-			
+
 			&-collection {
 				text-align: right;
 				margin-top: -2em;
-				
+
 				.label {
 					font-size: 15px;
 					margin-right: 1em;
 					color: $medium-grey;
 				}
-				
+
 				.link {
 					font-size: 19px;
 					text-decoration: underline;
 				}
 			}
 		}
-		
+
 		@include mq(medium){
 			float: none;
-			
+
 			width: auto;
 		}
 	}
-	
+
 	&-aside {
 		width: 26%;
 		float: right;
 		position: relative;
-		
+
 		@include mq(medium){
 			float: none;
 			width: auto;
 		}
-		
+
 		.btn {
 			margin-bottom: 2em;
 			margin-top: .75em;
 		}
-		
-		.plus18 {
+
+		.age {
 			position: absolute;
 			right: 0;
 			bottom: .25em;
 		}
 	}
-	
+
 	&-info {
 		width: 48%;
 		display: inline-block;
 		vertical-align: top;
 		margin-bottom: 2.5em;
-			
+
 		&-label {
 			@extend %mcf;
 			color: $accent-color;
 			margin-bottom: 2em;
 			font-size: 11px;
-			
+
 			i {
 				font-size: 24px;
 				float: left;
 				margin-right: .25em;
 			}
-			
+
 			span {
 				overflow: hidden;
 				display: block;
@@ -129,7 +129,7 @@
 			}
 		}
 	}
-	
+
 	&-contacts {
 		margin-top: 2.5em;
 		line-height: 1.5em;

@@ -17,7 +17,7 @@
 		<div class="collection-list-item">
 			<div class="collection-list-item-img to-left">
 				<figure class="covermini">
-					<span class="covermini-age">+18</span>
+					<div class="age">+18</div>
 					<img src="example-images/example-cover-mini.png">
 				</figure>
 			</div>
