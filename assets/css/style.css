@@ -1723,6 +1723,64 @@ html, body {
 .collection-list .section {
   padding: 70px 8% 50px;
 }
+.collection-list-description {
+  background-color: #BC6F00;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.collection-list-description-center {
+  padding: 70px 8% 50px;
+}
+.collection-list-description img {
+  position: absolute;
+}
+.collection-list-description img:nth-of-type(1) {
+  top: 10px;
+}
+.collection-list-description img:nth-of-type(2) {
+  bottom: -30px;
+  left: 120px;
+}
+.collection-list-description img:nth-of-type(3) {
+  bottom: -30px;
+  left: 800px;
+}
+.collection-list-description img:nth-of-type(4) {
+  right: 30px;
+}
+.collection-list-description img:nth-of-type(5) {
+  left: -15px;
+  top: 100px;
+}
+.collection-list-description h4 {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 0.7em;
+}
+.collection-list-description h5 {
+  color: #555;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.5em;
+}
+.collection-list-description p {
+  color: white;
+}
+.collection-list-other {
+  margin-top: 2em;
+}
+.collection-list-other span {
+  color: #555;
+  color: rgba(0, 0, 0, 0.5);
+}
+.collection-list-other ul {
+  display: inline;
+}
+.collection-list-other li {
+  display: inline;
+  color: white;
+  padding-left: 1em;
+}
 .collection-list-item-img {
   width: 40%;
 }
@@ -2066,6 +2124,9 @@ html, body {
 .collection-0 .age--circle {
   color: #26C0D5;
 }
+.collection-0 .collection-list-description {
+  background-color: #26C0D5;
+}
 
 .collection-0 .aligner {
   max-width: 1050px;
@@ -2203,6 +2264,9 @@ html, body {
 }
 .collection-1 .age--circle {
   color: #89CC32;
+}
+.collection-1 .collection-list-description {
+  background-color: #89CC32;
 }
 
 .collection-1 .aligner {

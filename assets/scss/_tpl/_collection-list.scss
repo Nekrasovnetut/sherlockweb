@@ -4,6 +4,82 @@
 		padding: 70px 8% 50px;
 	}
 	
+	&-description{
+		background-color: $accent-color;
+		text-align: center;
+		position: relative;
+		overflow: hidden;
+		
+		&-center{
+			padding: 70px 8% 50px;
+		}
+		
+		img {
+			position: absolute;
+		}
+		
+		img:nth-of-type(1) {
+			top: 10px;
+		}
+		
+		img:nth-of-type(2) {
+			bottom: -30px;
+			left: 120px;
+		}
+		
+		img:nth-of-type(3) {
+			bottom: -30px;
+			left: 800px;
+		}
+		
+		img:nth-of-type(4) {
+			right: 30px;
+		}
+		
+		img:nth-of-type(5) {
+			left: -15px;
+			top: 100px
+		}
+		
+		h4{
+			color: white;
+			font-size: 2.5em;
+			margin-bottom: 0.7em;
+		}
+		
+		h5{
+			color: #555;
+			color: rgba(0, 0, 0, 0.5);
+			font-size: 1.5em;
+			
+		}
+		
+		p{
+			color: white;
+		}
+	}
+	
+	&-other {
+		
+		margin-top: 2em;
+		
+		
+		span {
+			color: #555;
+			color: rgba(0, 0, 0, 0.5);
+		}
+		
+		ul{
+			display: inline;
+		}
+		
+		li {
+			display: inline;
+			color: white;
+			padding-left: 1em;
+		}
+	}
+	
 	&-item{
 		&-img{
 			width: 40%;
