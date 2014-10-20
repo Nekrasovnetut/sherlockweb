@@ -31,6 +31,14 @@ $header-height: 40px;
 		line-height: $header-height;
 
 		transition: background .2s;
+
+		+ .page {
+			margin-top: $header-height;
+
+			._sherlock-about {
+				padding-top: 160px - $header-height;
+			}
+		}
 	}
 
 	/*
@@ -87,10 +95,6 @@ $header-height: 40px;
 
 			@include triangle(12px, white, up);
 		}
-	}
-
-	+ .page {
-//		padding-top: $header-height;
 	}
 }
 
