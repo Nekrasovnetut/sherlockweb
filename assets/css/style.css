@@ -1922,6 +1922,24 @@ html, body {
   line-height: 1.5em;
 }
 
+.winners-circle {
+  border-color: #B2B2B2;
+  color: #B2B2B2;
+  border-style: solid;
+  border-width: 2px;
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  float: left;
+}
+.winners-back {
+  position: absolute;
+  top: 50%;
+  left: 8%;
+}
+.winners-heading {
+  position: relative;
+}
 .winners .section {
   padding: 0px 8% 50px;
 }
@@ -1943,6 +1961,12 @@ html, body {
 }
 .winners-table td {
   padding: 1em;
+}
+.winners-table td:first-of-type {
+  padding-left: 8%;
+}
+.winners-table td:last-of-type {
+  padding-right: 8%;
 }
 @media (max-width: 650px) {
   .winners-table td {
@@ -1984,6 +2008,12 @@ html, body {
 }
 .winners-table-photo {
   width: 10%;
+}
+.winners-table-firstcol {
+  padding-left: 8%;
+}
+.winners-table-lastcol {
+  padding-right: 8%;
 }
 
 .collection-map, .collection-schedule {

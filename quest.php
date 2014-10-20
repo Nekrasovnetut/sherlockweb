@@ -5,14 +5,18 @@
 	include "includes/header.php" ?>
 
 
-<div class="fixed-top"><header class="page-cover">
+<div class="fixed-top">
+	<header class="page-cover">
 	<div class="page-cover-bg">
 		<img src="example-images/example-cover.jpg" alt="" />
 	</div>
 	<div class="page-cover-content">
 
 	</div>
-</header></div><div class="js-ghost"></div>
+	</header>
+</div>
+
+<div class="js-ghost"></div>
 <div class="page <?= $pageClass ?> quest">
 	<section class="section">
 		<article class="quest-article">

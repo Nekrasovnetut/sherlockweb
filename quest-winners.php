@@ -5,7 +5,7 @@
 	include "includes/header.php" ?>
 
 
-<div class="page <?= $pageClass ?>">
+<div class="fixed-top">
 	<header class="page-cover">
 	<div class="page-cover-bg">
 		<img src="example-images/example-cover.jpg" alt="" />
@@ -14,19 +14,25 @@
 
 	</div>
 	</header>
-	<header class="page-heading">
+</div>
+
+<div class="js-ghost"></div>
+
+<div class="page <?= $pageClass ?>">
+	
+	
+	<header class="page-heading winners-heading">
 		<h3>Лучшая команда</h3>
 		<p>В квесте &laquo;Диплодоки в ловушке&raquo;</p>
+		<div class="winners-back"><a href="quest.php"><div class="winners-circle"><i class="icon-arrow-left"></i></div>Квест</a></div>
 	</header>
-	<div><a href="quest.php">Квест</a></div>
+	
 	<div class="winners">
-		<section class="section">
-			<table class="winners-table">
-
-						
-
+	
+			<table class="winners-table">	
+				<tbody>
 				<tr class="winners-table-header">
-					<td>
+					<td class="winners-table-firstcol">
 						Место
 					</td>
 
@@ -44,7 +50,7 @@
 
 					<td>
 						Фото
-					</td>
+					</td class="winners-table-lastcol">
 				</tr>
 
 				<tr class="winners-table-userteam">
@@ -65,7 +71,7 @@
 					</td>
 
 					<td>
-						Фото
+						<a href="#"><i class="icon-clock"></i></a>
 					</td>
 				</tr>
 
@@ -87,7 +93,7 @@
 					</td>
 
 					<td>
-						Фото
+						<a href="#"><i class="icon-clock"></i></a>
 					</td>
 				</tr>
 
@@ -109,7 +115,7 @@
 					</td>
 
 					<td>
-						Фото
+						<a href="#"><i class="icon-clock"></i></a>
 					</td>
 				</tr>
 				
@@ -131,7 +137,7 @@
 					</td>
 
 					<td>
-						Фото
+						<a href="#"><i class="icon-clock"></i></a>
 					</td>
 				</tr>
 				
@@ -153,17 +159,12 @@
 					</td>
 
 					<td>
-						Фото
+						<a href="#"><i class="icon-clock"></i></a>
 					</td>
 				</tr>
-
-				
-	
-
-				
-
+				</tbody>
 			</table>
-		</section>
+		
 	</div>
 </div>
 
