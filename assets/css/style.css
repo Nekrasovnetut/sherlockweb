@@ -558,10 +558,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .schedule-heading, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .mcf {
+.form-row, .schedule-heading, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
   *zoom: 1;
 }
-.form-row:after, .schedule-heading:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .mcf:after {
+.form-row:after, .schedule-heading:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -2423,6 +2423,20 @@ html, body {
   }
 }
 
+.textpage {
+  padding: 70px 8% 50px;
+}
+.textpage h3 {
+  font-size: 21px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 0;
+}
+.textpage-contacts-colums div {
+  float: left;
+  margin-right: 10%;
+}
+
 /*------------------------------------*\
 	Стили-помошники:
 \*------------------------------------*/
@@ -2499,4 +2513,5 @@ html, body {
 }
 
 /* ------- Заполнение -------- */
+
 /*# sourceMappingURL=style.css.map */

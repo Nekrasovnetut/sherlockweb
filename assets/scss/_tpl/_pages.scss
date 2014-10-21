@@ -1,0 +1,34 @@
+.textpage {
+	
+	@extend %mcf;
+	padding: 70px 8% 50px;
+	
+	h3{
+		font-size: 21px;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		margin: 0;
+	}
+	
+	&-contacts {
+		
+		&-colums {
+			
+			div{
+				float: left;
+				margin-right: 10%;
+			}
+			
+			&-one {
+			
+			}
+			&-two {
+			
+			}
+			&-three {
+			
+			}
+		}
+
+	}
+}
