@@ -4,6 +4,10 @@
 		padding: 70px 8% 50px;
 	}
 	
+	&-bottomborder {
+		border-bottom: 1px solid $sexy-grey;
+	}
+	
 	&-description{
 		background-color: $accent-color;
 		text-align: center;
@@ -25,20 +29,24 @@
 		img:nth-of-type(2) {
 			bottom: -30px;
 			left: 120px;
+			
 		}
 		
 		img:nth-of-type(3) {
 			bottom: -30px;
 			left: 800px;
+			@include mq(small){display: none;}
 		}
 		
 		img:nth-of-type(4) {
 			right: 30px;
+			@include mq(small){display: none;}
 		}
 		
 		img:nth-of-type(5) {
 			left: -15px;
-			top: 100px
+			top: 100px;
+			@include mq(small){display: none;}
 		}
 		
 		h4{
@@ -81,18 +89,43 @@
 	}
 	
 	&-item{
+		@extend %mcf;
+		margin-bottom: 4em;
+	
+		p{
+				font-size: 1em;
+				line-height: 1.3em;
+		}
+		
 		&-img{
 			width: 40%;
+			height: 250px;
+			float: left;
+				@include mq(small){
+				float: none;
+				width: 100%;
+				}
 			}
 		&-content{
-			width: 58%;
+			width: 55%;
+			float: right;
+				@include mq(small){
+				float: none;
+				width: 100%;
+				}
 			&-top{
+				padding-bottom: 1.5em;
 				&-info{	
+					.quest-info{
+						margin-bottom: 0;
+					}
 				}
 			}
 			&-middle{
+				padding-top: 1.5em;
 			}
 			&-bottom{
+				
 				color: $accent-color;
 				
 					i {

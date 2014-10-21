@@ -558,10 +558,10 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .schedule-heading, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
+.form-row, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
   *zoom: 1;
 }
-.form-row:after, .schedule-heading:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
+.form-row:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1166,12 +1166,14 @@ hr {
 
 .covermini {
   width: 100%;
-  max-width: 400px;
+  height: 250px;
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 .covermini img {
-  border-radius: 10px;
   width: 100%;
+  border-radius: 10px;
 }
 .covermini .age {
   position: absolute;
@@ -1723,6 +1725,9 @@ html, body {
 .collection-list .section {
   padding: 70px 8% 50px;
 }
+.collection-list-bottomborder {
+  border-bottom: 1px solid #ebebeb;
+}
 .collection-list-description {
   background-color: #BC6F00;
   text-align: center;
@@ -1746,12 +1751,27 @@ html, body {
   bottom: -30px;
   left: 800px;
 }
+@media (max-width: 650px) {
+  .collection-list-description img:nth-of-type(3) {
+    display: none;
+  }
+}
 .collection-list-description img:nth-of-type(4) {
   right: 30px;
+}
+@media (max-width: 650px) {
+  .collection-list-description img:nth-of-type(4) {
+    display: none;
+  }
 }
 .collection-list-description img:nth-of-type(5) {
   left: -15px;
   top: 100px;
+}
+@media (max-width: 650px) {
+  .collection-list-description img:nth-of-type(5) {
+    display: none;
+  }
 }
 .collection-list-description h4 {
   color: white;
@@ -1781,11 +1801,42 @@ html, body {
   color: white;
   padding-left: 1em;
 }
+.collection-list-item {
+  margin-bottom: 4em;
+}
+.collection-list-item p {
+  font-size: 1em;
+  line-height: 1.3em;
+}
 .collection-list-item-img {
   width: 40%;
+  height: 250px;
+  float: left;
+}
+@media (max-width: 650px) {
+  .collection-list-item-img {
+    float: none;
+    width: 100%;
+  }
 }
 .collection-list-item-content {
-  width: 58%;
+  width: 55%;
+  float: right;
+}
+@media (max-width: 650px) {
+  .collection-list-item-content {
+    float: none;
+    width: 100%;
+  }
+}
+.collection-list-item-content-top {
+  padding-bottom: 1.5em;
+}
+.collection-list-item-content-top-info .quest-info {
+  margin-bottom: 0;
+}
+.collection-list-item-content-middle {
+  padding-top: 1.5em;
 }
 .collection-list-item-content-bottom {
   color: #BC6F00;
@@ -2434,7 +2485,8 @@ html, body {
 }
 .textpage-contacts-colums div {
   float: left;
-  margin-right: 10%;
+  margin-left: 0%;
+  width: 30%;
 }
 
 /*------------------------------------*\
