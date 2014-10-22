@@ -2,7 +2,6 @@
 // @codekit-prepend "lib/jquery.royalslider.custom.min.js"
 // @codekit-prepend "lib/velocity.min.js"
 // @codekit-prepend "lib/parsley.js"
-// @codekit-prepend "lib/jquery.parallax.js"
 
 (function($){
 
@@ -37,19 +36,17 @@
 		$('.rsGCaption').wrap('<div class="rsGCaption-helper"></div>');
 	}
 
-	if ($('.header-ghost').next('.page')) $('.header').addClass('is-visible');
+	if ($('.header-ghost + .page')[0]) $('.header').addClass('is-visible');
 
 	$(window).scroll(function (event) {
 	    var scroll = $(window).scrollTop();
 
-	    if (scroll > 0 && !$('.header-ghost').next('.page')) {
+	    if (scroll > 0 && !$('.header-ghost + .page')[0]) {
 		    $('.header').addClass('is-visible');
-	    } else if (scroll <= 0 && !$('.header-ghost').next('.page')) {
+	    } else if (scroll <= 0 && !$('.header-ghost + .page')[0]) {
 		    $('.header').removeClass('is-visible');
 	    }
 	});
-
-	$('._parallax-test').parallax();
 
 	$('.js-btn-toggly').on('click', function(){
 		$target = $($(this).data('toggly-target'));
