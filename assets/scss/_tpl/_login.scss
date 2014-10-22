@@ -3,14 +3,14 @@
 	line-height: 40px;
 	background-color: $main-color;
 	color: white;
-	
-	._login-label {
-		width: 60px;
-		display: inline-block;
-		
-		+ .input {
-			width: 200px;
-			border-bottom-color: white;
+	font-size: 12px;
+
+	.form {
+		width: 290px;
+		line-height: normal;
+
+		.form-row + .form-row {
+			margin-top: 30px;
 		}
 	}
 }

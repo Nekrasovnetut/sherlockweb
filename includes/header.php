@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!--[if !IE]><!--> <html><!--<![endif]-->
+<!--[if !IE]><!--> <html class="not-ie"> <!--<![endif]-->
 <!--[if IE 8]>  <html class="ie8 lt-ie9"> <![endif]-->
 <!--[if IE 9]> <html class="ie9"> <![endif]-->
 <head>
@@ -60,13 +60,21 @@
 				</span>
 				<div class="dropdown-block dropdown-block--right _login-dropdown">
 					<form class="form" action="">
-						<div class="form-item">
-							<label class="label _login-label" for="login-user-name"> <i class="icon-user"></i> Логин </label>
-							<input id="login-user-name" type="text" class="input" name="user" placeholder="sexyboy2000" />
+						<div class="form-row">
+							<div class="form-label">
+								<label class="label" for="login-user-email"><i class="icon-user"></i> Логин </label>
+							</div>
+							<div class="form-item">
+								<input id="login-user-email" type="email" class="input" name="email" placeholder="e-mail" />
+							</div>
 						</div>
-						<div class="form-item">
-							<label class="label _login-label" for="login-user-pass"> <i class="icon-lock"></i> Пароль </label>
-							<input id="login-user-pass" type="password" class="input" name="user" placeholder="●●●●●●●●●" />
+						<div class="form-row">
+							<div class="form-label">
+								<label class="label" for="login-user-pass"><i class="icon-lock"></i> Пароль </label>
+							</div>
+							<div class="form-item">
+								<input id="login-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" />
+							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-item to-left">
@@ -81,7 +89,7 @@
 						</div>
 						<div class="form-row">
 							<div class="form-item to-left">
-								<button class="btn-link" type="submit" value="signup"> Зарегистрироваться </button>
+								<a href="register.php" class="btn-link"> Зарегистрироваться </a>
 							</div>
 							<div class="form-item to-right">
 								<button class="btn btn-white" type="submit" value="login"> Войти </button>

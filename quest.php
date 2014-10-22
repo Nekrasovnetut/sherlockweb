@@ -25,7 +25,7 @@
 				<h2> Пещера Майя </h2>
 				<div class="quest-article-heading-collection">
 					<span class="label">Серия</span>
-					<a href="collection.php" class="link"> Путешествия </a>
+					<a href="collection-list.php" class="link"> Путешествия </a>
 				</div>
 			</header>
 

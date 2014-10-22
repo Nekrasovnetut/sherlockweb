@@ -1,6 +1,7 @@
 // @codekit-prepend "lib/polyfill.sticky.js"
 // @codekit-prepend "lib/jquery.royalslider.custom.min.js"
 // @codekit-prepend "lib/velocity.min.js"
+// @codekit-prepend "lib/parsley.js"
 // @codekit-prepend "lib/jquery.parallax.js"
 
 (function($){
@@ -36,12 +37,14 @@
 		$('.rsGCaption').wrap('<div class="rsGCaption-helper"></div>');
 	}
 
+	if ($('.header-ghost').next('.page')) $('.header').addClass('is-visible');
+
 	$(window).scroll(function (event) {
 	    var scroll = $(window).scrollTop();
 
-	    if (scroll > 0) {
+	    if (scroll > 0 && !$('.header-ghost').next('.page')) {
 		    $('.header').addClass('is-visible');
-	    } else {
+	    } else if (scroll <= 0 && !$('.header-ghost').next('.page')) {
 		    $('.header').removeClass('is-visible');
 	    }
 	});
@@ -141,4 +144,11 @@
 		}
     }
 
+    $.listen('parsley:form:validate', function (ParsleyForm) {
+		if (ParsleyForm.isValid()) {
+			$('.form-message').addClass('is-hidden');
+		} else {
+			$('.form-message').removeClass('is-hidden');
+		}
+    });
 }(jQuery));

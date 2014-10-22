@@ -337,9 +337,11 @@ figure {
  * Define consistent border, margin, and padding.
  */
 fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
+  border: none;
+    /*
+margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+*/
 }
 
 /**
@@ -558,16 +560,16 @@ iframe {
   padding: 0px;
 }
 
-.form-row, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
+.form-message, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
   *zoom: 1;
 }
-.form-row:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
+.form-message:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
 }
 
-.btn, .btn-simple, .btn-link, .input {
+.btn, .btn-simple, .btn-link, .input, .select {
   -webkit-appearance: none;
   -moz-appearance: none;
   border: none;
@@ -919,11 +921,13 @@ html {
 }
 .btn-to-center {
   display: table;
-  margin: 1em auto 2em;
+  margin: 0 auto;
 }
 .btn-outline {
   background: transparent;
+  color: inherit;
   border: 1px solid #BC6F00;
+  letter-spacing: .1em;
 }
 .btn-link {
   text-decoration: underline;
@@ -933,28 +937,163 @@ html {
   color: #2C3236;
 }
 
-.form-item {
-  white-space: nowrap;
+.form {
+  text-align: left;
 }
-
-.label {
-  font-size: 12px;
+.form-group {
+  margin-bottom: 4em;
 }
-.label i {
-  margin-right: .5em;
+.form-row {
+  display: table;
+  width: 100%;
 }
-.label + .input {
+.form-row + .form-row {
+  margin-top: 1.8em;
+}
+.form-label, .form-item {
+  display: table-cell;
+  vertical-align: bottom;
+  position: relative;
+}
+.form-label + .form-label, .form-item + .form-label, .form-label + .form-item, .form-item + .form-item {
+  border-left: 1em solid transparent;
+}
+.form-item .messages, .form-item .parsley-errors-list {
+  position: absolute;
+  left: 100%;
+  bottom: 0;
+  width: 90px;
+}
+.form-item .parsley-errors-list {
+  margin-left: -.5em;
+  color: #F66534;
+}
+.form-item .parsley-errors-list li {
+  font-size: 0;
+  line-height: 0;
+}
+.form-item .parsley-errors-list li:before {
+  content: "!";
+  visibility: visible;
+  font-size: 24px;
+  line-height: 1em;
+  font-weight: bold;
+  -webkit-animation: form-appear .2s;
+          animation: form-appear .2s;
+}
+.form-item .messages {
   margin-left: 1em;
+  font-size: .8em;
+  -webkit-animation: form-appear .2s;
+          animation: form-appear .2s;
 }
-.label .checkbox {
-  margin-right: .5em;
+.form-item .messages-error {
+  display: none;
+  color: #F66534;
+}
+.form-item .messages-info {
+  display: block;
+  color: #7F7F7F;
+}
+.form-item .parsley-error ~ .messages .messages-info {
+  display: none;
+}
+.form-item .parsley-error ~ .messages .messages-error {
+  display: block;
+}
+.form-label {
+  width: 75px;
+  font-size: 1em;
+  line-height: 1.1em;
+  color: #BC6F00;
+}
+.header .form-label {
+  color: inherit;
+}
+.form-message {
+  margin-bottom: 2em;
+  margin-top: -1em;
+  -webkit-animation: form-appear .2s;
+          animation: form-appear .2s;
+}
+.form-message.is-hidden {
+  display: none;
+}
+.form-message--error {
+  color: #F66534;
+}
+.form-message-icon {
+  float: left;
+  display: block;
+  width: 42px;
+  height: 42px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid;
+  font-size: 28px;
+  margin-top: 5px;
+  margin-right: 15px;
+}
+.form-message-icon.exclamation {
+  font-weight: bold;
+}
+.form-message-text {
+  overflow: hidden;
 }
 
-.input {
-  padding-bottom: 3px;
-  border-bottom: 1px solid #2C3236;
+.input, .select {
+  width: 100%;
+  font-size: 1.2em;
+  padding-bottom: .4em;
+  margin-bottom: -.4em;
+  border-bottom: 1px solid #B2B2B2;
+  -webkit-transition: all .2s;
+          transition: all .2s;
+}
+.input:focus, .select:focus {
+  border-bottom-color: #BC6F00;
+}
+.input.parsley-error, .select.parsley-error {
+  border-bottom-color: #F66534;
 }
 
+.select {
+  background: url("../images/icons/arrow-down.svg") no-repeat right 40%;
+  padding-right: 10px;
+}
+.ie8 .select {
+  padding-right: 0;
+}
+.select.parsley-error {
+  background: none;
+}
+
+@-webkit-keyframes form-appear {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes form-appear {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 .foremost-logo {
   background-repeat: no-repeat;
   background-image: url("../images/logos/foremost-logo.png");
@@ -2444,14 +2583,14 @@ html, body {
   line-height: 40px;
   background-color: #2C3236;
   color: white;
+  font-size: 12px;
 }
-._login-dropdown ._login-label {
-  width: 60px;
-  display: inline-block;
+._login-dropdown .form {
+  width: 290px;
+  line-height: normal;
 }
-._login-dropdown ._login-label + .input {
-  width: 200px;
-  border-bottom-color: white;
+._login-dropdown .form .form-row + .form-row {
+  margin-top: 30px;
 }
 
 ._sherlock-about {

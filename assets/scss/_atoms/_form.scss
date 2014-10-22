@@ -1,36 +1,181 @@
 .form {
-	&-item {
-		white-space: nowrap;
+	text-align: left;
+
+	&-group {
+		margin-bottom: 4em;
 	}
-	
+
 	&-row {
-		@extend %mcf;
-		
-		.form-item + .form-item {
-//			margin-left: 1em;
+		display: table;
+		width: 100%;
+
+		& + & {
+			margin-top: 1.8em;
 		}
 	}
+
+	&-label, &-item {
+		display: table-cell;
+		vertical-align: bottom;
+		position: relative;
+
+		& + & {
+			border-left: 1em solid transparent;
+		}
+	}
+
+	&-item {
+		.messages, .parsley-errors-list {
+			position: absolute;
+			left: 100%;
+			bottom: 0;
+			width: 90px;
+		}
+
+		.parsley-errors-list {
+			margin-left: -.5em;
+			color: $wrong;
+
+			li {
+				font-size: 0;
+				line-height: 0;
+
+				&:before {
+					content: "!";
+					visibility: visible;
+
+					font-size: 24px;
+					line-height: 1em;
+					font-weight: bold;
+
+					animation: form-appear .2s;
+				}
+			}
+		}
+
+		.messages {
+			margin-left: 1em;
+			font-size: .8em;
+
+			animation: form-appear .2s;
+
+			&-error {
+				display: none;
+				color: $wrong;
+			}
+
+			&-info {
+				display: block;
+				color: $medium-grey;
+			}
+		}
+
+		.parsley-error {
+			& ~ .messages .messages-info {
+				display: none;
+			}
+
+			& ~ .messages .messages-error {
+				display: block;
+			}
+		}
+	}
+
+	&-label {
+		width: 75px;
+
+		font-size: 1em; line-height: 1.1em;
+		color: $accent-color;
+
+		.header & {
+			color: inherit;
+		}
+	}
+
+	&-message {
+		@extend %mcf;
+
+		margin-bottom: 2em;
+		margin-top: -1em;
+
+		animation: form-appear .2s;
+
+		&.is-hidden {
+			display: none;
+		}
+
+		&--error {
+			color: $wrong;
+		}
+
+		&-icon {
+			float: left;
+			display: block;
+			width: 42px; height: 42px;
+			line-height: 40px;
+			text-align: center;
+			border-radius: 50%;
+			border: 1px solid;
+
+			font-size: 28px;
+			margin-top: 5px;
+			margin-right: 15px;
+
+			&.exclamation {
+				font-weight: bold;
+			}
+		}
+
+		&-text {
+			overflow: hidden;
+			//margin-left: 1em;
+		}
+
+	}
 }
 
-.label {
-	font-size: 12px;
-	
-	i {
-		margin-right: .5em;
-	}
-	
-	+ .input {
-		margin-left: 1em;
-	}
-	
-	.checkbox {
-		margin-right: .5em;
-	}
-}
-
-.input {
+.input, .select {
 	@extend %reset-appearance;
-	
-	padding-bottom: 3px;
-	border-bottom: 1px solid $main-color;
+	width: 100%;
+
+	font-size: 1.2em;
+	padding-bottom: .4em;
+	margin-bottom: -.4em;
+	border-bottom: 1px solid $light-grey;
+
+	transition: all .2s;
+
+	&:focus {
+		border-bottom-color: $accent-color;
+	}
+
+	&.parsley-error {
+		border-bottom-color: $wrong;
+	}
+}
+
+.select {
+	background: url('../images/icons/arrow-down.svg') no-repeat right 40%;
+
+	padding-right: 10px;
+
+	.ie8  & {
+		padding-right: 0;
+	}
+
+	&.parsley-error {
+		background: none;
+	}
+}
+
+@keyframes form-appear {
+	from {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
 }

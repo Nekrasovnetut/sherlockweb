@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="8px" height="3px" viewBox="0 0 8 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.1.1 (8761) - http://www.bohemiancoding.com/sketch -->
+    <title>arrow-down</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="registration" sketch:type="MSLayerGroup" transform="translate(-852.000000, -311.000000)" fill="#505050">
+            <g transform="translate(208.000000, 0.000000)" id="arrow-down" sketch:type="MSShapeGroup">
+                <path d="M646.314273,313.485727 L646.397411,313.553883 C646.81631,313.83315 647.097186,313.9455 647.5,313.9455 C647.832197,313.9455 648.234724,313.799127 648.602589,313.553883 C648.807436,313.456169 651.040898,312.030556 651.185727,311.885727 L650.414273,311.114273 C650.370867,311.15768 648.223333,312.528446 648.056045,312.61209 C647.795276,312.780873 647.592803,312.8545 647.5,312.8545 C647.352814,312.8545 647.25869,312.81685 647.002589,312.646117 L646.7,313.1 L647.085727,312.714273 C646.940898,312.569444 644.707436,311.143831 644.443955,311.01209 L643.956045,311.98791 C644.123333,312.071554 646.270867,313.44232 646.314273,313.485727 Z"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -40,12 +40,14 @@
 
 	&-to-center {
 		display: table;
-		margin: 1em auto 2em;
+		margin: 0 auto;
 	}
 
 	&-outline {
 		background: transparent;
+		color: inherit;
 		border: 1px solid $accent-color;
+		letter-spacing: .1em;
 	}
 
 	&-link {
