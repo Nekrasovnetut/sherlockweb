@@ -34,9 +34,18 @@
 	</nav>
 	<nav class="section-nav nav" >
 		<ul>
-			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="0" checked /> Путешествия </label></li>
-			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="1" checked /> Сериалы </label></li>
-			<li class="nav-item"><label class="checkbox"><input type="checkbox" name="map-filter" value="43" checked /> 43 </label></li>
+			<li class="nav-item">
+				<input id="uniqid-3" type="checkbox" class="checkbox-input" name="map-filter" value="0" checked/>
+				<label class="checkbox" for="uniqid-3"> Путешествия</label>
+			</li>
+			<li class="nav-item">
+				<input id="uniqid-4" type="checkbox" class="checkbox-input" name="map-filter" value="1" checked/>
+				<label class="checkbox" for="uniqid-4"> Сериалы </label>
+			</li>
+			<li class="nav-item">
+				<input id="uniqid-5" type="checkbox" class="checkbox-input" name="map-filter" value="43" checked/>
+				<label class="checkbox" for="uniqid-5"> 43 </label>
+			</li>
 		</ul>
 	</nav>
 	<section>

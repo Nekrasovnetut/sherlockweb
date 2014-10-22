@@ -78,10 +78,8 @@
 						</div>
 						<div class="form-row">
 							<div class="form-item to-left">
-								<label class="label">
-									<input type="checkbox" class="checkbox" name="remember" value="true" />
-									Запомнить меня
-								</label>
+								<input id="remember-me2" type="checkbox" name="remember" value="true" class="checkbox-input" />
+								<label class="checkbox" for="remember-me2">Запомнить меня</label>
 							</div>
 							<div class="form-item to-right">
 								<a href="#" class="label"> Я не помню пароль </a>

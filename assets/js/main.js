@@ -143,9 +143,9 @@
 
     $.listen('parsley:form:validate', function (ParsleyForm) {
 		if (ParsleyForm.isValid()) {
-			$('.form-message').addClass('is-hidden');
+			ParsleyForm.$element.find('.form-message').addClass('is-hidden');
 		} else {
-			$('.form-message').removeClass('is-hidden');
+			ParsleyForm.$element.find('.form-message').removeClass('is-hidden');
 		}
     });
 }(jQuery));

@@ -3,11 +3,54 @@
 	include "includes/header.php" ?>
 
 <div class="page page--splitter">
-
 	<div class="aligner splitter">
 		<div class="splitter-item">
 			<form class="form" data-parsley-validate>
-				<p class="faded form-text">Для того чтобы ваш опыт игры с Шерлоком был полным, пожалуйста заполните все поля </p>
+				<h4>Войдите</h4>
+				<div class="form-message form-message--error is-hidden">
+					<span class="exclamation form-message-icon">!</span>
+					<p class="form-message-text">Поля, выделенные красным не&nbsp;заполнены или заполнены неверно</p>
+				</div>
+				<fieldset class="form-group">
+					<div class="form-row">
+						<div class="form-label">
+							<label class="label" for="reg-user-email"> E-mail </label>
+						</div>
+						<div class="form-item">
+							<input id="reg-user-email" type="email" class="input" name="email" required />
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-label">
+							<label class="label" for="reg-user-pass"> Пароль </label>
+						</div>
+						<div class="form-item">
+							<input id="reg-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" required />
+						</div>
+					</div>
+				</fieldset>
+
+				<div class="form-row">
+					<div class="form-item to-right">
+						<a href="#" class="link-small"> Я не помню пароль </a>
+					</div>
+				</div>
+
+				<div class="form-row">
+					<div class="form-item">
+						<input id="uniqid-2" type="checkbox" name="remember" value="true" class="checkbox-input" />
+						<label class="checkbox" for="uniqid-2">Запомнить меня</label>
+					</div>
+					<div class="form-item to-right">
+						<button class="btn btn-outline" type="submit" value="login"> Войти </button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="splitter-item">
+			<form class="form" data-parsley-validate>
+				<h4>Зарегистрируйтесь</h4>
 				<div class="form-message form-message--error is-hidden">
 					<span class="exclamation form-message-icon">!</span>
 					<p class="form-message-text">Поля, выделенные красным не&nbsp;заполнены или заполнены неверно</p>
@@ -87,16 +130,6 @@
 						</div>
 						<div class="form-item">
 							<input id="reg-user-email" type="email" class="input" name="email" required />
-							<ul class="messages">
-								<li class="messages-info">Используется как логин</li>
-
-								<!-- Показывать этот li при ответе от сервера, а так не показывать:
-									<li class="messages-error">Такой e-mail уже используется</li>
-
-									 и к input добавить класс parsley-error
-								-->
-
-							</ul>
 						</div>
 					</div>
 					<div class="form-row">

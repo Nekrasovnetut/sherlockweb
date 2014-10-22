@@ -34,9 +34,10 @@ $header-height: 40px;
 
 		+ .page {
 			margin-top: $header-height;
+			padding-top: 75px;
 
 			._sherlock-about {
-				padding-top: 160px - $header-height;
+				padding-top: 160px - 75px - $header-height;
 			}
 		}
 	}

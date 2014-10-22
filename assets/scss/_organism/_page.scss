@@ -5,17 +5,15 @@
 	min-height: 100%;
 	background: white;
 
-/*
-	&:after {
-		content: "";
-		display: block;
-		background: white;
-		position: absolute;
-		z-index: -1;
-		left: 0; top: 0;
-		width: 100%; height: 100%;
+	&--splitter {
+		padding-left: 40px;
+		padding-right: 40px;
+
+		@media (max-width: 580px) {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
 	}
-*/
 
 	&-heading {
 		@extend %heading;
@@ -29,7 +27,6 @@
 
 	&-cover {
 		height: 350px;
-//		height: 100%;
 		overflow: hidden;
 		position: relative;
 		z-index: 0;
