@@ -14,18 +14,18 @@
 				<fieldset class="form-group">
 					<div class="form-row">
 						<div class="form-label">
-							<label class="label" for="reg-user-email"> E-mail </label>
+							<label class="label" for="login-user-email"> E-mail </label>
 						</div>
 						<div class="form-item">
-							<input id="reg-user-email" type="email" class="input" name="email" required />
+							<input id="login-user-email" type="email" class="input" name="email" required />
 						</div>
 					</div>
 					<div class="form-row">
 						<div class="form-label">
-							<label class="label" for="reg-user-pass"> Пароль </label>
+							<label class="label" for="login-user-pass"> Пароль </label>
 						</div>
 						<div class="form-item">
-							<input id="reg-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" required />
+							<input id="login-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" required />
 						</div>
 					</div>
 				</fieldset>

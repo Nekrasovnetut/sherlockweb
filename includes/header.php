@@ -62,18 +62,18 @@
 					<form class="form" action="">
 						<div class="form-row">
 							<div class="form-label">
-								<label class="label" for="login-user-email"><i class="icon-user"></i> Логин </label>
+								<label class="label" for="dropdown-login-user-email"><i class="icon-user"></i> Логин </label>
 							</div>
 							<div class="form-item">
-								<input id="login-user-email" type="email" class="input" name="email" placeholder="e-mail" />
+								<input id="dropdown-login-user-email" type="email" class="input" name="email" placeholder="e-mail" />
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-label">
-								<label class="label" for="login-user-pass"><i class="icon-lock"></i> Пароль </label>
+								<label class="label" for="dropdown-login-user-pass"><i class="icon-lock"></i> Пароль </label>
 							</div>
 							<div class="form-item">
-								<input id="login-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" />
+								<input id="dropdown-login-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" />
 							</div>
 						</div>
 						<div class="form-row">
