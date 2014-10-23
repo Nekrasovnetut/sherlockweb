@@ -173,6 +173,57 @@
 			<div class="collection-map-content-stars"></div>
 		</div>
 	</section>
+	<section class="section collection-map collection-0">
+		<header class="section-heading"><a href="collection-list.php">
+			<h3> Путешествия </h3>
+			<p> Все 10 квестов </p>
+		</a></header>
+
+		<div class="aligner">
+
+			<article class="collection-map-item">
+				<h4 class="collection-map-item-heading"> Сибирский цирюльник </h4>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-snake.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake.png'" />
+
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+
+					<img src="series-icons/icon-paper.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-paper.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<h4 class="collection-map-item-heading"> Бермудский треугольник </h4>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-fire-extinguisher.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+					<img src="series-icons/icon-skull.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<div class="collection-map-item-noitem">
+					<img src="assets/images/icons/no-item.svg"
+						 onerror="this.onerror=null; this.src='assets/images/icons/no-item.png'" />
+				</div>
+			</article>
+
+			<div class="collection-map-content-bg"></div>
+			<div class="collection-map-content-stars"></div>
+		</div>
+	</section>
 	<section class="section">
 		<header class="section-heading">
 			<h4> Наши партнёры </h4>
