@@ -1932,6 +1932,11 @@ html, body {
   margin: auto;
   z-index: -1;
 }
+@media (max-width: 650px) {
+  .page-cover-bg img {
+    width: 150%;
+  }
+}
 .page-cover-bg + .page-cover-content {
   color: white;
 }
