@@ -1,7 +1,8 @@
 .textpage {
-	
+	.section {
 	@extend %mcf;
 	padding: 70px 8% 50px;
+	}
 	
 	h3{
 		font-size: 21px;
@@ -13,8 +14,9 @@
 	&-contacts {
 		
 		&-colums {
-			
+				@extend %mcf;
 			div{
+				@extend %mcf;
 				float: left;
 				margin-left: 0%;
 				width: 30%;

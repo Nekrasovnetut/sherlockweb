@@ -560,10 +560,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
+.form-message, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
+.form-message:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -2701,7 +2701,7 @@ html, body {
   }
 }
 
-.textpage {
+.textpage .section {
   padding: 70px 8% 50px;
 }
 .textpage h3 {

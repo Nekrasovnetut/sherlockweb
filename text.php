@@ -18,7 +18,9 @@
 
 <div class="js-ghost"></div>
 
-<section class="page textpage">
+<div class="page textpage">
+
+<section class="section">
 	
 	<h2>Заголовок страницы</h2>
 	
@@ -44,6 +46,8 @@
 	</div>
 	
 </section>
+
+</div>
 
 <? include "includes/scripts.php" ?>
 <? include "includes/footer.php" ?>
