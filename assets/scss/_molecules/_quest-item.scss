@@ -1,0 +1,63 @@
+//Это основа для вывода листового айтема
+.quest-item{
+	@extend %mcf;
+	
+			&-img{
+			width: 40%;
+			height: 250px;
+			float: left;
+				@include mq(small){
+				float: none;
+				width: 100%;
+				}
+			}
+		&-content{
+			width: 55%;
+			float: right;
+				@include mq(small){
+				float: none;
+				width: 100%;
+				}
+			&-top{
+				padding-bottom: 1.5em;
+				&-info{	
+					.quest-info{
+						margin-bottom: 0;
+					}
+				}
+			}
+			&-middle{
+				padding-top: 1.5em;
+			}
+			&-bottom{
+				
+				color: $accent-color;
+				
+					i {
+						font-size: 2em;
+					}
+				
+			}
+
+		}
+}
+
+//Это добавляем, если нужен вывод в букинге
+
+.booking-final-item{
+	
+}
+
+//Это добавляем, если нужен вывод в списке
+
+.collection-list-item{
+		
+		margin-bottom: 4em;
+	
+		p{
+				font-size: 1em;
+				line-height: 1.3em;
+		}
+		
+
+}

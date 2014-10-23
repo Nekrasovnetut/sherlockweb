@@ -2,6 +2,7 @@
 	.section {
 		@extend %mcf;
 		padding: 70px 8% 50px;
+		
 	}
 	
 	&-heading {
@@ -18,4 +19,10 @@
 
 }
 
-//Ниже я корректирую внешний вид стандартного листайтема под данную страницу
+@media print {
+	
+	.booking-final-heading{
+		display: none;
+	}
+}
+

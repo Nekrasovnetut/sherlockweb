@@ -560,10 +560,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .schedule-heading, .booking-final .section, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1494,6 +1494,51 @@ hr {
   right: 80px;
 }
 
+.quest-item-img {
+  width: 40%;
+  height: 250px;
+  float: left;
+}
+@media (max-width: 650px) {
+  .quest-item-img {
+    float: none;
+    width: 100%;
+  }
+}
+.quest-item-content {
+  width: 55%;
+  float: right;
+}
+@media (max-width: 650px) {
+  .quest-item-content {
+    float: none;
+    width: 100%;
+  }
+}
+.quest-item-content-top {
+  padding-bottom: 1.5em;
+}
+.quest-item-content-top-info .quest-info {
+  margin-bottom: 0;
+}
+.quest-item-content-middle {
+  padding-top: 1.5em;
+}
+.quest-item-content-bottom {
+  color: #BC6F00;
+}
+.quest-item-content-bottom i {
+  font-size: 2em;
+}
+
+.collection-list-item {
+  margin-bottom: 4em;
+}
+.collection-list-item p {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
 .schedule {
   width: 100%;
   table-layout: fixed;
@@ -1966,6 +2011,11 @@ html, body {
   margin: 0 auto;
 }
 
+@media print {
+  .booking-final-heading {
+    display: none;
+  }
+}
 .collection-list .section {
   padding: 70px 8% 50px;
 }
@@ -2044,49 +2094,6 @@ html, body {
   display: inline;
   color: white;
   padding-left: 1em;
-}
-.collection-list-item {
-  margin-bottom: 4em;
-}
-.collection-list-item p {
-  font-size: 1em;
-  line-height: 1.3em;
-}
-.collection-list-item-img {
-  width: 40%;
-  height: 250px;
-  float: left;
-}
-@media (max-width: 650px) {
-  .collection-list-item-img {
-    float: none;
-    width: 100%;
-  }
-}
-.collection-list-item-content {
-  width: 55%;
-  float: right;
-}
-@media (max-width: 650px) {
-  .collection-list-item-content {
-    float: none;
-    width: 100%;
-  }
-}
-.collection-list-item-content-top {
-  padding-bottom: 1.5em;
-}
-.collection-list-item-content-top-info .quest-info {
-  margin-bottom: 0;
-}
-.collection-list-item-content-middle {
-  padding-top: 1.5em;
-}
-.collection-list-item-content-bottom {
-  color: #BC6F00;
-}
-.collection-list-item-content-bottom i {
-  font-size: 2em;
 }
 
 .quest .section {
@@ -2440,7 +2447,7 @@ html, body {
 .collection-0 .schedule-cost td hr {
   border-bottom-color: #26C0D5;
 }
-.collection-0 .collection-list-item-content-bottom {
+.collection-0 .quest-item-content-bottom {
   color: #26C0D5;
 }
 .collection-0 .nav-days .nav-item:after {
@@ -2581,7 +2588,7 @@ html, body {
 .collection-1 .schedule-cost td hr {
   border-bottom-color: #89CC32;
 }
-.collection-1 .collection-list-item-content-bottom {
+.collection-1 .quest-item-content-bottom {
   color: #89CC32;
 }
 .collection-1 .nav-days .nav-item:after {
@@ -2718,6 +2725,41 @@ html, body {
   }
 }
 
+section.printed {
+  display: none;
+}
+
+@media print {
+  body {
+    color: black;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .header, .header-ghost {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .btn-print {
+    display: none;
+  }
+
+  section.section {
+    padding: 0 !important;
+  }
+
+  .page {
+    padding: 0 !important;
+  }
+
+  section.printed {
+    display: block;
+  }
+}
 .textpage .section {
   padding: 70px 8% 50px;
 }
