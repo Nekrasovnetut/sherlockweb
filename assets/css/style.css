@@ -1515,20 +1515,45 @@ hr {
     width: 100%;
   }
 }
-.quest-item-content-top {
+.quest-item-top {
   padding-bottom: 1.5em;
 }
-.quest-item-content-top-info .quest-info {
+.quest-item-top-left {
+  width: 50%;
+}
+.quest-item-top-right {
+  width: 50%;
+}
+.quest-item-top-right .quest-info {
   margin-bottom: 0;
 }
-.quest-item-content-middle {
+.quest-item-middle {
   padding-top: 1.5em;
 }
-.quest-item-content-bottom {
+.quest-item-bottom {
   color: #BC6F00;
 }
-.quest-item-content-bottom i {
+.quest-item-bottom i {
   font-size: 2em;
+}
+
+.booking-final-item-bigname {
+  font-size: 3em;
+  font-weight: normal;
+}
+.booking-final-item-price {
+  font-size: 2em;
+  color: #BC6F00;
+  padding-bottom: 1em;
+}
+.booking-final-item-day {
+  font-size: 1.5em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+.booking-final-item-adress {
+  color: #7F7F7F;
+  padding-top: 2em;
 }
 
 .collection-list-item {
@@ -2009,6 +2034,9 @@ html, body {
 .booking-final-heading p {
   width: 40%;
   margin: 0 auto;
+}
+.booking-final-print {
+  margin-top: 5em;
 }
 
 @media print {

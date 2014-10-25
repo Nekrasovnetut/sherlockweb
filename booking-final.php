@@ -34,11 +34,11 @@
 			</div>
 			<div class="quest-item-content">
 
-				<div class="quest-item-content-top mcf">
-					<h3 class="to-left">Текила бум</h3>
-					<div class="quest-item-content-top-info to-right">
-						<div class="">21 Сентября</div>
-						<div class="">14:45 2000 руб</div>
+				<div class="quest-item-top mcf">
+					<h3 class="to-left quest-item-top-left booking-final-item-bigname">Квест с достаточно длинным названием про диплодоков</h3>
+					<div class="quest-item-top-right to-right">
+						<div class="booking-final-item-day">21 Сентября 14:45</div>
+						<div class="booking-final-item-price"> 2000 руб</div>
 					</div>
 				</div>
 
@@ -46,15 +46,14 @@
 
 		
 
-				<div class="quest-item-content-bottom">
+				<div class="quest-item-bottom booking-final-item-adress">
 					<div class="to-left">
 						<i class="icon-marker"></i>
 					</div>
-					<div class="to-left">
-						<ul>
-							<li>М. Кропоткинская</li>
-							<li>Большой Афонасьевский пер 15 стр1 </li>
-						</ul>
+					<div class="to-left ">
+						
+							М. Кропоткинская Большой Афонасьевский пер 15 стр1 
+						
 					</div>
 				
 				</div>
@@ -62,7 +61,7 @@
 
 		</div>
 		
-	<a href="javascript:window.print()" class="btn btn-outline btn-to-center btn-print">Распечатать</a>
+	<a href="javascript:window.print()" class="btn btn-outline btn-to-center btn-print booking-final-print">Распечатать</a>
 	
 </section>
 
