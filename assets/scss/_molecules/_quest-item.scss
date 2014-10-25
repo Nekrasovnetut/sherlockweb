@@ -2,46 +2,79 @@
 .quest-item{
 	@extend %mcf;
 	
-		&-img{
-			width: 40%;
-			height: 250px;
+		h3 {
 			float: left;
-				@include mq(small){
-				float: none;
-				width: 100%;
-				}
 		}
+	
+		&-img{
+			
+			//Изображение
+			width: 40%;
+			float: left;
+			
+			//Изображение для телефонов
+			@include mq(small){
+			float: none;
+			width: 100%;
+			margin: 0 auto;
+			}
+			
+		}
+		
 		&-content{
+			//Правая колонка контента
 			width: 55%;
 			float: right;
 			height: 250px;
 			position: relative;
-			@include mq(small){
-				float: none;
-				width: 100%;
-			}
-		}
-		&-top{
-		height: 90px;
-		@extend %mcf;
+			//Правая колонка для телефонов
+			@include mq(small){float: none;width: 100%;}
 			
-			h3{
+		}
+		
+		&-top{
+			
+			@extend %mcf;
+			
+				h3{
 				padding: 0;
 				margin: 0;
-			}
-			&-left{
-				width: 60%;
-			}
-			&-right{	
-				width: 40%;
-				.quest-info{
-						margin-bottom: 0;
+				}
+				
+				
+				&-left{
+					@extend %mcf;
+					width: 60%;		
+						
+					@include mq(medium){width: 100%; float: none;}
+				}
+				
+				&-right{	
+					@extend %mcf;
+					float: right;
+					width: 40%;
+					.quest-info{margin-bottom: 0;}
+					
+					//Упрощяем правый блок верха для мертвой зоны
+					@include mq(medium){
+					float: none;
+					width: 100%;
+					.quest-info {
+					width: auto;
+					padding-right: 1em;
+					padding-top: 1em;	
+					&-label{display: none;}	
+					}	
 					}
+					
+									
+					
+					
+					
 				}
 			}
 		&-middle{
 		@extend %mcf;
-		height: 130px;
 		}
 		&-bottom{
 		@extend %mcf;
@@ -52,6 +85,29 @@
 		right: 0;
 		left: 0;		
 		width: 100%;
+		@include mq(medium){position: static;}
+		
+				&-left{		
+					display: inline-block;	
+					vertical-align: top;	
+					@include mq(medium){
+					margin-top: 1em;
+					}		
+				}
+				
+				&-right{
+					display: inline-block;
+					right: 0;
+					position: absolute;
+					vertical-align: top;
+					@include mq(medium){
+					position: static;
+					display: block;
+					text-align: center;
+					margin-top: 1em;
+					}				
+				}
+
 				i {
 					font-size: 2em;
 				}	
@@ -65,6 +121,9 @@
 				}
 				&-button {
 					float: right;
+					@include mq(medium){
+					float: none;
+					}
 				}
 		}
 }
@@ -72,21 +131,55 @@
 //Это добавляем, если нужен вывод в букинге
 
 .booking-final-item{
-	&-bigname{
-		font-size: 2.5em;
-		font-weight: normal;
-		}
+	
 	&-price{
+		@extend %mcf;
+
 		font-size: 2em;
 		color: $accent-color;
-		height: 2em;
-	}
+		padding-bottom: 1em;
+		}
 	&-day{
+		@extend %mcf;
+
 		font-size: 1.5em;
-		height: 1.5em;
+		padding-bottom: 1em;
+		@include mq(medium){padding-top: 1em;}
+		
+		
 	}
-	&-adress{
-		color: $medium-grey;	
+		@include mq(medium){
+		h3{
+			float: none;
+		}
+		}
+	hr {
+			padding-top: 3.5em;
+	}
+	@include mq(medium){
+		hr{
+			display: none;
+		}
+		}
+	li{
+		display: inline-block;
+		@include mq(medium){
+		display: block;
+		}
+	}
+	
+	.quest-item{
+		&-content{
+			height: 225px;
+		}
+		&-bottom{
+			color: $medium-grey;
+			margin-bottom: 1em;	
+		}
+
+	}
+	.covermini {
+		height: 225px;
 	}
 }
 
@@ -97,9 +190,17 @@
 		margin-bottom: 4em;
 	
 		p{
-				font-size: 1em;
-				line-height: 1.3em;
+			font-size: 14px;
+			line-height: 1.2em;
 		}
+		
+		hr {
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+
+		
+
 		
 
 }
