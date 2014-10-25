@@ -560,10 +560,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-middle, .quest-item-bottom, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-middle:after, .quest-item-bottom:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1519,6 +1519,8 @@ hr {
 .quest-item-content {
   width: 55%;
   float: right;
+  height: 250px;
+  position: relative;
 }
 @media (max-width: 650px) {
   .quest-item-content {
@@ -1527,44 +1529,63 @@ hr {
   }
 }
 .quest-item-top {
-  padding-bottom: 1.5em;
+  height: 90px;
+}
+.quest-item-top h3 {
+  padding: 0;
+  margin: 0;
 }
 .quest-item-top-left {
-  width: 50%;
+  width: 60%;
 }
 .quest-item-top-right {
-  width: 50%;
+  width: 40%;
 }
 .quest-item-top-right .quest-info {
   margin-bottom: 0;
 }
 .quest-item-middle {
-  padding-top: 1.5em;
+  height: 130px;
 }
 .quest-item-bottom {
+  height: 30px;
   color: #BC6F00;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
 }
 .quest-item-bottom i {
   font-size: 2em;
 }
+.quest-item-bottom-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+.quest-item-bottom-adress {
+  display: inline-block;
+  vertical-align: middle;
+}
+.quest-item-bottom-button {
+  float: right;
+}
 
 .booking-final-item-bigname {
-  font-size: 3em;
+  font-size: 2.5em;
   font-weight: normal;
 }
 .booking-final-item-price {
   font-size: 2em;
   color: #BC6F00;
-  padding-bottom: 1em;
+  height: 2em;
 }
 .booking-final-item-day {
   font-size: 1.5em;
-  padding-bottom: 2em;
-  padding-top: 1em;
+  height: 1.5em;
 }
 .booking-final-item-adress {
   color: #7F7F7F;
-  padding-top: 2em;
 }
 
 .collection-list-item {
