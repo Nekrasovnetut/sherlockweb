@@ -47,7 +47,11 @@
 	    <td><a href="javascript:void(0)" class="deactivated">20:00</a></td>
 	    <td><a href="quest-order.php">21:45</a></td>
 	    <td><a href="quest-order.php">23:00</a></td>
-
+	</tr>
+	<tr class="schedule-cost">
+	    <th>Четверг</th>
+	    <td colspan="12"> 2000 Р <hr /> </td>
+	    <td colspan="8"> 3000 Р <hr /> </td>
 	</tr>
 	<tr class="schedule-time">
 	    <th>24 Сентября</th>

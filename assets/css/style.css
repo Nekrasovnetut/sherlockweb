@@ -1518,7 +1518,6 @@ hr {
 
 .quest-item-img {
   width: 40%;
-  height: 250px;
   float: left;
 }
 @media (max-width: 650px) {
@@ -1565,6 +1564,11 @@ hr {
     float: none;
     width: 100%;
   }
+  .quest-item-top-right .quest-info {
+    width: auto;
+    padding-right: 1em;
+    padding-top: 1em;
+  }
   .quest-item-top-right .quest-info-label {
     display: none;
   }
@@ -1587,6 +1591,11 @@ hr {
   display: inline-block;
   vertical-align: top;
 }
+@media (max-width: 950px) {
+  .quest-item-bottom-left {
+    margin-top: 1em;
+  }
+}
 .quest-item-bottom-right {
   display: inline-block;
   right: 0;
@@ -1597,6 +1606,8 @@ hr {
   .quest-item-bottom-right {
     position: static;
     display: block;
+    text-align: center;
+    margin-top: 1em;
   }
 }
 .quest-item-bottom i {
@@ -1619,33 +1630,38 @@ hr {
   }
 }
 
-.booking-final-item-bigname {
-  font-size: 2.5em;
-  font-weight: normal;
-}
 .booking-final-item-price {
   font-size: 2em;
   color: #BC6F00;
+  padding-bottom: 1em;
 }
 .booking-final-item-day {
   font-size: 1.5em;
-}
-.booking-final-item-adress {
-  color: #7F7F7F;
+  padding-bottom: 1em;
 }
 .booking-final-item hr {
-  padding-top: 4em;
+  padding-top: 3.5em;
 }
 .booking-final-item li {
   display: inline-block;
+}
+.booking-final-item .quest-item-content {
+  height: 225px;
+}
+.booking-final-item .quest-item-bottom {
+  color: #7F7F7F;
+  margin-bottom: 1em;
+}
+.booking-final-item .covermini {
+  height: 225px;
 }
 
 .collection-list-item {
   margin-bottom: 4em;
 }
 .collection-list-item p {
-  font-size: 0.9em;
-  line-height: 1.3em;
+  font-size: 14px;
+  line-height: 1.2em;
 }
 .collection-list-item hr {
   margin-top: 1em;

@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Главная";
+<? 	$pageTitle = "Квест забронирован";
 	$pageClass = "page-collection-map-1";
 	$collection1color = '#26C0D5';
 

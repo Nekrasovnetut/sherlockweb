@@ -6,7 +6,6 @@
 			
 			//Изображение
 			width: 40%;
-			height: 250px;
 			float: left;
 			
 			//Изображение для телефонов
@@ -56,8 +55,11 @@
 					@include mq(medium){
 					float: none;
 					width: 100%;
-					.quest-info-label {
-					display: none;
+					.quest-info {
+					width: auto;
+					padding-right: 1em;
+					padding-top: 1em;	
+					&-label{display: none;}	
 					}	
 					}
 					
@@ -83,7 +85,10 @@
 		
 				&-left{		
 					display: inline-block;	
-					vertical-align: top;		
+					vertical-align: top;	
+					@include mq(medium){
+					margin-top: 1em;
+					}		
 				}
 				
 				&-right{
@@ -94,6 +99,8 @@
 					@include mq(medium){
 					position: static;
 					display: block;
+					text-align: center;
+					margin-top: 1em;
 					}				
 				}
 
@@ -120,28 +127,37 @@
 //Это добавляем, если нужен вывод в букинге
 
 .booking-final-item{
-	&-bigname{
-		font-size: 2.5em;
-		font-weight: normal;
-		}
+	
 	&-price{
 		font-size: 2em;
 		color: $accent-color;
+		padding-bottom: 1em;
 		}
 	&-day{
 		font-size: 1.5em;
-		
-	}
-	&-adress{
-		color: $medium-grey;	
+		padding-bottom: 1em;
 	}
 	
 	hr {
-			padding-top: 4em;
+			padding-top: 3.5em;
 	}
 	
 	li{
 		display: inline-block;
+	}
+	
+	.quest-item{
+		&-content{
+			height: 225px;
+		}
+		&-bottom{
+			color: $medium-grey;
+			margin-bottom: 1em;	
+		}
+
+	}
+	.covermini {
+		height: 225px;
 	}
 }
 
@@ -152,8 +168,8 @@
 		margin-bottom: 4em;
 	
 		p{
-				font-size: 0.9em;
-				line-height: 1.3em;
+			font-size: 14px;
+			line-height: 1.2em;
 		}
 		
 		hr {
