@@ -1,0 +1,32 @@
+.booking-final{
+	.section {
+		@extend %mcf;
+		padding: 70px 8% 50px;
+		
+	}
+	
+	&-heading {
+		a{
+		color: $accent-color;
+		text-decoration: underline;
+		}
+		
+		p{
+			width: 40%;
+			margin: 0 auto;
+		}
+	}
+	
+	&-print{
+		margin-top: 5em;
+	}
+
+}
+
+@media print {
+	
+	.booking-final-heading{
+		display: none;
+	}
+}
+

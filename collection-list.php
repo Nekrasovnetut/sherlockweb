@@ -77,29 +77,30 @@
 	</nav>
 	
 	<section class="section">
-		<div class="collection-list-item">
-			<div class="collection-list-item-img">
+	
+		<div class="collection-list-item quest-item">
+			<div class="quest-item-img">
 				<figure class="covermini">
 					<div class="age">+18</div>
 					<img src="example-images/example-cover-mini.png">
 				</figure>
 			</div>
-			<div class="collection-list-item-content">
+			<div class="quest-item-content">
 
-				<div class="collection-list-item-content-top mcf">
-					<h3 class="to-left">Текила бум</h3>
-					<div class="collection-list-item-content-top-info to-right"><? include "includes/quest-preview.php" ?></div>
+				<div class="quest-item-top mcf">
+					<h3 class="quest-item-top-left to-left">Сибирь: Старая лаборатория</h3>
+					<div class="quest-item-top-right to-right"><? include "includes/quest-preview.php" ?></div>
 				</div>
 
 				<hr />
 
-				<div class="collection-list-item-content-middle">
+				<div class="quest-item-middle">
 					<p>
 					Судья Люк Фонтен принял решение на основании позиции прокуратуры Лиона, которая ранее дала согласие на выдачу Кузнецова. Возражения адвокатов бывшего министра, настаивавших на политических мотивах преследования их клиента, были отвергнуты. Вместе с тем решение суда сопровождается рядом оговорок. Как сообщили судебные источники, Кузнецова нельзя.
 					</p>
 				</div>
 
-				<div class="collection-list-item-content-bottom">
+				<div class="quest-item-bottom">
 					<div class="to-left">
 						<i class="icon-marker"></i>
 					</div>
@@ -109,48 +110,15 @@
 							<li>Большой Афонасьевский пер 15 стр1 </li>
 						</ul>
 					</div>
-					<a href="quest.php" class="btn to-right">Записаться</a>
+					<a href="quest.php" class="btn btn-outline to-right">Записаться</a>
 				</div>
 			</div>
+			
+			
 
 		</div>
-		<div class="collection-list-item">
-			<div class="collection-list-item-img">
-				<figure class="covermini">
-					<div class="age">+18</div>
-					<img src="example-images/example-cover-mini.png">
-				</figure>
-			</div>
-			<div class="collection-list-item-content">
-
-				<div class="collection-list-item-content-top mcf">
-					<h3 class="to-left">Текила бум</h3>
-					<div class="collection-list-item-content-top-info to-right"><? include "includes/quest-preview.php" ?></div>
-				</div>
-
-				<hr />
-
-				<div class="collection-list-item-content-middle">
-					<p>
-					Судья Люк Фонтен принял решение на основании позиции прокуратуры Лиона, которая ранее дала согласие на выдачу Кузнецова. Возражения адвокатов бывшего министра, настаивавших на политических мотивах преследования их клиента, были отвергнуты. Вместе с тем решение суда сопровождается рядом оговорок. Как сообщили судебные источники, Кузнецова нельзя.
-					</p>
-				</div>
-
-				<div class="collection-list-item-content-bottom">
-					<div class="to-left">
-						<i class="icon-marker"></i>
-					</div>
-					<div class="to-left">
-						<ul>
-							<li>М. Кропоткинская</li>
-							<li>Большой Афонасьевский пер 15 стр1 </li>
-						</ul>
-					</div>
-					<a href="quest.php" class="btn to-right">Записаться</a>
-				</div>
-			</div>
-
-		</div>
+		
+		
 	</section>
 
 

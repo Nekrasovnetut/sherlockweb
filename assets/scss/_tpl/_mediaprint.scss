@@ -1,0 +1,35 @@
+section.printed {
+	display: none ; 
+}
+
+@media print {
+	
+	body {
+		color: black;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+	.header, .header-ghost{
+		display: none;
+	}
+	.footer{
+		display: none;
+	}
+	
+	.btn-print{
+		display: none;
+	}
+	
+	section.section {
+		padding: 0 !important;
+	}
+	
+	.page {
+		padding: 0 !important;
+	}
+	
+	section.printed{
+		display: block;
+	}
+}
