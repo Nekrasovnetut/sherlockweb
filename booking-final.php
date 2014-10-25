@@ -34,7 +34,7 @@
 			</div>
 			<div class="quest-item-content">
 
-				<div class="quest-item-top mcf">
+				<div class="quest-item-top">
 					<h3 class="to-left quest-item-top-left booking-final-item-bigname">Сибирь: Старая лаборатория</h3>
 					<div class="quest-item-top-right to-right">
 						<div class="booking-final-item-day">21 Сентября 14:45</div>
@@ -47,13 +47,11 @@
 		
 
 				<div class="quest-item-bottom booking-final-item-adress">
-					<div class="to-left">
+					<div class="quest-item-bottom-icon">
 						<i class="icon-marker"></i>
 					</div>
-					<div class="to-left ">
-						
-							М. Кропоткинская Большой Афонасьевский пер 15 стр1 
-						
+					<div class="quest-item-bottom-adress">			
+							М. Кропоткинская Большой Афонасьевский пер 15 стр1 				
 					</div>
 				
 				</div>

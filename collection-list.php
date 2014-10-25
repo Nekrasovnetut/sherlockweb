@@ -101,16 +101,16 @@
 				</div>
 
 				<div class="quest-item-bottom">
-					<div class="to-left">
+					<div class="quest-item-bottom-icon">
 						<i class="icon-marker"></i>
 					</div>
-					<div class="to-left">
+					<div class="quest-item-bottom-adress">
 						<ul>
 							<li>М. Кропоткинская</li>
 							<li>Большой Афонасьевский пер 15 стр1 </li>
 						</ul>
 					</div>
-					<a href="quest.php" class="btn btn-outline to-right">Записаться</a>
+					<a href="quest.php" class="btn btn-outline quest-item-bottom-button">Записаться</a>
 				</div>
 			</div>
 			

@@ -14,31 +14,58 @@
 		&-content{
 			width: 55%;
 			float: right;
+			height: 250px;
+			position: relative;
 			@include mq(small){
 				float: none;
 				width: 100%;
 			}
 		}
 		&-top{
-		padding-bottom: 1.5em;
+		height: 90px;
+		@extend %mcf;
+			
+			h3{
+				padding: 0;
+				margin: 0;
+			}
 			&-left{
-				width: 50%;
+				width: 60%;
 			}
 			&-right{	
-				width: 50%;
+				width: 40%;
 				.quest-info{
 						margin-bottom: 0;
 					}
 				}
 			}
 		&-middle{
-		padding-top: 1.5em;
+		@extend %mcf;
+		height: 130px;
 		}
 		&-bottom{
-		color: $accent-color;		
+		@extend %mcf;
+		height: 30px;
+		color: $accent-color;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		left: 0;		
+		width: 100%;
 				i {
 					font-size: 2em;
 				}	
+				&-icon {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				&-adress {
+					display: inline-block;
+					vertical-align: middle;
+				}
+				&-button {
+					float: right;
+				}
 		}
 }
 
@@ -46,23 +73,20 @@
 
 .booking-final-item{
 	&-bigname{
-		font-size: 3em;
+		font-size: 2.5em;
 		font-weight: normal;
 		}
 	&-price{
 		font-size: 2em;
 		color: $accent-color;
-		padding-bottom: 1em;
+		height: 2em;
 	}
 	&-day{
 		font-size: 1.5em;
-		padding-bottom: 2em;
-		padding-top: 1em;
+		height: 1.5em;
 	}
 	&-adress{
-		color: $medium-grey;
-		padding-top: 2em;
-	
+		color: $medium-grey;	
 	}
 }
 
