@@ -2,6 +2,10 @@
 .quest-item{
 	@extend %mcf;
 	
+		h3 {
+			float: left;
+		}
+	
 		&-img{
 			
 			//Изображение
@@ -129,21 +133,39 @@
 .booking-final-item{
 	
 	&-price{
+		@extend %mcf;
+
 		font-size: 2em;
 		color: $accent-color;
 		padding-bottom: 1em;
 		}
 	&-day{
+		@extend %mcf;
+
 		font-size: 1.5em;
 		padding-bottom: 1em;
+		@include mq(medium){padding-top: 1em;}
+		
+		
 	}
-	
+		@include mq(medium){
+		h3{
+			float: none;
+		}
+		}
 	hr {
 			padding-top: 3.5em;
 	}
-	
+	@include mq(medium){
+		hr{
+			display: none;
+		}
+		}
 	li{
 		display: inline-block;
+		@include mq(medium){
+		display: block;
+		}
 	}
 	
 	.quest-item{

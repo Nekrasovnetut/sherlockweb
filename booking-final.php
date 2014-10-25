@@ -35,7 +35,7 @@
 			<div class="quest-item-content">
 
 				<div class="quest-item-top">
-					<h3 class="to-left quest-item-top-left booking-final-item-bigname">Сибирь: Старая лаборатория</h3>
+					<h3 class="quest-item-top-left booking-final-item-bigname">Сибирь: Старая лаборатория</h3>
 					<div class="quest-item-top-right">
 						<div class="booking-final-item-day">21 Сентября 14:45</div>
 						<div class="booking-final-item-price"> 2000 руб</div>
