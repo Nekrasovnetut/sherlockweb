@@ -2,47 +2,69 @@
 .quest-item{
 	@extend %mcf;
 	
-				@include mq(medium){
-				font-size: 0.7em;
-				}
-	
 		&-img{
+			
+			//Изображение
 			width: 40%;
 			height: 250px;
 			float: left;
-				@include mq(small){
-				float: none;
-				width: 100%;
-				}
-
-
+			
+			//Изображение для телефонов
+			@include mq(small){
+			float: none;
+			width: 100%;
+			margin: 0 auto;
+			}
+			
 		}
+		
 		&-content{
+			//Правая колонка контента
 			width: 55%;
 			float: right;
 			height: 250px;
 			position: relative;
-			@include mq(small){
-				float: none;
-				width: 100%;
-			}
+			//Правая колонка для телефонов
+			@include mq(small){float: none;width: 100%;}
 			
 		}
+		
 		&-top{
-		@extend %mcf;
 			
-			h3{
+			@extend %mcf;
+			
+				h3{
 				padding: 0;
 				margin: 0;
-			}
-			&-left{
-				width: 60%;
-			}
-			&-right{	
-				width: 40%;
-				.quest-info{
-						margin-bottom: 0;
+				}
+				
+				
+				&-left{
+					@extend %mcf;
+					width: 60%;		
+						
+					@include mq(medium){width: 100%; float: none;}
+				}
+				
+				&-right{	
+					@extend %mcf;
+					float: right;
+					width: 40%;
+					.quest-info{margin-bottom: 0;}
+					
+					//Упрощяем правый блок верха для мертвой зоны
+					@include mq(medium){
+					float: none;
+					width: 100%;
+					.quest-info-label {
+					display: none;
+					}	
 					}
+					
+									
+					
+					
+					
 				}
 			}
 		&-middle{
@@ -58,6 +80,22 @@
 		left: 0;		
 		width: 100%;
 		@include mq(medium){position: static;}
+		
+				&-left{		
+					display: inline-block;	
+					vertical-align: top;		
+				}
+				
+				&-right{
+					display: inline-block;
+					right: 0;
+					position: absolute;
+					vertical-align: top;
+					@include mq(medium){
+					position: static;
+					display: block;
+					}				
+				}
 
 				i {
 					font-size: 2em;
@@ -72,6 +110,9 @@
 				}
 				&-button {
 					float: right;
+					@include mq(medium){
+					float: none;
+					}
 				}
 		}
 }
@@ -86,11 +127,10 @@
 	&-price{
 		font-size: 2em;
 		color: $accent-color;
-		height: 2em;
-	}
+		}
 	&-day{
 		font-size: 1.5em;
-		height: 1.5em;
+		
 	}
 	&-adress{
 		color: $medium-grey;	
@@ -101,7 +141,7 @@
 	}
 	
 	li{
-		display: inline;
+		display: inline-block;
 	}
 }
 

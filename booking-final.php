@@ -36,7 +36,7 @@
 
 				<div class="quest-item-top">
 					<h3 class="to-left quest-item-top-left booking-final-item-bigname">Сибирь: Старая лаборатория</h3>
-					<div class="quest-item-top-right to-right">
+					<div class="quest-item-top-right">
 						<div class="booking-final-item-day">21 Сентября 14:45</div>
 						<div class="booking-final-item-price"> 2000 руб</div>
 					</div>
@@ -47,15 +47,16 @@
 		
 
 				<div class="quest-item-bottom booking-final-item-adress">
-					<div class="quest-item-bottom-icon">
+					<div class="quest-item-bottom-left">
+						<div class="quest-item-bottom-icon">
 						<i class="icon-marker"></i>
-					</div>
-					<div class="quest-item-bottom-adress">			
+						</div>
+						<div class="quest-item-bottom-adress">			
 						<ul>
 							<li>М. Кропоткинская</li>
 							<li>Большой Афонасьевский пер 15 стр1 </li>
 						</ul>
-		
+						</div>
 					</div>
 				
 				</div>

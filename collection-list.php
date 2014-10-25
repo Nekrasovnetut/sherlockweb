@@ -89,7 +89,7 @@
 
 				<div class="quest-item-top mcf">
 					<h3 class="quest-item-top-left to-left">Сибирь: Старая лаборатория</h3>
-					<div class="quest-item-top-right to-right"><? include "includes/quest-preview.php" ?></div>
+					<div class="quest-item-top-right"><? include "includes/quest-preview.php" ?></div>
 				</div>
 
 				<hr />
@@ -101,16 +101,22 @@
 				</div>
 
 				<div class="quest-item-bottom">
-					<div class="quest-item-bottom-icon">
+					<div class="quest-item-bottom-left">
+						<div class="quest-item-bottom-icon">
 						<i class="icon-marker"></i>
-					</div>
-					<div class="quest-item-bottom-adress">
+					</div>			
+						<div class="quest-item-bottom-adress">
 						<ul>
 							<li>М. Кропоткинская</li>
 							<li>Большой Афонасьевский пер 15 стр1 </li>
 						</ul>
 					</div>
-					<a href="quest.php" class="btn btn-outline quest-item-bottom-button">Записаться</a>
+					</div>
+					
+					<div class="quest-item-bottom-right">
+						<a href="quest.php" class="btn btn-outline quest-item-bottom-button">Записаться</a>
+					</div>
+					
 				</div>
 			</div>
 			
