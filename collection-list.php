@@ -88,7 +88,7 @@
 			<div class="quest-item-content">
 
 				<div class="quest-item-top mcf">
-					<h3 class="quest-item-top-left to-left">Квест с достаточно длинным</h3>
+					<h3 class="quest-item-top-left to-left">Сибирь: Старая лаборатория</h3>
 					<div class="quest-item-top-right to-right"><? include "includes/quest-preview.php" ?></div>
 				</div>
 
