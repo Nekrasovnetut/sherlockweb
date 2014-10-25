@@ -23,6 +23,10 @@
 		$ghost.height($ghost.prev().innerHeight() - 10);
 	});
 
+	$('.header').on('click', '.header-nav-toggle', function(){
+		$(this).toggleClass('is-active');
+	});
+
 	$linksSlider = $('.js-links-slider');
 
 	$linksSlider.royalSlider({

@@ -36,6 +36,9 @@
 			 onerror="this.onerror=null;
 			 this.src='/assets/images/logo-sm.png'" width="70" height="14" />
 	</a>
+
+	<button class="header-nav-toggle btn"> меню </button>
+
 	<nav class="header-nav nav">
 		<ul class="to-left">
 			<li class="nav-item dropdown">

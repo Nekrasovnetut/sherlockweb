@@ -70,6 +70,10 @@ p {
 	& + &, & + .btn {
 		margin-top: 1em;
 	}
+
+	@include mq(to-small) {
+		line-height: 1.4em;
+	}
 }
 
 hr {

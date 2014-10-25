@@ -5,6 +5,10 @@
 	text-align: center;
 	background: white;
 
+	@include mq(to-small) {
+		display: none;
+	}
+
 	&-text {
 		max-width: 610px;
 		min-width: 320px;

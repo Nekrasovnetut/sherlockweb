@@ -2,21 +2,50 @@
 
 ._sherlock-about {
 	text-align: center;
-	padding-top: 160px; padding-bottom: 160px;
+//	padding-top: 160px; padding-bottom: 160px;
 	width: 100%;
+	padding-top: 120px;
+	padding-bottom: 120px;
 
 	height: auto;
 
-	.description {
-		font-size: 1.5em; // 24px 1.6em
+	@include mq(medium) {
+		padding-top: 14%;
+		padding-bottom: 14%;
 	}
 
-	@include mq(small) {
-		.description {
-			padding-left: 1.5em;
-			padding-right: 1.5em;
+	.description {
+		font-size: 1.5em; // 24px 1.6em
+
+		@include mq(medium) {
+			font-size: 1.25em;
 		}
 
-		br { display: none; }
+		@include mq(small) {
+			font-size: 1em;
+
+			padding-left: 1.5em;
+			padding-right: 1.5em;
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	@include mq(to-small) {
+
+		.logo--big {
+			margin: 0 40px;
+
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		+ .js-text-slider  {
+			display: none;
+		}
 	}
 }
