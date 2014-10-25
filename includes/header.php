@@ -37,7 +37,7 @@
 			 this.src='/assets/images/logo-sm.png'" width="70" height="14" />
 	</a>
 
-	<button class="header-nav-toggle btn-simple on-mobile"> меню </button>
+	<button class="header-nav-toggle btn-simple on-mobile"> <i class="icon-burger"> <b></b> <b></b> <b></b> <b></b> </i> </button>
 
 	<nav class="header-nav nav">
 		<ul class="to-left">

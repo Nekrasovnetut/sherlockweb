@@ -70,6 +70,14 @@
 				margin: 50px auto;
 				width: auto;
 				max-width: 60%;
+
+				&-heading  {
+					height: auto;
+
+					span {
+						position: static;
+					}
+				}
 			}
 
 			@include mq(small) {

@@ -59,8 +59,11 @@ $header-height: 50px;
 		@include mq(small) {
 			display: none !important;
 
+			animation: menu-appear .3s reverse;
+
 			&-toggle.is-active + & {
 				clear: both;
+				min-height: 600px;
 
 				text-align: left;
 
@@ -70,8 +73,10 @@ $header-height: 50px;
 				background: $main-color;
 				background: rgba(#232323, .95);
 
-				position: relative;
-				top: -.2em;
+				position: relative;  z-index: -1;
+				top: -4px;
+
+				animation: menu-appear .3s;
 
 				> ul {
 					float: none !important;
@@ -89,6 +94,7 @@ $header-height: 50px;
 
 					> a, > span {
 						font-size: 14px;
+						display: block;
 					}
 				}
 
@@ -101,8 +107,13 @@ $header-height: 50px;
 
 		&-toggle {
 			height: $header-height;
-			margin-right: 1em;
+			width: $header-height;
+//			margin-right: 1em;
 			float: right;
+
+			&.is-active {
+				background: white;
+			}
 		}
 
 
@@ -156,4 +167,17 @@ $header-height: 50px;
 
 .nav-item.current ~ .header-nav-triangle {
 	display: block;
+}
+
+@keyframes menu-appear {
+	from {
+		opacity: 0;
+//		transform: scaleY(0);
+//		transform-origin: center top;
+	}
+
+	to {
+		opacity: 1;
+//		transform: scaleY(1);
+	}
 }

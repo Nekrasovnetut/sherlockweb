@@ -51,6 +51,10 @@ i {
 
 		vertical-align: middle;
 		margin-right: 7px !important;
+
+		@include mq(to-small) {
+			display: none;
+		}
 	}
 
 	.icon-quest {
@@ -60,7 +64,7 @@ i {
 
 .sticky {
 	position: sticky;
-	top: 40px;
+	top: 50px;
 	z-index: 99;
 }
 
