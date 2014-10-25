@@ -178,7 +178,7 @@
 		<div class="aligner">
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> Сибирский цирюльник </h4>
+				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -195,7 +195,7 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> Бермудский треугольник </h4>
+				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 

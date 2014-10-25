@@ -560,10 +560,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .schedule-heading, .collection-list .section, .collection-list-item, .quest .section, .quest-info-label, .winners .section, .textpage, .mcf {
+.form-message, .quest-item, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .schedule-heading:after, .collection-list .section:after, .collection-list-item:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage:after, .mcf:after {
+.form-message:after, .quest-item:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1495,6 +1495,76 @@ hr {
   right: 80px;
 }
 
+.quest-item-img {
+  width: 40%;
+  height: 250px;
+  float: left;
+}
+@media (max-width: 650px) {
+  .quest-item-img {
+    float: none;
+    width: 100%;
+  }
+}
+.quest-item-content {
+  width: 55%;
+  float: right;
+}
+@media (max-width: 650px) {
+  .quest-item-content {
+    float: none;
+    width: 100%;
+  }
+}
+.quest-item-top {
+  padding-bottom: 1.5em;
+}
+.quest-item-top-left {
+  width: 50%;
+}
+.quest-item-top-right {
+  width: 50%;
+}
+.quest-item-top-right .quest-info {
+  margin-bottom: 0;
+}
+.quest-item-middle {
+  padding-top: 1.5em;
+}
+.quest-item-bottom {
+  color: #BC6F00;
+}
+.quest-item-bottom i {
+  font-size: 2em;
+}
+
+.booking-final-item-bigname {
+  font-size: 3em;
+  font-weight: normal;
+}
+.booking-final-item-price {
+  font-size: 2em;
+  color: #BC6F00;
+  padding-bottom: 1em;
+}
+.booking-final-item-day {
+  font-size: 1.5em;
+  padding-bottom: 2em;
+  padding-top: 1em;
+}
+.booking-final-item-adress {
+  color: #7F7F7F;
+  padding-top: 2em;
+}
+
+.collection-list-item {
+  margin-bottom: 4em;
+}
+.collection-list-item p {
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
 .schedule {
   width: 100%;
   table-layout: fixed;
@@ -1900,6 +1970,11 @@ html, body {
   margin: auto;
   z-index: -1;
 }
+@media (max-width: 650px) {
+  .page-cover-bg img {
+    width: 150%;
+  }
+}
 .page-cover-bg + .page-cover-content {
   color: white;
 }
@@ -1950,6 +2025,26 @@ html, body {
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
+.booking-final .section {
+  padding: 70px 8% 50px;
+}
+.booking-final-heading a {
+  color: #BC6F00;
+  text-decoration: underline;
+}
+.booking-final-heading p {
+  width: 40%;
+  margin: 0 auto;
+}
+.booking-final-print {
+  margin-top: 5em;
+}
+
+@media print {
+  .booking-final-heading {
+    display: none;
+  }
+}
 .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {
   bottom: 100%;
   margin-bottom: -22px;
@@ -2077,49 +2172,6 @@ html, body {
   display: inline;
   color: white;
   padding-left: 1em;
-}
-.collection-list-item {
-  margin-bottom: 4em;
-}
-.collection-list-item p {
-  font-size: 1em;
-  line-height: 1.3em;
-}
-.collection-list-item-img {
-  width: 40%;
-  height: 250px;
-  float: left;
-}
-@media (max-width: 650px) {
-  .collection-list-item-img {
-    float: none;
-    width: 100%;
-  }
-}
-.collection-list-item-content {
-  width: 55%;
-  float: right;
-}
-@media (max-width: 650px) {
-  .collection-list-item-content {
-    float: none;
-    width: 100%;
-  }
-}
-.collection-list-item-content-top {
-  padding-bottom: 1.5em;
-}
-.collection-list-item-content-top-info .quest-info {
-  margin-bottom: 0;
-}
-.collection-list-item-content-middle {
-  padding-top: 1.5em;
-}
-.collection-list-item-content-bottom {
-  color: #BC6F00;
-}
-.collection-list-item-content-bottom i {
-  font-size: 2em;
 }
 
 .quest .section {
@@ -2785,7 +2837,42 @@ html, body {
   }
 }
 
-.textpage {
+section.printed {
+  display: none;
+}
+
+@media print {
+  body {
+    color: black;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .header, .header-ghost {
+    display: none;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .btn-print {
+    display: none;
+  }
+
+  section.section {
+    padding: 0 !important;
+  }
+
+  .page {
+    padding: 0 !important;
+  }
+
+  section.printed {
+    display: block;
+  }
+}
+.textpage .section {
   padding: 70px 8% 50px;
 }
 .textpage h3 {
