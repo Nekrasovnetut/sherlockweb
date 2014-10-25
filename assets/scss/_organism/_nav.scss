@@ -13,9 +13,11 @@
 		@include mq(to-small) {
 			padding: 0 1em;
 
-			i {
+			/*
+i {
 				display: none;
 			}
+*/
 		}
 
 		&-btn.nav-item-btn {

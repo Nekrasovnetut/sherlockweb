@@ -1,4 +1,4 @@
-$header-height: 40px;
+$header-height: 50px;
 
 .header {
 	position: fixed; z-index: 100; left: 0; top: 0;
@@ -46,6 +46,10 @@ $header-height: 40px;
 		float: left;
 		padding-top: 3px; // <- small alignment fix
 		padding-left: 40px;
+
+		@include mq(to-small) {
+			padding-left: 1em;
+		}
 	}
 
 	&-nav {
@@ -54,21 +58,76 @@ $header-height: 40px;
 
 		@include mq(small) {
 			display: none !important;
-		}
 
-		&-toggle.is-active + & {
-			display: block !important;
-			background: $main-color;
+			&-toggle.is-active + & {
+				clear: both;
 
-			> ul, > ul > li {
-				float: none !important;
-				display: block;
+				text-align: left;
+
+				display: block !important;
+				width: 100%;
+
+				background: $main-color;
+				background: rgba(#232323, .95);
+
+				position: relative;
+				top: -.2em;
+
+				> ul {
+					float: none !important;
+					display: block;
+				}
+
+				.nav-item {
+					display: block;
+
+					border-top: 1px solid #C4C4C4;
+
+					border-top-color: rgba(#C4C4C4, .8);
+
+					height: auto;
+
+					> a, > span {
+						font-size: 14px;
+					}
+				}
+
+				.nav-item.dropdown {
+					background: white;
+					color: $main-color;
+				}
 			}
 		}
+
+		&-toggle {
+			height: $header-height;
+			margin-right: 1em;
+			float: right;
+		}
+
+
 
 		.dropdown-block {
 			background: $main-color;
 			background: rgba(#232323, .95);
+
+			@include mq(small){
+				background: none;
+				padding: 0;
+
+				li {
+					padding: 1em 0;
+
+					&:last-child {
+						padding-bottom: 1.5em;
+					}
+				}
+
+				.btn-simple {
+					font-size: 14px;
+					font-weight: bold;
+				}
+			}
 		}
 
 		.nav-item {

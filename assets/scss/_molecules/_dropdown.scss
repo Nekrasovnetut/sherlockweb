@@ -1,11 +1,11 @@
 .dropdown {
 	position: relative;
 	text-transform: none;
-	
+
 	&-toggle {
 		cursor: pointer;
 	}
-	
+
 	&-block {
 		display: none;
 		position: absolute;
@@ -15,28 +15,37 @@
 		//min-width: 100%;
 		min-width: 160px;
 		line-height: normal;
-		
+
 		transition: all .3s;
 		padding: 0 1.5em .5em;
-		
+
 		background: inherit;
-		
+
 		&--right {
 			right: 0;
 			left: auto;
 		}
-		
+
 		li {
 			padding: .5em 0;
 		}
+
+		@include mq(small) {
+			height: 0;
+			position: static;
+		}
 	}
-	
+
 	&:hover &-block {
 		display: block;
-		
+
 		transform-origin: top center;
-		
+
 		animation: dropdown-open .4s $ease-out-back forwards;
+
+		@include mq(small) {
+			height: auto;
+		}
 	}
 }
 
@@ -44,7 +53,7 @@
 	from {
 		transform: scaleY(0);
 	}
-	
+
 	to {
 		transform: scale(1);
 	}

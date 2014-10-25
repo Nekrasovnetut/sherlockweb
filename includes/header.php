@@ -37,10 +37,13 @@
 			 this.src='/assets/images/logo-sm.png'" width="70" height="14" />
 	</a>
 
-	<button class="header-nav-toggle btn"> меню </button>
+	<button class="header-nav-toggle btn-simple on-mobile"> меню </button>
 
 	<nav class="header-nav nav">
 		<ul class="to-left">
+			<li class="nav-item dropdown on-mobile">
+				<a href="login-register.php"><i class="icon-key"></i> Вход</a>
+			</li>
 			<li class="nav-item dropdown">
 				<span class="dropdown-toggle"><i class="icon-star"></i> Москва</span>
 				<div class="dropdown-block">
@@ -66,7 +69,7 @@
 
 			<div class="header-nav-triangle"></div>
 
-			<li class="nav-item dropdown">
+			<li class="nav-item dropdown on-desktop">
 				<span class="dropdown-toggle">
 					<i class="icon-key"></i> Вход
 				</span>

@@ -1413,6 +1413,12 @@ hr {
 .dropdown-block li {
   padding: .5em 0;
 }
+@media (max-width: 650px) {
+  .dropdown-block {
+    height: 0;
+    position: static;
+  }
+}
 .dropdown:hover .dropdown-block {
   display: block;
   -webkit-transform-origin: top center;
@@ -1420,6 +1426,11 @@ hr {
           transform-origin: top center;
   -webkit-animation: dropdown-open 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
           animation: dropdown-open 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+@media (max-width: 650px) {
+  .dropdown:hover .dropdown-block {
+    height: auto;
+  }
 }
 
 @-webkit-keyframes dropdown-open {
@@ -1761,8 +1772,8 @@ html, body {
   background: rgba(35, 35, 35, 0);
   color: white;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   -webkit-transition: background .2s;
           transition: background .2s;
 }
@@ -1778,22 +1789,27 @@ html, body {
   background: rgba(35, 35, 35, 0.95);
   color: white;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   -webkit-transition: background .2s;
           transition: background .2s;
 }
 .header-ghost + .page {
-  margin-top: 40px;
+  margin-top: 50px;
   padding-top: 75px;
 }
 .header-ghost + .page ._sherlock-about {
-  padding-top: 45px;
+  padding-top: 35px;
 }
 .header-logo {
   float: left;
   padding-top: 3px;
   padding-left: 40px;
+}
+@media (max-width: 400px) {
+  .header-logo {
+    padding-left: 1em;
+  }
 }
 .header-nav {
   position: relative;
@@ -1802,22 +1818,62 @@ html, body {
   .header-nav {
     display: none !important;
   }
+  .header-nav-toggle.is-active + .header-nav {
+    clear: both;
+    text-align: left;
+    display: block !important;
+    width: 100%;
+    background: #2C3236;
+    background: rgba(35, 35, 35, 0.95);
+    position: relative;
+    top: -.2em;
+  }
+  .header-nav-toggle.is-active + .header-nav > ul {
+    float: none !important;
+    display: block;
+  }
+  .header-nav-toggle.is-active + .header-nav .nav-item {
+    display: block;
+    border-top: 1px solid #C4C4C4;
+    border-top-color: rgba(196, 196, 196, 0.8);
+    height: auto;
+  }
+  .header-nav-toggle.is-active + .header-nav .nav-item > a, .header-nav-toggle.is-active + .header-nav .nav-item > span {
+    font-size: 14px;
+  }
+  .header-nav-toggle.is-active + .header-nav .nav-item.dropdown {
+    background: white;
+    color: #2C3236;
+  }
 }
-.header-nav-toggle.is-active + .header-nav {
-  display: block !important;
-  background: #2C3236;
-}
-.header-nav-toggle.is-active + .header-nav > ul, .header-nav-toggle.is-active + .header-nav > ul > li {
-  float: none !important;
-  display: block;
+.header-nav-toggle {
+  height: 50px;
+  margin-right: 1em;
+  float: right;
 }
 .header-nav .dropdown-block {
   background: #2C3236;
   background: rgba(35, 35, 35, 0.95);
 }
+@media (max-width: 650px) {
+  .header-nav .dropdown-block {
+    background: none;
+    padding: 0;
+  }
+  .header-nav .dropdown-block li {
+    padding: 1em 0;
+  }
+  .header-nav .dropdown-block li:last-child {
+    padding-bottom: 1.5em;
+  }
+  .header-nav .dropdown-block .btn-simple {
+    font-size: 14px;
+    font-weight: bold;
+  }
+}
 .header-nav .nav-item {
   color: #fff;
-  height: 40px;
+  height: 50px;
 }
 .header-nav-triangle {
   position: absolute;
@@ -1860,9 +1916,11 @@ html, body {
 @media (max-width: 400px) {
   .nav-item {
     padding: 0 1em;
-  }
-  .nav-item i {
-    display: none;
+    			/*
+    i {
+    				display: none;
+    			}
+    */
   }
 }
 .nav-item-btn.nav-item-btn {
@@ -3034,5 +3092,19 @@ section.printed {
 }
 
 /* ------- Заполнение -------- */
+.on-mobile {
+  display: none;
+}
+@media (max-width: 650px) {
+  .on-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 650px) {
+  .on-desktop {
+    display: none !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

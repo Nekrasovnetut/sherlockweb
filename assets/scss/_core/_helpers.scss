@@ -29,7 +29,7 @@
 	top: -9999px !important; }
 
 // For Screen readers
-.sr-only, %screen-readers, 
+.sr-only, %screen-readers,
 .visuallyhidden, %visuallyhidden {
     position: absolute;
     width: 1px;
@@ -58,7 +58,7 @@
 	display: table-cell;
 	width: 9999px;
 	vertical-align: top;
-	
+
 	zoom: 1;
 }
 
@@ -99,17 +99,17 @@
 
 %img-fill {
 	position: absolute;
-			
+
 	left: -9999px; right: -9999px; top: -9999px; bottom: -9999px; margin: auto;
-	
+
 	width: 100%;
 	height: auto;
-	
+
 	&.wide {
 		width: auto;
 		height: 100%;
 	}
-	
+
 	&.tall {
 		width: 100%;
 		height: auto;
@@ -125,4 +125,20 @@
 
 %fill {
 	@include fill;
+}
+
+.on-mobile {
+	display: none;
+
+	@include mq(small) {
+		display: block;
+	}
+}
+
+.on-desktop {
+//	display: ;
+
+	@include mq(small) {
+		display: none !important;
+	}
 }
