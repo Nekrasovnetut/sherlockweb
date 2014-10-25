@@ -51,7 +51,11 @@
 						<i class="icon-marker"></i>
 					</div>
 					<div class="quest-item-bottom-adress">			
-							М. Кропоткинская Большой Афонасьевский пер 15 стр1 				
+						<ul>
+							<li>М. Кропоткинская</li>
+							<li>Большой Афонасьевский пер 15 стр1 </li>
+						</ul>
+		
 					</div>
 				
 				</div>
