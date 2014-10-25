@@ -4,6 +4,7 @@ html {
 	font-feature-settings: "kern" 1;
 	font-kerning: normal;
 	color: #222;
+	-webkit-font-smoothing: antialiased;
 }
 
 a { color: inherit; }

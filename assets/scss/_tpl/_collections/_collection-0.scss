@@ -1,80 +1,78 @@
 $collection-0: #26C0D5;
+$scale-1: .95;
+$scale-2: 1.05;
+$scale-3: 1.15;
 
 @include collection-page-color(0, $collection-0);
 
 .collection-0 {
-	.aligner {
-		max-width: 1050px;
-		transform-origin: top center;
-
-		@include mq(big) {
-			transform: scale(1.05) translateZ(0) !important;
-
-			height: 710px;
-		}
-
-		@include mq(ipad) {
-			transform: scale(.95) translateZ(0) !important;
-
-			height: 680px;
-		}
-
-		@include mq(ultrabig) {
-			transform: scale(1.15) translateZ(0) !important;
-
-			height: 750px;
-		}
-	}
 
 	.collection-map {
 		&-content-stars {
-			background: url('../images/layout/1/layout-1-all-stars.svg') 70px 35px;
-			background-repeat: no-repeat; z-index: 1;
+			background: url('../images/layout/0/all-stars.svg')  no-repeat 10px 60px;
 		}
 
 		&-content-bg {
-			z-index: 0;
+			.svg & {
+				background: url('../images/layout/0/path-1.svg') no-repeat 460px 90px,
+							url('../images/layout/0/path-2.svg') no-repeat 655px 380px;
+			} .no-svg & {
+				background: url('../images/layout/0/path-1.png') no-repeat 460px 90px,
+							url('../images/layout/0/path-2.png') no-repeat 655px 380px;
 
-			background: url('../images/layout/1/layout-1-path-1.svg') 270px 350px,
-						url('../images/layout/1/layout-1-path-2.svg') 825px 300px;
-			background-repeat: no-repeat;
-
-			&:before, &:after {
-				content: "";
-				display: block;
-				position: absolute;
-				background-repeat: no-repeat;
-
-				@include mq(medium) {
-					content: none;
-				}
+				-pie-background: url('../images/layout/0/path-1.png') no-repeat 460px 90px,
+	 							 url('../images/layout/0/path-2.png') no-repeat 655px 380px;
 			}
 
 			&:before {
-				background: url('../images/layout/1/layout-1-path-first.png') left top;
-				background: url('../images/layout/1/layout-1-path-first.svg') left top;
-				width: 240px; height: 100px;
+				.svg & {
+					background-image: url('../images/layout/0/path-first.svg');
+				} .no-svg & {
+					background-image: url('../images/layout/0/path-first.png');
+				}
 
-				left: -140px;
-				top: 80px;
+				width: 102px; height: 171px;
+
+				left: 120px;
+				top: -110px;
+
+
+				@include mq(ipad) {
+					top: (-110px/$scale-1);
+				}
+
+				@include mq(big) {
+					top: (-110px/$scale-2);
+				}
+
+				@include mq(ultrabig) {
+					top: (-110px/$scale-3);
+				}
 			}
 
 			&:after {
-				background: url('../images/layout/1/layout-1-path-last.png') left top;
-				background: url('../images/layout/1/layout-1-path-last.svg') left top;
-				width: 322px; height: 105px;
+				.svg & {
+					background-image: url('../images/layout/0/path-last.svg');
+				} .no-svg & {
+					background-image: url('../images/layout/0/path-last.png');
+				}
 
-				left: 86%;
-				top: 30px;
-			}
-		}
+				width: 184px; height: 162px;
 
-		&-content-bg, .collection-content-stars {
-			position: absolute;
-			left: -50px; top: 0; right: -100px; bottom: 0;
+				left: 120px;
+				bottom: -50px;
 
-			@include mq(medium) {
-				background: none;
+				@include mq(ipad) {
+					bottom: -50px*($scale-1 * 2);
+				}
+
+				@include mq(big) {
+					bottom: -15px*($scale-2 * 2);
+				}
+
+				@include mq(ultrabig) {
+					bottom: -15px*($scale-3 * -2);
+				}
 			}
 		}
 
@@ -84,9 +82,11 @@ $collection-0: #26C0D5;
 				left: 95px;
 				top: 100px;
 
+//				background: url('../images/star-small.svg') no-repeat -10px 110px;
+
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-center;
+						@extend %icon-left-top;
 					}
 
 					img:nth-of-type(2) {
@@ -94,14 +94,14 @@ $collection-0: #26C0D5;
 					}
 
 					img:nth-of-type(3) {
-						@extend %icon-right-bottom;
+						@extend %icon-left-bottom;
 					}
 				}
 			}
 
 			&:nth-of-type(2) {
-				top: 410px;
-				left: 460px;
+				left: 680px;
+				top: 160px;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -119,12 +119,13 @@ $collection-0: #26C0D5;
 			}
 
 			&:nth-of-type(3) {
-				left: 680px;
-				top: 120px;
+				top: 410px;
+				left: 300px;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-center;
+						@extend %icon-left-to-top;
+						margin-top: -20px;
 					}
 
 					img:nth-of-type(2) {

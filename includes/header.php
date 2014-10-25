@@ -18,7 +18,16 @@
 		<script src="assets/js/lib/html5shiv-printshiv.min.js"></script>
 		<script src="assets/js/lib/jquery-1.11.1.min.js"></script>
 		<script src="assets/js/lib/selectivizr.min.js"></script>
+		<script src="assets/js/lib/PIE_IE678.js"></script>
 	<![endif]-->
+
+	<script>
+		// Проверка на поддержку SVG:
+		if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1"))
+			document.documentElement.className += " svg";
+		else
+			document.documentElement.className += " no-svg";
+	</script>
 </head><body ontouchstart="">
 
 <header class="header">

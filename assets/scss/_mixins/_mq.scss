@@ -9,7 +9,7 @@ $MQs: true !default;
 			@media (max-width: 1150px) { @content; }
 		}
 		@else if $point == ipad {
-			@media (min-width: 949px) and (max-width: 1150px) { @content; }
+			@media (min-width: 949px) and (max-width: 1050px) { @content; }
 		}
 		@else if $point == big {
 			@media (min-width: 1150px) { @content; }

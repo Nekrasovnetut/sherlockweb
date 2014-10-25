@@ -1,92 +1,89 @@
 $collection-1: #89CC32;
+$scale-1: .95;
+$scale-2: 1.05;
+$scale-3: 1.15;
 
 @include collection-page-color(1, $collection-1);
 
 .collection-1 {
-	.aligner {
-		max-width: 1050px;
-		transform-origin: top center;
-
-		@include mq(big) {
-			transform: scale(1.05) translateZ(0) !important;
-
-			height: 710px;
-		}
-
-		@include mq(ipad) {
-			transform: scale(.95) translateZ(0) !important;
-
-			height: 680px;
-		}
-
-		@include mq(ultrabig) {
-			transform: scale(1.15) translateZ(0) !important;
-
-			height: 750px;
-		}
-	}
 
 	.collection-map {
 		&-content-stars {
-			background: url('../images/layout/1/layout-1-all-stars.svg') 70px 35px;
-			background-repeat: no-repeat; z-index: 1;
+			//background: url('../images/layout/1/all-stars.svg') no-repeat 70px 35px;
 		}
 
 		&-content-bg {
-			z-index: 0;
+			.svg & {
+				background: url('../images/layout/1/path-1.svg') no-repeat 190px 20px,
+						url('../images/layout/1/path-2.svg') no-repeat 695px 210px;
+			} .no-svg & {
+				background: url('../images/layout/1/path-1.png') no-repeat 190px 20px,
+							url('../images/layout/1/path-2.png') no-repeat 695px 210px;
 
-			background: url('../images/layout/1/layout-1-path-1.svg') 270px 350px,
-						url('../images/layout/1/layout-1-path-2.svg') 825px 300px;
-			background-repeat: no-repeat;
-
-			&:before, &:after {
-				content: "";
-				display: block;
-				position: absolute;
-				background-repeat: no-repeat;
-
-				@include mq(medium) {
-					content: none;
-				}
+				-pie-background: url('../images/layout/1/path-1.png') no-repeat 190px 20px,
+								 url('../images/layout/1/path-2.png') no-repeat 695px 210px;
 			}
 
 			&:before {
-				background: url('../images/layout/1/layout-1-path-first.png') left top;
-				background: url('../images/layout/1/layout-1-path-first.svg') left top;
-				width: 240px; height: 100px;
+				.svg & {
+					background: url('../images/layout/1/path-first.svg') no-repeat left top;
+				} .no-svg & {
+					background: url('../images/layout/1/path-first.png') no-repeat left top;
+				}
 
-				left: -140px;
-				top: 80px;
+				width: 156px; height: 347px;
+
+				left: 80px;
+				bottom: -50px;
+
+				@include mq(ipad) {
+					bottom: -83px;
+				}
+
+				@include mq(big) {
+					bottom: -17px;
+				}
+
+				@include mq(ultrabig) {
+					bottom: 47px;
+				}
 			}
 
 			&:after {
-				background: url('../images/layout/1/layout-1-path-last.png') left top;
-				background: url('../images/layout/1/layout-1-path-last.svg') left top;
-				width: 322px; height: 105px;
+				.svg & {
+					background: url('../images/layout/1/path-last.svg') no-repeat left top;
+				} .no-svg & {
+					background: url('../images/layout/1/path-last.png') no-repeat left top;
+				}
 
-				left: 86%;
-				top: 30px;
-			}
-		}
+				width: 108px; height: 171px;
 
-		&-content-bg, .collection-content-stars {
-			position: absolute;
-			left: -50px; top: 0; right: -100px; bottom: 0;
+				left: 400px;
+				bottom: -50px;
 
-			@include mq(medium) {
-				background: none;
+				@include mq(ipad) {
+					bottom: -83px;
+				}
+
+				@include mq(big) {
+					bottom: -47px;
+				}
+
+				@include mq(ultrabig) {
+					bottom: 47px;
+				}
 			}
 		}
 
 		&-item {
 
 			&:nth-of-type(1) {
-				left: 95px;
-				top: 100px;
+				left: 110px;
+				top: 180px;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-center;
+						@extend %icon-left-to-top;
 					}
 
 					img:nth-of-type(2) {
@@ -100,12 +97,13 @@ $collection-1: #89CC32;
 			}
 
 			&:nth-of-type(2) {
-				top: 410px;
-				left: 460px;
+				left: 580px;
+				top: 60px;
+				// bottom: 390px;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-center;
+						@extend %icon-left-to-top;
 					}
 
 					img:nth-of-type(2) {
@@ -113,26 +111,26 @@ $collection-1: #89CC32;
 					}
 
 					img:nth-of-type(3) {
-						@extend %icon-right-bottom;
+						@extend %icon-right-bottom-2;
 					}
 				}
 			}
 
 			&:nth-of-type(3) {
-				left: 680px;
-				top: 120px;
+				top: 370px;
+				left: 500px;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-center;
+						@extend %icon-left-to-top;
 					}
 
 					img:nth-of-type(2) {
-						@extend %icon-after-title;
+						@extend %icon-right-center;
 					}
 
 					img:nth-of-type(3) {
-						@extend %icon-right-bottom;
+						@extend %icon-after-button;
 					}
 				}
 			}

@@ -148,4 +148,10 @@
 			ParsleyForm.$element.find('.form-message').removeClass('is-hidden');
 		}
     });
+
+    if (window.PIE) {
+        $('.collection-map-content-bg').each(function() {
+            PIE.attach(this);
+        });
+    }
 }(jQuery));

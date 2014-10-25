@@ -14,7 +14,7 @@
 				<fieldset class="form-group">
 					<div class="form-row">
 						<div class="form-label">
-							<label class="label" for="login-user-email"> E-mail </label>
+							<label class="label" for="login-user-email"> Логин </label>
 						</div>
 						<div class="form-item">
 							<input id="login-user-email" type="email" class="input" name="email" required />

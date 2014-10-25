@@ -4,18 +4,40 @@
 		overflow: hidden;
 	}
 
+	$scale-1: .95;
+	$scale-2: 1.05;
+	$scale-3: 1.15;
+	$mapHeight: 600px;
+
 	&-map {
 		.aligner {
 			position: relative;
-			height: 650px;
+			height: $mapHeight;
 
 			@include mq(medium) {
 				height: auto;
 			}
-		}
 
-		.btn {
-			border-color: white;
+			max-width: 1050px;
+			transform-origin: top center;
+
+			@include mq(ipad) {
+				transform: scale($scale-1) translateZ(0) !important;
+
+				height: $mapHeight*$scale-1;
+			}
+
+			@include mq(big) {
+				transform: scale($scale-2) translateZ(0) !important;
+
+				height: $mapHeight*$scale-2;
+			}
+
+			@include mq(ultrabig) {
+				transform: scale($scale-3) translateZ(0) !important;
+
+				height: $mapHeight*$scale-3;
+			}
 		}
 
 		&-item {
@@ -28,9 +50,17 @@
 				margin-bottom: .75em;
 				color: #444;
 				color: rgba(black, .7);
+				position: relative;
+				height: 1em;
+
+				span {
+					position: absolute;
+					bottom: 0;
+				}
 			}
 
 			.btn {
+				border-color: white;
 				margin-top: 3em;
 			}
 
@@ -57,7 +87,17 @@
 			---	*/
 
 			&-icons {
-				img { position: absolute; }
+				img {
+					position: absolute;
+
+					@include mq(small) {
+						display: none;
+
+						&:nth-of-type(2) { // Номер иконки, которая останеться на маленьком экране
+							display: block;
+						}
+					}
+				}
 			}
 
 			position: absolute; z-index: 1; // <- Основные стили
@@ -70,128 +110,42 @@
 				display: none;
 			}
 		}
+
+		&-content-stars {
+			position: absolute;
+			left: 0; top: 0;
+			width: 100%;
+			height: 100%;
+
+			z-index: 1;
+		}
+
+		&-content-bg {
+			z-index: 0;
+			position: absolute;
+			left: -50px; top: 0; right: -100px; bottom: 0;
+
+			@include mq(medium) {
+				background: none !important;
+			}
+
+			&:before, &:after {
+				content: "";
+				display: block;
+				position: absolute;
+				background-repeat: no-repeat;
+
+				@include mq(medium) {
+					content: none;
+				}
+			}
+		}
 	}
 
 	&-schedule {
 		.schedule-overflow {
 			padding: 0 50px 20px;
 		}
-	}
-}
-
-%icon-after-title {
-	top: 0;
-	margin-top: -40px;
-	left: 130px;
-}
-
-%icon-left {
-	&-bottom {
-		right: 100%;
-		margin-right: 20px;
-		bottom: 0;
-	}
-
-	&-top {
-		right: 100%;
-		bottom: 105%;
-		margin-right: -20px;
-	}
-
-	&-center {
-		right: 100%;
-		margin-right: 20px;
-		top: 35%;
-	}
-}
-
-%icon-right {
-	&-bottom {
-		right: 10%;
-		top: 100%;
-		margin-top: -40px;
-	}
-
-	&-center {
-		left: 100%;
-		bottom: 60px;
-	}
-}
-
-// Назначение цветов для разных:
-
-@mixin collection-page-color($n, $color) {
-	.collection-#{$n} {
-		.page-heading h3, .page-heading h2 { color: $color; }
-
-		&.section {
-			background: $color;
-		}
-
-		.btn {
-			background-color: $color;
-
-			&-white {
-				color: $color;
-			}
-		}
-
-		.link {
-			color: $color;
-		}
-
-		.quest-info-label {
-			color: $color;
-		}
-
-		.quote {
-			&-text:before, &-text:after, &-author {
-				color: $color;
-			}
-		}
-
-		.section-map {
-			background: $color;
-
-			&:after {
-				border-top-color: $color;
-			}
-		}
-
-		.schedule {
-			&-heading-month li.is-active a {
-				color: $color;
-			}
-
-			&-time th {
-				color: $color;
-			}
-
-			&-cost td {
-				color: $color;
-
-				hr {
-					border-bottom-color: $color;
-				}
-			}
-		}
-
-		.collection-list-item-content-bottom {
-			color: $color;
-		}
-
-		.nav-days .nav-item:after {
-			border-bottom-color: $color;
-		}
-
-		.age--circle {
-			color: $color;
-		}
-		
-		.collection-list-description {
-			background-color: $color;
-		}
-		
 	}
 }
 
