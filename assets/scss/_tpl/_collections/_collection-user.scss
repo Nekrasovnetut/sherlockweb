@@ -1,0 +1,96 @@
+$collection-user: #F5F5F6;
+$scale-1: .95;
+$scale-2: 1.05;
+$scale-3: 1.15;
+
+// @include collection-page-color(1, $collection-1);
+
+.collection-user {
+	background: #f4f4f4;
+
+	.section-heading {
+		color: $accent-color;
+	}
+
+	.collection-map {
+
+		&-content-bg {
+			.svg & {
+				background: url('../images/layout/user/path-1.svg') no-repeat 530px 90px,
+						url('../images/layout/user/path-2.svg') no-repeat 275px 280px;
+			} .no-svg & {
+				background: url('../images/layout/user/path-1.png') no-repeat 190px 20px,
+							url('../images/layout/user/path-2.png') no-repeat 695px 210px;
+
+				-pie-background: url('../images/layout/user/path-1.png') no-repeat 190px 20px,
+								 url('../images/layout/user/path-2.png') no-repeat 695px 210px;
+			}
+		}
+
+		&-item {
+
+			color: $dark-grey;
+
+			&:nth-of-type(1) {
+				left: 190px;
+				top: 60px;
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-to-top;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-after-title;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-right-bottom;
+					}
+				}
+			}
+
+			&:nth-of-type(2) {
+				left: 660px;
+				top: 290px;
+				// bottom: 390px;
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-bottom;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-after-title;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-right-bottom-2;
+					}
+				}
+			}
+
+			&:nth-of-type(3) {
+				top: 490px;
+				left: 120px;
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-to-top;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-right-center;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-after-button;
+					}
+				}
+			}
+
+		}
+	}
+
+
+}

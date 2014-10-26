@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-pay .section, .collection-list .section, .quest .section, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-pay .section:after, .collection-list .section:after, .quest .section:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -2455,11 +2455,8 @@ html, body {
   }
 }
 
-.section, .section-color {
-  padding: 35px 8% 50px;
-}
-.section-color {
-  background: #f4f4f4;
+.section {
+  padding: 35px 0 50px;
 }
 
 .splitter {
@@ -2498,7 +2495,7 @@ html, body {
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
-.booking-final .section, .booking-final .section-color {
+.booking-final .section {
   padding: 70px 8% 50px;
 }
 .booking-final-heading a {
@@ -2518,11 +2515,11 @@ html, body {
     display: none;
   }
 }
-.booking-pay .section, .booking-pay .section-color {
+.booking-pay .section {
   padding: 25px 8% 50px;
 }
 @media (max-width: 650px) {
-  .booking-pay .section, .booking-pay .section-color {
+  .booking-pay .section {
     padding-top: 10px;
   }
 }
@@ -2564,19 +2561,19 @@ html, body {
   }
 }
 
-.collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {
+.collection-user .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-user .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {
   bottom: 100%;
   margin-bottom: -22px;
   left: 150px;
 }
 
-.collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(3) {
+.collection-user .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(3), .collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(3) {
   bottom: 0;
   margin-bottom: -22px;
   left: 150px;
 }
 
-.collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(3) {
+.collection-user .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(1), .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(3) {
   right: 100%;
   margin-right: 20px;
   bottom: 0;
@@ -2586,7 +2583,7 @@ html, body {
   bottom: 105%;
   margin-right: -20px;
 }
-.collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(1) {
+.collection-user .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(1), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(1), .collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(1) {
   right: 100%;
   top: 0;
   margin-right: 1.5em;
@@ -2597,23 +2594,23 @@ html, body {
   top: 35%;
 }
 
-.collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(3), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(3), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(3) {
+.collection-user .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(3), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(3), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(3), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(3) {
   right: 10%;
   top: 100%;
   margin-top: -40px;
 }
-.collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(3) {
+.collection-user .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(3), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(3) {
   left: 100%;
   bottom: 0;
   margin-bottom: -20px;
   margin-left: -40px;
 }
-.collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2) {
+.collection-user .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2) {
   left: 100%;
   bottom: 60px;
 }
 
-.collection-list .section, .collection-list .section-color {
+.collection-list .section {
   padding: 70px 8% 50px;
 }
 .collection-list-bottomborder {
@@ -2693,11 +2690,11 @@ html, body {
   padding-left: 1em;
 }
 
-.quest .section, .quest .section-color {
+.quest .section {
   padding: 70px 8% 50px;
 }
 @media (max-width: 650px) {
-  .quest .section, .quest .section-color {
+  .quest .section {
     padding-top: 30px;
   }
 }
@@ -2844,11 +2841,11 @@ html, body {
 .winners-heading {
   position: relative;
 }
-.winners .section, .winners .section-color {
+.winners .section {
   padding: 0px 8% 50px;
 }
 @media (max-width: 650px) {
-  .winners .section, .winners .section-color {
+  .winners .section {
     padding: 0px 0px 50px;
   }
 }
@@ -3073,10 +3070,39 @@ html, body {
   padding: 0 50px 20px;
 }
 
+.collection-user {
+  background: #f4f4f4;
+}
+.collection-user .section-heading {
+  color: #BC6F00;
+}
+.svg .collection-user .collection-map-content-bg {
+  background: url("../images/layout/user/path-1.svg") no-repeat 530px 90px, url("../images/layout/user/path-2.svg") no-repeat 275px 280px;
+}
+.no-svg .collection-user .collection-map-content-bg {
+  background: url("../images/layout/user/path-1.png") no-repeat 190px 20px, url("../images/layout/user/path-2.png") no-repeat 695px 210px;
+  -pie-background: url("../images/layout/user/path-1.png") no-repeat 190px 20px, url("../images/layout/user/path-2.png") no-repeat 695px 210px;
+}
+.collection-user .collection-map-item {
+  color: #505050;
+}
+.collection-user .collection-map-item:nth-of-type(1) {
+  left: 190px;
+  top: 60px;
+}
+.collection-user .collection-map-item:nth-of-type(2) {
+  left: 660px;
+  top: 290px;
+}
+.collection-user .collection-map-item:nth-of-type(3) {
+  top: 490px;
+  left: 120px;
+}
+
 .collection-0 .page-heading h3, .collection-0 .page-heading h2 {
   color: #26C0D5;
 }
-.collection-0.section, .collection-0.section-color {
+.collection-0.section {
   background: #26C0D5;
 }
 .collection-0 .accent {
@@ -3214,7 +3240,7 @@ html, body {
 .collection-1 .page-heading h3, .collection-1 .page-heading h2 {
   color: #89CC32;
 }
-.collection-1.section, .collection-1.section-color {
+.collection-1.section {
   background: #89CC32;
 }
 .collection-1 .accent {
@@ -3423,7 +3449,7 @@ section.printed {
     display: none;
   }
 
-  section.section, section.section-color {
+  section.section {
     padding: 0 !important;
   }
 
@@ -3435,7 +3461,7 @@ section.printed {
     display: block;
   }
 }
-.textpage .section, .textpage .section-color {
+.textpage .section {
   padding: 70px 8% 50px;
 }
 .textpage h3 {

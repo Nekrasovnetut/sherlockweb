@@ -1,13 +1,7 @@
 .section {
-	padding: 35px 8% 50px;
+	padding: 35px 0 50px;
 
 	&-heading {
 		@extend %heading;
-	}
-
-	&-color {
-		@extend .section;
-
-		background: #f4f4f4;
 	}
 }

@@ -158,4 +158,12 @@
             PIE.attach(this);
         });
     }
+
+	$('.collection-user .aligner').height(function(){
+		var $first = $('.collection-map-item').first(),
+			$last = $('.collection-map-item').last();
+
+		return $last.offset().top - $first.offset().top + $last.height() + 100;
+
+	})
 }(jQuery));

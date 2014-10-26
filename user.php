@@ -66,12 +66,61 @@
 			</tbody>
 		</table>
 	</div></section>
-	<section class="section-color collection-map collection-repeat">
-		<header class="section-heading">
-			<h3>Пройденные квесты</h3>
-		</header>
-		<div class="aligner">
+	<section class="section collection-map collection-user">
+		<header class="section-heading"><a href="collection-list.php">
+			<h3> Пройденные квесты </h3>
+		</a></header>
 
+		<div class="aligner">
+			<div class="collection-map-content-bg"></div>
+			<div class="collection-map-content-stars"></div>
+
+			<article class="collection-map-item">
+				<h4 class="collection-map-item-heading"> <span>Текила Бум</span> </h4>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-snake-full.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
+					<img src="series-icons/icon-drink.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
+					<img src="series-icons/icon-skull.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-bat.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-bat.png'" />
+
+					<img src="series-icons/icon-pyramid.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-pyramid.png'" />
+
+					<img src="series-icons/icon-mask.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-mask.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-doors.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+					<img src="series-icons/icon-torch.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
+				</div>
+			</article>
 		</div>
 	</section>
 </div>
