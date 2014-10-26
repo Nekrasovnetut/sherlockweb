@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Личный кабинет &mdash; изменить данные";
+<? 	$pageTitle = "Изменить данные &mdash; Личный кабинет";
 
 	include "includes/header.php" ?>
 

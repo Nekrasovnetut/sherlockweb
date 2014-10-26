@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .quest-info-label, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .quest-info-label, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .quest-info-label:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .quest-info-label:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1773,6 +1773,12 @@ hr {
   margin-bottom: 1em;
 }
 
+@media (max-width: 650px) {
+  .booking-pay-item .covermini {
+    display: none;
+  }
+}
+
 .schedule {
   width: 100%;
   table-layout: fixed;
@@ -2447,6 +2453,52 @@ html, body {
     display: none;
   }
 }
+.booking-pay .section, .booking-pay .section-color {
+  padding: 25px 8% 50px;
+}
+@media (max-width: 650px) {
+  .booking-pay .section, .booking-pay .section-color {
+    padding-top: 10px;
+  }
+}
+.booking-pay-variant {
+  width: 33.333333333%;
+  float: left;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant {
+    float: none;
+    width: 100%;
+    padding-bottom: 2em;
+  }
+}
+.booking-pay-variant + .booking-pay-variant {
+  padding-left: 5%;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant + .booking-pay-variant {
+    padding-left: 0;
+  }
+}
+.booking-pay-variant p {
+  height: 100px;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant p {
+    height: auto;
+  }
+}
+.booking-pay-variant h4 {
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant h4 {
+    height: auto;
+  }
+}
+
 .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {
   bottom: 100%;
   margin-bottom: -22px;

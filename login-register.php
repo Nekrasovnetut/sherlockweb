@@ -5,7 +5,7 @@
 <div class="page page--splitter">
 	<div class="aligner splitter">
 		<div class="splitter-item">
-			<form class="form" data-parsley-validate>
+			<form class="form" data-parsley-validate action="booking-pay.php">
 				<h4>Войдите</h4>
 				<div class="form-message form-message--error is-hidden">
 					<span class="exclamation form-message-icon">!</span>
@@ -49,7 +49,7 @@
 		</div>
 
 		<div class="splitter-item">
-			<form class="form" data-parsley-validate>
+			<form class="form" data-parsley-validate action="booking-pay.php">
 				<h4>Зарегистрируйтесь</h4>
 				<div class="form-message form-message--error is-hidden">
 					<span class="exclamation form-message-icon">!</span>

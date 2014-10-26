@@ -7,9 +7,9 @@
 
 
 <div class="page booking-pay">
-		
+
 	<section class="section">
-		
+
 		<div class="quest-item booking-final-item booking-pay-item">
 			<div class="quest-item-img">
 				<figure class="covermini">
@@ -29,48 +29,48 @@
 
 				<hr />
 
-		
+
 
 				<div class="quest-item-bottom booking-final-item-adress">
 					<div class="quest-item-bottom-left">
 						<div class="quest-item-bottom-icon">
 						<i class="icon-marker"></i>
 						</div>
-						<div class="quest-item-bottom-adress">			
+						<div class="quest-item-bottom-adress">
 						<ul>
 							<li>М. Кропоткинская</li>
 							<li>Большой Афонасьевский пер 15 стр1 </li>
 						</ul>
 						</div>
 					</div>
-				
+
 				</div>
 			</div>
 
 		</div>
-				
+
 	</section>
-	
+
 	<section class="section">
-		
+
 		<div class="booking-pay-variant booking-pay-booked">
 		<h4>Забронировать</h4>
 		<p>Вы можете забронировать игру и оплатить ее на месте перед прохождением деньгами или купоном</p>
-		<a href="#" class="btn btn-outline">Бронировать</a>
+		<a href="booking-final.php" class="btn btn-outline">Бронировать</a>
 	</div>
-		
+
 		<div class="booking-pay-variant booking-pay-cupon">
 		<h4>Использовать подарочный купон</h4>
 		<p>Используйте свой подарочный купон для оплаты квеста</p>
 		<a href="#" class="btn btn-outline">Использовать купон</a>
 	</div>
-		
+
 		<div class=" booking-pay-variant booking-pay-booked">
 		<h4>Забронировать и оплатить</h4>
 		<p>Вы можете забронировать игру и оплатить ее прямо сейчас</p>
 		<a href="#" class="btn btn-outline">Оплатить</a>
 	</div>
-		
+
 	</section>
 
 </div>
