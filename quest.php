@@ -23,10 +23,10 @@
 	<section class="quest-section-first">
 		
 		
-	<img class="quest-icon" src="series-icons/icon-fire-extinguisher.svg"
-		 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
 	<img class="quest-icon" src="series-icons/icon-cactus.svg"
 		 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+	<img class="quest-icon" src="series-icons/icon-fire-extinguisher.svg"
+		 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
 	<img class="quest-icon" src="series-icons/icon-skull.svg"
 		 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
 		
