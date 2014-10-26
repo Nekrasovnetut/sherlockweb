@@ -41,12 +41,7 @@
 По словам метеорологов, в настоящее время наблюдается крупнейшая погодная аномалия последних десятилетий. Значительные холода отмечаются по всей северной части Европейской России, в ряде пунктов Республики Коми, Ненецкого АО и Архангельской области.
 	</p>
 	
-	<div class="textpage-contacts-colums">
-		<div class="textpage-contacts-colums-one">PR и внешние коммуникации</div>
-		<div class="textpage-contacts-colums-two">Екатерина Коновалова</div>
-		<div class="textpage-contacts-colums-three">+7 905 384-34-34 konovalova@sherlockgame.ru</div>
-	</div>
-	
+		
 </section>
 
 </div>

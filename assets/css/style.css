@@ -2965,6 +2965,11 @@ html, body {
   position: absolute;
   z-index: 1;
 }
+@media (max-width: 950px) {
+  .collection-map-item-noitem {
+    display: none;
+  }
+}
 .collection-map-item-heading {
   font-size: 21px;
   width: 115px;
@@ -3436,10 +3441,50 @@ section.printed {
   padding-bottom: 1em;
   margin: 0;
 }
+.textpage-contacts-colums {
+  padding-bottom: 1.5em;
+  padding-top: 1.5em;
+}
 .textpage-contacts-colums div {
   float: left;
   margin-left: 0%;
-  width: 30%;
+}
+@media (max-width: 650px) {
+  .textpage-contacts-colums div {
+    float: none;
+  }
+}
+.textpage-contacts-colums-one {
+  width: 33.333333333%;
+  padding-right: 20%;
+}
+@media (max-width: 650px) {
+  .textpage-contacts-colums-one {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.textpage-contacts-colums-two {
+  width: 33.333333333%;
+  color: #BC6F00;
+  padding-right: 20%;
+}
+@media (max-width: 650px) {
+  .textpage-contacts-colums-two {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+.textpage-contacts-colums-three {
+  width: 33.333333333%;
+}
+@media (max-width: 650px) {
+  .textpage-contacts-colums-three {
+    width: 100%;
+  }
+}
+.textpage-contacts-colums-three span {
+  color: #BC6F00;
 }
 
 /*------------------------------------*\

@@ -209,8 +209,8 @@
 
 			<article class="collection-map-item">
 				<div class="collection-map-item-noitem">
-					<img src="assets/images/icons/no-item.svg"
-						 onerror="this.onerror=null; this.src='assets/images/icons/no-item.png'" />
+					<img src="assets/images/no-item.svg"
+						 onerror="this.onerror=null; this.src='assets/images/no-item.png'" />
 				</div>
 			</article>
 
