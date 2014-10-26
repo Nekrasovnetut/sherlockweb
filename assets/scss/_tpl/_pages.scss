@@ -15,21 +15,44 @@
 		
 		&-colums {
 				@extend %mcf;
+				padding-bottom: 1.5em;
+				padding-top: 1.5em;
+
+				
 			div{
 				@extend %mcf;
 				float: left;
 				margin-left: 0%;
-				width: 30%;
+				@include mq(small){
+				float: none;
+				}
 			}
 			
 			&-one {
-				
+				width: 33.333333333%;
+				padding-right: 20%;
+				@include mq(small){
+				width: 100%;
+				padding-right: 0;
+				}
 			}
 			&-two {
-			
+				width: 33.333333333%;
+				color: $accent-color;
+				padding-right: 20%;
+				@include mq(small){
+				width: 100%;
+				padding-right: 0;
+				}
 			}
 			&-three {
-			
+				width: 33.333333333%;
+				@include mq(small){
+				width: 100%;
+				}
+				span {
+					color: $accent-color;
+				}
 			}
 		}
 

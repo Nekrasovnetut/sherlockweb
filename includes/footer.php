@@ -1,8 +1,8 @@
 <footer class="footer">
 	<nav class="footer-nav nav">
 		<ul>
-			<li class="nav-item"><a href="#">Франшиза</a></li> 
-			<li class="nav-item"><a href="#">Пресса о нас</a></li>
+			<li class="nav-item"><a href="text.php">Франшиза</a></li> 
+			<li class="nav-item"><a href="text.php">Пресса о нас</a></li>
 		</ul>
 	</nav>
 	<ul class="centery">

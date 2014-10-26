@@ -43,7 +43,13 @@
 		&-item {
 			width: 285px;
 			margin-bottom: 2em;
-
+			
+			&-noitem{
+				@include mq(medium) {
+					display: none;
+				}
+			}
+			
 			&-heading {
 				font-size: 21px;
 				width: 115px;
