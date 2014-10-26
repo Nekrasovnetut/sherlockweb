@@ -150,6 +150,14 @@
           transform: rotate(-45deg);
 }
 
+.icon-photo:before {
+  content: "\e000";
+}
+
+.icon-photo-fill:before {
+  content: "\e012";
+}
+
 /*------------------------------------*\
 	Resets:
 \*------------------------------------*/

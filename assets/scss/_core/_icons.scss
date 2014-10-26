@@ -139,3 +139,10 @@
 		}
 	}
 }
+
+.icon-photo:before {
+  content: "\e000";
+}
+.icon-photo-fill:before {
+  content: "\e012";
+}

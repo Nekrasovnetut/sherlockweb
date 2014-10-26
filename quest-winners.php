@@ -73,7 +73,7 @@
 					</td>
 
 					<td>
-						<a href="#"><i class="icon-clock"></i></a>
+						<a href="#"><i class="icon-photo"></i></a>
 					</td>
 				</tr>
 
@@ -95,7 +95,7 @@
 					</td>
 
 					<td>
-						<a href="#"><i class="icon-clock"></i></a>
+						<a href="#"><i class="icon-photo-fill"></i></a>
 					</td>
 				</tr>
 
@@ -117,7 +117,7 @@
 					</td>
 
 					<td>
-						<a href="#"><i class="icon-clock"></i></a>
+						<a href="#"><i class="icon-photo"></i></a>
 					</td>
 				</tr>
 
@@ -139,7 +139,7 @@
 					</td>
 
 					<td>
-						<a href="#"><i class="icon-clock"></i></a>
+						<a href="#"><i class="icon-photo"></i></a>
 					</td>
 				</tr>
 
@@ -161,7 +161,7 @@
 					</td>
 
 					<td>
-						<a href="#"><i class="icon-clock"></i></a>
+						<a href="#"><i class="icon-photo"></i></a>
 					</td>
 				</tr>
 				</tbody>

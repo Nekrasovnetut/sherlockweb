@@ -66,7 +66,7 @@
 
 			<li class="nav-item <?= currentPage("sertificat") ?>"><a href="certificate.php">Сертификат</a></li>
 			<li class="nav-item  <?= currentPage("contacts") ?>"><a href="contacts.php">Контакты</a></li>
-			<li class="nav-item  <?= currentPage("user") ?>"><a href="user.php"><i class="icon-user"></i> Личный кабинет</a></li>
+			<li class="nav-item  <?= currentPage("user") ?>"><a href="user.php"><i class="icon-user"></i> Иван</a></li>
 
 			<div class="header-nav-triangle"></div>
 
