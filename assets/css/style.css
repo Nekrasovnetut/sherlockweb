@@ -2809,10 +2809,13 @@ html, body {
   bottom: .25em;
 }
 .quest-info {
-  width: 48%;
+  width: 45%;
   display: inline-block;
   vertical-align: top;
   margin-bottom: 2.5em;
+}
+.quest-info--container {
+  white-space: nowrap;
 }
 .quest-info + .quest-info {
   margin-left: 15px;

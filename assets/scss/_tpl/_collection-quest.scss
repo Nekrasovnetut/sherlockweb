@@ -117,10 +117,14 @@
 	}
 
 	&-info {
-		width: 48%;
+		width: 45%;
 		display: inline-block;
 		vertical-align: top;
 		margin-bottom: 2.5em;
+
+		&--container {
+			white-space: nowrap;
+		}
 
 		& + & {
 			margin-left: 15px;
