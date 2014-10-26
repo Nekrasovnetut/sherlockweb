@@ -197,10 +197,14 @@
 		hr {
 			margin-top: 1em;
 			margin-bottom: 1em;
+		}		
+
+}
+
+.booking-pay-item{
+	.covermini {
+		@include mq(small){
+		display: none;
 		}
-
-		
-
-		
-
+	}	
 }

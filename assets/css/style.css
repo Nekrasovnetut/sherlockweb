@@ -1748,6 +1748,12 @@ hr {
   margin-bottom: 1em;
 }
 
+@media (max-width: 650px) {
+  .booking-pay-item .covermini {
+    display: none;
+  }
+}
+
 .schedule {
   width: 100%;
   table-layout: fixed;
@@ -2363,18 +2369,47 @@ html, body {
 .booking-pay .section {
   padding: 25px 8% 50px;
 }
+@media (max-width: 650px) {
+  .booking-pay .section {
+    padding-top: 10px;
+  }
+}
 .booking-pay-variant {
   width: 33.333333333%;
   float: left;
 }
+@media (max-width: 650px) {
+  .booking-pay-variant {
+    float: none;
+    width: 100%;
+    padding-bottom: 2em;
+  }
+}
 .booking-pay-variant + .booking-pay-variant {
   padding-left: 5%;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant + .booking-pay-variant {
+    padding-left: 0;
+  }
 }
 .booking-pay-variant p {
   height: 100px;
 }
+@media (max-width: 650px) {
+  .booking-pay-variant p {
+    height: auto;
+  }
+}
 .booking-pay-variant h4 {
-  height: 30px;
+  height: 3em;
+  padding: 0;
+  margin: 0;
+}
+@media (max-width: 650px) {
+  .booking-pay-variant h4 {
+    height: auto;
+  }
 }
 
 .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {

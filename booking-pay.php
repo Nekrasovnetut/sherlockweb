@@ -10,7 +10,7 @@
 		
 	<section class="section">
 		
-		<div class="quest-item booking-final-item">
+		<div class="quest-item booking-final-item booking-pay-item">
 			<div class="quest-item-img">
 				<figure class="covermini">
 					<div class="age">+18</div>
