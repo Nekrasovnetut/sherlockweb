@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-pay .section, .collection-list .section, .quest .section, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-pay .section, .collection-list .section, .quest .section, .quest-top, .quest-quest, .quest-section-first, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-pay .section:after, .collection-list .section:after, .quest .section:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-pay .section:after, .collection-list .section:after, .quest .section:after, .quest-top:after, .quest-quest:after, .quest-section-first:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1257,7 +1257,6 @@ html {
   height: 155px;
   line-height: 155px;
   text-align: center;
-  background: white;
 }
 @media (max-width: 400px) {
   .quote {
@@ -2698,6 +2697,27 @@ html, body {
     padding-top: 30px;
   }
 }
+.quest-icon {
+  position: absolute;
+}
+@media (max-width: 650px) {
+  .quest-icon {
+    display: none;
+  }
+}
+.quest-icon:nth-of-type(1) {
+  left: 0;
+}
+.quest-icon:nth-of-type(2) {
+  bottom: -50px;
+}
+.quest-icon:nth-of-type(3) {
+  right: 0;
+}
+.quest-section-first {
+  padding: 70px 8% 0;
+  position: relative;
+}
 .quest .quote {
   font-size: 20px;
 }
@@ -3431,10 +3451,8 @@ section.printed {
 }
 
 @media print {
-  body {
-    color: black;
-    height: 100%;
-    overflow: hidden;
+  .booking-final {
+    display: none;
   }
 
   .header, .header-ghost {
@@ -3459,6 +3477,28 @@ section.printed {
 
   section.printed {
     display: block;
+  }
+
+  .printed-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+  }
+  .printed img {
+    padding-top: 15%;
+  }
+
+  .printed-list {
+    text-align: center;
+    width: 100%;
+  }
+  .printed-list .age {
+    display: inline-block;
+  }
+
+  .section-non-printed {
+    display: none;
   }
 }
 .textpage .section {

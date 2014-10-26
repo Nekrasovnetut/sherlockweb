@@ -3,8 +3,7 @@
 	margin: 0 auto;
 	height: 155px; line-height: 155px;
 	text-align: center;
-	background: white;
-
+	
 	@include mq(to-small) {
 		display: none;
 	}
