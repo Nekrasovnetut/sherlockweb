@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-pay .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-pay .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -2360,6 +2360,23 @@ html, body {
     display: none;
   }
 }
+.booking-pay .section {
+  padding: 25px 8% 50px;
+}
+.booking-pay-variant {
+  width: 33.333333333%;
+  float: left;
+}
+.booking-pay-variant + .booking-pay-variant {
+  padding-left: 5%;
+}
+.booking-pay-variant p {
+  height: 100px;
+}
+.booking-pay-variant h4 {
+  height: 30px;
+}
+
 .collection-0 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2), .collection-0 .collection-map-item:nth-of-type(3) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(1) .collection-map-item-icons img:nth-of-type(2), .collection-1 .collection-map-item:nth-of-type(2) .collection-map-item-icons img:nth-of-type(2) {
   bottom: 100%;
   margin-bottom: -22px;

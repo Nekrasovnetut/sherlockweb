@@ -1,0 +1,24 @@
+.booking-pay{
+	.section {
+		@extend %mcf;
+		padding: 25px 8% 50px;
+		
+	}
+	
+	&-variant{
+		width: 33.333333333%;
+		float: left;
+		
+		& + & {
+			padding-left: 5%;
+		}
+		
+		p {
+			height: 100px;
+		}
+		
+		h4{
+			height: 30px;
+		}
+	}
+}
