@@ -3077,7 +3077,7 @@ html, body {
   left: -50px;
   top: 0;
   right: -100px;
-  bottom: 0;
+  bottom: -25px;
 }
 @media (max-width: 950px) {
   .collection-map-content-bg {
@@ -3133,7 +3133,7 @@ html, body {
   }
 }
 .svg .collection-user .collection-map-content-bg {
-  background: url("../images/layout/user/path-1.svg") no-repeat 530px 90px, url("../images/layout/user/path-2.svg") no-repeat 275px 280px, url("../images/layout/user/path-3.svg") no-repeat 475px 475px, url("../images/layout/user/path-4.svg") no-repeat 395px 740px, url("../images/layout/user/path-5.svg") no-repeat 525px 945px;
+  background: url("../images/layout/user/path-1.svg") no-repeat 530px 90px, url("../images/layout/user/path-2.svg") no-repeat 275px 280px, url("../images/layout/user/path-3.svg") no-repeat 475px 475px, url("../images/layout/user/path-4.svg") no-repeat 395px 740px, url("../images/layout/user/path-5.svg") no-repeat 525px 930px;
 }
 .no-svg .collection-user .collection-map-content-bg {
   background: url("../images/layout/user/path-1.png") no-repeat 530px 90px, url("../images/layout/user/path-2.png") no-repeat 275px 280px, url("../images/layout/user/path-3.png") no-repeat 475px 475px, url("../images/layout/user/path-4.png") no-repeat 395px 740px, url("../images/layout/user/path-5.png") no-repeat 525px 945px;
