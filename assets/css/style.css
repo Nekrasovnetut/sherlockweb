@@ -1059,6 +1059,10 @@ html {
   bottom: 0;
   width: 90px;
 }
+.form-item h4 {
+  margin-bottom: 0;
+  color: #BC6F00;
+}
 .form-item .parsley-errors-list {
   margin-left: -.5em;
   color: #F66534;
@@ -1125,6 +1129,10 @@ html {
 }
 .form-message--error {
   color: #F66534;
+}
+.form-message--error .form-message-icon {
+  background: #F66534;
+  color: white;
 }
 .form-message-icon {
   float: left;
@@ -1348,7 +1356,7 @@ h3 {
   margin-bottom: .75em;
 }
 .section-heading h3 {
-  margin-bottom: .25em;
+  margin-bottom: 20px;
 }
 
 h4 {
@@ -1356,7 +1364,10 @@ h4 {
   line-height: 1.25em;
   margin-bottom: 1.4em;
 }
-.section-heading h4, .footer h4 {
+.section-heading h4 {
+  font-size: 21px;
+}
+.footer h4 {
   text-transform: uppercase;
   margin-bottom: 2em;
 }
@@ -3137,7 +3148,7 @@ html, body {
 }
 .no-svg .collection-user .collection-map-content-bg {
   background: url("../images/layout/user/path-1.png") no-repeat 530px 90px, url("../images/layout/user/path-2.png") no-repeat 275px 280px, url("../images/layout/user/path-3.png") no-repeat 475px 475px, url("../images/layout/user/path-4.png") no-repeat 395px 740px, url("../images/layout/user/path-5.png") no-repeat 525px 945px;
-  -pie-background: url("../images/layout/user/path-1.png") no-repeat 190px 20px, url("../images/layout/user/path-2.png") no-repeat 695px 210px;
+  -pie-background: url("../images/layout/user/path-1.png") no-repeat 530px 90px, url("../images/layout/user/path-2.png") no-repeat 275px 280px, url("../images/layout/user/path-3.png") no-repeat 475px 475px, url("../images/layout/user/path-4.png") no-repeat 395px 740px, url("../images/layout/user/path-5.png") no-repeat 525px 945px;
 }
 .collection-user .collection-map-item {
   color: #505050;

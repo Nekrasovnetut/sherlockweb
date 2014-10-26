@@ -44,6 +44,11 @@
 			width: 90px;
 		}
 
+		h4 {
+			margin-bottom: 0;
+			color: $accent-color;
+		}
+
 		.parsley-errors-list {
 			margin-left: -.5em;
 			color: $wrong;
@@ -126,6 +131,11 @@
 
 		&--error {
 			color: $wrong;
+
+			.form-message-icon {
+				background: $wrong;
+				color: white;
+			}
 		}
 
 		&-icon {

@@ -18,7 +18,9 @@
 
 <div class="page">
 	<section class="section"><div class="aligner">
-		<h4>Забронированные квесты</h4>
+		<div class="section-heading">
+			<h4 class="accent">Забронированные квесты</h4>
+		</div>
 
 		<table class="table-standart">
 			<thead>
@@ -68,7 +70,7 @@
 	</div></section>
 	<section class="section collection-map collection-user">
 		<header class="section-heading"><a href="collection-list.php">
-			<h3> Пройденные квесты </h3>
+			<h4 class="accent"> Пройденные квесты </h4>
 		</a></header>
 
 		<? for($i = 1; $i <= 2; $i++) { ?>

@@ -62,9 +62,9 @@
 				}
 			?>
 
-			<li class="nav-item <?= currentPage("about") ?>"><a href="about.php">О проекте</a></li>
+			<li class="nav-item <?= currentPage("about") ?>"><a href="text.php">О проекте</a></li>
 
-			<li class="nav-item <?= currentPage("sertificat") ?>"><a href="#">Сертификат</a></li>
+			<li class="nav-item <?= currentPage("sertificat") ?>"><a href="certificate.php">Сертификат</a></li>
 			<li class="nav-item  <?= currentPage("contacts") ?>"><a href="contacts.php">Контакты</a></li>
 			<li class="nav-item  <?= currentPage("user") ?>"><a href="user.php"><i class="icon-user"></i> Личный кабинет</a></li>
 
@@ -98,7 +98,7 @@
 								<label class="checkbox" for="remember-me2">Запомнить меня</label>
 							</div>
 							<div class="form-item to-right">
-								<a href="#" class="label"> Я не помню пароль </a>
+								<a href="lost.php" class="label"> Я не помню пароль </a>
 							</div>
 						</div>
 						<div class="form-row">
