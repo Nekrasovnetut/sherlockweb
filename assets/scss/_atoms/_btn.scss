@@ -6,6 +6,7 @@
 	font-size: 10px;
 	line-height: 1;
 	text-transform: uppercase;
+	white-space: nowrap;
 
 	i:first-child {
 		margin-right: 3px;
@@ -23,6 +24,26 @@
 
 	font-weight: bold;
 	border-radius: 40px;
+	position: relative;
+	overflow: hidden;
+
+	i.icon-arrow-right{
+		width: 0;
+		position: absolute;
+
+		&:before {
+			left: 20px; opacity: 0;
+
+			transition: all .2s;
+		}
+	}
+
+	&:hover {
+		i.icon-arrow-right:before {
+			left: 5px;
+			opacity: 1;
+		}
+	}
 
 	&--big {
 		font-size: 14px;
@@ -54,7 +75,8 @@
 		@extend %reset-appearance;
 		@extend %btn-base;
 
-		text-decoration: underline;
+		color: $accent-color;
+		border-bottom: 1px solid;
 	}
 
 	&-white {

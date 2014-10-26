@@ -1,0 +1,40 @@
+.table-standart {
+	width: 100%;
+	text-align: left;
+
+	thead {
+		font-weight: bold;
+		text-align: left;
+
+		tr {
+			height: 50px;
+//			vertical-align: top;
+		}
+	}
+
+	tbody {
+		td {
+			height: 50px;
+
+			padding-right: 1em;
+
+			&:last-child {
+				border-top: none;
+				text-align: center;
+				padding-right: 0;
+			}
+
+/*
+			&:nth-of-type(3) {
+
+			}
+*/
+		}
+
+		tr + tr {
+			td {
+				border-top: 1px solid $light-grey;
+			}
+		}
+	}
+}

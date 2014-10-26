@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .collection-list .section, .quest .section, .quest-info-label, .winners .section, .textpage .section, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .quest-info-label, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .collection-list .section:after, .quest .section:after, .quest-info-label:after, .winners .section:after, .textpage .section:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .quest-info-label:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -948,6 +948,7 @@ html {
   font-size: 10px;
   line-height: 1;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 .btn i:first-child, .btn-simple i:first-child, .btn-link i:first-child {
   margin-right: 3px;
@@ -959,6 +960,22 @@ html {
   padding: .75em 2.25em;
   font-weight: bold;
   border-radius: 40px;
+  position: relative;
+  overflow: hidden;
+}
+.btn i.icon-arrow-right {
+  width: 0;
+  position: absolute;
+}
+.btn i.icon-arrow-right:before {
+  left: 20px;
+  opacity: 0;
+  -webkit-transition: all .2s;
+          transition: all .2s;
+}
+.btn:hover i.icon-arrow-right:before {
+  left: 5px;
+  opacity: 1;
 }
 .btn--big {
   font-size: 14px;
@@ -980,7 +997,8 @@ html {
   letter-spacing: .1em;
 }
 .btn-link {
-  text-decoration: underline;
+  color: #BC6F00;
+  border-bottom: 1px solid;
 }
 .btn-white {
   background: white;
@@ -1386,6 +1404,13 @@ hr {
   color: #404040;
 }
 
+.info {
+  margin-bottom: 30px;
+}
+.info li {
+  margin-bottom: .75em;
+}
+
 /*------------------------------------*\
 	Молекулы:
 \*------------------------------------*/
@@ -1396,7 +1421,7 @@ hr {
   .centery {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
-    overflow-x: scroll;
+    overflow-x: auto;
     overflow-y: hidden;
   }
 }
@@ -1870,6 +1895,35 @@ hr {
   padding-bottom: 20px;
 }
 
+.table-standart {
+  width: 100%;
+  text-align: left;
+}
+.table-standart thead {
+  font-weight: bold;
+  text-align: left;
+}
+.table-standart thead tr {
+  height: 50px;
+}
+.table-standart tbody td {
+  height: 50px;
+  padding-right: 1em;
+  /*
+  			&:nth-of-type(3) {
+  
+  			}
+  */
+}
+.table-standart tbody td:last-child {
+  border-top: none;
+  text-align: center;
+  padding-right: 0;
+}
+.table-standart tbody tr + tr td {
+  border-top: 1px solid #ddd;
+}
+
 .tabs-content {
   -webkit-transition: height .2s;
           transition: height .2s;
@@ -1973,8 +2027,20 @@ html, body {
     padding-left: 1em;
   }
 }
-.header-nav {
-  position: relative;
+.header-nav--on-right {
+  white-space: nowrap;
+  text-align: right;
+}
+.header-nav--on-right .nav-item:last-child:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: 0;
+  height: 10px;
+  width: 1px;
+  background: white;
 }
 @media (max-width: 650px) {
   .header-nav {
@@ -1984,7 +2050,7 @@ html, body {
   }
   .header-nav-toggle.is-active + .header-nav {
     clear: both;
-    min-height: 600px;
+    min-height: 1024px;
     text-align: left;
     display: block !important;
     width: 100%;
@@ -1999,6 +2065,7 @@ html, body {
   .header-nav-toggle.is-active + .header-nav > ul {
     float: none !important;
     display: block;
+    text-align: left;
   }
   .header-nav-toggle.is-active + .header-nav .nav-item {
     display: block;
@@ -2119,7 +2186,7 @@ html, body {
 .nav-item > a, .nav-item > span {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 11px;
+  font-size: 12px;
 }
 .nav-item > a i, .nav-item > span i {
   margin-right: 2px;
@@ -2247,19 +2314,19 @@ html, body {
   color: black;
 }
 .page-cover {
-  height: 350px;
+  min-height: 350px;
   overflow: hidden;
   position: relative;
   z-index: 0;
 }
 @media (max-width: 650px) {
   .page-cover {
-    height: 250px;
+    min-height: 250px;
   }
 }
 @media (max-width: 400px) {
   .page-cover {
-    height: 200px;
+    min-height: 200px;
   }
 }
 .page-cover-bg img {
@@ -2285,6 +2352,23 @@ html, body {
 .page-cover-bg + .page-cover-content {
   color: white;
 }
+.page-cover-content {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+@media (max-width: 950px) {
+  .page-cover-content {
+    padding-top: 14%;
+    padding-bottom: 14%;
+  }
+}
+.page-cover-content h2 {
+  margin-bottom: 30px;
+}
+.page-cover + .page {
+  border-top: 1px solid #ddd;
+}
 
 .fixed-top {
   position: fixed;
@@ -2300,8 +2384,11 @@ html, body {
   }
 }
 
-.section {
-  padding: 35px 0 50px;
+.section, .section-color {
+  padding: 35px 8% 50px;
+}
+.section-color {
+  background: #f4f4f4;
 }
 
 .splitter {
@@ -2340,7 +2427,7 @@ html, body {
 /*------------------------------------*\
 	Шаблоны:
 \*------------------------------------*/
-.booking-final .section {
+.booking-final .section, .booking-final .section-color {
   padding: 70px 8% 50px;
 }
 .booking-final-heading a {
@@ -2409,7 +2496,7 @@ html, body {
   bottom: 60px;
 }
 
-.collection-list .section {
+.collection-list .section, .collection-list .section-color {
   padding: 70px 8% 50px;
 }
 .collection-list-bottomborder {
@@ -2489,11 +2576,11 @@ html, body {
   padding-left: 1em;
 }
 
-.quest .section {
+.quest .section, .quest .section-color {
   padding: 70px 8% 50px;
 }
 @media (max-width: 650px) {
-  .quest .section {
+  .quest .section, .quest .section-color {
     padding-top: 30px;
   }
 }
@@ -2649,11 +2736,11 @@ html, body {
 .winners-heading {
   position: relative;
 }
-.winners .section {
+.winners .section, .winners .section-color {
   padding: 0px 8% 50px;
 }
 @media (max-width: 650px) {
-  .winners .section {
+  .winners .section, .winners .section-color {
     padding: 0px 0px 50px;
   }
 }
@@ -2876,7 +2963,7 @@ html, body {
 .collection-0 .page-heading h3, .collection-0 .page-heading h2 {
   color: #26C0D5;
 }
-.collection-0.section {
+.collection-0.section, .collection-0.section-color {
   background: #26C0D5;
 }
 .collection-0 .btn {
@@ -3011,7 +3098,7 @@ html, body {
 .collection-1 .page-heading h3, .collection-1 .page-heading h2 {
   color: #89CC32;
 }
-.collection-1.section {
+.collection-1.section, .collection-1.section-color {
   background: #89CC32;
 }
 .collection-1 .btn {
@@ -3141,8 +3228,10 @@ html, body {
   padding: 18px  40px 30px;
   line-height: 40px;
   background-color: #2C3236;
-  color: white;
   font-size: 12px;
+}
+._login-dropdown, ._login-dropdown .btn-link {
+  color: white;
 }
 ._login-dropdown .form {
   width: 290px;
@@ -3153,17 +3242,8 @@ html, body {
 }
 
 ._sherlock-about {
-  text-align: center;
   width: 100%;
-  padding-top: 120px;
-  padding-bottom: 120px;
   height: auto;
-}
-@media (max-width: 950px) {
-  ._sherlock-about {
-    padding-top: 14%;
-    padding-bottom: 14%;
-  }
 }
 ._sherlock-about .description {
   font-size: 1.5em;
@@ -3224,7 +3304,7 @@ section.printed {
     display: none;
   }
 
-  section.section {
+  section.section, section.section-color {
     padding: 0 !important;
   }
 
@@ -3236,7 +3316,7 @@ section.printed {
     display: block;
   }
 }
-.textpage .section {
+.textpage .section, .textpage .section-color {
   padding: 70px 8% 50px;
 }
 .textpage h3 {
@@ -3303,7 +3383,7 @@ section.printed {
 /* 	Magic ***
 	http://www.fionachan.net/talks/block-formatting-context/#/
 */
-.header-nav, .bfc {
+.bfc {
   display: table-cell;
   width: 9999px;
   vertical-align: top;

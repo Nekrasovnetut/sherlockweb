@@ -2,8 +2,12 @@
 	padding: 18px  40px 30px;
 	line-height: 40px;
 	background-color: $main-color;
-	color: white;
+
 	font-size: 12px;
+
+	&, .btn-link {
+		color: white;
+	}
 
 	.form {
 		width: 290px;

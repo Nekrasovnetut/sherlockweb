@@ -1,18 +1,8 @@
 // :(
 
 ._sherlock-about {
-	text-align: center;
-//	padding-top: 160px; padding-bottom: 160px;
 	width: 100%;
-	padding-top: 120px;
-	padding-bottom: 120px;
-
 	height: auto;
-
-	@include mq(medium) {
-		padding-top: 14%;
-		padding-bottom: 14%;
-	}
 
 	.description {
 		font-size: 1.5em; // 24px 1.6em

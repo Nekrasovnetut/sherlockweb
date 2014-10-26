@@ -54,7 +54,7 @@
 				</div>
 			</li>
 		</ul>
-		<ul class="to-right">
+		<ul class="header-nav--on-right">
 			<? 	function currentPage($page) {
 					$self =  preg_replace('/\\.[^.\\s]{3,4}$/', '', basename($_SERVER['PHP_SELF']));
 
@@ -66,6 +66,7 @@
 
 			<li class="nav-item <?= currentPage("sertificat") ?>"><a href="#">Сертификат</a></li>
 			<li class="nav-item  <?= currentPage("contacts") ?>"><a href="#">Контакты</a></li>
+			<li class="nav-item  <?= currentPage("cabinet") ?>"><a href="user.php">Личный кабинет</a></li>
 
 			<div class="header-nav-triangle"></div>
 

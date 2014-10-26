@@ -1,25 +1,25 @@
 .centery {
 	text-align: center;
-	
+
 	@include mq(small) {
 		white-space: nowrap;
 		-webkit-overflow-scrolling: touch;
-		overflow-x: scroll;
+		overflow-x: auto;
 		overflow-y: hidden;
 	}
-	
+
 	&-item {
 		display: inline-block;
 		vertical-align: middle;
 		margin: 0 15px;
-		
+
 		@include mq(small) {
 			margin: 0 5px;
 		}
-		
+
 		.centery--wider & {
 			margin: 0 30px;
-			
+
 			@include mq(small) {
 				margin: 0 15px;
 			}

@@ -53,8 +53,22 @@ $header-height: 50px;
 	}
 
 	&-nav {
-		position: relative;
-		@extend %bfc; // http://www.fionachan.net/talks/block-formatting-context/#/
+		//position: relative;
+
+		&--on-right {
+			white-space: nowrap;
+			text-align: right;
+
+			.nav-item:last-child:before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 50%; margin-top: -5px; left: 0;
+				height: 10px;
+				width: 1px;
+				background: white;
+			}
+		}
 
 		@include mq(small) {
 			display: none !important;
@@ -63,7 +77,7 @@ $header-height: 50px;
 
 			&-toggle.is-active + & {
 				clear: both;
-				min-height: 600px;
+				min-height: 1024px;
 
 				text-align: left;
 
@@ -81,6 +95,7 @@ $header-height: 50px;
 				> ul {
 					float: none !important;
 					display: block;
+					text-align: left;
 				}
 
 				.nav-item {
@@ -142,7 +157,6 @@ $header-height: 50px;
 		}
 
 		.nav-item {
-//			background: $main-color;
 			color: #fff;
 			height: $header-height;
 		}
