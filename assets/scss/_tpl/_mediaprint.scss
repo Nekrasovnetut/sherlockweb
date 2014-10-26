@@ -4,10 +4,11 @@ section.printed {
 
 @media print {
 	
-	body {
-		color: black;
-		height: 100%;
-		overflow: hidden;
+
+
+	
+	.booking-final{
+		display: none;
 	}
 	
 	.header, .header-ghost{
@@ -30,6 +31,33 @@ section.printed {
 	}
 	
 	section.printed{
-		display: block;
+		display: block;	
 	}
-}
+	
+	.printed{
+		&-footer{
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+			left: 0;
+		}
+		
+		img{
+			padding-top: 15%;
+		}
+	}
+	
+	.printed-list{
+		text-align: center;
+		width: 100%;
+		.age {
+			display: inline-block;
+		}
+	}
+	
+	.section-non-printed{
+		display: none;
+	}
+
+}	
+

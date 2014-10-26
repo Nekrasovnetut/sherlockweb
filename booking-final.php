@@ -6,24 +6,14 @@
 
 
 
+
 <div class="page booking-final">
 	
 <header class="page-heading booking-final-heading">
 	<h2>Квест забронирован</h2>	
 	<p>Подробную информация о нём вы можете посмотреть его вы можете в своем <a href="#">личном кабинете</a></p>
 </header>
-
-<section class="printed">
-	<img src="assets/images/logo.svg"
-				 onerror="this.onerror=null;
-				 this.src='assets/images/logo.png'" width="350" height="111" alt="Логотип Шерлок" />
-
-	<h2>Бронирование квеста</h2>
-</section>
-
-<section class="section">
-	
-	
+<section class="section section-non-printed">
 	
 	<div class="quest-item booking-final-item">
 			<div class="quest-item-img">
@@ -69,6 +59,26 @@
 </section>
 
 </div>
+
+<!-- Ниже идет версия для печати -->
+
+<section class="printed printed-list">
+	<img src="assets/images/logo.svg" onerror="this.onerror=null; this.src='assets/images/logo.png'" width="150" alt="Логотип Шерлок" />
+
+	<h2>Бронирование квеста</h2>
+	<p>21 сентября, 14:45</p>
+	<p>2000 руб</p>
+	<p>м. Кропоткинская, Большой Афанасьевский пер., 15, стр. 1</p>
+	<div class="age age--circle">+18</div>
+	<h3>Желаем хорошей игры</h3>
+	<ul>
+		<li>sherlockgame.ru</li>
+		<li>8 923 456-56-12</li>
+	</ul>
+	<p class="printed-footer">&copy Шерлок. Все права защищены. 2014</p>
+</section>
+
+<!-- Конец версии для печати -->
 
 <? include "includes/scripts.php" ?>
 <? include "includes/footer.php" ?>
