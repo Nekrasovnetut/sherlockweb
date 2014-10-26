@@ -7,7 +7,7 @@
 	<div class="aligner splitter">
 		<div class="splitter-item">
 			<form class="form" data-parsley-validate>
-				<p class="faded form-text">Изменение личных данных</p>
+				<p class="faded form-text"> <a href="user.php" class="btn-left _back-btn">Назад</a> Изменение личных данных</p>
 				<div class="form-message form-message--error is-hidden">
 					<span class="exclamation form-message-icon">!</span>
 					<p class="form-message-text">Поля, выделенные красным не&nbsp;заполнены или заполнены неверно</p>

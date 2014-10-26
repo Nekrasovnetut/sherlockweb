@@ -12,24 +12,25 @@ $collection-color-assets: #26C0D5;
 		border-radius: 1em;
 		float: left;
 	}
-	
+
 	&-back{
 		position: absolute;
 		top: 50%;
 		left: 8%;
+		color: $medium-grey;
 	}
-	
+
 	&-heading {
 		position: relative;
-		
+
 	}
-	
+
 	.section{
 		@extend %mcf;
 		padding: 0px 8% 50px;
 		@include mq(small){padding: 0px 0px 50px;}
 	}
-	
+
 	&-table {
 		width: 100%;
 		table-layout: fixed;
@@ -38,15 +39,15 @@ $collection-color-assets: #26C0D5;
 		min-width: 320px;
 
 		tr {
-			
+
 					}
-		
+
 		@include mq(small){
 			font-size: 12px;
 		}
-		
 
-		
+
+
 		td{
 			&:first-of-type{
 				padding-left: 8%;
@@ -57,57 +58,57 @@ $collection-color-assets: #26C0D5;
 			padding: 1em;
 			@include mq(small){padding: 0.6em;}
 		}
-		
+
 		&-header {
 			color: $collection-color-assets;
-			font-size: 0.8em;	
-			height: 3em;					
+			font-size: 0.8em;
+			height: 3em;
 		}
-		
-		&-team {	
+
+		&-team {
 			&:hover{background-color: $sexy-grey;}
 			height: 3em;
 		}
-		
+
 		&-userteam {
 			background-color: $collection-color-assets;
 			color: white;
 			height: 3em;
 		}
-		
-		&-mesto {	
+
+		&-mesto {
 			width: 6%
 		}
-		
-		&-comanda {	
+
+		&-comanda {
 			width: 40%;
 			@include mq(small){width: 30%;}
 		}
-		
-		&-vremya {	
+
+		&-vremya {
 			width: 16%
 		}
-		
-		&-data {	
+
+		&-data {
 			width: 16%
 		}
-		
-				
-		&-photo {	
+
+
+		&-photo {
 			width: 10%
 		}
-		
+
 
 		&-firstcol {
 		padding-left: 8%;
 		}
-		
+
 		&-lastcol {
 		padding-right: 8%;
 
 		}
 
-		
+
 	}
 
 }

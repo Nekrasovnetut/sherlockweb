@@ -7,7 +7,7 @@
   font-style: normal;
 }
 [class^="icon-"]:before,
-[class*=" icon-"]:before, .not-ie .checkbox:before, .quote-text:before, .quote-text:after, .js-links-slider .rsArrowLeft .rsArrowIcn:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
+[class*=" icon-"]:before, .btn-left:before, .btn-right:before, .not-ie .checkbox:before, .quote-text:before, .quote-text:after, .js-links-slider .rsArrowLeft .rsArrowIcn:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
   font-family: "sherlock" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -96,7 +96,7 @@
   content: "\e010";
 }
 
-.icon-arrow-left:before, .js-links-slider .rsArrowLeft .rsArrowIcn:before {
+.icon-arrow-left:before, .btn-left:before, .btn-right:before, .js-links-slider .rsArrowLeft .rsArrowIcn:before {
   content: "\e011";
 }
 
@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .quest-info-label, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .quest-info-label:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -916,6 +916,7 @@ html {
 .aligner {
   max-width: 1400px;
   margin: 0 auto;
+  position: relative;
 }
 
 .logo {
@@ -963,17 +964,17 @@ html {
   position: relative;
   overflow: hidden;
 }
-.btn i.icon-arrow-right {
+.btn i {
   width: 0;
   position: absolute;
 }
-.btn i.icon-arrow-right:before {
+.btn i:before {
   left: 20px;
   opacity: 0;
   -webkit-transition: all .2s;
           transition: all .2s;
 }
-.btn:hover i.icon-arrow-right:before {
+.btn:hover i:before {
   left: 5px;
   opacity: 1;
 }
@@ -1003,6 +1004,25 @@ html {
 .btn-white {
   background: white;
   color: #2C3236;
+}
+.btn-left, .btn-right {
+  text-decoration: underline;
+}
+.js-links-slider .rsArrow, .btn-left:before, .btn-right:before {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid;
+  text-align: center;
+  font-size: 12px;
+  line-height: 18px;
+  left: -7px;
+}
+
+._back-btn {
+  position: absolute;
+  left: 0;
 }
 
 .form {
@@ -1411,6 +1431,10 @@ hr {
   margin-bottom: .75em;
 }
 
+.accent {
+  color: #BC6F00;
+}
+
 /*------------------------------------*\
 	Молекулы:
 \*------------------------------------*/
@@ -1529,6 +1553,25 @@ hr {
             transform: scale(1);
   }
 }
+.iconInfo {
+  margin-bottom: 1em;
+  display: table;
+  white-space: normal;
+}
+.iconInfo-icon, .iconInfo-content {
+  vertical-align: middle;
+}
+.iconInfo-icon {
+  display: table-cell;
+  color: #BC6F00;
+  font-size: 24px;
+}
+.iconInfo-content {
+  display: table-cell;
+  font-size: 12px;
+  border-left: .5em solid transparent;
+}
+
 .js-links-slider {
   background: black;
   height: 330px;
@@ -1585,14 +1628,9 @@ hr {
   position: absolute;
   top: 42px;
   right: 52px;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  border: 2px solid white;
-  color: white;
-  text-align: center;
-  font-size: 12px;
+  left: auto;
   line-height: 21px;
+  color: white;
 }
 .js-links-slider .rsArrowLeft {
   right: 80px;
@@ -1640,9 +1678,14 @@ hr {
 .quest-item-top-right {
   float: right;
   width: 40%;
+  margin-top: 5px;
+  white-space: nowrap;
 }
 .quest-item-top-right .quest-info {
   margin-bottom: 0;
+}
+.quest-item-top-right .iconInfo {
+  margin-bottom: 1.5em;
 }
 @media (max-width: 950px) {
   .quest-item-top-right {
@@ -1696,7 +1739,7 @@ hr {
   }
 }
 .quest-item-bottom i {
-  font-size: 2em;
+  font-size: 30px;
 }
 .quest-item-bottom-icon {
   display: inline-block;
@@ -1722,7 +1765,9 @@ hr {
 }
 .booking-final-item-day {
   font-size: 1.5em;
-  padding-bottom: 1em;
+  line-height: 1.2em;
+  white-space: nowrap;
+  padding-bottom: 25px;
 }
 @media (max-width: 950px) {
   .booking-final-item-day {
@@ -1735,7 +1780,7 @@ hr {
   }
 }
 .booking-final-item hr {
-  padding-top: 3.5em;
+  padding-top: .5em;
 }
 @media (max-width: 950px) {
   .booking-final-item hr {
@@ -1756,6 +1801,26 @@ hr {
 .booking-final-item .quest-item-bottom {
   color: #7F7F7F;
   margin-bottom: 1em;
+}
+.booking-final-item .quest-item-bottom i {
+  color: #7F7F7F;
+}
+.booking-final-item .quest-item-bottom .iconInfo-content {
+  font-size: 15px;
+}
+.booking-final-item .quest-item-bottom .age {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #7F7F7F;
+}
+.booking-final-item-bigname {
+  font-size: 40px;
+  line-height: 48px;
+  padding-right: 15px;
+}
+.booking-final-item-bigname + .quest-item-top-right {
+  margin-top: 17px;
 }
 .booking-final-item .covermini {
   height: 225px;
@@ -2749,21 +2814,8 @@ html, body {
   vertical-align: top;
   margin-bottom: 2.5em;
 }
-.quest-info-label {
-  color: #BC6F00;
-  margin-bottom: 2em;
-  font-size: 11px;
-}
-.quest-info-label i {
-  font-size: 24px;
-  float: left;
-  margin-right: .25em;
-}
-.quest-info-label span {
-  overflow: hidden;
-  display: block;
-  line-height: 12px;
-  margin-top: 3px;
+.quest-info + .quest-info {
+  margin-left: 15px;
 }
 .quest-contacts {
   margin-top: 2.5em;
@@ -2784,6 +2836,7 @@ html, body {
   position: absolute;
   top: 50%;
   left: 8%;
+  color: #7F7F7F;
 }
 .winners-heading {
   position: relative;
@@ -3018,6 +3071,9 @@ html, body {
 .collection-0.section, .collection-0.section-color {
   background: #26C0D5;
 }
+.collection-0 .accent {
+  color: #26C0D5;
+}
 .collection-0 .btn {
   background-color: #26C0D5;
 }
@@ -3030,7 +3086,7 @@ html, body {
 .collection-0 .link {
   color: #26C0D5;
 }
-.collection-0 .quest-info-label {
+.collection-0 .iconInfo-icon {
   color: #26C0D5;
 }
 .collection-0 .quote-text:before, .collection-0 .quote-text:after, .collection-0 .quote-author {
@@ -3153,6 +3209,9 @@ html, body {
 .collection-1.section, .collection-1.section-color {
   background: #89CC32;
 }
+.collection-1 .accent {
+  color: #89CC32;
+}
 .collection-1 .btn {
   background-color: #89CC32;
 }
@@ -3165,7 +3224,7 @@ html, body {
 .collection-1 .link {
   color: #89CC32;
 }
-.collection-1 .quest-info-label {
+.collection-1 .iconInfo-icon {
   color: #89CC32;
 }
 .collection-1 .quote-text:before, .collection-1 .quote-text:after, .collection-1 .quote-author {

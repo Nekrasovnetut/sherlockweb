@@ -1,0 +1,24 @@
+.iconInfo {
+	margin-bottom: 1em;
+	display: table;
+	white-space: normal;
+
+	&-icon, &-content {
+		vertical-align: middle;
+	}
+
+	&-icon {
+		display: table-cell;
+
+		color: $accent-color;
+		font-size: 24px;
+	}
+
+	&-content {
+		display: table-cell;
+
+		font-size: 12px;
+
+		border-left: .5em solid transparent;
+	}
+}

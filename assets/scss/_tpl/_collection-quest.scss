@@ -122,24 +122,8 @@
 		vertical-align: top;
 		margin-bottom: 2.5em;
 
-		&-label {
-			@extend %mcf;
-			color: $accent-color;
-			margin-bottom: 2em;
-			font-size: 11px;
-
-			i {
-				font-size: 24px;
-				float: left;
-				margin-right: .25em;
-			}
-
-			span {
-				overflow: hidden;
-				display: block;
-				line-height: 12px;
-				margin-top: 3px;
-			}
+		& + & {
+			margin-left: 15px;
 		}
 	}
 

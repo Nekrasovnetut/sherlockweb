@@ -32,18 +32,19 @@
 
 
 				<div class="quest-item-bottom booking-final-item-adress">
-					<div class="quest-item-bottom-left">
-						<div class="quest-item-bottom-icon">
-						<i class="icon-marker"></i>
-						</div>
-						<div class="quest-item-bottom-adress">
-						<ul>
-							<li>М. Кропоткинская</li>
-							<li>Большой Афонасьевский пер 15 стр1 </li>
-						</ul>
-						</div>
-					</div>
+					<dl class="iconInfo">
+						<dt class="iconInfo-icon">
+							<i class="icon-marker"></i>
+						</dt>
+						<dt class="iconInfo-content">
+							<ul>
+								<li>М. Кропоткинская</li>
+								<li>Большой Афонасьевский пер 15 стр1 </li>
+							</ul>
+						</dt>
+					</dl>
 
+					<div class="age age--circle"> 18+ </div>
 				</div>
 			</div>
 

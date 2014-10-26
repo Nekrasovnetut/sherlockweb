@@ -1,26 +1,26 @@
 //Это основа для вывода листового айтема
 .quest-item{
 	@extend %mcf;
-	
+
 		h3 {
 			float: left;
 		}
-	
+
 		&-img{
-			
+
 			//Изображение
 			width: 40%;
 			float: left;
-			
+
 			//Изображение для телефонов
 			@include mq(small){
 			float: none;
 			width: 100%;
 			margin: 0 auto;
 			}
-			
+
 		}
-		
+
 		&-content{
 			//Правая колонка контента
 			width: 55%;
@@ -29,32 +29,40 @@
 			position: relative;
 			//Правая колонка для телефонов
 			@include mq(small){float: none;width: 100%;}
-			
+
 		}
-		
+
 		&-top{
-			
+
 			@extend %mcf;
-			
+
 				h3{
 				padding: 0;
 				margin: 0;
 				}
-				
-				
+
+
 				&-left{
 					@extend %mcf;
-					width: 60%;		
-						
+					width: 60%;
+
 					@include mq(medium){width: 100%; float: none;}
 				}
-				
-				&-right{	
+
+				&-right{
 					@extend %mcf;
 					float: right;
 					width: 40%;
-					.quest-info{margin-bottom: 0;}
-					
+					margin-top: 5px;
+					white-space: nowrap;
+
+
+					.quest-info{ margin-bottom: 0;}
+
+					.iconInfo {
+						margin-bottom: 1.5em;
+					}
+
 					//Упрощяем правый блок верха для мертвой зоны
 					@include mq(medium){
 					float: none;
@@ -62,15 +70,15 @@
 					.quest-info {
 					width: auto;
 					padding-right: 1em;
-					padding-top: 1em;	
-					&-label{display: none;}	
-					}	
+					padding-top: 1em;
+					&-label{display: none;}
 					}
-					
-									
-					
-					
-					
+					}
+
+
+
+
+
 				}
 			}
 		&-middle{
@@ -83,18 +91,18 @@
 		position: absolute;
 		bottom: 0;
 		right: 0;
-		left: 0;		
+		left: 0;
 		width: 100%;
 		@include mq(medium){position: static;}
-		
-				&-left{		
-					display: inline-block;	
-					vertical-align: top;	
+
+				&-left{
+					display: inline-block;
+					vertical-align: top;
 					@include mq(medium){
 					margin-top: 1em;
-					}		
+					}
 				}
-				
+
 				&-right{
 					display: inline-block;
 					right: 0;
@@ -105,12 +113,12 @@
 					display: block;
 					text-align: center;
 					margin-top: 1em;
-					}				
+					}
 				}
 
 				i {
-					font-size: 2em;
-				}	
+					font-size: 30px;
+				}
 				&-icon {
 					display: inline-block;
 					vertical-align: middle;
@@ -130,8 +138,8 @@
 
 //Это добавляем, если нужен вывод в букинге
 
-.booking-final-item{
-	
+.booking-final-item {
+
 	&-price{
 		@extend %mcf;
 
@@ -143,10 +151,15 @@
 		@extend %mcf;
 
 		font-size: 1.5em;
-		padding-bottom: 1em;
+		line-height: 1.2em;
+
+		white-space: nowrap;
+
+		padding-bottom: 25px;
+
 		@include mq(medium){padding-top: 1em;}
-		
-		
+
+
 	}
 		@include mq(medium){
 		h3{
@@ -154,7 +167,7 @@
 		}
 		}
 	hr {
-			padding-top: 3.5em;
+			padding-top: .5em;
 	}
 	@include mq(medium){
 		hr{
@@ -167,17 +180,43 @@
 		display: block;
 		}
 	}
-	
+
 	.quest-item{
 		&-content{
 			height: 225px;
 		}
 		&-bottom{
 			color: $medium-grey;
-			margin-bottom: 1em;	
+			margin-bottom: 1em;
+
+			i {
+				color: $medium-grey;
+			}
+
+			.iconInfo-content {
+				font-size: 15px;
+			}
+
+			.age {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				color: $medium-grey;
+			}
 		}
 
 	}
+
+	&-bigname {
+		font-size: 40px;
+		line-height: 48px;
+		padding-right: 15px;
+
+		+ .quest-item-top-right {
+			margin-top: 17px;
+		}
+	}
+
 	.covermini {
 		height: 225px;
 	}
@@ -186,18 +225,18 @@
 //Это добавляем, если нужен вывод в списке
 
 .collection-list-item{
-		
+
 		margin-bottom: 4em;
-	
+
 		p{
 			font-size: 14px;
 			line-height: 1.2em;
 		}
-		
+
 		hr {
 			margin-top: 1em;
 			margin-bottom: 1em;
-		}		
+		}
 
 }
 
@@ -206,5 +245,5 @@
 		@include mq(small){
 		display: none;
 		}
-	}	
+	}
 }
