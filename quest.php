@@ -18,6 +18,15 @@
 
 <div class="js-ghost"></div>
 <div class="page <?= $pageClass ?> quest">
+	
+	
+	<img src="series-icons/icon-fire-extinguisher.svg"
+		 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
+	<img src="series-icons/icon-cactus.svg"
+		 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+	<img src="series-icons/icon-skull.svg"
+		 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+	
 	<section class="section">
 		<article class="quest-article">
 

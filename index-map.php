@@ -2,26 +2,7 @@
 
 	include "includes/header.php" ?>
 
-<div class="fixed-top"><header class="page-cover _sherlock-about">
-	<div class="page-cover-bg">
-		<img src="example-images/example-cover.png" alt="" />
-	</div>
-	<div class="page-cover-content">
-		<a class="section-logo logo logo--big" href="index.php">
-			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<img src="assets/images/logo-white.svg"
-				 onerror="this.onerror=null;
-				 this.src='assets/images/logo-white.png'" width="350" height="111" alt="Логотип Шерлок" />
-		</a>
 
-		<div class="description">
-			<p> Шерлок — это квест в реальности. Разгадайте головоломки, <br />
-				найдите тайники, воспользуйтесь подсказками, всеми доступными вещами, <br />
-				добудьте ключи и откройте двери к победе! </p>
-		</div>
-	</div>
-</header>
-</div><div class="js-ghost"></div>
 
 <div class="page">
 	<nav class="section-nav nav sticky" >
