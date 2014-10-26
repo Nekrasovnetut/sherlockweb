@@ -610,10 +610,10 @@ iframe {
   padding: 0px;
 }
 
-.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
+.form-message, .quest-item, .quest-item-top, .quest-item-top-left, .quest-item-top-right, .quest-item-middle, .quest-item-bottom, .booking-final-item-price, .booking-final-item-day, .schedule-heading, .booking-final .section, .booking-final .section-color, .booking-pay .section, .booking-pay .section-color, .collection-list .section, .collection-list .section-color, .quest .section, .quest .section-color, .quest-top, .quest-quest, .quest-section-first, .winners .section, .winners .section-color, .textpage .section, .textpage .section-color, .textpage-contacts-colums, .textpage-contacts-colums div, .mcf {
   *zoom: 1;
 }
-.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
+.form-message:after, .quest-item:after, .quest-item-top:after, .quest-item-top-left:after, .quest-item-top-right:after, .quest-item-middle:after, .quest-item-bottom:after, .booking-final-item-price:after, .booking-final-item-day:after, .schedule-heading:after, .booking-final .section:after, .booking-final .section-color:after, .booking-pay .section:after, .booking-pay .section-color:after, .collection-list .section:after, .collection-list .section-color:after, .quest .section:after, .quest .section-color:after, .quest-top:after, .quest-quest:after, .quest-section-first:after, .winners .section:after, .winners .section-color:after, .textpage .section:after, .textpage .section-color:after, .textpage-contacts-colums:after, .textpage-contacts-colums div:after, .mcf:after {
   content: "";
   display: table;
   clear: both;
@@ -1257,7 +1257,6 @@ html {
   height: 155px;
   line-height: 155px;
   text-align: center;
-  background: white;
 }
 @media (max-width: 400px) {
   .quote {
@@ -2700,6 +2699,27 @@ html, body {
   .quest .section, .quest .section-color {
     padding-top: 30px;
   }
+}
+.quest-icon {
+  position: absolute;
+}
+@media (max-width: 650px) {
+  .quest-icon {
+    display: none;
+  }
+}
+.quest-icon:nth-of-type(1) {
+  left: 0;
+}
+.quest-icon:nth-of-type(2) {
+  bottom: -50px;
+}
+.quest-icon:nth-of-type(3) {
+  right: 0;
+}
+.quest-section-first {
+  padding: 70px 8% 0;
+  position: relative;
 }
 .quest .quote {
   font-size: 20px;
