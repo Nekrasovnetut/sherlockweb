@@ -21,6 +21,13 @@
 
 			&-outline {
 				background: transparent;
+				border-color: $color;
+			}
+		}
+
+		.collection-map-item {
+			.btn-outline {
+				border-color: white;
 			}
 		}
 
@@ -81,5 +88,11 @@
 			background-color: $color;
 		}
 
+	}
+
+	.collection-map-item.collection-#{$n} {
+		.collection-map-item-heading {
+			color: $color;
+		}
 	}
 }

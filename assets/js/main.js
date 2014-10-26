@@ -159,11 +159,23 @@
         });
     }
 
-	$('.collection-user .aligner').height(function(){
-		var $first = $('.collection-map-item').first(),
-			$last = $('.collection-map-item').last();
+	updateCollectionHeight = function() {
+		$('.collection-user .aligner').each(function(){
+			$el = $(this);
 
-		return $last.offset().top - $first.offset().top + $last.height() + 100;
+			$el.height(function(){
+				var $first = $el.find('.collection-map-item').first(),
+					$last = $el.find('.collection-map-item').last();
 
-	})
+				return $last.offset().top - $first.offset().top + $last.height() + 50;
+			})
+		});
+	}; updateCollectionHeight();
+
+	$(window).on('resize', function(){
+		updateCollectionHeight();
+	});
+
+//	updateCollectionHeight();
+
 }(jQuery));

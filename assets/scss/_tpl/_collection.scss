@@ -104,11 +104,17 @@
 				img {
 					position: absolute;
 
-					@include mq(small) {
+					@include mq(medium) {
 						display: none;
 
-						&:nth-of-type(2) { // Номер иконки, которая останеться на маленьком экране
+						&:nth-of-type(1) { // Номер иконки, которая останеться на маленьком экране
 							display: block;
+
+							//@extend %icon-after-title;
+							bottom: 100% !important;
+							top: auto !important;
+							margin-bottom: -22px !important;
+							left: 150px !important;
 						}
 					}
 				}
@@ -168,3 +174,5 @@
 @import "_collections/collection-user";
 @import "_collections/collection-0";
 @import "_collections/collection-1";
+
+@include collection-page-color(2, #F66534);

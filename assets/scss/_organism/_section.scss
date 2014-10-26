@@ -1,7 +1,12 @@
 .section {
-	padding: 35px 0 50px;
+	padding: 35px 8% 50px;
 
 	&-heading {
 		@extend %heading;
+	}
+
+	&.collection-map {
+		padding-left: 0;
+		padding-right: 0;
 	}
 }
