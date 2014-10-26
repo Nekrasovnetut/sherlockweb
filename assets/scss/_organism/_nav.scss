@@ -73,6 +73,11 @@ i {
 	border-top-color: rgba(black, .1);
 	padding: 0 50px;
 	background: white;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+
+	position: relative; top: 1px; // @magic iOS mysterious bug
 
 	ul {
 		display: table; table-layout: fixed;

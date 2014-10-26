@@ -3,6 +3,10 @@
 		@extend %mcf;
 
 		padding: 70px 8% 50px;
+
+		@include mq(small) {
+			padding-top: 30px;
+		}
 	}
 
 	.quote {
@@ -57,9 +61,18 @@
 		&-heading {
 			padding-bottom: 2em;
 
+			h2 {
+				margin-bottom: .5em;
+			}
+
 			&-collection {
 				text-align: right;
 				margin-top: -2em;
+
+				@include mq(small) {
+					margin-top: 0;
+					text-align: left;
+				}
 
 				.label {
 					font-size: 15px;

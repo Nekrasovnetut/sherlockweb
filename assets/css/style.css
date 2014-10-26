@@ -1530,6 +1530,13 @@ hr {
   pointer-events: none;
   display: table;
 }
+@media (max-width: 650px) {
+  .js-links-slider .rsGCaption-helper {
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+}
 .js-links-slider .rsBullets {
   position: absolute;
   width: 100%;
@@ -1757,12 +1764,30 @@ hr {
   font-size: 24px;
   line-height: 24px;
 }
+@media (max-width: 650px) {
+  .schedule-heading h4 {
+    float: none;
+    margin-bottom: .25em;
+    padding-top: 20px;
+  }
+}
 .schedule-heading-month {
   float: right;
   line-height: 28px;
 }
+@media (max-width: 650px) {
+  .schedule-heading-month {
+    float: none;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 1em;
+  }
+}
 .schedule-heading-month li {
   display: inline-block;
+}
+.schedule-heading-month li + li {
   margin-left: 1em;
 }
 .schedule-heading-month li a {
@@ -1777,7 +1802,7 @@ hr {
   text-decoration: underline;
 }
 .schedule .deactivated {
-  opacity: 0;
+  display: none;
 }
 .schedule .disabled {
   color: #ddd;
@@ -2136,6 +2161,11 @@ html, body {
   border-top-color: rgba(0, 0, 0, 0.1);
   padding: 0 50px;
   background: white;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  position: relative;
+  top: 1px;
 }
 .nav-days ul {
   display: table;
@@ -2222,12 +2252,18 @@ html, body {
   position: relative;
   z-index: 0;
 }
+@media (max-width: 650px) {
+  .page-cover {
+    height: 250px;
+  }
+}
+@media (max-width: 400px) {
+  .page-cover {
+    height: 200px;
+  }
+}
 .page-cover-bg img {
   width: 100%;
-  /*
-  
-  				@include mq(to-small){width: 170%;}
-  */
   position: absolute;
   left: -9999px;
   right: -9999px;
@@ -2237,8 +2273,13 @@ html, body {
 }
 @media (max-width: 650px) {
   .page-cover-bg img {
+    width: 150%;
+  }
+}
+@media (max-width: 400px) {
+  .page-cover-bg img {
     width: auto;
-    height: 110%;
+    height: 120%;
   }
 }
 .page-cover-bg + .page-cover-content {
@@ -2451,6 +2492,11 @@ html, body {
 .quest .section {
   padding: 70px 8% 50px;
 }
+@media (max-width: 650px) {
+  .quest .section {
+    padding-top: 30px;
+  }
+}
 .quest .quote {
   font-size: 20px;
 }
@@ -2510,9 +2556,18 @@ html, body {
 .quest-article-heading {
   padding-bottom: 2em;
 }
+.quest-article-heading h2 {
+  margin-bottom: .5em;
+}
 .quest-article-heading-collection {
   text-align: right;
   margin-top: -2em;
+}
+@media (max-width: 650px) {
+  .quest-article-heading-collection {
+    margin-top: 0;
+    text-align: left;
+  }
 }
 .quest-article-heading-collection .label {
   font-size: 15px;
@@ -3112,6 +3167,9 @@ html, body {
 }
 ._sherlock-about .description {
   font-size: 1.5em;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 50px;
 }
 @media (max-width: 950px) {
   ._sherlock-about .description {
@@ -3121,8 +3179,10 @@ html, body {
 @media (max-width: 650px) {
   ._sherlock-about .description {
     font-size: 1em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    /*
+    			padding-left: 3em;
+    			padding-right: 3em;
+    */
   }
   ._sherlock-about .description br {
     display: none;

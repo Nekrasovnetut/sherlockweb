@@ -16,16 +16,32 @@
 			float: left;
 			font-size: 24px;
 			line-height: 24px;
+
+			@include mq(small) {
+				float: none;
+				margin-bottom: .25em;
+				padding-top: 20px;
+			}
 		}
 
 		&-month {
 			float: right;
 			line-height: 28px; // + 4 мистических пикселя
 
+			@include mq(small) {
+				float: none;
+				overflow-x: auto;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+				margin-bottom: 1em;
+			}
+
 			li {
 				display: inline-block;
 
-				margin-left: 1em;
+				+ li {
+					margin-left: 1em;
+				}
 
 				a {
 					text-decoration: underline;
@@ -45,8 +61,8 @@
 	}
 
 	.deactivated {
-		opacity: 0;
-		}
+		display: none;
+	}
 
 	.disabled {
 		color: $light-grey;

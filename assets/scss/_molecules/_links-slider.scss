@@ -27,6 +27,12 @@
 			pointer-events: none;
 
 			display: table;
+
+			@include mq(small) {
+				width: 100%;
+				left: 0;
+				margin-left: 0;
+			}
 		}
 	}
 
