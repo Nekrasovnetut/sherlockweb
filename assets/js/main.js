@@ -145,14 +145,6 @@
 		}
     }
 
-    $.listen('parsley:form:validate', function (ParsleyForm) {
-		if (ParsleyForm.isValid()) {
-			ParsleyForm.$element.find('.form-message').addClass('is-hidden');
-		} else {
-			ParsleyForm.$element.find('.form-message').removeClass('is-hidden');
-		}
-    });
-
     if (window.PIE) {
         $('.collection-map-content-bg').each(function() {
             PIE.attach(this);
@@ -176,6 +168,93 @@
 		updateCollectionHeight();
 	});
 
-//	updateCollectionHeight();
+	popup = function(targetPopup) {
+		var targetContent = (document.getElementById(targetPopup)) ? $('#'+targetPopup).html() : targetPopup,
+			popupView = '<div class="popup-bg"></div>'+
+						 '<div class="popup">' +
+							'<div class="popup-content">' +
+								'<button class="btn-close"></button>'+
+							'</div>'+
+						'</div>';
+
+		hidePopup = function() {
+			$('html').css('overflow', '');
+
+			$popup.velocity({opacity: 0, translateY: 20},
+							{ complete: function(){
+								$(this).remove();
+
+								$bg.velocity({opacity: 0},
+									{ complete: function(){
+										$(this).remove();
+									}});
+							}});
+		}
+
+		this.hide = hidePopup;
+
+		this.show = function() {
+			$('html').css('overflow', 'hidden');
+			$('body').append(popupView);
+			$('.popup-content').append(targetContent);
+
+			$bg = $('.popup-bg');
+			$popup = $('.popup');
+
+
+			$bg	.velocity({opacity: 0}, { duration: 0, display: 'auto' })
+				.velocity({opacity: .9});
+
+			$popup.velocity({opacity: 0, translateY: -40 }, { duration: 0, display: 'auto' })
+				  .velocity({opacity: 1, translateY: 0});
+
+			// Close popup:
+			$('.popup').on('click', '.btn-close', function(){
+				hidePopup();
+			});
+		}
+	}
+
+	$('.js-popup-btn').on('click', function(e){
+		e.preventDefault();
+
+		linkPopup = new popup($(this).data('popup'));
+
+		linkPopup.show();
+	});
+
+	$('.js-form').on('submit', function(e){
+		e.preventDefault();
+
+		var $form = $(this);
+		formAction = $form.attr('action');
+		formData = $form.serialize();
+	});
+
+	$.listen('parsley:form:validate', function (ParsleyForm) {
+		$form = ParsleyForm.$element;
+
+		if (ParsleyForm.isValid()) {
+			$form.find('.form-message').addClass('is-hidden');
+
+			if ($form.hasClass('js-form')) {
+				$.ajax({
+				    url: formAction,
+				    data: formData,
+				    type: 'post',
+				    error: function(){
+					    formPopup = new popup('<h3> Ошибка! Попробуйте снова. </h3>');
+						formPopup.show();
+				    },
+				    success: function(){
+						formPopup = new popup($form.data('popup'));
+						formPopup.show();
+					}
+				});
+			}
+		} else {
+			$form.find('.form-message').removeClass('is-hidden');
+		}
+    });
 
 }(jQuery));

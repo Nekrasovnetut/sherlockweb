@@ -39,7 +39,7 @@
 					<td>12:00</td>
 					<td>3500 Р</td>
 					<td>Не оплачен</td>
-					<td><button class="btn btn-outline">Снять бронь</button></td>
+					<td><button class="btn btn-outline js-popup-btn" data-popup="book-success">Снять бронь</button></td>
 				</tr>
 				<tr>
 					<td>Текила Бум</td>
@@ -63,11 +63,16 @@
 					<td>12:00</td>
 					<td>3500 Р</td>
 					<td>Не оплачен</td>
-					<td><button class="btn btn-outline">Снять бронь</button></td>
+					<td><button class="btn btn-outline js-popup-btn" data-popup="book-success">Снять бронь</button></td>
 				</tr>
 			</tbody>
 		</table>
 	</div></section>
+
+	<div id="book-success">
+		<h3>Письмо с новым паролем отправлено вам на  e-mail.</h3>
+	</div>
+
 	<section class="section collection-map collection-user">
 		<header class="section-heading"><a href="collection-list.php">
 			<h4 class="accent"> Пройденные квесты </h4>

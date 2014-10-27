@@ -6,7 +6,10 @@
 
 	<div class="aligner splitter">
 		<div class="splitter-item">
-			<form class="form" data-parsley-validate>
+			<form class="form js-form"
+				  action="includes/response-error.php"
+				  data-popup="lost-success"
+				  data-parsley-validate>
 				<p class="faded form-text">Введите свой e-mail, на который
 мы отправим вам новый пароль </p>
 				<div class="form-message form-message--error is-hidden">
@@ -30,6 +33,11 @@
 		</div>
 	</div>
 </div>
+
+<div id="lost-success">
+	<h3>Письмо с новым паролем отправлено вам на  e-mail.</h3>
+</div>
+
 
 <? include "includes/scripts.php" ?>
 <? include "includes/footer.php" ?>

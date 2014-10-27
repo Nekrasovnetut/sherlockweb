@@ -4,9 +4,13 @@
 
 <div class="page page--splitter">
 
+
 	<div class="aligner splitter">
 		<div class="splitter-item">
-			<form class="form" data-parsley-validate style="max-width: 500px;">
+			<form 	class="form js-form" style="max-width: 500px;"
+					action="includes/response-ok.php"
+					data-popup="certificate-success"
+					data-parsley-validate>
 				<p class="form-text">Закажите сертификат на одну игру с Шерлоком, им сможем
 может воспользоваться любая команда, но только один раз
 и только в том городе, в котором сертификат был приобретён. </p>
@@ -44,6 +48,10 @@
 			</form>
 		</div>
 	</div>
+</div>
+
+<div id="certificate-success">
+	<h3>Спасибо. Ваша заявка на сертификат принята. <br /> Скоро вам позвонят.</h3>
 </div>
 
 <? include "includes/scripts.php" ?>

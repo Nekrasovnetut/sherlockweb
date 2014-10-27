@@ -88,7 +88,11 @@
 		text-decoration: underline;
 	}
 
-	@at-root %btn-arrow, &-left:before, &-right:before {
+	&-close {
+		@extend %reset-appearance;
+	}
+
+	@at-root %btn-arrow, &-left:before, &-right:before, &-close:before {
 		display: inline-block;
 		width: 22px;
 		height: 22px;
@@ -105,6 +109,10 @@
 
 	&-right:before {
 		@extend %icon-arrow-left, %icon;
+	}
+
+	&-close:before {
+		@extend %icon-cross, %icon;
 	}
 }
 
