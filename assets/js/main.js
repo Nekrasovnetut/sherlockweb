@@ -151,7 +151,7 @@
         });
     }
 
-	updateCollectionHeight = function() {
+	(updateCollectionHeight = function() {
 		$('.collection-user .aligner').each(function(){
 			$el = $(this);
 
@@ -162,11 +162,9 @@
 				return $last.offset().top - $first.offset().top + $last.height() + 50;
 			})
 		});
-	}; updateCollectionHeight();
+	})();
 
-	$(window).on('resize', function(){
-		updateCollectionHeight();
-	});
+	$(window).on('resize', updateCollectionHeight);
 
 	popup = function(targetPopup) {
 		var targetContent = (document.getElementById(targetPopup)) ? $('#'+targetPopup).html() : targetPopup,
@@ -177,8 +175,8 @@
 							'</div>'+
 						'</div>';
 
-		hidePopup = function() {
-			$('html').css('overflow', '');
+		this.hide = function() {
+			document.documentElement.style.overflow = "";
 
 			$popup.velocity({opacity: 0, translateY: 20},
 							{ complete: function(){
@@ -191,10 +189,9 @@
 							}});
 		}
 
-		this.hide = hidePopup;
-
 		this.show = function() {
-			$('html').css('overflow', 'hidden');
+			document.documentElement.style.overflow = "hidden";
+
 			$('body').append(popupView);
 			$('.popup-content').append(targetContent);
 
@@ -209,9 +206,7 @@
 				  .velocity({opacity: 1, translateY: 0});
 
 			// Close popup:
-			$('.popup').on('click', '.btn-close', function(){
-				hidePopup();
-			});
+			$('.popup').on('click', '.btn-close', this.hide);
 		}
 	}
 
