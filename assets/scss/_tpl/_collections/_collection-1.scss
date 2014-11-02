@@ -5,12 +5,9 @@ $scale-3: 1.15;
 
 @include collection-page-color(1, $collection-1);
 
-.collection-1 {
+section.collection-1 {
 
 	.collection-map {
-		&-content-stars {
-			//background: url('../images/layout/1/all-stars.svg') no-repeat 70px 35px;
-		}
 
 		&-content-bg {
 			.svg & {
@@ -78,8 +75,10 @@ $scale-3: 1.15;
 		&-item {
 
 			&:nth-of-type(1) {
-				left: 110px;
-				top: 180px;
+				left: 20px;
+				top: 150px;
+
+				@include star-5;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -97,9 +96,10 @@ $scale-3: 1.15;
 			}
 
 			&:nth-of-type(2) {
-				left: 580px;
-				top: 60px;
-				// bottom: 390px;
+				left: 490px;
+				top: 10px;
+
+				@include star-7;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -117,12 +117,14 @@ $scale-3: 1.15;
 			}
 
 			&:nth-of-type(3) {
-				top: 370px;
-				left: 500px;
+				top: 340px;
+				left: 410px;
+
+				@include star-6;
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
-						@extend %icon-left-to-top;
+						@extend %icon-left-top;
 					}
 
 					img:nth-of-type(2) {

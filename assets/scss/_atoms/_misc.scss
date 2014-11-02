@@ -1,7 +1,16 @@
 .js-ghost {
 	position: relative; z-index: -2;
+
+	transition: height .2s;
 }
 
 [id^="lpck"] { // Codekit error message id
 	display: none !important;
+}
+
+.overWrapper {
+	overflow-y: hidden;
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+	padding-bottom: 20px;
 }

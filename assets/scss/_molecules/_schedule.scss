@@ -11,7 +11,7 @@
 
 	&-heading {
 		@extend %mcf;
-		
+
 
 		h4 {
 			float: left;
@@ -140,12 +140,5 @@
 				}
 			}
 		}
-	}
-
-	&-overflow {
-		overflow-y: hidden;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
-		padding-bottom: 20px;
 	}
 }

@@ -5,16 +5,16 @@
 
 <div class="fixed-top"><header class="page-cover _sherlock-about">
 	<div class="page-cover-bg">
-		<img src="example-images/example-cover.png" alt="" />
+		<img class="js-imageFill" src="example-images/example-5.jpg" alt="" />
 	</div>
 	<div class="page-cover-content">
-		<a class="section-logo logo logo--big" href="index.php">
+		<div class="section-logo logo logo--big">
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<img src="assets/images/logo-white.svg"
+			<a href="index.php"><img src="assets/images/logo-white.svg"
 				 onerror="this.onerror=null;
 				 this.src='assets/images/logo-white.png'" width="350" height="111"
-				 alt="Логотип Шерлок" />
-		</a>
+				 alt="Логотип Шерлок" /></a>
+		</div>
 
 		<div class="description">
 			<p> «Шерлок» &mdash; это интерактивные игры в реальности, созданные на качественно ином  уровне восприятия. Мы предлагаем вам стать героями уникальных миров, которые заставят работать на максимум все ваши чувства: обоняние, осязание, зрение, вкус, слух, и интуицию. </p>
@@ -24,20 +24,28 @@
 <div class="royalSlider js-text-slider">
 	<div class="rsContent">
 		<div class="quote">
-			<img 	src="example-images/pic-quote.png" alt="Автор" class="quote-image"
-					srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x"  />
-			<q class="quote-text">Этот квест завёл меня быстрее моего парня и я ещё долго
-буду вспоминать бесконечные минуты проведённые
-в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
+			<div class="quote-image">
+				<img 	src="example-images/pic-quote.png" alt="Автор"
+					srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x" width="113" height="144" />
+			</div>
+			<div class="quote-text-container">
+				<q class="quote-text">
+					Этот квест завёл меня быстрее моего парня и я ещё долго буду вспоминать бесконечные минуты проведённые в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small>
+				</q>
+			</div>
 		</div>
 	</div>
 
 	<div class="rsContent">
 		<div class="quote">
-			<img 	src="example-images/al-capone.png" alt="Автор" class="quote-image"  />
-			<q class="quote-text">Этот квест завёл меня быстрее моего парня и я ещё долго
-буду вспоминать бесконечные минуты проведённые
-в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
+			<div class="quote-image">
+				<img 	src="example-images/al-capone.png" alt="Автор" height="130" />
+			</div>
+			<div class="quote-text-container">
+				<q class="quote-text">
+					Этот квест завёл меня быстрее моего парня и я ещё долго буду вспоминать бесконечные минуты проведённые в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small>
+				</q>
+			</div>
 		</div>
 	</div>
 </div>
@@ -60,10 +68,11 @@
 
 		<div class="aligner">
 			<div class="collection-map-content-bg"></div>
-			<div class="collection-map-content-stars"></div>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Текила Бум</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Текила Бум </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -78,7 +87,9 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -95,7 +106,9 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -118,9 +131,11 @@
 
 		<div class="collection-map-content aligner">
 			<div class="collection-map-content-bg"></div>
-<!-- 			<div class="collection-map-content-stars"></div> -->
+
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -137,7 +152,9 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -152,7 +169,9 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Текила Бум</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Текила Бум </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -174,15 +193,18 @@
 		</a></header>
 
 		<div class="aligner">
+			<div class="collection-map-content-bg"></div>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
 				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-snake.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-snake.png'" />
+					<img src="series-icons/icon-snake-full.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
 
 					<img src="series-icons/icon-cactus.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
@@ -193,7 +215,9 @@
 			</article>
 
 			<article class="collection-map-item">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
 				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
@@ -207,22 +231,18 @@
 				</div>
 			</article>
 
-			<article class="collection-map-item">
-				<div class="collection-map-item-noitem">
-					<img src="assets/images/no-item.svg"
-						 onerror="this.onerror=null; this.src='assets/images/no-item.png'" />
-				</div>
+			<article class="collection-map-item is-empty">
+				<img src="assets/images/no-item.svg"
+					 onerror="this.onerror=null; this.src='assets/images/no-item.png'" />
 			</article>
-
-			<div class="collection-map-content-bg"></div>
-			<div class="collection-map-content-stars"></div>
 		</div>
 	</section>
 	<section class="section">
 		<header class="section-heading">
 			<h4> Наши партнёры </h4>
 		</header>
-		<ul class="centery centery--wider">
+
+		<div class="overWrapper"><ul class="centery centery--wider">
 			<li class="centery-item">
 				<a href="#"><img src="example-images/example-1.png" width="99" height="37" /></a>
 			</li>
@@ -238,7 +258,7 @@
 			<li class="centery-item">
 				<a href="#"><img src="example-images/example-3.png" width="102" height="25" /></a>
 			</li>
-		</ul>
+		</ul></div>
 	</section>
 </div>
 

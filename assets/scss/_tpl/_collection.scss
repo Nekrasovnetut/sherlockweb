@@ -15,7 +15,11 @@
 			height: $mapHeight;
 
 			@include mq(medium) {
-				height: auto;
+				height: auto !important;
+
+				&:before, &:after {
+					content: none !important;
+				}
 			}
 
 			max-width: 1050px;
@@ -41,41 +45,71 @@
 		}
 
 		&-item {
-			width: 285px;
-			margin-bottom: 2em;
+			width: 400px;
+			padding: 30px 30px 30px 90px;
 
-			&-noitem{
+			&.is-empty {
+				background: none !important;
+
 				@include mq(medium) {
 					display: none;
 				}
 			}
 
 			&-heading {
-				font-size: 21px;
-				width: 115px;
-				margin-bottom: .75em;
-				color: #444;
-				color: rgba(black, .7);
 				position: relative;
-				height: 1em;
 
-				span {
-					position: absolute;
-					bottom: 0;
+				margin-bottom: $magic-number * 1.5;
+
+				h4 {
+					width: 130px;
+					font-size: 25px;
+					color: #444;
+					color: rgba(black, .7);
+
+					margin-bottom: 10px;
 				}
+
+				p a {
+					text-decoration: underline;
+
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+
+			&-date {
+				display: inline-block;
+				margin-left: 1em;
 			}
 
 			.btn {
 				border-color: white;
-				margin-top: 3em;
+				margin-top: $magic-number * 2;
 			}
 
 			@include mq(medium) {
-				position: relative !important;
-				left: 30px !important; right: auto !important; top:  auto !important; bottom: auto !important; // <- Hard Core
-				margin: 50px auto;
+
+				position: relative;
+				left: auto !important; right: auto !important;
+				top: auto !important; bottom: auto !important;
+				background: none !important;
+				margin-top: 90px !important;
+
+				padding: 0 30px;
 				width: auto;
-				max-width: 60%;
+				max-width: 500px;
+				margin: 0 auto;
+
+				&:before {
+					content: none !important;
+				}
+
+				& > .collection-map-item {
+					padding: 0;
+					width: auto;
+				}
 
 				&-heading  {
 					height: auto;
@@ -86,14 +120,6 @@
 				}
 			}
 
-			@include mq(small) {
-				max-width: 85%;
-				left: auto !important;
-
-				.collection-item-icons {
-					display: none;
-				}
-			}
 
 			/* ---
 				Типичные варианты расположения иконок:
@@ -103,18 +129,24 @@
 			&-icons {
 				img {
 					position: absolute;
+//					width: 70px;
+//					height: 70px;
 
 					@include mq(medium) {
 						display: none;
 
-						&:nth-of-type(1) { // Номер иконки, которая останеться на маленьком экране
+						&:first-child { // Номер иконки, которая останеться на маленьком экране
 							display: block;
 
-							//@extend %icon-after-title;
-							bottom: 100% !important;
+							position: absolute;
+
+							margin: 0 !important;
+							right: auto !important;
 							top: auto !important;
-							margin-bottom: -22px !important;
-							left: 150px !important;
+
+							bottom: 50% !important;
+							margin-bottom: 60px !important;
+							left: 220px !important;
 						}
 					}
 				}

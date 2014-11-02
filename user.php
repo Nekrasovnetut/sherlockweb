@@ -21,56 +21,61 @@
 		<div class="section-heading">
 			<h4 class="accent">Забронированные квесты</h4>
 		</div>
-
-		<table class="table-standart">
-			<thead>
-				<tr>
-					<th>Название</th>
-					<th>Дата</th>
-					<th>Время</th>
-					<th>Стоимость</th>
-					<th width="95px">Статус</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>Гуси завоёвывают Константинополь</td>
-					<td>23.10.2014</td>
-					<td>12:00</td>
-					<td>3500 Р</td>
-					<td>Не оплачен</td>
-					<td><button class="btn btn-outline js-popup-btn" data-popup="book-success">Снять бронь</button></td>
-				</tr>
-				<tr>
-					<td>Текила Бум</td>
-					<td>21.12.2014</td>
-					<td>12:00</td>
-					<td>3500 Р</td>
-					<td>Оплачен</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Текила Бум</td>
-					<td>06.12.2014</td>
-					<td>12:00</td>
-					<td>3500 Р</td>
-					<td>Оплачен</td>
-					<td></td>
-				</tr>
-				<tr>
-					<td>Пещера Майя</td>
-					<td>03.12.2014</td>
-					<td>12:00</td>
-					<td>3500 Р</td>
-					<td>Не оплачен</td>
-					<td><button class="btn btn-outline js-popup-btn" data-popup="book-success">Снять бронь</button></td>
-				</tr>
-			</tbody>
-		</table>
+		<div class="overWrapper">
+			<table class="table-standart">
+				<thead>
+					<tr>
+						<th>Название</th>
+						<th>Дата</th>
+						<th>Время</th>
+						<th>Стоимость</th>
+						<th width="95px">Статус</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Гуси завоёвывают Константинополь</td>
+						<td>23.10.2014</td>
+						<td>12:00</td>
+						<td>3500 Р</td>
+						<td>Не оплачен</td>
+						<td><button class="btn btn-outline js-popup-btn" data-popup="book-success-1">Снять бронь</button></td>
+					</tr>
+					<tr>
+						<td>Текила Бум</td>
+						<td>21.12.2014</td>
+						<td>12:00</td>
+						<td>3500 Р</td>
+						<td>Оплачен</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Текила Бум</td>
+						<td>06.12.2014</td>
+						<td>12:00</td>
+						<td>3500 Р</td>
+						<td>Оплачен</td>
+						<td></td>
+					</tr>
+					<tr>
+						<td>Пещера Майя</td>
+						<td>03.12.2014</td>
+						<td>12:00</td>
+						<td>3500 Р</td>
+						<td>Не оплачен</td>
+						<td><button class="btn btn-outline js-popup-btn" data-popup="book-success-2">Снять бронь</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div></section>
 
-	<div id="book-success">
-		<h3>Письмо с новым паролем отправлено вам на  e-mail.</h3>
+	<div id="book-success-1" class="popup-content-message">
+		<h3>Бронь на игру <br /> &laquo;Гуси завоёвывают Константинополь&raquo; <br /> снята.</h3>
+	</div>
+
+	<div id="book-success-2" class="popup-content-message">
+		<h3>Бронь на игру <br /> &laquo;Пещера мая&raquo; <br /> снята.</h3>
 	</div>
 
 	<section class="section collection-map collection-user">
@@ -78,34 +83,39 @@
 			<h4 class="accent"> Пройденные квесты </h4>
 		</a></header>
 
-		<? for($i = 1; $i <= 2; $i++) { ?>
-
 		<div class="aligner">
-			<div class="collection-map-content-bg"></div>
-			<div class="collection-map-content-stars"></div>
 
-			<article class="collection-map-item collection-0">
-				<h4 class="collection-map-item-heading"> <span>Текила Бум</span> </h4>
 
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
+			<? for($i = 0; $i <= 5; $i++) { ?>
 
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
+			<article class="collection-map-item collection-<?= $i ?>">
+				<header class="collection-map-item-heading">
+					<h4> Текила Бум </h4>
+					<p>Серия <a href="collection-list.php" class="accent">&laquo;Путешествия&raquo;</a></p>
+				</header>
+
+				<section class="collection-map-item-content">
+					<dl class="iconInfo">
+						<dt class="iconInfo-icon">
+							<i class="icon-user"></i>
+						</dt>
+						<dt class="iconInfo-content">
+							Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
+						</dt>
+					</dl>
+
+					<dl class="iconInfo">
+						<dt class="iconInfo-icon">
+							<i class="icon-clock"></i>
+						</dt>
+						<dt class="iconInfo-content">
+							34:40
+						</dt>
+					</dl>
+				</section>
 
 				<a href="quest.php" class="btn btn-outline">фото <i class="icon-arrow-right"></i></a>
+				<span class="collection-map-item-date">23.10.2014</span>
 
 				<div class="collection-map-item-icons">
 					<img src="series-icons/icon-snake-full.svg"
@@ -115,202 +125,45 @@
 					<img src="series-icons/icon-skull.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
 				</div>
+
+				<? } ?>
+
+		<? for($i = 1; $i <= 6; $i++) { ?>
 			</article>
+		<? } ?>
+		</div>
 
-			<article class="collection-map-item collection-1">
-				<h4 class="collection-map-item-heading"> <span>Сибирский цирюльник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-bat.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-bat.png'" />
-
-					<img src="series-icons/icon-pyramid.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-pyramid.png'" />
-
-					<img src="series-icons/icon-mask.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-mask.png'" />
-				</div>
-			</article>
-
-			<article class="collection-map-item collection-2">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-doors.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-cactus.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-torch.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
-				</div>
-			</article>
-
-			<article class="collection-map-item collection-0">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-doors.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-cactus.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-torch.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
-				</div>
-			</article>
-
-			<article class="collection-map-item collection-1">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-doors.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-cactus.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-torch.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
-				</div>
-			</article>
-
-			<article class="collection-map-item collection-2">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-doors.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-cactus.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-torch.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
-				</div>
-			</article>
-		</div> <? } ?>
 
 		<div class="aligner">
-			<div class="collection-map-content-bg"></div>
-			<div class="collection-map-content-stars"></div>
 
 			<article class="collection-map-item collection-0">
-				<h4 class="collection-map-item-heading"> <span>Текила Бум</span> </h4>
+				<header class="collection-map-item-heading">
+					<h4> Текила Бум </h4>
+					<p>Серия <a href="collection-list.php" class="accent">&laquo;Путешествия&raquo;</a></p>
+				</header>
 
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
+				<section class="collection-map-item-content">
+					<dl class="iconInfo">
+						<dt class="iconInfo-icon">
+							<i class="icon-user"></i>
+						</dt>
+						<dt class="iconInfo-content">
+							Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
+						</dt>
+					</dl>
 
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
+					<dl class="iconInfo">
+						<dt class="iconInfo-icon">
+							<i class="icon-clock"></i>
+						</dt>
+						<dt class="iconInfo-content">
+							34:40
+						</dt>
+					</dl>
+				</section>
 
 				<a href="quest.php" class="btn btn-outline">фото <i class="icon-arrow-right"></i></a>
+				<span class="collection-map-item-date">23.10.2014</span>
 
 				<div class="collection-map-item-icons">
 					<img src="series-icons/icon-snake-full.svg"
@@ -320,39 +173,7 @@
 					<img src="series-icons/icon-skull.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
 				</div>
-			</article>
 
-			<article class="collection-map-item collection-2">
-				<h4 class="collection-map-item-heading"> <span>Бермудский треугольник</span> </h4>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-user"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						Константинопольский, Усть&#8209;Засольский, Берия, Виноградов
-					</dt>
-				</dl>
-
-				<dl class="iconInfo">
-					<dt class="iconInfo-icon">
-						<i class="icon-clock"></i>
-					</dt>
-					<dt class="iconInfo-content">
-						34:40
-					</dt>
-				</dl>
-
-				<a href="quest.php" class="btn btn-outline">Фото <i class="icon-arrow-right"></i></a>
-
-				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-doors.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-cactus.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-torch.svg"
-						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
-				</div>
 			</article>
 		</div>
 	</section>

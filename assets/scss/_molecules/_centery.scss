@@ -18,11 +18,19 @@
 		}
 
 		.centery--wider & {
-			margin: 0 30px;
+			margin: 0 30px 30px;
 
 			@include mq(small) {
 				margin: 0 15px;
 			}
+		}
+	}
+
+	&--wider {
+		margin-bottom: -30px;
+
+		@include mq(small) {
+			margin-bottom: 0;
 		}
 	}
 }

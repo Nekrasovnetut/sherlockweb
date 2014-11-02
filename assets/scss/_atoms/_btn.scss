@@ -119,4 +119,11 @@
 ._back-btn {
 	position: absolute;
 	left: 0;
+
+	@include mq(small) {
+		position: relative;
+		display: block;
+
+		top: -30px;
+	}
 }

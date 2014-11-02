@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Регистрация";
+<? 	$pageTitle = "Сертификат";
 
 	include "includes/header.php" ?>
 

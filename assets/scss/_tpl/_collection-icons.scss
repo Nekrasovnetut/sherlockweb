@@ -1,49 +1,90 @@
 %icon-after-title {
-	bottom: 100%;
-	margin-bottom: -22px;
-	left: 150px;
+	margin: 0;
+	right: auto;
+	top: auto;
+
+	bottom: 50%;
+	margin-bottom: 60px;
+	left: 250px;
 }
 
 %icon-after-button {
+	margin: 0;
+	right: auto;
+	top: auto;
+
 	bottom: 0;
 	margin-bottom: -22px;
-	left: 150px;
+	left: 220px;
+}
+
+%icon-over-title {
+	margin: 0;
+	right: auto;
+	top: auto;
+
+	bottom: 100%;
+	margin-bottom: 18px;
+
+	left: 60px;
 }
 
 %icon-left {
 	&-bottom {
-		right: 100%;
-		margin-right: 20px;
+		margin: 0;
+		right: auto;
+		top: auto;
+
+		left: 0;
 		bottom: 0;
 	}
 
 	&-top {
-		right: 102.5%;
-		bottom: 105%;
-//		margin-right: -40px;
+		margin: 0;
+		right: auto;
+		top: auto;
+
+		left: 0;
+		top: -15px;
 	}
 
 	&-to-top {
-		right: 100%;
-		top: 0;
-		margin-right: 1.5em;
+		margin: 0;
+		right: auto;
+		bottom: auto;
+
+		left: -15px;
+		top: 30px;
 	}
 
 	&-center {
-		right: 100%;
+		margin: 0;
+		right: auto;
+		bottom: auto;
+
+		left: 0;
 		margin-right: 20px;
-		top: 35%;
+		top: 50%;
+		margin-top: -30px;
 	}
 }
 
 %icon-right {
 	&-bottom {
-		right: 10%;
-		top: 100%;
-		margin-top: -40px;
+		margin: 0;
+		left: auto;
+		top: auto;
+
+		right: 30px;
+		bottom: 5px;
+//		margin-bottom: -70px;
 	}
 
 	&-bottom-2 {
+		margin: 0;
+		right: auto;
+		top: auto;
+
 		left: 100%;
 		bottom: 0;
 		margin-bottom: -20px;
@@ -51,6 +92,10 @@
 	}
 
 	&-center {
+		margin: 0;
+		right: auto;
+		top: auto;
+
 		left: 100%;
 		bottom: 60px;
 	}

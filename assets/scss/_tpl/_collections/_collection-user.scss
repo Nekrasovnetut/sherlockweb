@@ -12,187 +12,232 @@ $scale-3: 1.15;
 		color: $accent-color;
 	}
 
-	.aligner + .aligner {
-		.collection-map-content-bg:before {
-			.svg & {
-				background: url('../images/layout/user/path-6.svg') no-repeat left top;
-			} .no-svg & {
-				background: url('../images/layout/user/path-6.png') no-repeat left top;
-			}
+	.aligner {
+		height: auto;
+	}
 
-			width: 414px; height: 143px;
+	.aligner + .aligner:before {
+		content: "";
+		display: block;
+		position: absolute;
 
-			left: 220px;
-			top: -90px;
-//				margin-top: -160px;
-
-			@include mq(ipad) {
-//					bottom: -83px;
-				top: -160px / $scale-1;
-			}
-
-			@include mq(big) {
-//					bottom: -47px;
-
-				top: -160px / $scale-2;
-			}
-
-			@include mq(ultrabig) {
-//					bottom: 47px;
-				top: -160px / $scale-3;
-			}
+		.svg & {
+			background: url('../images/layout/user/path-6.svg') no-repeat left top;
+		} .no-svg & {
+			background: url('../images/layout/user/path-6.png') no-repeat left top;
 		}
+
+		width: 414px; height: 143px;
+
+		left: 220px;
+		top: -100px;
+
+/*
+		@include mq(ipad) {
+			top: -160px / $scale-1;
+		}
+
+		@include mq(big) {
+			top: -160px / $scale-2;
+		}
+
+		@include mq(ultrabig) {
+			top: -160px / $scale-3;
+		}
+*/
 	}
 
 	.collection-map {
 
 
+		@mixin path($image, $width, $height, $left, $top){
+			$imageUrl: str-slice($image, 0, -5);
 
-		&-content-bg {
-			.svg & {
-				background: url('../images/layout/user/path-1.svg') no-repeat 530px 90px,
-							url('../images/layout/user/path-2.svg') no-repeat 275px 280px,
-							url('../images/layout/user/path-3.svg') no-repeat 475px 475px,
-							url('../images/layout/user/path-4.svg') no-repeat 395px 740px,
-							url('../images/layout/user/path-5.svg') no-repeat 525px 930px;
-			} .no-svg & {
-				background: url('../images/layout/user/path-1.png') no-repeat 530px 90px,
-							url('../images/layout/user/path-2.png') no-repeat 275px 280px,
-							url('../images/layout/user/path-3.png') no-repeat 475px 475px,
-							url('../images/layout/user/path-4.png') no-repeat 395px 740px,
-							url('../images/layout/user/path-5.png') no-repeat 525px 945px;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
 
-				-pie-background: url('../images/layout/user/path-1.png') no-repeat 530px 90px,
-							url('../images/layout/user/path-2.png') no-repeat 275px 280px,
-							url('../images/layout/user/path-3.png') no-repeat 475px 475px,
-							url('../images/layout/user/path-4.png') no-repeat 395px 740px,
-							url('../images/layout/user/path-5.png') no-repeat 525px 945px;
+				width: $width; height: $height;
+
+				top: $top; left: $left;
+
+				transform: translateZ(0);
+
+				.svg & {
+					background: url('#{$imageUrl}.svg') no-repeat;
+				} .no-svg & {
+					background: url('#{$imageUrl}.png') no-repeat;
+				}
+
+				@content;
 			}
 		}
 
 		&-item {
-
 			color: $dark-grey;
+
+			// 1:
+
+			left: 70px;
+			top: 60px;
+
+			@include star-1;
+
+			.collection-map-item-icons {
+				img:nth-of-type(1) {
+					@extend %icon-left-to-top;
+				}
+
+				img:nth-of-type(2) {
+					@extend %icon-after-title;
+				}
+
+				img:nth-of-type(3) {
+					@extend %icon-right-bottom;
+				}
+			}
+
+			// 2:
+
+			> .collection-map-item  {
+				left: 520px;
+				top: 240px;
+
+
+				@include star-2;
+
+
+				@include path('../images/layout/user/path-1.png', 300px, 139px, -100px, -180px);
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-bottom;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-after-title;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-right-bottom;
+					}
+				}
+
+			}
+
+			// 3:
+
+			> .collection-map-item
+			> .collection-map-item  {
+				top: 100%;
+				margin-top: 15px;
+				left: -580px;
+
+				@include path('../images/layout/user/path-2.svg', 412px, 160px, 220px, -170px);
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-over-title;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-right-bottom;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-after-title;
+					}
+				}
+			}
+
+			// 4:
+
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item  {
+
+				top: 100%;
+				margin-top: 15px;
+				left: 560px;
+
+				@include path('../images/layout/user/path-3.svg', 507px, 186px, -130px, -220px);
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-to-top;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-after-title;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-right-bottom;
+					}
+				}
+
+			}
+
+			// 5:
+
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item {
+				top: 100%;
+				margin-top: 15px;
+				left: -500px;
+
+				@include path('../images/layout/user/path-4.svg', 244px, 134px, 310px, -130px);
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-over-title;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-left-center;
+					}
+
+					img:nth-of-type(3) {
+					@extend %icon-right-bottom;
+					}
+				}
+			}
+
+			// 6:
+
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item
+			> .collection-map-item {
+				top: 100%;
+				margin-top: 15px;
+				left: 510px;
+
+				@include path('../images/layout/user/path-5.svg', 303px, 104px, -100px, -130px);
+
+				.collection-map-item-icons {
+					img:nth-of-type(1) {
+						@extend %icon-left-to-top;
+					}
+
+					img:nth-of-type(2) {
+						@extend %icon-after-title;
+					}
+
+					img:nth-of-type(3) {
+						@extend %icon-right-bottom;
+					}
+				}
+			}
+
 
 			.iconInfo-content {
 				font-size: 15px;
 			}
-
-			&:nth-of-type(1) {
-				left: 190px;
-				top: 60px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-to-top;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-after-title;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-right-bottom;
-					}
-				}
-			}
-
-			&:nth-of-type(2) {
-				left: 660px;
-				top: 290px;
-				// bottom: 390px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-bottom;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-after-title;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-right-bottom-2;
-					}
-				}
-			}
-
-			&:nth-of-type(3) {
-				top: 490px;
-				left: 120px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-to-top;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-right-bottom;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-after-title;
-					}
-				}
-			}
-
-			&:nth-of-type(4) {
-				top: 730px;
-				left: 610px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-top;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-right-center;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-after-button;
-					}
-				}
-			}
-
-			&:nth-of-type(5) {
-				top: 910px;
-				left: 190px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-bottom;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-left-top;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-after-button;
-					}
-				}
-			}
-
-			&:nth-of-type(6) {
-				top: 1090px;
-				left: 600px;
-
-				.collection-map-item-icons {
-					img:nth-of-type(1) {
-						@extend %icon-left-to-top;
-					}
-
-					img:nth-of-type(2) {
-						@extend %icon-right-center;
-					}
-
-					img:nth-of-type(3) {
-						@extend %icon-after-title;
-					}
-				}
-			}
-
 		}
 	}
 

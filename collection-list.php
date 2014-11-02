@@ -7,7 +7,7 @@
 
 	<header class="page-cover">
 	<div class="page-cover-bg">
-		<img src="example-images/example-cover.jpg" alt="" />
+		<img  class="js-imageFill" src="example-images/example-cover.jpg" alt="" />
 	</div>
 	<div class="page-cover-content">
 

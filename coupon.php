@@ -1,4 +1,4 @@
-<? 	$pageTitle = "Регистрация";
+<? 	$pageTitle = "Активировать купон";
 
 	include "includes/header.php" ?>
 

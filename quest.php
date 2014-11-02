@@ -8,7 +8,7 @@
 <div class="fixed-top">
 	<header class="page-cover">
 	<div class="page-cover-bg">
-		<img src="example-images/example-cover.jpg" alt="" />
+		<img  class="js-imageFill" src="example-images/example-cover.jpg" alt="" />
 	</div>
 	<div class="page-cover-content">
 
@@ -18,19 +18,19 @@
 
 <div class="js-ghost"></div>
 <div class="page <?= $pageClass ?> quest">
-	
-	
+
+
 	<section class="quest-section-first">
-		
-		
+
+
 	<img class="quest-icon" src="series-icons/icon-cactus.svg"
 		 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
 	<img class="quest-icon" src="series-icons/icon-fire-extinguisher.svg"
 		 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
 	<img class="quest-icon" src="series-icons/icon-skull.svg"
 		 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
-		
-		
+
+
 		<div class="quest-top">
 		<article class="quest-article">
 
@@ -40,7 +40,7 @@
 					<span class="label">Серия</span>
 					<a href="collection-list.php" class="link"> Путешествия </a>
 				</div>
-			</header>			
+			</header>
 			<div class="quest-article-description">
 				<p>Главным обвиняемым по делу о "серых" приватизационных схемах в Башкирии проходит Урал Рахимов, сын бывшего президента Башкирии Муртазы Рахимова. Еще одним фигурантом является глава совета директоров ИД "Собеседник" Левон Айрапетян, которого в СКР считают посредником в сделке с башкирским ТЭКом.17 сентября источник сообщил, что в деле "Башнефти" могут появиться новые фигуранты. По его словам, ключевым свидетелем проходит экс-сенатор от Башкирии Игорь Изместьев, отбывающий пожизненное заключение. Обвинения Рахимову, Айрапетяну и Евтушенкову были предъявлены на основании его показаний. миллиардер Владимир Евтушенков потерял 36% состояния. </p>
 			</div>
@@ -56,14 +56,18 @@
 			<div class="age age--circle"> 18+ </div>
 		</aside>
 		</div>
-		
+
 		<div class="quest-quote">
 			<div class="quote">
-				<img 	src="example-images/pic-quote.png" alt="Автор" class="quote-image"
-						srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x"  />
-				<q class="quote-text">Этот квест завёл меня быстрее моего парня и я ещё долго
-	буду вспоминать бесконечные минуты проведённые
-	в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small></q>
+				<div class="quote-image">
+					<img 	src="example-images/pic-quote.png" alt="Автор"
+						srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x" width="113" height="144" />
+				</div>
+				<div class="quote-text-container">
+					<q class="quote-text">
+						Этот квест завёл меня быстрее моего парня и я ещё долго буду вспоминать бесконечные минуты проведённые в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small>
+					</q>
+				</div>
 			</div>
 		</div>
 
@@ -111,7 +115,7 @@
 			    <li class="tabs-item"><a href="#december-2014">Декабрь 2014</a></li>
 		    </ul>
 	    </header>
-		<div class="schedule-overflow tabs-content">
+		<div class="overWrapper tabs-content">
 			<!-- Открытая вкладка: -->
 			<div id="september-2014" class="tabs-content-item is-active">
 				<? include "includes/misc/schedule.php" ?>

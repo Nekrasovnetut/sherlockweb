@@ -8,27 +8,24 @@
 
 		tr {
 			height: 50px;
-//			vertical-align: top;
+
+			th {
+				padding-right: 15px;
+			}
 		}
 	}
 
 	tbody {
 		td {
-			height: 50px;
+			padding: 15px 15px 15px 0;
 
-			padding-right: 1em;
+			line-height: 1.2em;
 
 			&:last-child {
 				border-top: none;
 				text-align: center;
 				padding-right: 0;
 			}
-
-/*
-			&:nth-of-type(3) {
-
-			}
-*/
 		}
 
 		tr + tr {

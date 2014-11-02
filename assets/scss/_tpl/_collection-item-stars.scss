@@ -1,0 +1,55 @@
+@mixin star-1 {
+	background: url('../images/star-big.svg') no-repeat 60px 10px,
+				url('../images/star-small.svg') no-repeat 85px 0px,
+				url('../images/star-big.svg') no-repeat 40px 160px,
+				url('../images/star-small.svg') no-repeat 55px 170px,
+				url('../images/star-small.svg') no-repeat 290px 92px;
+}
+
+@mixin star-2 {
+	background: url('../images/star-small.svg') no-repeat 65px 0px,
+				url('../images/star-big.svg') no-repeat 40px 130px,
+				url('../images/star-big.svg') no-repeat 330px 72px,
+				url('../images/star-big.svg') no-repeat 290px 100%,
+				url('../images/star-small.svg') no-repeat 310px 92px;
+}
+
+@mixin star-3 {
+	background: url('../images/star-big.svg') no-repeat 30px 35%,
+				url('../images/star-small.svg') no-repeat 55px 40%,
+				url('../images/star-big.svg') no-repeat 70% 100%,
+				url('../images/star-small.svg') no-repeat 74% 93%,
+				url('../images/star-small.svg') no-repeat 81% 0;
+}
+
+@mixin star-4 {
+	background: url('../images/star-big.svg') no-repeat 240px 0,
+				url('../images/star-small.svg') no-repeat 100% 50px,
+				url('../images/star-big.svg') no-repeat 12% 84%,
+				url('../images/star-small.svg') no-repeat 8% 91%,
+				url('../images/star-small.svg') no-repeat 74% 100%;
+}
+
+@mixin star-5 {
+	background: url('../images/star-small.svg') no-repeat 65px 0px,
+				url('../images/star-big.svg') no-repeat 40px 130px,
+				url('../images/star-big.svg') no-repeat 253px 89%,
+				url('../images/star-big.svg') no-repeat 210px 0,
+				url('../images/star-small.svg') no-repeat 234px 95%;
+}
+
+@mixin star-6 {
+	background: url('../images/star-big.svg') no-repeat 32px 65%,
+				url('../images/star-small.svg') no-repeat 55px 60%,
+				url('../images/star-big.svg') no-repeat 100% 60px,
+				url('../images/star-small.svg') no-repeat 130px 100%,
+				url('../images/star-small.svg') no-repeat 81% 0;
+}
+
+@mixin star-7 {
+	background: url('../images/star-big.svg') no-repeat 240px 0,
+				url('../images/star-small.svg') no-repeat 100% 50px,
+				url('../images/star-big.svg') no-repeat 210px 100%,
+				url('../images/star-small.svg') no-repeat 225px 93%,
+				url('../images/star-small.svg') no-repeat 74% 100%;
+}

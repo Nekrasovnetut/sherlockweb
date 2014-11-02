@@ -5,9 +5,9 @@
 
 
 <div class="page">
-	
 
-	
+
+
 	<nav class="section-nav nav sticky" >
 		<ul>
 			<li class="nav-item current"><a href="index-reserve.php"><i class="icon-clock"></i> Забронировать</a></li>
@@ -37,7 +37,7 @@
 						<h3> Путешествия </h3>
 					</a></header>
 					<div class="collection-content aligner">
-						<div class="schedule-overflow">
+						<div class="overWrapper">
 							<? include "includes/misc/schedule-reserve.php" ?>
 						</div>
 					</div>
@@ -47,7 +47,7 @@
 						<h3> Сериалы </h3>
 					</a></header>
 					<div class="collection-content aligner">
-						<div class="schedule-overflow">
+						<div class="overWrapper">
 							<? include "includes/misc/schedule-reserve.php" ?>
 						</div>
 					</div>

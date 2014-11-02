@@ -92,7 +92,13 @@
 
 	.collection-map-item.collection-#{$n} {
 		.collection-map-item-heading {
-			color: $color;
+			h4 {
+				color: $color;
+			}
+		}
+
+		.btn-outline {
+			border-color: $color;
 		}
 	}
 }

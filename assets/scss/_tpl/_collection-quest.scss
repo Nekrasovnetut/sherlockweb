@@ -8,7 +8,7 @@
 			padding-top: 30px;
 		}
 	}
-	
+
 	&-icon{
 		position: absolute;
 		@include mq(small) {
@@ -26,26 +26,31 @@
 		right: 0;
 		}
 	}
-	
+
 	&-top{
-		@extend %mcf;			
+		@extend %mcf;
 	}
-		
+
 	&-quest{
-		@extend %mcf;			
+		@extend %mcf;
 	}
-	
+
 	&-section-first{
 		@extend %mcf;
-		padding: 70px 8% 0;	
-		position: relative;	
+		padding: 70px 8% 0;
+		position: relative;
 		overflow: hidden;
+
+		@include mq(medium) {
+			padding-top: 30px;
+		}
 	}
-	
+
 	.quote {
+//		padding-top: 2em;
 		font-size: 20px;
 	}
-	
+
 
 	.section-map {
 		background: $accent-color;
@@ -168,6 +173,10 @@
 	&-contacts {
 		margin-top: 2.5em;
 		line-height: 1.5em;
+
+		@include mq(medium) {
+			margin: 1em 0 2.5em;
+		}
 	}
 }
 
