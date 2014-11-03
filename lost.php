@@ -34,7 +34,7 @@
 	</div>
 </div>
 
-<div id="lost-success">
+<div id="lost-success" class="popup-content-message">
 	<h3>Письмо с новым паролем отправлено вам на  e-mail.</h3>
 </div>
 

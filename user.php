@@ -2,21 +2,20 @@
 
 	include "includes/header.php" ?>
 
-<div class="page-cover">
-	<div class="page-cover-content">
-		<header class="page-cover-heading">
-			<h2> Глеб Белг </h2>
-			<ul class="info">
-				<li>14.04.1996</li>
-				<li>konstantinopolsky@gmail.com </li>
-				<li>+7 903 567 67 66</li>
-			</ul>
-			<a href="user-change.php" class="btn-link">изменить данные</a>
-		</header>
-	</div>
-</div>
-
 <div class="page">
+	<div class="page-cover">
+		<div class="page-cover-content">
+			<header class="page-cover-heading">
+				<h2> Глеб Белг </h2>
+				<ul class="info">
+					<li>14.04.1996</li>
+					<li>konstantinopolsky@gmail.com </li>
+					<li>+7 903 567 67 66</li>
+				</ul>
+				<a href="user-change.php" class="btn-link">изменить данные</a>
+			</header>
+		</div>
+	</div>
 	<section class="section"><div class="aligner">
 		<div class="section-heading">
 			<h4 class="accent">Забронированные квесты</h4>

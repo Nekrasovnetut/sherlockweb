@@ -1,18 +1,16 @@
-$collection-1: #89CC32;
-$scale-1: .95;
-$scale-2: 1.05;
-$scale-3: 1.15;
+@import "_collection-mixins/collection-color-mixin";
+@import "_collection-mixins/collection-item-stars";
 
-@include collection-page-color(1, $collection-1);
+@include collection-page-color(1, #89CC32);
 
-section.collection-1 {
+section.collection-1, %collection-layout-1 {
 
 	.collection-map {
 
 		&-content-bg {
 			.svg & {
 				background: url('../images/layout/1/path-1.svg') no-repeat 190px 20px,
-						url('../images/layout/1/path-2.svg') no-repeat 695px 210px;
+							url('../images/layout/1/path-2.svg') no-repeat 695px 210px;
 			} .no-svg & {
 				background: url('../images/layout/1/path-1.png') no-repeat 190px 20px,
 							url('../images/layout/1/path-2.png') no-repeat 695px 210px;
@@ -74,7 +72,9 @@ section.collection-1 {
 
 		&-item {
 
-			&:nth-of-type(1) {
+			// 1:
+
+			& {
 				left: 20px;
 				top: 150px;
 
@@ -95,7 +95,9 @@ section.collection-1 {
 				}
 			}
 
-			&:nth-of-type(2) {
+			// 2:
+
+			& + #{$item} {
 				left: 490px;
 				top: 10px;
 
@@ -116,7 +118,9 @@ section.collection-1 {
 				}
 			}
 
-			&:nth-of-type(3) {
+			// 3:
+
+			& + #{$item} + #{$item} {
 				top: 340px;
 				left: 410px;
 

@@ -35,6 +35,10 @@
 			left: 20px; opacity: 0;
 
 			transition: all .2s;
+
+			.lt-ie9 & {
+				left: 5px;
+			}
 		}
 	}
 
@@ -86,10 +90,13 @@
 
 	&-left, &-right {
 		text-decoration: underline;
+
+		overflow: visible;
 	}
 
 	&-close {
 		@extend %reset-appearance;
+		overflow: visible;
 	}
 
 	@at-root %btn-arrow, &-left:before, &-right:before, &-close:before {

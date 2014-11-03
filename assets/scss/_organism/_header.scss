@@ -14,31 +14,16 @@ $header-height: 50px;
 
 	transition: background .2s;
 
-	&:hover, &.is-visible {
+	&:hover, &.is-visible, .no-js & {
 		background: rgba(#232323, .95);
 	}
 
-	&-ghost {
-		position: fixed; z-index: 0; left: 0; top: 0;
-		background: $main-color;
-		background: rgba(#232323, .95);
-		color: white;
+	+ .page {
+		margin-top: $header-height;
+		padding-top: 75px;
 
-		width: 100%;
-
-		// Vertical centering:
-		height: $header-height;
-		line-height: $header-height;
-
-		transition: background .2s;
-
-		+ .page {
-			margin-top: $header-height;
-			padding-top: 75px;
-
-			._sherlock-about {
-				padding-top: 160px - 75px - $header-height;
-			}
+		._sherlock-about {
+			padding-top: 160px - 75px - $header-height;
 		}
 	}
 

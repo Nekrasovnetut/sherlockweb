@@ -199,6 +199,7 @@
 .input, .select {
 	@extend %reset-appearance;
 	width: 100%;
+	min-width: 100px;
 
 	font-size: 1.2em;
 	padding-bottom: .4em;

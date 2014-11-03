@@ -80,7 +80,7 @@ $scale-3: 1.15;
 			// 1:
 
 			left: 70px;
-			top: 60px;
+			top: 30px;
 
 			@include star-1;
 
@@ -102,7 +102,7 @@ $scale-3: 1.15;
 
 			> .collection-map-item  {
 				left: 520px;
-				top: 240px;
+				top: 100%;
 
 
 				@include star-2;
@@ -131,7 +131,7 @@ $scale-3: 1.15;
 			> .collection-map-item
 			> .collection-map-item  {
 				top: 100%;
-				margin-top: 15px;
+				margin-top: 0;
 				left: -580px;
 
 				@include path('../images/layout/user/path-2.svg', 412px, 160px, 220px, -170px);
@@ -158,7 +158,7 @@ $scale-3: 1.15;
 			> .collection-map-item  {
 
 				top: 100%;
-				margin-top: 15px;
+//				margin-top: 15px;
 				left: 560px;
 
 				@include path('../images/layout/user/path-3.svg', 507px, 186px, -130px, -220px);
@@ -186,7 +186,7 @@ $scale-3: 1.15;
 			> .collection-map-item
 			> .collection-map-item {
 				top: 100%;
-				margin-top: 15px;
+//				margin-top: 15px;
 				left: -500px;
 
 				@include path('../images/layout/user/path-4.svg', 244px, 134px, 310px, -130px);
@@ -214,7 +214,7 @@ $scale-3: 1.15;
 			> .collection-map-item
 			> .collection-map-item {
 				top: 100%;
-				margin-top: 15px;
+//				margin-top: 15px;
 				left: 510px;
 
 				@include path('../images/layout/user/path-5.svg', 303px, 104px, -100px, -130px);

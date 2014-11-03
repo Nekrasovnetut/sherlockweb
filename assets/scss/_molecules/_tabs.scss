@@ -1,6 +1,7 @@
 .tabs {
 	&-content {
 		transition: height .2s;
+		overflow: hidden;
 
 		&-item {
 			display: none;

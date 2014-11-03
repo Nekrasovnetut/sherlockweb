@@ -50,7 +50,7 @@
 	</div>
 </div>
 
-<div id="certificate-success">
+<div id="certificate-success"  class="popup-content-message">
 	<h3>Спасибо. Ваша заявка на сертификат принята. <br /> Скоро вам позвонят.</h3>
 </div>
 

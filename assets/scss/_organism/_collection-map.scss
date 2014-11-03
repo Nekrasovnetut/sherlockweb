@@ -1,20 +1,22 @@
+$scale-0: .9 !global;
+$scale-1: .95 !global;
+$scale-2: 1.05 !global;
+$scale-3: 1.15 !global;
+$mapHeight: 600px !global;
+$item: ".collection-map-item";
+
 .collection {
 	&-map, &-schedule {
 		color: white;
 		overflow: hidden;
 	}
 
-	$scale-1: .95;
-	$scale-2: 1.05;
-	$scale-3: 1.15;
-	$mapHeight: 600px;
-
 	&-map {
 		.aligner {
 			position: relative;
 			height: $mapHeight;
 
-			@include mq(medium) {
+			@media (max-width: 850px) {
 				height: auto !important;
 
 				&:before, &:after {
@@ -24,6 +26,12 @@
 
 			max-width: 1050px;
 			transform-origin: top center;
+
+			@include mq(medium) {
+				transform: scale($scale-0) translateZ(0) !important;
+
+				height: $mapHeight*$scale-0;
+			}
 
 			@include mq(ipad) {
 				transform: scale($scale-1) translateZ(0) !important;
@@ -51,7 +59,7 @@
 			&.is-empty {
 				background: none !important;
 
-				@include mq(medium) {
+				@media (max-width: 850px) {
 					display: none;
 				}
 			}
@@ -89,7 +97,7 @@
 				margin-top: $magic-number * 2;
 			}
 
-			@include mq(medium) {
+			@media (max-width: 850px) {
 
 				position: relative;
 				left: auto !important; right: auto !important;
@@ -129,10 +137,8 @@
 			&-icons {
 				img {
 					position: absolute;
-//					width: 70px;
-//					height: 70px;
 
-					@include mq(medium) {
+					@media (max-width: 850px) {
 						display: none;
 
 						&:first-child { // Номер иконки, которая останеться на маленьком экране
@@ -158,7 +164,7 @@
 		&-path {
 			position: absolute; z-index: 2; // <- Основные стили
 
-			@include mq(medium) {
+			@media (max-width: 850px) {
 				display: none;
 			}
 		}
@@ -177,7 +183,7 @@
 			position: absolute;
 			left: -50px; top: 0; right: -100px; bottom: -25px;
 
-			@include mq(medium) {
+			@media (max-width: 850px) {
 				background: none !important;
 			}
 
@@ -187,24 +193,10 @@
 				position: absolute;
 				background-repeat: no-repeat;
 
-				@include mq(medium) {
+				@media (max-width: 850px) {
 					content: none;
 				}
 			}
 		}
 	}
-
-	&-schedule {
-		.schedule-overflow {
-			padding: 0 50px 20px;
-		}
-	}
 }
-
-// Стили расположения коллекций:
-
-@import "_collections/collection-user";
-@import "_collections/collection-0";
-@import "_collections/collection-1";
-
-@include collection-page-color(2, #F66534);

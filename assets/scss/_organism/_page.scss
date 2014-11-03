@@ -60,32 +60,16 @@
 			padding-top: 120px;
 			padding-bottom: 120px;
 
-/*
-			@include mq(normal) {
-				padding-top: 120px;
-				padding-bottom: 120px;
+			.page & {
+				padding-top: 50px;
 			}
-
-			@include mq(medium) {
-				padding-top: 14%;
-				padding-bottom: 14%;
-			}
-*/
-
-/*
-			@include mq(small) {
-				padding-top: 14%;
-				padding-bottom: 14%;
-			}
-*/
-
 
 			h2 {
 				margin-bottom: 30px;
 			}
 		}
 
-		+ .page {
+		+ .page, + .section {
 			border-top: 1px solid $light-grey;
 		}
 	}
@@ -95,6 +79,10 @@
 	position: fixed;
 	z-index: 0;
 	width: 100%;
+
+	.no-js & {
+		position: static;
+	}
 
 	@include mq(small){
 		position: static;

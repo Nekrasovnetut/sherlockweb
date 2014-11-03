@@ -1,4 +1,7 @@
-<!--[if !IE]><!-->
+<!--[if gt IE 9]>
+	<script src="assets/js/lib/jquery-2.1.1.min.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if IE]><!-->
 	<script src="assets/js/lib/jquery-2.1.1.min.js" type="text/javascript"></script>
 <!--<![endif]-->
 

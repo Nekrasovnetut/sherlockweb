@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if !IE]><!--> <html class="not-ie"> <!--<![endif]-->
-<!--[if IE 8]>  <html class="ie8 lt-ie9"> <![endif]-->
-<!--[if IE 9]> <html class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html class="not-ie no-js"> <!--<![endif]-->
+<!--[if IE 8]>  <html class="ie8 lt-ie9 no-js"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -22,11 +22,15 @@
 	<![endif]-->
 
 	<script>
+		var root = document.documentElement;
+
+		root.className = root.className.replace(new RegExp('\\b no-js\\b'), '');
+
 		// Проверка на поддержку SVG:
 		if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1"))
-			document.documentElement.className += " svg";
+			root.className += " svg";
 		else
-			document.documentElement.className += " no-svg";
+			root.className += " no-svg";
 	</script>
 </head><body ontouchstart="">
 
@@ -114,4 +118,4 @@
 			</li>
 		</ul>
 	</nav>
-</header><div class="header-ghost"></div>
+</header>

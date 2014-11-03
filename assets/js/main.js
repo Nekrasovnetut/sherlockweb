@@ -47,14 +47,14 @@
 
 	// !Шапка сайта:
 
-	if ($('.header-ghost + .page')[0]) $('.header').addClass('is-visible');
+	if ($('.header + .page')[0]) $('.header').addClass('is-visible');
 
 	$(window).scroll(function (event) {
 	    var scroll = $(window).scrollTop();
 
-	    if (scroll > 0 && !$('.header-ghost + .page')[0]) {
+	    if (scroll > 0 && !$('.header + .page')[0]) {
 		    $('.header').addClass('is-visible');
-	    } else if (scroll <= 0 && !$('.header-ghost + .page')[0]) {
+	    } else if (scroll <= 0 && !$('.header + .page')[0]) {
 		    $('.header').removeClass('is-visible');
 	    }
 	});
