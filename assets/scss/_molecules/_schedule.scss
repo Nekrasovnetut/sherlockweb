@@ -63,6 +63,9 @@
 
 	.deactivated {
 		display: none;
+		&-holder{
+			opacity: 0;
+		}
 	}
 
 	.disabled {

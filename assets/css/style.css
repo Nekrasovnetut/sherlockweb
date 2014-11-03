@@ -2001,6 +2001,9 @@ hr {
 .schedule .deactivated {
   display: none;
 }
+.schedule .deactivated-holder {
+  opacity: 0;
+}
 .schedule .disabled {
   color: #ddd;
   cursor: default;

@@ -50,8 +50,10 @@
 	</tr>
 	<tr class="schedule-cost">
 	    <th>Четверг</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
+	    <td colspan="5" class="deactivated-holder"><hr /></td>
+	    <td colspan="3"> 2000 Р <hr /> </td>
+	    <td colspan="9" class="deactivated-holder"> 3000 Р <hr /> </td>
+	    <td colspan="2"> 2000 Р <hr /> </td>
 	</tr>
 	<tr class="schedule-time">
 	    <th>24 Сентября</th>
