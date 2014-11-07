@@ -15,6 +15,7 @@
 			});
 		}
 
+
 	};
 
 	$($coverImage[0]).on('load', imageFill);
