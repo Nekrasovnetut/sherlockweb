@@ -1,3 +1,25 @@
+ .last,  .first {
+	 position: relative
+ }
+
+.last::after{
+	content: "|";
+	position: absolute;
+	right: -0.1em;
+	font-size: 0.7em;
+	//line-height: 1em;
+	font-weight: bold;
+}
+
+ .first::before {
+	content: "|";
+	position: absolute;
+	left: -0.1em;
+	font-size: 0.7em;
+	//line-height: 1em;
+	font-weight: bold;
+	}
+
 .schedule {
 	width: 100%;
 	table-layout: fixed;
@@ -87,8 +109,8 @@
 	}
 
 	td {
-		width: 4.5%;
-		padding: .5em 0 .25em 10px;
+		width: 4.8%;
+		padding: .5em 0 .25em 0;
 	}
 
 	&-time {
@@ -96,20 +118,78 @@
 		th {
 			font-weight: bold;
 			color: $accent-color;
-			padding-top: 1.5em;
+			padding-top: 2em;
 			vertical-align: top;
-			line-height: 1.3125em;
+			line-height: 1em;
+			span {
+				float: left;
+				padding-top: 0.8em;
+				color: $medium-grey;
+				font-style: normal;
+				
+
+			}
 
 			.collection-schedule & {
 				color: white;
 				font-size: 1.066666667em; // 16px
-				padding-top: 1.1em;
+				padding-top: 1.9em;
 				line-height: 1.7em;
 			}
+			
+			.collection-list & {
+				color: white !important; 
+			}
+			
+			
+			
 		}
 
 		td {
-			padding-top: 1.5em;
+			padding-top: 2em;
+			height: 4.2em;
+			a{
+				display: block;
+				height: 1em;
+				text-align: center;
+				margin-bottom: 1em;
+				
+			}
+			span {
+				color: $accent-color;
+				font-size: 0.8em;
+				line-height: 1em;
+				display: block;
+				height: 0.6em;
+				text-align: center;
+				
+				.collection-schedule & {
+				color: #333;
+				color: rgba(black, .75);
+				}
+				
+				.collection-list & {
+				color: #333 !important;
+				color: rgba(black, .75) !important;
+				}
+				
+				hr {
+				display: inline-block;
+				vertical-align: middle;
+				width: 100%;
+				border-bottom-color: $accent-color;
+				.collection-schedule & {
+				border-bottom-color: #333;
+				border-bottom-color: rgba(black, .75);
+				}
+							.collection-list & {
+				border-bottom-color: #333 !important;
+				border-bottom-color: rgba(black, .75) !important;
+				}
+				}
+	
+
+			}
 		}
 	}
 
@@ -118,6 +198,7 @@
 			color: $medium-grey;
 			font-size: .928571429em; // 13px
 			font-weight: normal;
+
 		}
 
 		td {
@@ -128,6 +209,10 @@
 			.collection-schedule & {
 				color: #333;
 				color: rgba(black, .75);
+			}
+			
+			.collection-list & {
+				color: white !important;
 			}
 
 			hr {
@@ -141,7 +226,10 @@
 					border-bottom-color: #333;
 					border-bottom-color: rgba(black, .75);
 				}
+				
+
 			}
 		}
 	}
 }
+

@@ -1,8 +1,20 @@
 // Назначение цветов для разных:
 
 @mixin collection-page-color($n, $color) {
+	
+
+	
 	.collection-#{$n} {
 		.page-heading h3, .page-heading h2 { color: $color; }
+
+
+		.last {
+	
+		}
+
+		.first {
+		
+		}
 
 		&.section {
 			background: $color;
@@ -59,9 +71,25 @@
 				color: $color;
 			}
 
-			&-time th {
+			&-time {
+				th {
 				color: $color;
+
+				}
+				td {
+
+					span {
+						color: $color;
+							hr {
+								border-bottom-color: $color;
+							}
+					}
+				}
 			}
+			
+	
+			
+
 
 			&-cost td {
 				color: $color;

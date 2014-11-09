@@ -63,7 +63,7 @@
 
 		</div>
 
-
+		
 
 	</section>
 
@@ -75,56 +75,42 @@
 			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
 		</ul>
 	</nav>
+	
+	
 
-	<section class="section">
+	<nav class="tabs nav-days">
+		<ul>
+			<li class="nav-item nav-item-heading js-date-switch"><span>1</span> Cентября</li>
 
-		<div class="collection-list-item quest-item">
-			<div class="quest-item-img">
-				<figure class="covermini">
-					<div class="age">+18</div>
-					<img src="example-images/example-cover.jpg">
-				</figure>
+			<? for ($i = 1; $i <= 31; $i++) { ?>
+				<li class="tabs-item nav-item <?= ($i == 1) ? "is-active" : "" ?> ">
+					<a href="#day-<?= $i ?>" data-date="<?= $i ?> Сентября"> <?= $i ?> </a>
+				</li>
+			<? } ?>
+		</ul>
+	</nav>
+	<div class="tabs-content" style="background-color: #26C0D5;">
+
+		<? for ($i = 1; $i <= 31; $i++) { ?>
+			<div id="day-<?= $i ?>" class="tabs-content-item <?= ($i == 1) ? "is-active" : "" ?> ">
+
+				<section class="section collection-schedule" style="background-color: #26C0D5;">
+					<header class="section-heading"><a href="collection-list.php">
+						<h3> Сериалы </h3>
+					</a></header>
+					<div class="collection-content aligner">
+						<div class="overWrapper">
+							<? include "includes/misc/schedule-reserve.php" ?>
+						</div>
+					</div>
+				</section>
 			</div>
-			<div class="quest-item-content">
-
-				<div class="quest-item-top mcf">
-					<h3 class="quest-item-top-left to-left">Сибирь: Старая лаборатория</h3>
-					<div class="quest-item-top-right"><? include "includes/quest-preview.php" ?></div>
-				</div>
-
-				<hr />
-
-				<div class="quest-item-middle">
-					<p>
-					Судья Люк Фонтен принял решение на основании позиции прокуратуры Лиона, которая ранее дала согласие на выдачу Кузнецова. Возражения адвокатов бывшего министра, настаивавших на политических мотивах преследования их клиента, были отвергнуты. Вместе с тем решение суда сопровождается рядом оговорок. Как сообщили судебные источники, Кузнецова нельзя.
-					</p>
-				</div>
-
-				<div class="quest-item-bottom">
-
-					<dl class="iconInfo">
-						<dt class="iconInfo-icon">
-							<i class="icon-marker"></i>
-						</dt>
-						<dt class="iconInfo-content">
-							<span class="accent">
-								<ul>
-									<li>М. Кропоткинская</li>
-									<li>Большой Афонасьевский пер 15 стр1 </li>
-								</ul>
-							</span>
-						</dt>
-					</dl>
-
-				</div>
-			</div>
+		<? } ?>
+	</div>
 
 
 
-		</div>
 
-
-	</section>
 
 
 

@@ -42,12 +42,22 @@
 		&-bg {
 			img {
 				width: 100%;
+						@include mq(small) {
+							width: 140%;
+						}
 				height: auto;
 
 				position: absolute;
 				left: -9999px; right: -9999px; top: 0; //top: -9999px; bottom: -9999px;
 				margin: auto;
 				z-index: -1;
+				bottom: -30%;
+						@include mq(medium) {
+							bottom: auto;
+						}
+						@include mq(medium) {
+							bottom: -15%;
+						}
 			}
 
 			+ .page-cover-content {

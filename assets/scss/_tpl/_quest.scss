@@ -10,6 +10,7 @@
 	}
 
 	&-icon{
+		z-index: -1;
 		position: absolute;
 		@include mq(small) {
 			display: none;

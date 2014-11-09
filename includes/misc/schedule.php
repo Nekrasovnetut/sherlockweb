@@ -1,194 +1,94 @@
 <table class="schedule">
 	<tr class="schedule-time">
-	    <th>23 Сентября</th>
-	    <td><a href="login-register.php">00:00</a></td>
-	    <td><a href="login-register.php">01:15</a></td>
-	    <td><a href="login-register.php">02:30</a></td>
-	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">03:45</a></td>
-	    <td><a href="login-register.php">05:00</a></td>
-	    <td><a href="login-register.php">06:15</a></td>
-	    <td><a href="login-register.php">07:30</a></td>
-	    <td><a href="login-register.php">08:45</a></td>
-	    <td><a href="login-register.php">10:00</a></td>
-	    <td><a href="login-register.php">11:15</a></td>
-	    <td><a href="login-register.php">12:30</a></td>
-	    <td><a href="login-register.php">13:45</a></td>
-	    <td><a href="login-register.php">15:00</a></td>
-	    <td><a href="login-register.php">16:15</a></td>
-	    <td><a href="login-register.php">17:30</a></td>
-	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">18:45</a></td>
-	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">20:00</a></td>
-	    <td><a href="login-register.php">21:15</a></td>
-	    <td><a href="login-register.php">22:30</a></td>
+	    <th>23 Сентября<span>Четверг</span></th>
+	    <td><a href="login-register.php">00:00</a><span>3000Р</span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">01:15</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">02:30</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">03:45</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">05:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">06:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">07:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">08:45</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">10:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">11:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">12:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">13:45</a><span><hr></span></td>
+	    <td><a href="login-register.php">15:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">16:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">17:30</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">18:45</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">20:00</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">21:15</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">22:30</a><span class="last"><hr></span></td>
 	</tr>
-	<tr class="schedule-cost">
-	    <th>Вторник</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
+	
 	<tr class="schedule-time">
-	    <th>24 Сентября</th>
-		<td><a href="javascript:void(0)" class="deactivated">00:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">01:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">02:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">03:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">05:00</a></td>
-	    <td><a href="login-register.php">06:45</a></td>
-	    <td><a href="login-register.php">08:00</a></td>
-	    <td><a href="login-register.php">09:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">10:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">11:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">12:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">13:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">15:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">16:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">17:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">18:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">20:00</a></td>
-	    <td><a href="login-register.php">21:45</a></td>
-	    <td><a href="login-register.php">23:00</a></td>
+	    <th>23 Сентября<span>Четверг</span></th>
+	    <td><a href="login-register.php">00:00</a><span>3000Р</span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">01:15</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">02:30</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">03:45</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">05:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">06:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">07:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">08:45</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">10:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">11:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">12:30</a><span class="last"><hr></span></td>
+	     <td><a href="javascript:void(0)" class="deactivated">13:45</a><span></span></td>
+	    <td><a href="login-register.php">15:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">16:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">17:30</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">18:45</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">20:00</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">21:15</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">22:30</a><span class="last"><hr></span></td>
 	</tr>
-	<tr class="schedule-cost">
-	    <th>Четверг</th>
-	    <td colspan="5" class="deactivated-holder"><hr /></td>
-	    <td colspan="3"> 2000 Р <hr /> </td>
-	    <td colspan="9" class="deactivated-holder"> 3000 Р <hr /> </td>
-	    <td colspan="2"> 2000 Р <hr /> </td>
-	</tr>
-	<tr class="schedule-time">
-	    <th>24 Сентября</th>
-		<td><a href="javascript:void(0)" class="deactivated">00:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">01:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">02:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">03:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">05:00</a></td>
-	    <td><a href="login-register.php">06:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">08:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">09:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">10:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">11:45</a></td>
-	    <td><a>13:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">13:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">15:00</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">16:15</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">17:30</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">18:45</a></td>
-	    <td><a href="javascript:void(0)" class="deactivated">20:00</a></td>
-	    <td><a href="login-register.php">21:45</a></td>
-	    <td><a href="login-register.php">23:00</a></td>
 
-	</tr>
-	<tr class="schedule-cost">
-	    <th>Среда</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
 	<tr class="schedule-time">
-	    <th>25 Сентября</th>
-	    <td><a href="login-register.php">06:00</a></td>
-	    <td><a href="login-register.php">07:15</a></td>
-	    <td><a href="login-register.php">08:30</a></td>
-	    <td><a href="login-register.php">09:45</a></td>
-	    <td><a href="login-register.php">11:00</a></td>
-	    <td><a href="login-register.php">12:14</a></td>
-	    <td><a href="login-register.php">13:30</a></td>
-	    <td><a href="login-register.php">14:45</a></td>
-	    <td><a href="login-register.php">16:00</a></td>
-	    <td><a href="login-register.php">17:15</a></td>
-	    <td><a href="login-register.php">18:30</a></td>
-	    <td><a href="login-register.php">19:45</a></td>
-	    <td><a href="login-register.php">21:00</a></td>
-	    <td><a href="login-register.php">22:15</a></td>
-	    <td><a href="login-register.php">22:30</a></td>
-	    <td><a href="login-register.php">23:45</a></td>
-	    <td><a href="login-register.php">01:00</a></td>
-	    <td><a href="login-register.php">02:15</a></td>
-	    <td><a href="login-register.php">03:30</a></td>
+	    <th>23 Сентября<span>Четверг</span></th>
+	    <td><a href="login-register.php">00:00</a><span>3000Р</span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">01:15</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">02:30</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">03:45</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">05:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">06:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">07:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">08:45</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">10:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">11:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">12:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">13:45</a><span><hr></span></td>
+	    <td><a href="login-register.php">15:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">16:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">17:30</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">18:45</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">20:00</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">21:15</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">22:30</a><span class="last"><hr></span></td>
 	</tr>
-	<tr class="schedule-cost">
-	    <th>Четверг</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
+	
 	<tr class="schedule-time">
-	    <th>26 Сентября</th>
-	    <td><a href="login-register.php">06:00</a></td>
-	    <td><a href="login-register.php">07:15</a></td>
-	    <td><a href="login-register.php">08:30</a></td>
-	    <td><a href="login-register.php">09:45</a></td>
-	    <td><a href="login-register.php">11:00</a></td>
-	    <td><a href="login-register.php">12:14</a></td>
-	    <td><a href="login-register.php">13:30</a></td>
-	    <td><a href="login-register.php">14:45</a></td>
-	    <td><a href="login-register.php">16:00</a></td>
-	    <td><a href="login-register.php">17:15</a></td>
-	    <td><a href="login-register.php">18:30</a></td>
-	    <td><a href="login-register.php">19:45</a></td>
-	    <td><a href="login-register.php">21:00</a></td>
-	    <td><a href="login-register.php">22:15</a></td>
-	    <td><a href="login-register.php">22:30</a></td>
-	    <td><a href="login-register.php">23:45</a></td>
-	    <td><a href="login-register.php">01:00</a></td>
-	    <td><a href="login-register.php">02:15</a></td>
-	    <td><a href="login-register.php">03:30</a></td>
-	</tr>
-	<tr class="schedule-cost">
-	    <th>Пятница</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
-	<tr class="schedule-time">
-	    <th>27 Сентября</th>
-	    <td><a href="login-register.php">06:00</a></td>
-	    <td><a href="login-register.php">07:15</a></td>
-	    <td><a href="login-register.php">08:30</a></td>
-	    <td><a href="login-register.php">09:45</a></td>
-	    <td><a href="login-register.php">11:00</a></td>
-	    <td><a href="login-register.php">12:14</a></td>
-	    <td><a href="login-register.php">13:30</a></td>
-	    <td><a href="login-register.php">14:45</a></td>
-	    <td><a href="login-register.php">16:00</a></td>
-	    <td><a href="login-register.php">17:15</a></td>
-	    <td><a href="login-register.php">18:30</a></td>
-	    <td><a href="login-register.php">19:45</a></td>
-	    <td><a href="login-register.php">21:00</a></td>
-	    <td><a href="login-register.php">22:15</a></td>
-	    <td><a href="login-register.php">22:30</a></td>
-	    <td><a href="login-register.php">23:45</a></td>
-	    <td><a href="login-register.php">01:00</a></td>
-	    <td><a href="login-register.php">02:15</a></td>
-	    <td><a href="login-register.php">03:30</a></td>
-	</tr>
-	<tr class="schedule-cost">
-	    <th>Суббота</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
-	<tr class="schedule-time">
-	    <th>28 Сентября</th>
-	    <td><a href="login-register.php">06:00</a></td>
-	    <td><a href="login-register.php">07:15</a></td>
-	    <td><a href="login-register.php">08:30</a></td>
-	    <td><a href="login-register.php">09:45</a></td>
-	    <td><a href="login-register.php">11:00</a></td>
-	    <td><a href="login-register.php">12:14</a></td>
-	    <td><a href="login-register.php">13:30</a></td>
-	    <td><a href="login-register.php">14:45</a></td>
-	    <td><a href="login-register.php">16:00</a></td>
-	    <td><a href="login-register.php">17:15</a></td>
-	    <td><a href="login-register.php">18:30</a></td>
-	    <td><a href="login-register.php">19:45</a></td>
-	    <td><a href="login-register.php">21:00</a></td>
-	    <td><a href="login-register.php">22:15</a></td>
-	    <td><a href="login-register.php">22:30</a></td>
-	    <td><a href="login-register.php">23:45</a></td>
-	    <td><a href="login-register.php">01:00</a></td>
-	    <td><a href="login-register.php">02:15</a></td>
-	    <td><a href="login-register.php">03:30</a></td>
-	</tr>
-	<tr class="schedule-cost">
-	    <th>Воскресенье</th>
-	    <td colspan="12"> 2000 Р <hr /> </td>
-	    <td colspan="8"> 3000 Р <hr /> </td>
-	</tr>
-</table>
+	    <th>23 Сентября<span>Четверг</span></th>
+	    <td><a href="login-register.php">00:00</a><span>3000Р</span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">01:15</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="deactivated">02:30</a><span></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">03:45</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">05:00</a><span><hr></span></td>
+	    <td><a href="login-register.php">06:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">07:30</a><span><hr></span></td>
+	    <td><a href="login-register.php">08:45</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">10:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">11:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">12:30</a><span class="last"><hr></span></td>
+	     <td><a href="javascript:void(0)" class="deactivated">13:45</a><span></span></td>
+	    <td><a href="login-register.php">15:00</a><span>4000Р</span></td>
+	    <td><a href="login-register.php">16:15</a><span><hr></span></td>
+	    <td><a href="login-register.php">17:30</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">18:45</a><span><hr></span></td>
+	    <td><a href="javascript:void(0)" class="disabled" title="Данное время уже зарезервировано">20:00</a><span class="last"><hr></span></td>
+	    <td><a href="login-register.php">21:15</a><span>3000Р</span></td>
+	    <td><a href="login-register.php">22:30</a><span class="last"><hr></span></td>
+	</tr>	
+
+	</table>
