@@ -15,6 +15,7 @@
     		delay: 5000
     	}
 	});
+	
 
 	$ghost = $('.js-ghost');
 	$ghost.height($ghost.prev().innerHeight() - 10);
@@ -22,6 +23,7 @@
 	$(window).resize(function(){
 		$ghost.height($ghost.prev().innerHeight() - 10);
 	});
+
 
 	$('.header').on('click', '.header-nav-toggle', function(){
 		$(this).toggleClass('is-active');
