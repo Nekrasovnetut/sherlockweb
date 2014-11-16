@@ -1,14 +1,14 @@
 @mixin retina-pic($name, $width, $height) {
 	background-repeat: no-repeat;
 	
-	background-image: url('../images/'+$name+'.png');
+	background-image: url('../../img/front/'+$name+'.png');
 	
 	width: $width;
 	height: $height;
 	
 	
 	@include hidpi(1.5) {
-		background-image: url('../images/'+$name+'@2x.png');
+		background-image: url('../../img/front/'+$name+'@2x.png');
 		background-size: $width $height;
 	}	
 }
@@ -17,13 +17,13 @@
 	background-repeat: no-repeat;
 	background-position: left top;
 	
-	background-image: url('../images/'+$name+'.png');
+	background-image: url('../../img/front/'+$name+'.png');
 	
 	width: $width;
 	height: $height;
 	
 	@include hidpi(1.5) {
-		background-image: url('../images/'+$name+'@2x.png');
+		background-image: url('../../img/front/'+$name+'@2x.png');
 		background-size: ($width*$number) $height;
 	}	
 }

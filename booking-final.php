@@ -63,7 +63,7 @@
 <!-- Ниже идет версия для печати -->
 
 <section class="printed printed-list">
-	<img src="assets/images/logo.svg" onerror="this.onerror=null; this.src='assets/images/logo.png'" width="150" alt="Логотип Шерлок" />
+	<img src="assets/img/front/logo.svg" onerror="this.onerror=null; this.src='assets/img/front/logo.png'" width="150" alt="Логотип Шерлок" />
 
 	<h2>Бронирование квеста</h2>
 	<p>21 сентября, 14:45</p>

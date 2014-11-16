@@ -1,10 +1,10 @@
 @font-face {
   font-family: "sherlock";
-  src:url("../fonts/sherlock-icons/sherlock.eot");
-  src:url("../fonts/sherlock-icons/sherlock.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/sherlock-icons/sherlock.woff") format("woff"),
-    url("../fonts/sherlock-icons/sherlock.ttf") format("truetype"),
-    url("../fonts/sherlock-icons/sherlock.svg#sherlock") format("svg");
+  src:url("../../fonts/front/sherlock-icons/sherlock.eot");
+  src:url("../../fonts/front/sherlock-icons/sherlock.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/front/sherlock-icons/sherlock.woff") format("woff"),
+    url("../../fonts/front/sherlock-icons/sherlock.ttf") format("truetype"),
+    url("../../fonts/front/sherlock-icons/sherlock.svg#sherlock") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -80,6 +80,11 @@
 }
 .icon-quest:before {
   content: "\e00f";
+}
+
+.icon-social-vk:before {
+  content: "\e014";
+  font-size: 1.2em;
 }
 
 .icon-arrow-right:before, %icon-arrow-right {

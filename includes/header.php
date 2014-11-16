@@ -11,8 +11,8 @@
 	<meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-	<link rel="stylesheet" href="assets/fonts/bliss-pro-font/font.css" />
+    <link rel="stylesheet" href="assets/css/front/style.css" />
+	<link rel="stylesheet" href="assets/fonts/front/bliss-pro-font/font.css" />
 
 	<!--[if lt IE 9]>
 		<script src="assets/js/lib/html5shiv-printshiv.min.js"></script>
@@ -36,9 +36,9 @@
 
 <header class="header">
 	<a href="index.php" class="header-logo logo logo--sm">
-		<img src="assets/images/logo-sm.svg"
+		<img src="assets/img/front/logo-sm.svg"
 			 onerror="this.onerror=null;
-			 this.src='/assets/images/logo-sm.png'" width="70" height="14" />
+			 this.src='/assets/img/front/logo-sm.png'" width="70" height="14" />
 	</a>
 
 	<button class="header-nav-toggle btn-simple on-mobile"> <i class="icon-burger"> <b></b> <b></b> <b></b> <b></b> </i> </button>

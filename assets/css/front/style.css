@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @font-face {
   font-family: "sherlock";
-  src: url("../fonts/sherlock-icons/sherlock.eot");
-  src: url("../fonts/sherlock-icons/sherlock.eot?#iefix") format("embedded-opentype"), url("../fonts/sherlock-icons/sherlock.woff") format("woff"), url("../fonts/sherlock-icons/sherlock.ttf") format("truetype"), url("../fonts/sherlock-icons/sherlock.svg#sherlock") format("svg");
+  src: url("../../fonts/front/sherlock-icons/sherlock.eot");
+  src: url("../../fonts/front/sherlock-icons/sherlock.eot?#iefix") format("embedded-opentype"), url("../../fonts/front/sherlock-icons/sherlock.woff") format("woff"), url("../../fonts/front/sherlock-icons/sherlock.ttf") format("truetype"), url("../../fonts/front/sherlock-icons/sherlock.svg#sherlock") format("svg");
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"]:before,
@@ -72,6 +72,10 @@
 
 .icon-quest:before {
   content: "\e00f"; }
+
+.icon-social-vk:before {
+  content: "\e014";
+  font-size: 1.2em; }
 
 .icon-arrow-right:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
   content: "\e010"; }
@@ -1042,7 +1046,7 @@ html {
     border-bottom-color: #F66534; }
 
 .select {
-  background: url("../images/icons/arrow-down.svg") no-repeat right 40%;
+  background: url("../../img/front/icons/arrow-down.svg") no-repeat right 40%;
   padding-right: 10px; }
   .ie8 .select {
     padding-right: 0; }
@@ -1793,23 +1797,27 @@ hr {
         content: none !important; } }
   @media (max-width: 950px) {
     .collection-map .aligner {
-      -webkit-transform: scale(0.9) translateZ(0) !important;
-              transform: scale(0.9) translateZ(0) !important;
+      -webkit-transform: scale(0.9) !important;
+          -ms-transform: scale(0.9) !important;
+              transform: scale(0.9) !important;
       height: 360px; } }
   @media (min-width: 949px) and (max-width: 1050px) {
     .collection-map .aligner {
-      -webkit-transform: scale(0.95) translateZ(0) !important;
-              transform: scale(0.95) translateZ(0) !important;
+      -webkit-transform: scale(0.95) !important;
+          -ms-transform: scale(0.95) !important;
+              transform: scale(0.95) !important;
       height: 380px; } }
   @media (min-width: 1150px) {
     .collection-map .aligner {
-      -webkit-transform: scale(1.05) translateZ(0) !important;
-              transform: scale(1.05) translateZ(0) !important;
+      -webkit-transform: scale(1.05) !important;
+          -ms-transform: scale(1.05) !important;
+              transform: scale(1.05) !important;
       height: 420px; } }
   @media (min-width: 1250px) {
     .collection-map .aligner {
-      -webkit-transform: scale(1.15) translateZ(0) !important;
-              transform: scale(1.15) translateZ(0) !important;
+      -webkit-transform: scale(1.15) !important;
+          -ms-transform: scale(1.15) !important;
+              transform: scale(1.15) !important;
       height: 460.0px; } }
 .collection-map-item {
   width: 400px;
@@ -2383,19 +2391,19 @@ html, body {
   border-color: #26C0D5; }
 
 .svg section.collection-0 .collection-map-content-bg {
-  background: url("../images/layout/0/path-1.svg") no-repeat 460px 50px, url("../images/layout/0/path-2.svg") no-repeat 655px 290px; }
+  background: url("../../img/front/layout/0/path-1.svg") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.svg") no-repeat 655px 290px; }
 .no-svg section.collection-0 .collection-map-content-bg {
-  background: url("../images/layout/0/path-1.png") no-repeat 460px 50px, url("../images/layout/0/path-2.png") no-repeat 655px 290px;
-  -pie-background: url("../images/layout/0/path-1.png") no-repeat 460px 50px, url("../images/layout/0/path-2.png") no-repeat 655px 290px; }
+  background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 290px;
+  -pie-background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 290px; }
 section.collection-0 .collection-map-content-bg:before {
   width: 102px;
   height: 171px;
   left: 120px;
   top: -110px; }
   .svg section.collection-0 .collection-map-content-bg:before {
-    background-image: url("../images/layout/0/path-first.svg"); }
+    background-image: url("../../img/front/layout/0/path-first.svg"); }
   .no-svg section.collection-0 .collection-map-content-bg:before {
-    background-image: url("../images/layout/0/path-first.png"); }
+    background-image: url("../../img/front/layout/0/path-first.png"); }
   @media (min-width: 949px) and (max-width: 1050px) {
     section.collection-0 .collection-map-content-bg:before {
       top: -189.4736842105px; } }
@@ -2411,9 +2419,9 @@ section.collection-0 .collection-map-content-bg:after {
   left: 120px;
   bottom: 10px; }
   .svg section.collection-0 .collection-map-content-bg:after {
-    background-image: url("../images/layout/0/path-last.svg"); }
+    background-image: url("../../img/front/layout/0/path-last.svg"); }
   .no-svg section.collection-0 .collection-map-content-bg:after {
-    background-image: url("../images/layout/0/path-last.png"); }
+    background-image: url("../../img/front/layout/0/path-last.png"); }
   @media (min-width: 949px) and (max-width: 1050px) {
     section.collection-0 .collection-map-content-bg:after {
       bottom: 19px; } }
@@ -2426,15 +2434,15 @@ section.collection-0 .collection-map-content-bg:after {
 section.collection-0 .collection-map-item {
   left: 5px;
   top: 0px;
-  background: url("../images/star-big.svg") no-repeat 30px 35%, url("../images/star-small.svg") no-repeat 55px 40%, url("../images/star-big.svg") no-repeat 70% 100%, url("../images/star-small.svg") no-repeat 74% 93%, url("../images/star-small.svg") no-repeat 81% 0; }
+  background: url("../../img/front/star-big.svg") no-repeat 30px 35%, url("../../img/front/star-small.svg") no-repeat 55px 40%, url("../../img/front/star-big.svg") no-repeat 70% 100%, url("../../img/front/star-small.svg") no-repeat 74% 93%, url("../../img/front/star-small.svg") no-repeat 81% 0; }
 section.collection-0 .collection-map-item + .collection-map-item {
   left: 585px;
   top: 25px;
-  background: url("../images/star-small.svg") no-repeat 65px 0px, url("../images/star-big.svg") no-repeat 40px 130px, url("../images/star-big.svg") no-repeat 330px 72px, url("../images/star-big.svg") no-repeat 290px 100%, url("../images/star-small.svg") no-repeat 310px 92px; }
+  background: url("../../img/front/star-small.svg") no-repeat 65px 0px, url("../../img/front/star-big.svg") no-repeat 40px 130px, url("../../img/front/star-big.svg") no-repeat 330px 72px, url("../../img/front/star-big.svg") no-repeat 290px 100%, url("../../img/front/star-small.svg") no-repeat 310px 92px; }
 section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item {
   top: 230px;
   left: 170px;
-  background: url("../images/star-big.svg") no-repeat 240px 0, url("../images/star-small.svg") no-repeat 100% 50px, url("../images/star-big.svg") no-repeat 12% 84%, url("../images/star-small.svg") no-repeat 8% 91%, url("../images/star-small.svg") no-repeat 74% 100%; }
+  background: url("../../img/front/star-big.svg") no-repeat 240px 0, url("../../img/front/star-small.svg") no-repeat 100% 50px, url("../../img/front/star-big.svg") no-repeat 12% 84%, url("../../img/front/star-small.svg") no-repeat 8% 91%, url("../../img/front/star-small.svg") no-repeat 74% 100%; }
   section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(1) {
     margin-top: -20px; }
 
@@ -2490,19 +2498,19 @@ section.collection-0 .collection-map-item + .collection-map-item + .collection-m
   border-color: #89CC32; }
 
 .svg section.collection-1 .collection-map-content-bg {
-  background: url("../images/layout/1/path-1.svg") no-repeat 190px 20px, url("../images/layout/1/path-2.svg") no-repeat 695px 210px; }
+  background: url("../../img/front/layout/1/path-1.svg") no-repeat 190px 20px, url("../../img/front/layout/1/path-2.svg") no-repeat 695px 210px; }
 .no-svg section.collection-1 .collection-map-content-bg {
-  background: url("../images/layout/1/path-1.png") no-repeat 190px 20px, url("../images/layout/1/path-2.png") no-repeat 695px 210px;
-  -pie-background: url("../images/layout/1/path-1.png") no-repeat 190px 20px, url("../images/layout/1/path-2.png") no-repeat 695px 210px; }
+  background: url("../../img/front/layout/1/path-1.png") no-repeat 190px 20px, url("../../img/front/layout/1/path-2.png") no-repeat 695px 210px;
+  -pie-background: url("../../img/front/layout/1/path-1.png") no-repeat 190px 20px, url("../../img/front/layout/1/path-2.png") no-repeat 695px 210px; }
 section.collection-1 .collection-map-content-bg:before {
   width: 156px;
   height: 347px;
   left: 80px;
   bottom: -50px; }
   .svg section.collection-1 .collection-map-content-bg:before {
-    background: url("../images/layout/1/path-first.svg") no-repeat left top; }
+    background: url("../../img/front/layout/1/path-first.svg") no-repeat left top; }
   .no-svg section.collection-1 .collection-map-content-bg:before {
-    background: url("../images/layout/1/path-first.png") no-repeat left top; }
+    background: url("../../img/front/layout/1/path-first.png") no-repeat left top; }
   @media (min-width: 949px) and (max-width: 1050px) {
     section.collection-1 .collection-map-content-bg:before {
       bottom: -83px; } }
@@ -2518,9 +2526,9 @@ section.collection-1 .collection-map-content-bg:after {
   left: 400px;
   bottom: -50px; }
   .svg section.collection-1 .collection-map-content-bg:after {
-    background: url("../images/layout/1/path-last.svg") no-repeat left top; }
+    background: url("../../img/front/layout/1/path-last.svg") no-repeat left top; }
   .no-svg section.collection-1 .collection-map-content-bg:after {
-    background: url("../images/layout/1/path-last.png") no-repeat left top; }
+    background: url("../../img/front/layout/1/path-last.png") no-repeat left top; }
   @media (min-width: 949px) and (max-width: 1050px) {
     section.collection-1 .collection-map-content-bg:after {
       bottom: -83px; } }
@@ -2533,15 +2541,15 @@ section.collection-1 .collection-map-content-bg:after {
 section.collection-1 .collection-map-item {
   left: 20px;
   top: 150px;
-  background: url("../images/star-small.svg") no-repeat 65px 0px, url("../images/star-big.svg") no-repeat 40px 130px, url("../images/star-big.svg") no-repeat 253px 89%, url("../images/star-big.svg") no-repeat 210px 0, url("../images/star-small.svg") no-repeat 234px 95%; }
+  background: url("../../img/front/star-small.svg") no-repeat 65px 0px, url("../../img/front/star-big.svg") no-repeat 40px 130px, url("../../img/front/star-big.svg") no-repeat 253px 89%, url("../../img/front/star-big.svg") no-repeat 210px 0, url("../../img/front/star-small.svg") no-repeat 234px 95%; }
 section.collection-1 .collection-map-item + .collection-map-item {
   left: 490px;
   top: 10px;
-  background: url("../images/star-big.svg") no-repeat 240px 0, url("../images/star-small.svg") no-repeat 100% 50px, url("../images/star-big.svg") no-repeat 210px 100%, url("../images/star-small.svg") no-repeat 225px 93%, url("../images/star-small.svg") no-repeat 74% 100%; }
+  background: url("../../img/front/star-big.svg") no-repeat 240px 0, url("../../img/front/star-small.svg") no-repeat 100% 50px, url("../../img/front/star-big.svg") no-repeat 210px 100%, url("../../img/front/star-small.svg") no-repeat 225px 93%, url("../../img/front/star-small.svg") no-repeat 74% 100%; }
 section.collection-1 .collection-map-item + .collection-map-item + .collection-map-item {
   top: 340px;
   left: 410px;
-  background: url("../images/star-big.svg") no-repeat 32px 65%, url("../images/star-small.svg") no-repeat 55px 60%, url("../images/star-big.svg") no-repeat 100% 60px, url("../images/star-small.svg") no-repeat 130px 100%, url("../images/star-small.svg") no-repeat 81% 0; }
+  background: url("../../img/front/star-big.svg") no-repeat 32px 65%, url("../../img/front/star-small.svg") no-repeat 55px 60%, url("../../img/front/star-big.svg") no-repeat 100% 60px, url("../../img/front/star-small.svg") no-repeat 130px 100%, url("../../img/front/star-small.svg") no-repeat 81% 0; }
 
 .collection-2 .page-heading h3, .collection-2 .page-heading h2 {
   color: #F66534; }
@@ -3101,18 +3109,18 @@ section.printed {
     		}
     */ }
     .svg .collection-user .aligner + .aligner:before {
-      background: url("../images/layout/user/path-6.svg") no-repeat left top; }
+      background: url("../../img/front/layout/user/path-6.svg") no-repeat left top; }
     .no-svg .collection-user .aligner + .aligner:before {
-      background: url("../images/layout/user/path-6.png") no-repeat left top; }
+      background: url("../../img/front/layout/user/path-6.png") no-repeat left top; }
   .collection-user .collection-map-item {
     color: #505050;
     left: 70px;
     top: 30px;
-    background: url("../images/star-big.svg") no-repeat 60px 10px, url("../images/star-small.svg") no-repeat 85px 0px, url("../images/star-big.svg") no-repeat 40px 160px, url("../images/star-small.svg") no-repeat 55px 170px, url("../images/star-small.svg") no-repeat 290px 92px; }
+    background: url("../../img/front/star-big.svg") no-repeat 60px 10px, url("../../img/front/star-small.svg") no-repeat 85px 0px, url("../../img/front/star-big.svg") no-repeat 40px 160px, url("../../img/front/star-small.svg") no-repeat 55px 170px, url("../../img/front/star-small.svg") no-repeat 290px 92px; }
     .collection-user .collection-map-item > .collection-map-item {
       left: 520px;
       top: 100%;
-      background: url("../images/star-small.svg") no-repeat 65px 0px, url("../images/star-big.svg") no-repeat 40px 130px, url("../images/star-big.svg") no-repeat 330px 72px, url("../images/star-big.svg") no-repeat 290px 100%, url("../images/star-small.svg") no-repeat 310px 92px; }
+      background: url("../../img/front/star-small.svg") no-repeat 65px 0px, url("../../img/front/star-big.svg") no-repeat 40px 130px, url("../../img/front/star-big.svg") no-repeat 330px 72px, url("../../img/front/star-big.svg") no-repeat 290px 100%, url("../../img/front/star-small.svg") no-repeat 310px 92px; }
       .collection-user .collection-map-item > .collection-map-item:before {
         content: "";
         display: block;
@@ -3124,9 +3132,9 @@ section.printed {
         -webkit-transform: translateZ(0);
                 transform: translateZ(0); }
         .svg .collection-user .collection-map-item > .collection-map-item:before {
-          background: url("../images/layout/user/path-1.svg") no-repeat; }
+          background: url("../../img/front/layout/user/path-1.svg") no-repeat; }
         .no-svg .collection-user .collection-map-item > .collection-map-item:before {
-          background: url("../images/layout/user/path-1.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-1.png") no-repeat; }
     .collection-user .collection-map-item > .collection-map-item
     > .collection-map-item {
       top: 100%;
@@ -3145,10 +3153,10 @@ section.printed {
                 transform: translateZ(0); }
         .svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-2.svg") no-repeat; }
+          background: url("../../img/front/layout/user/path-2.svg") no-repeat; }
         .no-svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-2.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-2.png") no-repeat; }
     .collection-user .collection-map-item > .collection-map-item
     > .collection-map-item
     > .collection-map-item {
@@ -3169,11 +3177,11 @@ section.printed {
         .svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-3.svg") no-repeat; }
+          background: url("../../img/front/layout/user/path-3.svg") no-repeat; }
         .no-svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-3.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-3.png") no-repeat; }
     .collection-user .collection-map-item > .collection-map-item
     > .collection-map-item
     > .collection-map-item
@@ -3197,12 +3205,12 @@ section.printed {
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-4.svg") no-repeat; }
+          background: url("../../img/front/layout/user/path-4.svg") no-repeat; }
         .no-svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-4.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-4.png") no-repeat; }
     .collection-user .collection-map-item > .collection-map-item
     > .collection-map-item
     > .collection-map-item
@@ -3229,13 +3237,13 @@ section.printed {
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-5.svg") no-repeat; }
+          background: url("../../img/front/layout/user/path-5.svg") no-repeat; }
         .no-svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          background: url("../images/layout/user/path-5.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-5.png") no-repeat; }
     .collection-user .collection-map-item .iconInfo-content {
       font-size: 15px; }
 

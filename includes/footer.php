@@ -21,7 +21,7 @@
 			<a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
 		</li>
 		<li class="centery-item">
-			<a href="https://twitter.com/"><i class="icon-twitter"></i></a>
+			<a href="https://twitter.com/"><i class="icon-social-vk"></i></a>
 		</li>
 	</ul>
 	

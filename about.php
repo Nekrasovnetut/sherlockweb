@@ -6,9 +6,9 @@
 	<div class="page-cover-content">
 		<a class="section-logo logo logo--big" href="index.php">
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<img src="assets/images/logo.svg"
+			<img src="assets/img/front/logo.svg"
 				 onerror="this.onerror=null;
-				 this.src='assets/images/logo.png'" width="350" height="111" alt="Логотип Шерлок" />
+				 this.src='assets/img/front/logo.png'" width="350" height="111" alt="Логотип Шерлок" />
 		</a>
 
 		<div class="description">

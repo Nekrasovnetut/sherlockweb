@@ -9,21 +9,21 @@ section.collection-1, %collection-layout-1 {
 
 		&-content-bg {
 			.svg & {
-				background: url('../images/layout/1/path-1.svg') no-repeat 190px 20px,
-							url('../images/layout/1/path-2.svg') no-repeat 695px 210px;
+				background: url('../../img/front/layout/1/path-1.svg') no-repeat 190px 20px,
+							url('../../img/front/layout/1/path-2.svg') no-repeat 695px 210px;
 			} .no-svg & {
-				background: url('../images/layout/1/path-1.png') no-repeat 190px 20px,
-							url('../images/layout/1/path-2.png') no-repeat 695px 210px;
+				background: url('../../img/front/layout/1/path-1.png') no-repeat 190px 20px,
+							url('../../img/front/layout/1/path-2.png') no-repeat 695px 210px;
 
-				-pie-background: url('../images/layout/1/path-1.png') no-repeat 190px 20px,
-								 url('../images/layout/1/path-2.png') no-repeat 695px 210px;
+				-pie-background: url('../../img/front/layout/1/path-1.png') no-repeat 190px 20px,
+								 url('../../img/front/layout/1/path-2.png') no-repeat 695px 210px;
 			}
 
 			&:before {
 				.svg & {
-					background: url('../images/layout/1/path-first.svg') no-repeat left top;
+					background: url('../../img/front/layout/1/path-first.svg') no-repeat left top;
 				} .no-svg & {
-					background: url('../images/layout/1/path-first.png') no-repeat left top;
+					background: url('../../img/front/layout/1/path-first.png') no-repeat left top;
 				}
 
 				width: 156px; height: 347px;
@@ -46,9 +46,9 @@ section.collection-1, %collection-layout-1 {
 
 			&:after {
 				.svg & {
-					background: url('../images/layout/1/path-last.svg') no-repeat left top;
+					background: url('../../img/front/layout/1/path-last.svg') no-repeat left top;
 				} .no-svg & {
-					background: url('../images/layout/1/path-last.png') no-repeat left top;
+					background: url('../../img/front/layout/1/path-last.png') no-repeat left top;
 				}
 
 				width: 108px; height: 171px;

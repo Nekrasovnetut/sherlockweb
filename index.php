@@ -10,9 +10,9 @@
 	<div class="page-cover-content">
 		<div class="section-logo logo logo--big">
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<a href="index.php"><img src="assets/images/logo-white.svg"
+			<a href="index.php"><img src="assets/img/front/logo-white.svg"
 				 onerror="this.onerror=null;
-				 this.src='assets/images/logo-white.png'" width="350" height="111"
+				 this.src='assets/img/front/logo-white.png'" width="350" height="111"
 				 alt="Логотип Шерлок" /></a>
 		</div>
 
@@ -54,10 +54,10 @@
 <div class="page">
 	<nav class="section-nav nav sticky" >
 		<ul>
-			<li class="nav-item"><a href="index-reserve.php"><i class="icon-clock"></i> Забронировать</a></li>
+			<li class="nav-item"><a href="index-reserve.php"><i class="icon-clock"></i>Забронировать</a></li>
 
-			<li class="nav-item current"><a href="index.php"><i class="icon-quest"></i> Квесты</a></li>
-			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i> Карта</a></li>
+			<li class="nav-item current"><a href="index.php"><i class="icon-quest"></i>Квесты</a></li>
+			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i>Карта</a></li>
 		</ul>
 	</nav>
 	<section class="section collection-map collection-0">
@@ -232,8 +232,8 @@
 			</article>
 
 			<article class="collection-map-item is-empty">
-				<img src="assets/images/no-item.svg"
-					 onerror="this.onerror=null; this.src='assets/images/no-item.png'" />
+				<img src="assets/img/front/no-item.svg"
+					 onerror="this.onerror=null; this.src='assets/img/front/no-item.png'" />
 			</article>
 		</div>
 	</section>

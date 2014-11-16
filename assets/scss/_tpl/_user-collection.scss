@@ -22,9 +22,9 @@ $scale-3: 1.15;
 		position: absolute;
 
 		.svg & {
-			background: url('../images/layout/user/path-6.svg') no-repeat left top;
+			background: url('../../img/front/layout/user/path-6.svg') no-repeat left top;
 		} .no-svg & {
-			background: url('../images/layout/user/path-6.png') no-repeat left top;
+			background: url('../../img/front/layout/user/path-6.png') no-repeat left top;
 		}
 
 		width: 414px; height: 143px;
@@ -108,7 +108,7 @@ $scale-3: 1.15;
 				@include star-2;
 
 
-				@include path('../images/layout/user/path-1.png', 300px, 139px, -100px, -180px);
+				@include path('../../img/front/layout/user/path-1.png', 300px, 139px, -100px, -180px);
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -134,7 +134,7 @@ $scale-3: 1.15;
 				margin-top: 0;
 				left: -580px;
 
-				@include path('../images/layout/user/path-2.svg', 412px, 160px, 220px, -170px);
+				@include path('../../img/front/layout/user/path-2.svg', 412px, 160px, 220px, -170px);
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -161,7 +161,7 @@ $scale-3: 1.15;
 //				margin-top: 15px;
 				left: 560px;
 
-				@include path('../images/layout/user/path-3.svg', 507px, 186px, -130px, -220px);
+				@include path('../../img/front/layout/user/path-3.svg', 507px, 186px, -130px, -220px);
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -189,7 +189,7 @@ $scale-3: 1.15;
 //				margin-top: 15px;
 				left: -500px;
 
-				@include path('../images/layout/user/path-4.svg', 244px, 134px, 310px, -130px);
+				@include path('../../img/front/layout/user/path-4.svg', 244px, 134px, 310px, -130px);
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {
@@ -217,7 +217,7 @@ $scale-3: 1.15;
 //				margin-top: 15px;
 				left: 510px;
 
-				@include path('../images/layout/user/path-5.svg', 303px, 104px, -100px, -130px);
+				@include path('../../img/front/layout/user/path-5.svg', 303px, 104px, -100px, -130px);
 
 				.collection-map-item-icons {
 					img:nth-of-type(1) {

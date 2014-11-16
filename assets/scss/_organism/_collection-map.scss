@@ -28,25 +28,25 @@ $item: ".collection-map-item";
 			transform-origin: top center;
 
 			@include mq(medium) {
-				transform: scale($scale-0) translateZ(0) !important;
+				transform: scale($scale-0) !important;
 
 				height: $mapHeight*$scale-0;
 			}
 
 			@include mq(ipad) {
-				transform: scale($scale-1) translateZ(0) !important;
+				transform: scale($scale-1) !important;
 
 				height: $mapHeight*$scale-1;
 			}
 
 			@include mq(big) {
-				transform: scale($scale-2) translateZ(0) !important;
+				transform: scale($scale-2) !important;
 
 				height: $mapHeight*$scale-2;
 			}
 
 			@include mq(ultrabig) {
-				transform: scale($scale-3) translateZ(0) !important;
+				transform: scale($scale-3) !important;
 
 				height: $mapHeight*$scale-3;
 			}
