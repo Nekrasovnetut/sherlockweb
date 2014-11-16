@@ -811,7 +811,7 @@ html {
 .logo {
   display: block; }
   .logo--big {
-    padding: 2.5% 0 5%; }
+    padding: 8% 0 8%; }
 
 /*------------------------------------*\
 	Атомы:
@@ -850,14 +850,14 @@ html {
     position: absolute; }
     .btn i.icon-arrow-right:before {
       left: 20px;
-      opacity: 0;
+      color: transparent;
       -webkit-transition: all .2s;
               transition: all .2s; }
       .lt-ie9 .btn i.icon-arrow-right:before {
         left: 5px; }
   .btn:hover i.icon-arrow-right:before {
     left: 5px;
-    opacity: 1; }
+    color: inherit; }
   .btn--big {
     font-size: 14px;
     display: block;

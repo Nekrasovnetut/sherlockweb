@@ -4,9 +4,13 @@
 
 
 <div class="fixed-top"><header class="page-cover _sherlock-about">
-	<div class="page-cover-bg">
-		<img class="js-imageFill" src="example-images/example-5.jpg" alt="" />
-	</div>
+
+	
+	<div class="royalSlider js-links-slider page-cover-bg">
+			<a href="quest.php?quest=1"><img class="rsImg js-imageFill" src="example-images/example-cover.jpg" alt="Летучий Голландец" /></a>
+			<a href="quest.php?quest=2"><img class="rsImg js-imageFill" src="example-images/slide-2.jpg" alt="Диплодоки в ловушке" /></a>
+		</div>
+	
 	<div class="page-cover-content">
 		<div class="section-logo logo logo--big">
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
@@ -17,7 +21,7 @@
 		</div>
 
 		<div class="description">
-			<p> «Шерлок» &mdash; это интерактивные игры в реальности, созданные на качественно ином  уровне восприятия. Мы предлагаем вам стать героями уникальных миров, которые заставят работать на максимум все ваши чувства: обоняние, осязание, зрение, вкус, слух, и интуицию. </p>
+			<p></p>
 		</div>
 	</div>
 </header>
