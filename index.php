@@ -7,7 +7,7 @@
 	<div class="page-cover-bg">
 		
 		<img class="js-imageFill" src="example-images/example-cover.png" alt="" />
-		
+		<img class="js-imageFill" src="example-images/example-cover-2.png" alt="" />
 		
 		
 	</div>
@@ -29,29 +29,20 @@
 	<div class="rsContent">
 		<div class="quote">
 			<div class="quote-image">
-				<img 	src="example-images/pic-quote.png" alt="Автор"
-					srcset="example-images/pic-quote.png 1x, example-images/pic-quote@2x.png 2x" width="113" height="144" />
+				<img 	src="assets/img/front/quotes/groysman.png" alt="Автор" height="130" />
 			</div>
 			<div class="quote-text-container">
 				<q class="quote-text">
-					Этот квест завёл меня быстрее моего парня и я ещё долго буду вспоминать бесконечные минуты проведённые в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small>
+				Мы хотим дать каждому возможность получать невероятные эмоции и при этом общаться друг с другом - вживую. Прелесть наших игр в том, что вы не сможете играть в них в одиночестве.
+					<small class="quote-author">Александра Гройсман</small>
 				</q>
 			</div>
 		</div>
 	</div>
 
-	<div class="rsContent">
-		<div class="quote">
-			<div class="quote-image">
-				<img 	src="example-images/al-capone.png" alt="Автор" height="130" />
-			</div>
-			<div class="quote-text-container">
-				<q class="quote-text">
-					Этот квест завёл меня быстрее моего парня и я ещё долго буду вспоминать бесконечные минуты проведённые в пыльном сундуке под дерюжкой! <small class="quote-author">Ксения Собчак</small>
-				</q>
-			</div>
-		</div>
-	</div>
+	
+
+	
 </div>
 </div><div class="js-ghost" style="position: relative; z-index: -2;"></div>
 
