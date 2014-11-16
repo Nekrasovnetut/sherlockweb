@@ -239,19 +239,16 @@
 
 		<div class="overWrapper"><ul class="centery centery--wider">
 			<li class="centery-item">
-				<a href="#"><img src="example-images/example-1.png" width="99" height="37" /></a>
+				<a href="#"><img src="example-images/example-1.png" width="130" height="62" /></a>
 			</li>
 			<li class="centery-item">
-				<a href="#"><img src="example-images/example-3.png" width="102" height="25" /></a>
+				<a href="#"><img src="example-images/example-2.png" width="109" height="40" /></a>
 			</li>
 			<li class="centery-item">
-				<a href="#"><img src="example-images/example-1.png" width="99" height="37" /></a>
+				<a href="#"><img src="example-images/example-3.png" width="64" height="84" /></a>
 			</li>
 			<li class="centery-item">
-				<a href="#"><img src="example-images/example-2.png" width="100" height="15" /></a>
-			</li>
-			<li class="centery-item">
-				<a href="#"><img src="example-images/example-3.png" width="102" height="25" /></a>
+				<a href="#"><img src="example-images/example-4.png" width="64" height="94" /></a>
 			</li>
 		</ul></div>
 	</section>
