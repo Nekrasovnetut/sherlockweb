@@ -54,9 +54,10 @@
 				bottom: -30%;
 						@include mq(medium) {
 							bottom: auto;
-						}
-						@include mq(medium) {
 							bottom: -15%;
+						}
+						@include mq(small) {
+							bottom: 0;
 						}
 			}
 

@@ -1785,7 +1785,7 @@ hr {
   overflow: hidden; }
 .collection-map .aligner {
   position: relative;
-  height: 400px;
+  height: 450px;
   max-width: 1050px;
   -webkit-transform-origin: top center;
       -ms-transform-origin: top center;
@@ -1800,25 +1800,25 @@ hr {
       -webkit-transform: scale(0.9) !important;
           -ms-transform: scale(0.9) !important;
               transform: scale(0.9) !important;
-      height: 360px; } }
+      height: 405px; } }
   @media (min-width: 949px) and (max-width: 1050px) {
     .collection-map .aligner {
       -webkit-transform: scale(0.95) !important;
           -ms-transform: scale(0.95) !important;
               transform: scale(0.95) !important;
-      height: 380px; } }
+      height: 427.5px; } }
   @media (min-width: 1150px) {
+    .collection-map .aligner {
+      -webkit-transform: scale(1) !important;
+          -ms-transform: scale(1) !important;
+              transform: scale(1) !important;
+      height: 450px; } }
+  @media (min-width: 1250px) {
     .collection-map .aligner {
       -webkit-transform: scale(1.05) !important;
           -ms-transform: scale(1.05) !important;
               transform: scale(1.05) !important;
-      height: 420px; } }
-  @media (min-width: 1250px) {
-    .collection-map .aligner {
-      -webkit-transform: scale(1.15) !important;
-          -ms-transform: scale(1.15) !important;
-              transform: scale(1.15) !important;
-      height: 460.0px; } }
+      height: 472.5px; } }
 .collection-map-item {
   width: 400px;
   padding: 30px 30px 30px 90px;
@@ -2232,10 +2232,11 @@ html, body {
           width: 140%; } }
       @media (max-width: 950px) {
         .page-cover-bg img {
-          bottom: auto; } }
-      @media (max-width: 950px) {
-        .page-cover-bg img {
+          bottom: auto;
           bottom: -15%; } }
+      @media (max-width: 650px) {
+        .page-cover-bg img {
+          bottom: 0; } }
     .page-cover-bg + .page-cover-content {
       color: white; }
     .page-cover-content {
@@ -2409,10 +2410,10 @@ section.collection-0 .collection-map-content-bg:before {
       top: -189.4736842105px; } }
   @media (min-width: 1150px) {
     section.collection-0 .collection-map-content-bg:before {
-      top: -171.4285714286px; } }
+      top: -180px; } }
   @media (min-width: 1250px) {
     section.collection-0 .collection-map-content-bg:before {
-      top: -156.5217391304px; } }
+      top: -171.4285714286px; } }
 section.collection-0 .collection-map-content-bg:after {
   width: 184px;
   height: 162px;
@@ -2427,10 +2428,10 @@ section.collection-0 .collection-map-content-bg:after {
       bottom: 19px; } }
   @media (min-width: 1150px) {
     section.collection-0 .collection-map-content-bg:after {
-      bottom: 21px; } }
+      bottom: 20px; } }
   @media (min-width: 1250px) {
     section.collection-0 .collection-map-content-bg:after {
-      bottom: -23px; } }
+      bottom: -21px; } }
 section.collection-0 .collection-map-item {
   left: 5px;
   top: 0px;
