@@ -70,7 +70,7 @@
   		<img style="vertical-align: top; margin-right: 20px; display: inline-block; width: 180px;" src="assets/img/front/about/1.jpg"/>  	
   		<img style="vertical-align: top;  margin-right: 20px; display: inline-block; width: 180px;" src="assets/img/front/about/2.jpg"/>
   		
-  		<p style="vertical-align: top; display: inline-block; width: 320px;"> 
+  		<p style="vertical-align: top; display: inline-block; width: 30%;"> 
   		<strong>Александра Гройсман</strong> 
   		и <strong>Максим Лебедев</strong> — телепро-
   		дюсеры, входили в руководство Телеканала Дождь, запускали крупные телепроекты с компанией «Среда» (Александр Цекало 
