@@ -1,23 +1,92 @@
 <? 	$pageTitle = "Главная";
+	$pageClass = "page-collection-map-1";
+	$collection1color = '#26C0D5';
 
 	include "includes/header.php" ?>
 
-<div class="page"><header class="page-cover _sherlock-about">
-	<div class="page-cover-content">
-		<a class="section-logo logo logo--big" href="index.php">
-			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
-			<img src="assets/img/front/logo.svg"
-				 onerror="this.onerror=null;
-				 this.src='assets/img/front/logo.png'" width="350" height="111" alt="Логотип Шерлок" />
-		</a>
-
-		<div class="description">
-			<p> Шерлок — это квест в реальности. Разгадайте головоломки, <br />
-				найдите тайники, воспользуйтесь подсказками, всеми доступными вещами, <br />
-				добудьте ключи и откройте двери к победе! </p>
-		</div>
+<div class="fixed-top">
+	<header class="page-cover">
+	<div class="page-cover-bg">
+		<img src="example-images/example-cover.jpg" alt="" />
 	</div>
-</header></div>
+	<div class="page-cover-content">
+
+	</div>
+	</header>
+</div>
+
+
+<div class="js-ghost"></div>
+
+<div class="page textpage">
+
+<section class="section" style="width:1000px; margin: auto;">
+	
+	
+	
+	<h2 style="color:#BC6F00; font-size: 21px; margin-top: 0px; line-height: 34px;">«Шерлок» — сообщество людей,  которые создают игры. Игры интеллектуальные, тренирующие логику и интуицию каждого участника. 
+	Но главное — игры, которые помогают всем нам стать немного ближе 
+	и научиться лучше понимать друг друга.</h2>
+	
+	<p style="margin-top: 20px;">
+		Соберитесь компанией близких друзей. Сыграйте всей семьей. Пригласите понравившегося человека на свидание, которое он точно запомнит надолго. Или мы подберем для вас компанию из абсолютных незнакомцев. «Шерлок» — это не просто развлечение. Это искусство.
+	</p>
+	
+	<h2 style="color:#BC6F00; font-size: 21px; margin-top: 60px;">5 правил «Шерлока»</h2>
+	
+	<h3 style="font-size: 15px; margin-top: 15px;">1. Погружаем c головой</h3>
+
+	<p style="margin-top: 15px;">
+		Полное погружение в иную реальность. Наша команда создает сценарии, которые открывают двери 
+		в другие миры. У игроков (от 2 до 4 человек) есть ровно 60 минут, чтобы разгадать целый ряд нетривиальных загадок и выполнить миссию, которая позволит перейти к следующему этапу игры. 
+	</p>
+	
+		<h3 style="font-size: 15px; margin-top: 15px;">2. Обостряем чувства</h3>
+	
+		<p style="margin-top: 15px;">
+			Каждая игра включают в себя особые ароматы, специально подобранную температуру, неожиданные трансформации пространства. Чтобы выиграть, вам потребуется использовать все шесть чувств, 
+			включая интуицию. 
+		</p>
+		
+		<h3 style="font-size: 15px; margin-top: 15px;">3. Расстягиваем удовольствие</h3>
+		
+		<p style="margin-top: 15px;">
+		Игры «Шерлок» объединены в большие интерактивные серии, связанные общей историей и конечной миссией. Приключение начинается с момента регистрации игроков на сайте: каждый день вы получаете специальные подсказки с информацией об игровом мире, в который вам предстоит попасть. Далее ваша команда отправляется в нелинейное путешествие из десятка заданий.		</p>
+			
+		<h3 style="font-size: 15px; margin-top: 15px;">4. Дарим эмоции</h3>
+			
+		<p style="margin-top: 15px;">
+При прохождении всех игровых зон вы получаете эксклюзивный доступ в секретное игровое пространство, причем совершенно бесплатно. Это — главный, но далеко не единственный подарок от «Шерлок». Обо всех остальных приятных моментах вы узнаете по ходу прохождения игры.
+		</p>
+				
+		<h3 style="font-size: 15px; margin-top: 15px;">5. Развиваем лучшие стороны
+		</h3>
+				
+		<p style="margin-top: 15px;">
+Совсем скоро «Шерлок» запустит и другие игровые механики: салонные детективы, большие интерактивные перфомансы и образовательные игровые пространства. Больше игр — больше общения.
+  		</p>
+  		
+  <div style="height: 260px; margin-top: 60px;">
+  		<img style="vertical-align: top; margin-right: 20px; display: inline-block; width: 180px;" src="assets/img/front/about/1.jpg"/>  	
+  		<img style="vertical-align: top;  margin-right: 20px; display: inline-block; width: 180px;" src="assets/img/front/about/2.jpg"/>
+  		
+  		<p style="vertical-align: top; display: inline-block; width: 320px;"> 
+  		<strong>Александра Гройсман</strong> 
+  		и <strong>Максим Лебедев</strong> — телепро-
+  		дюсеры, входили в руководство Телеканала Дождь, запускали крупные телепроекты с компанией «Среда» (Александр Цекало 
+  		и Руслан Сорокин). В данный момент продюсируют шоу «Ленинградский Stand-up клуб» для телеканала СТС.  		 </p>
+ </div>
+  		  		
+  <h2 style="margin-top: 50px; color:#BC6F00; font-size: 21px; line-height: 34px;">Эффективный способ борьбы с одиночеством.
+  		Новый уровень общения. И только положительные эмоции.
+  		Добро пожаловать в «Шерлок» — игры в реальности. 
+  		</h2>
+  		
+						
+		
+</section>
+
+</div>
 
 <? include "includes/scripts.php" ?>
 <? include "includes/footer.php" ?>
