@@ -1271,10 +1271,34 @@ html {
 }
 
 .overWrapper {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+.no-js .overWrapper {
   overflow-y: hidden;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  padding-bottom: 20px;
+}
+.overWrapper > * {
+  border-right: solid 20px transparent;
+}
+
+.iScrollHorizontalScrollbar {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  border-right: none !important;
+}
+.iScrollHorizontalScrollbar .iScrollIndicator {
+  height: 6px;
+  border-radius: 3px;
+  background: #ccc;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .quote {
@@ -2559,11 +2583,9 @@ html, body {
 .nav-days {
   border-top: 1px solid #C4C4C4;
   border-top-color: rgba(0, 0, 0, 0.1);
-  padding: 0 50px;
+  padding-left: 50px;
   background: white;
-  overflow-x: auto;
-  overflow-y: hidden;
-  -webkit-overflow-scrolling: touch;
+  overflow: hidden;
   position: relative;
   top: 1px;
 }
@@ -2572,6 +2594,7 @@ html, body {
   table-layout: fixed;
   width: 100%;
   min-width: 900px;
+  border-right: solid 80px transparent;
 }
 .nav-days .nav-item {
   display: table-cell;
@@ -2609,6 +2632,7 @@ html, body {
   width: 10%;
   text-align: left;
   vertical-align: bottom;
+  white-space: nowrap;
 }
 .nav-days .nav-item-heading span {
   font-size: 21px;

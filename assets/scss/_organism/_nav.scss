@@ -71,11 +71,12 @@ i {
 .nav-days {
 	border-top: 1px solid #C4C4C4;
 	border-top-color: rgba(black, .1);
-	padding: 0 50px;
+	padding-left: 50px;
 	background: white;
-	overflow-x: auto;
-	overflow-y: hidden;
-	-webkit-overflow-scrolling: touch;
+	//overflow-x: auto;
+	//overflow-y: hidden;
+	//-webkit-overflow-scrolling: touch;
+	overflow: hidden;
 
 	position: relative; top: 1px; // @magic iOS mysterious bug
 
@@ -83,6 +84,8 @@ i {
 		display: table; table-layout: fixed;
 		width: 100%;
 		min-width: 900px;
+		
+		border-right: solid 80px rgba(0, 0, 0, 0);
 	}
 
 	.nav-item {
@@ -119,6 +122,7 @@ i {
 			width: 10%;
 			text-align: left;
 			vertical-align: bottom;
+			white-space: nowrap;
 
 			span {
 				font-size: 21px;

@@ -2,6 +2,7 @@
 // @codekit-prepend "lib/jquery.royalslider.custom.min.js"
 // @codekit-prepend "lib/velocity.min.js"
 // @codekit-prepend "lib/parsley.js"
+// @codekit-prepend "lib/iscroll.js"
 
 (function($){
 
@@ -14,6 +15,18 @@
     		pauseOnHover: true,
     		delay: 5000
     	}
+	});
+	
+	$('.overWrapper, .nav-days').each(function(i, el){
+		iscroll_instance = new IScroll(el, {
+		    scrollbars: true,
+		    scrollX: true,
+		    scrollY: false,
+			mouseWheel: true,
+		    interactiveScrollbars: true,
+		    scrollbars: 'custom',
+			eventPassthrough: true
+		});
 	});
 
 	$ghost = $('.js-ghost');
