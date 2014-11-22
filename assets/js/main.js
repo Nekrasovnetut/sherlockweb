@@ -15,7 +15,9 @@
     		pauseOnHover: true,
     		delay: 5000
     	}
-	});
+	}); 
+	
+	// Скроллинг:
 	
 	$('.overWrapper, .nav-days').each(function(i, el){
 		iscroll_instance = new IScroll(el, {
