@@ -9,8 +9,35 @@
 }
 
 .overWrapper {
-	overflow-y: hidden;
-	overflow-x: auto;
-	-webkit-overflow-scrolling: touch;
+	padding-top: 20px;
 	padding-bottom: 20px;
+	position: relative;
+	
+	overflow: hidden;
+	
+	.no-js & {
+		overflow-y: hidden;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+	}
+	
+	> * {
+		border-right: solid 20px rgba(0, 0, 0, 0);
+	}
+}
+
+.iScrollHorizontalScrollbar {
+	position: absolute;
+	top: 1px; left: 0;
+	width: 100%;
+	background: rgba(black, .05);
+	border-radius: 4px;
+	border-right: none !important;
+	
+	.iScrollIndicator {
+		height: 6px;
+		border-radius: 3px;
+		background: #ccc;
+		background: rgba(black, .2);
+	}
 }
