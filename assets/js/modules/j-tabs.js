@@ -30,6 +30,18 @@
 						display: 'block',
 						complete: function(){
 							$(this).addClass('is-active');
+							
+							$(this).find('.overWrapper').each(function(i, el){
+								iscroll_instance = new IScroll(el, {
+								    scrollbars: true,
+								    scrollX: true,
+								    scrollY: false,
+									mouseWheel: true,
+								    interactiveScrollbars: true,
+								    scrollbars: 'custom',
+									eventPassthrough: true
+								});
+							});
 						}
 					});
 				}
