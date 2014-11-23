@@ -115,15 +115,21 @@
 			    <li class="tabs-item"><a href="#december-2014">Декабрь 2014</a></li>
 		    </ul>
 	    </header>
-		<div class="overWrapper tabs-content">
+		<div class="tabs-content">
 			<!-- Открытая вкладка: -->
 			<div id="september-2014" class="tabs-content-item is-active">
-				<? include "includes/misc/schedule.php" ?>
+				<div class="overWrapper"><? include "includes/misc/schedule.php" ?></div>
 			</div>
 			<!-- Другие вкладки: -->
-			<div id="october-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
-			<div id="november-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
-			<div id="december-2014" class="tabs-content-item"><? include "includes/misc/schedule.php" ?></div>
+			<div id="october-2014" class="tabs-content-item">
+				<div class="overWrapper"><? include "includes/misc/schedule.php" ?></div>
+			</div>
+			<div id="november-2014" class="tabs-content-item">
+				<div class="overWrapper"><? include "includes/misc/schedule.php" ?></div>
+			</div>
+			<div id="december-2014" class="tabs-content-item">
+				<div class="overWrapper"><? include "includes/misc/schedule.php" ?></div>
+			</div>
 		</div>
     </section>
     <section>
