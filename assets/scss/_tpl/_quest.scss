@@ -161,6 +161,10 @@
 		display: inline-block;
 		vertical-align: top;
 		margin-bottom: 2.5em;
+		
+		@include mq(medium) {
+			display: none
+		}
 
 		&--container {
 			white-space: nowrap;

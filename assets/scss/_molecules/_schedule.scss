@@ -53,17 +53,22 @@
 
 			@include mq(small) {
 				float: none;
-				overflow-x: auto;
-				white-space: nowrap;
-				-webkit-overflow-scrolling: touch;
 				margin-bottom: 1em;
 			}
 
 			li {
 				display: inline-block;
+				
+						@include mq(small) {
+							margin-right: 1em;
+						}
+
 
 				+ li {
 					margin-left: 1em;
+						@include mq(small) {
+							margin-left: 0;
+						}
 				}
 
 				a {

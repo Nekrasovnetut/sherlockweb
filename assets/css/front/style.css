@@ -1655,14 +1655,17 @@ hr {
     @media (max-width: 650px) {
       .schedule-heading-month {
         float: none;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
         margin-bottom: 1em; } }
     .schedule-heading-month li {
       display: inline-block; }
+      @media (max-width: 650px) {
+        .schedule-heading-month li {
+          margin-right: 1em; } }
       .schedule-heading-month li + li {
         margin-left: 1em; }
+        @media (max-width: 650px) {
+          .schedule-heading-month li + li {
+            margin-left: 0; } }
       .schedule-heading-month li a {
         text-decoration: underline;
         color: #7F7F7F; }
@@ -3055,6 +3058,9 @@ section.printed {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 2.5em; }
+  @media (max-width: 950px) {
+    .quest-info {
+      display: none; } }
   .quest-info--container {
     white-space: nowrap; }
   .quest-info + .quest-info {
