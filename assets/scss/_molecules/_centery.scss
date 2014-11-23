@@ -2,10 +2,7 @@
 	text-align: center;
 
 	@include mq(small) {
-		white-space: nowrap;
-		-webkit-overflow-scrolling: touch;
-		overflow-x: auto;
-		overflow-y: hidden;
+		
 	}
 
 	&-item {
@@ -15,6 +12,7 @@
 
 		@include mq(small) {
 			margin: 0 5px;
+			
 		}
 
 		.centery--wider & {
@@ -31,6 +29,7 @@
 
 		@include mq(small) {
 			margin-bottom: 0;
+			width: 100%;
 		}
 	}
 }

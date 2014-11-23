@@ -1265,12 +1265,6 @@ hr {
 \*------------------------------------*/
 .centery {
   text-align: center; }
-  @media (max-width: 650px) {
-    .centery {
-      white-space: nowrap;
-      -webkit-overflow-scrolling: touch;
-      overflow-x: auto;
-      overflow-y: hidden; } }
   .centery-item {
     display: inline-block;
     vertical-align: middle;
@@ -1287,7 +1281,8 @@ hr {
     margin-bottom: -30px; }
     @media (max-width: 650px) {
       .centery--wider {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        width: 100%; } }
 
 .covermini {
   width: 100%;
@@ -2427,13 +2422,13 @@ section.collection-0 .collection-map-content-bg:before {
     background-image: url("../../img/front/layout/0/path-first.png"); }
   @media (min-width: 949px) and (max-width: 1050px) {
     section.collection-0 .collection-map-content-bg:before {
-      top: -189.47368px; } }
+      top: -189.4736842105px; } }
   @media (min-width: 1150px) {
     section.collection-0 .collection-map-content-bg:before {
       top: -180px; } }
   @media (min-width: 1250px) {
     section.collection-0 .collection-map-content-bg:before {
-      top: -171.42857px; } }
+      top: -171.4285714286px; } }
 section.collection-0 .collection-map-content-bg:after {
   width: 184px;
   height: 162px;

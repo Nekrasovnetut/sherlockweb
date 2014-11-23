@@ -237,7 +237,7 @@
 			<h4> Наши партнёры </h4>
 		</header>
 
-		<div class="overWrapper"><ul class="centery centery--wider">
+		<ul class="centery centery--wider">
 			<li class="centery-item">
 				<a href="#"><img src="example-images/example-1.png" width="130" height="62" /></a>
 			</li>
@@ -250,7 +250,7 @@
 			<li class="centery-item">
 				<a href="#"><img src="example-images/example-4.png" width="64" height="94" /></a>
 			</li>
-		</ul></div>
+		</ul>
 	</section>
 </div>
 
