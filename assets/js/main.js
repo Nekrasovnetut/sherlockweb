@@ -30,17 +30,27 @@
     	}
 	});
 	
-	$('.overWrapper, .nav-days').each(function(i, el){
-		iscroll_instance = new IScroll(el, {
-		    scrollbars: true,
-		    scrollX: true,
-		    scrollY: false,
-			mouseWheel: true,
-		    interactiveScrollbars: true,
-		    scrollbars: 'custom',
-			eventPassthrough: true
+	(IScrolling = function() {
+		$('.overWrapper, .nav-days').each(function(i, el){
+			if (el.iscroll) {
+				el.iscroll_instance.refresh();
+			} else {
+				el.iscroll_instance = new IScroll(el, {
+				    scrollbars: true,
+				    scrollX: true,
+				    scrollY: false,
+					mouseWheel: true,
+				    interactiveScrollbars: true,
+				    scrollbars: 'custom',
+					eventPassthrough: true
+				});
+				
+				el.iscroll = "true";
+			}
 		});
-	});
+	})(window, document); 
+	
+	$(document).ajaxStop(IScrolling);
 
 	// Ссылки с картинками:
 

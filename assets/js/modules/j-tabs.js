@@ -1,5 +1,5 @@
 (function($){
-	$('.tabs').on('click', '.tabs-item a', function(e){
+	$(document).on('click', '.tabs-item a', function(e){
 		var $t = $(this),
 			$tab = $(this).parent('.tabs-item');
 
@@ -32,15 +32,21 @@
 							$(this).addClass('is-active');
 							
 							$(this).find('.overWrapper').each(function(i, el){
-								iscroll_instance = new IScroll(el, {
-								    scrollbars: true,
-								    scrollX: true,
-								    scrollY: false,
-									mouseWheel: true,
-								    interactiveScrollbars: true,
-								    scrollbars: 'custom',
-									eventPassthrough: true
-								});
+								if (el.iscroll) {
+									el.iscroll_instance.refresh();
+								} else {
+									el.iscroll_instance = new IScroll(el, {
+									    scrollbars: true,
+									    scrollX: true,
+									    scrollY: false,
+										mouseWheel: true,
+									    interactiveScrollbars: true,
+									    scrollbars: 'custom',
+										eventPassthrough: true
+									});
+									
+									el.iscroll = "true";
+								}
 							});
 						}
 					});
