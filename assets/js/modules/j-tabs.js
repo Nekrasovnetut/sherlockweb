@@ -1,5 +1,7 @@
 (function($){
-	$(document).on('click', '.tabs-item a', function(e){
+	$('.tabs').on('click', '.tabs-item a', function(e){
+	//$(document).on('click', '.tabs-item a', function(e){
+	//AJAX FIX который  конфликтовал с фиксом в адишинл js от прогеров. Необходимо прорефакторить и раскоментить эту часть кода, удалив строку выше
 		var $t = $(this),
 			$tab = $(this).parent('.tabs-item');
 
