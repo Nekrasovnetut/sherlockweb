@@ -11,6 +11,7 @@
 // @codekit-append "modules/sherlock-maps.js"
 // @codekit-append "modules/j-imageFill.js"
 // @codekit-append "modules/j-js-parsley-forms.js"
+// @codekit-append "modules/video-in-index.js"
 
 (function($){
 
@@ -122,3 +123,24 @@
         });
     }
 }(jQuery));
+
+$(document).ready(function() {
+	$(".index-video-starter").click(function() {
+		$(".prevideo").prepend('<video id="index-video-file"  autoplay=""> <source type="video/mp4" src="../img/front/video.mp4"><source src="../img/front/video.ogg" type="video/ogg"></video>');
+		$(".index-video-starter").css("opacity", "0");
+		$(".index-video-hide").css("opacity", "0");
+		$(".section-logo > img").css("z-index", "-100");
+		
+//Ниже отрабатываем завершение видео и обратную загрузку всего стафа
+		    document.getElementById('index-video-file').addEventListener('ended',myHandler,false);
+		      function myHandler(e) {
+		          if(!e) { e = window.event; }
+			          
+			          $(".index-video-starter").css("opacity", "1");
+			          $(".index-video-hide").css("opacity", "1");
+			          $(".section-logo > img").css("z-index", "1");
+			          $("#index-video-file").css("display", "none");
+			          //Refact Видео подгружается столько раз, сколько загрузилась страница
+		      }
+	});
+ });

@@ -1803,7 +1803,7 @@ hr {
   overflow: hidden; }
 .collection-map .aligner {
   position: relative;
-  height: 450px;
+  height: 480px;
   max-width: 1050px;
   -webkit-transform-origin: top center;
       -ms-transform-origin: top center;
@@ -1818,32 +1818,28 @@ hr {
       -webkit-transform: scale(0.9) !important;
           -ms-transform: scale(0.9) !important;
               transform: scale(0.9) !important;
-      height: 405px; } }
+      height: 432px; } }
   @media (min-width: 949px) and (max-width: 1050px) {
     .collection-map .aligner {
       -webkit-transform: scale(0.95) !important;
           -ms-transform: scale(0.95) !important;
               transform: scale(0.95) !important;
-      height: 427.5px; } }
+      height: 456px; } }
   @media (min-width: 1150px) {
     .collection-map .aligner {
       -webkit-transform: scale(1) !important;
           -ms-transform: scale(1) !important;
               transform: scale(1) !important;
-      height: 450px; } }
+      height: 480px; } }
   @media (min-width: 1250px) {
     .collection-map .aligner {
       -webkit-transform: scale(1.05) !important;
           -ms-transform: scale(1.05) !important;
               transform: scale(1.05) !important;
-      height: 472.5px; } }
+      height: 504px; } }
 .collection-map-item {
   width: 400px;
   padding: 30px 30px 30px 90px;
-  			/* ---
-  				Типичные варианты расположения иконок:
-  
-  			---	*/
   position: absolute;
   z-index: 1; }
   .collection-map-item.is-empty {
@@ -1869,7 +1865,8 @@ hr {
     margin-left: 1em; }
   .collection-map-item .btn {
     border-color: white;
-    margin-top: 30px; }
+    font-size: 10px !important;
+    padding: 9px 26px; }
   @media (max-width: 850px) {
     .collection-map-item {
       position: relative;
@@ -1893,7 +1890,9 @@ hr {
         .collection-map-item-heading span {
           position: static; } }
   .collection-map-item-icons img {
-    position: absolute; }
+    position: absolute;
+    max-width: 80px;
+    max-height: 80px; }
     @media (max-width: 850px) {
       .collection-map-item-icons img {
         display: none; }
@@ -1925,7 +1924,7 @@ hr {
   left: -50px;
   top: 0;
   right: -100px;
-  bottom: -25px; }
+  bottom: -150px; }
   @media (max-width: 850px) {
     .collection-map-content-bg {
       background: none !important; } }
@@ -2099,6 +2098,26 @@ html, body {
     opacity: 0; }
   to {
     opacity: 1; } }
+#index-video-file {
+  z-index: 100000;
+  width: 100%;
+  height: auto;
+  background-color: black;
+  background-position: initial initial;
+  background-repeat: initial initial; }
+
+.index-video-starter {
+  cursor: pointer;
+  position: absolute;
+  width: 350px;
+  margin-top: 12em;
+  border-color: white; }
+  @media (max-width: 650px) {
+    .index-video-starter {
+      margin-top: 11em;
+      width: 90%;
+      left: 5%; } }
+
 .nav {
   text-align: center; }
   .nav-item {
@@ -2168,7 +2187,7 @@ html, body {
     display: table-cell;
     text-align: center;
     padding: 1em 0;
-    width: 3%;
+    width: 1.5%;
     color: #7F7F7F;
     position: relative; }
     .nav-days .nav-item:after {
@@ -2199,8 +2218,10 @@ html, body {
       vertical-align: bottom;
       white-space: nowrap; }
       .nav-days .nav-item-heading span {
-        font-size: 21px;
-        font-weight: bold; }
+        font-size: 14px;
+        font-weight: bold;
+        color: #BC6F00;
+        padding-right: 8px; }
   .nav-days .is-active {
     color: #505050; }
     .nav-days .is-active:after {
@@ -2254,6 +2275,26 @@ html, body {
           bottom: -15%; } }
       @media (max-width: 650px) {
         .page-cover-bg img {
+          bottom: 0; } }
+    .page-cover-bg video {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      left: -9999px;
+      right: -9999px;
+      top: 0;
+      margin: auto;
+      z-index: -1;
+      bottom: -30%; }
+      @media (max-width: 650px) {
+        .page-cover-bg video {
+          width: 155% !important; } }
+      @media (max-width: 950px) {
+        .page-cover-bg video {
+          bottom: auto;
+          bottom: -15%; } }
+      @media (max-width: 650px) {
+        .page-cover-bg video {
           bottom: 0; } }
     .page-cover-bg + .page-cover-content {
       color: white; }
@@ -2410,46 +2451,10 @@ html, body {
   border-color: #26C0D5; }
 
 .svg section.collection-0 .collection-map-content-bg {
-  background: url("../../img/front/layout/0/path-1.svg") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.svg") no-repeat 655px 290px; }
+  background: url("../../img/front/layout/0/path-1.svg") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.svg") no-repeat 655px 320px; }
 .no-svg section.collection-0 .collection-map-content-bg {
-  background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 290px;
-  -pie-background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 290px; }
-section.collection-0 .collection-map-content-bg:before {
-  width: 102px;
-  height: 171px;
-  left: 120px;
-  top: -110px; }
-  .svg section.collection-0 .collection-map-content-bg:before {
-    background-image: url("../../img/front/layout/0/path-first.svg"); }
-  .no-svg section.collection-0 .collection-map-content-bg:before {
-    background-image: url("../../img/front/layout/0/path-first.png"); }
-  @media (min-width: 949px) and (max-width: 1050px) {
-    section.collection-0 .collection-map-content-bg:before {
-      top: -189.4736842105px; } }
-  @media (min-width: 1150px) {
-    section.collection-0 .collection-map-content-bg:before {
-      top: -180px; } }
-  @media (min-width: 1250px) {
-    section.collection-0 .collection-map-content-bg:before {
-      top: -171.4285714286px; } }
-section.collection-0 .collection-map-content-bg:after {
-  width: 184px;
-  height: 162px;
-  left: 120px;
-  bottom: 10px; }
-  .svg section.collection-0 .collection-map-content-bg:after {
-    background-image: url("../../img/front/layout/0/path-last.svg"); }
-  .no-svg section.collection-0 .collection-map-content-bg:after {
-    background-image: url("../../img/front/layout/0/path-last.png"); }
-  @media (min-width: 949px) and (max-width: 1050px) {
-    section.collection-0 .collection-map-content-bg:after {
-      bottom: 19px; } }
-  @media (min-width: 1150px) {
-    section.collection-0 .collection-map-content-bg:after {
-      bottom: 20px; } }
-  @media (min-width: 1250px) {
-    section.collection-0 .collection-map-content-bg:after {
-      bottom: -21px; } }
+  background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 320px;
+  -pie-background: url("../../img/front/layout/0/path-1.png") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.png") no-repeat 655px 320px; }
 section.collection-0 .collection-map-item {
   left: 5px;
   top: 0px;
@@ -2634,15 +2639,15 @@ section.collection-0 .collection-map-item .collection-map-item-icons img:nth-of-
   top: auto;
   bottom: 50%;
   margin-bottom: 60px;
-  left: 250px; }
+  left: 300px; }
 
-section.collection-1 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3) {
+section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3), section.collection-1 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3) {
   margin: 0;
   right: auto;
   top: auto;
   bottom: 0;
   margin-bottom: -22px;
-  left: 220px; }
+  left: 270px; }
 
 .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item > .collection-map-item
@@ -2667,7 +2672,7 @@ section.collection-0 .collection-map-item .collection-map-item-icons img:nth-of-
   right: auto;
   top: auto;
   left: 0;
-  top: -15px; }
+  top: 15px; }
 section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(1), section.collection-1 .collection-map-item .collection-map-item-icons img:nth-of-type(1), section.collection-1 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item
 > .collection-map-item .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item > .collection-map-item
@@ -2679,7 +2684,7 @@ section.collection-0 .collection-map-item + .collection-map-item + .collection-m
   right: auto;
   bottom: auto;
   left: -15px;
-  top: 30px; }
+  top: 80px; }
 section.collection-0 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(1), .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item
 > .collection-map-item
@@ -2692,7 +2697,7 @@ section.collection-0 .collection-map-item + .collection-map-item .collection-map
   top: 50%;
   margin-top: -30px; }
 
-section.collection-0 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3), section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3), section.collection-1 .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item
+section.collection-0 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3), section.collection-1 .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item .collection-map-item-icons img:nth-of-type(2), .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item
 > .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item
@@ -2707,7 +2712,7 @@ section.collection-0 .collection-map-item + .collection-map-item .collection-map
   left: auto;
   top: auto;
   right: 30px;
-  bottom: 5px; }
+  bottom: -30px; }
 section.collection-1 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(3) {
   margin: 0;
   right: auto;
@@ -2737,7 +2742,7 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
   .collection-list-description img {
     position: absolute; }
   .collection-list-description img:nth-of-type(1) {
-    top: 10px; }
+    top: -60px; }
   .collection-list-description img:nth-of-type(2) {
     bottom: -30px;
     left: 120px; }

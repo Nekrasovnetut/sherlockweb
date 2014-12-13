@@ -92,7 +92,7 @@ i {
 		display: table-cell;
 		text-align: center;
 		padding: 1em 0;
-		width: 3%;
+		width: 1.5%;
 
 		color: $medium-grey;
 		position: relative;
@@ -125,8 +125,10 @@ i {
 			white-space: nowrap;
 
 			span {
-				font-size: 21px;
+				font-size: 14px;
 				font-weight: bold;
+				color: $accent-color;
+				padding-right: 8px;
 			}
 		}
 	}
