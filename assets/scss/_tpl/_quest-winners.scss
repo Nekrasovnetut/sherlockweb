@@ -2,6 +2,7 @@ $collection-color-assets: #26C0D5;
 
 
 .winners {
+	
 	&-circle{
 		border-color: $light-grey;
 		color: $light-grey;
@@ -17,11 +18,21 @@ $collection-color-assets: #26C0D5;
 		position: absolute;
 		top: 50%;
 		left: 8%;
+		@include mq(ultrabig) {left: 14%;}
+		@include mq(ultrabigplus1350) {left:22%;}
+		
+		
 		color: $medium-grey;
 	}
 
 	&-heading {
 		position: relative;
+		@include mq(ultrabig) {
+			padding: 35px 14% 50px;
+		}
+		@include mq(ultrabigplus1350) {
+			padding: 35px 22% 50px;
+		}
 
 	}
 
@@ -29,6 +40,7 @@ $collection-color-assets: #26C0D5;
 		@extend %mcf;
 		padding: 0px 8% 50px;
 		@include mq(small){padding: 0px 0px 50px;}
+		
 	}
 
 	&-table {
@@ -37,7 +49,7 @@ $collection-color-assets: #26C0D5;
 		font-size: 17px;
 	//	font-size: 1.2vw;
 		min-width: 320px;
-
+		
 		tr {
 
 					}
@@ -51,9 +63,13 @@ $collection-color-assets: #26C0D5;
 		td{
 			&:first-of-type{
 				padding-left: 8%;
+				@include mq(ultrabig) {padding-left: 14%; width:16%;}
+				@include mq(ultrabigplus1350) {padding-left:22%; width:25%;}
 			}
 			&:last-of-type{
 				padding-right: 8%;
+				@include mq(ultrabig) {padding-right: 14%; width:16%;}
+				@include mq(ultrabigplus1350) {padding-right:22%; width:25%;}
 			}
 			padding: 1em;
 			@include mq(small){padding: 0.6em;}
@@ -86,7 +102,9 @@ $collection-color-assets: #26C0D5;
 		}
 
 		&-vremya {
-			width: 16%
+			width: 16%;
+			//@include mq(ultrabig) {width: 8%;}
+			//@include mq(ultrabigplus) {width: 8%;}
 		}
 
 		&-data {

@@ -2172,17 +2172,29 @@ html, body {
 .nav-days {
   border-top: 1px solid #C4C4C4;
   border-top-color: rgba(0, 0, 0, 0.1);
-  padding-left: 50px;
+  padding-left: 8%;
+  padding-right: 8%;
   background: white;
   overflow: hidden;
   position: relative;
   top: 1px; }
+  @media (min-width: 1350px) {
+    .nav-days {
+      padding-left: 16%;
+      padding-right: 16%; } }
+  @media (min-width: 1450px) {
+    .nav-days {
+      padding-left: 18%;
+      padding-right: 18%; } }
+  @media (min-width: 1550px) {
+    .nav-days {
+      padding-left: 22%;
+      padding-right: 22%; } }
   .nav-days ul {
     display: table;
     table-layout: fixed;
     width: 100%;
-    min-width: 900px;
-    border-right: solid 80px transparent; }
+    min-width: 900px; }
   .nav-days .nav-item {
     display: table-cell;
     text-align: center;
@@ -2250,6 +2262,21 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 0; }
+    @media (min-width: 1150px) {
+      .page-cover {
+        height: 360px; } }
+    @media (min-width: 1250px) {
+      .page-cover {
+        height: 380px; } }
+    @media (min-width: 1350px) {
+      .page-cover {
+        height: 400px; } }
+    @media (min-width: 1450px) {
+      .page-cover {
+        height: 450px; } }
+    @media (min-width: 1550px) {
+      .page-cover {
+        height: 500px; } }
     @media (max-width: 650px) {
       .page-cover {
         min-height: 250px; } }
@@ -2265,7 +2292,7 @@ html, body {
       top: 0;
       margin: auto;
       z-index: -1;
-      bottom: -30%; }
+      margin-top: -10%; }
       @media (max-width: 650px) {
         .page-cover-bg img {
           width: 140%; } }
@@ -2323,6 +2350,15 @@ html, body {
 
 .section {
   padding: 35px 8% 50px; }
+  @media (min-width: 1350px) {
+    .section {
+      padding: 35px 16% 50px; } }
+  @media (min-width: 1450px) {
+    .section {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .section {
+      padding: 35px 22% 50px; } }
   .section.collection-map {
     padding-left: 0;
     padding-right: 0; }
@@ -2370,6 +2406,15 @@ html, body {
     display: none; } }
 .booking-pay .section {
   padding: 25px 8% 50px; }
+  @media (min-width: 1350px) {
+    .booking-pay .section {
+      padding: 35px 16% 50px; } }
+  @media (min-width: 1450px) {
+    .booking-pay .section {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .booking-pay .section {
+      padding: 35px 22% 50px; } }
   @media (max-width: 650px) {
     .booking-pay .section {
       padding-top: 10px; } }
@@ -2730,6 +2775,15 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
 
 .collection-list .section {
   padding: 70px 8% 50px; }
+  @media (min-width: 1350px) {
+    .collection-list .section {
+      padding: 35px 16% 50px; } }
+  @media (min-width: 1450px) {
+    .collection-list .section {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .collection-list .section {
+      padding: 35px 22% 50px; } }
 .collection-list-bottomborder {
   border-bottom: 1px solid #ebebeb; }
 .collection-list-description {
@@ -2739,28 +2793,74 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
   overflow: hidden; }
   .collection-list-description-center {
     padding: 70px 8% 50px; }
+    @media (min-width: 1250px) {
+      .collection-list-description-center {
+        padding: 35px 13% 50px; } }
+    @media (min-width: 1350px) {
+      .collection-list-description-center {
+        padding: 35px 16% 50px; } }
+    @media (min-width: 1450px) {
+      .collection-list-description-center {
+        padding: 35px 18% 50px; } }
+    @media (min-width: 1550px) {
+      .collection-list-description-center {
+        padding: 35px 22% 50px; } }
   .collection-list-description img {
-    position: absolute; }
+    position: absolute;
+    max-width: 80px;
+    max-height: 80px; }
   .collection-list-description img:nth-of-type(1) {
-    top: -60px; }
+    top: 13%;
+    right: 13%; }
+    @media (max-width: 950px) {
+      .collection-list-description img:nth-of-type(1) {
+        right: 2%; } }
+    @media (min-width: 1450px) {
+      .collection-list-description img:nth-of-type(1) {
+        right: 28%; } }
   .collection-list-description img:nth-of-type(2) {
-    bottom: -30px;
-    left: 120px; }
+    top: 6%;
+    left: 21%; }
+    @media (max-width: 950px) {
+      .collection-list-description img:nth-of-type(2) {
+        left: 1%; } }
+    @media (min-width: 1450px) {
+      .collection-list-description img:nth-of-type(2) {
+        left: 29%; } }
   .collection-list-description img:nth-of-type(3) {
-    bottom: -30px;
-    left: 800px; }
-    @media (max-width: 650px) {
+    top: 65%;
+    left: 6%; }
+    @media (max-width: 950px) {
       .collection-list-description img:nth-of-type(3) {
         display: none; } }
+    @media (max-width: 1150px) {
+      .collection-list-description img:nth-of-type(3) {
+        left: 0.3%; } }
+    @media (min-width: 1450px) {
+      .collection-list-description img:nth-of-type(3) {
+        left: 10%; } }
+    @media (min-width: 1550px) {
+      .collection-list-description img:nth-of-type(3) {
+        left: 15%; } }
   .collection-list-description img:nth-of-type(4) {
-    right: 30px; }
-    @media (max-width: 650px) {
+    top: 40%;
+    right: 4%; }
+    @media (max-width: 950px) {
       .collection-list-description img:nth-of-type(4) {
         display: none; } }
+    @media (max-width: 1150px) {
+      .collection-list-description img:nth-of-type(4) {
+        right: 0.3%; } }
+    @media (min-width: 1450px) {
+      .collection-list-description img:nth-of-type(4) {
+        right: 10%; } }
+    @media (min-width: 1550px) {
+      .collection-list-description img:nth-of-type(4) {
+        right: 15%; } }
   .collection-list-description img:nth-of-type(5) {
-    left: -15px;
-    top: 100px; }
-    @media (max-width: 650px) {
+    bottom: -40px;
+    left: 50%; }
+    @media (max-width: 950px) {
       .collection-list-description img:nth-of-type(5) {
         display: none; } }
   .collection-list-description h4 {
@@ -2841,6 +2941,18 @@ section.printed {
     display: none; } }
 .textpage .section {
   padding: 70px 8% 50px; }
+  @media (min-width: 1250px) {
+    .textpage .section {
+      padding: 35px 13% 50px; } }
+  @media (min-width: 1350px) {
+    .textpage .section {
+      padding: 35px 16% 50px; } }
+  @media (min-width: 1450px) {
+    .textpage .section {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .textpage .section {
+      padding: 35px 22% 50px; } }
 .textpage h3 {
   font-size: 21px;
   padding-top: 1em;
@@ -2892,8 +3004,20 @@ section.printed {
   top: 50%;
   left: 8%;
   color: #7F7F7F; }
+  @media (min-width: 1250px) {
+    .winners-back {
+      left: 14%; } }
+  @media (min-width: 1350px) {
+    .winners-back {
+      left: 22%; } }
 .winners-heading {
   position: relative; }
+  @media (min-width: 1250px) {
+    .winners-heading {
+      padding: 35px 14% 50px; } }
+  @media (min-width: 1350px) {
+    .winners-heading {
+      padding: 35px 22% 50px; } }
 .winners .section {
   padding: 0px 8% 50px; }
   @media (max-width: 650px) {
@@ -2911,8 +3035,24 @@ section.printed {
     padding: 1em; }
     .winners-table td:first-of-type {
       padding-left: 8%; }
+      @media (min-width: 1250px) {
+        .winners-table td:first-of-type {
+          padding-left: 14%;
+          width: 16%; } }
+      @media (min-width: 1350px) {
+        .winners-table td:first-of-type {
+          padding-left: 22%;
+          width: 25%; } }
     .winners-table td:last-of-type {
       padding-right: 8%; }
+      @media (min-width: 1250px) {
+        .winners-table td:last-of-type {
+          padding-right: 14%;
+          width: 16%; } }
+      @media (min-width: 1350px) {
+        .winners-table td:last-of-type {
+          padding-right: 22%;
+          width: 25%; } }
     @media (max-width: 650px) {
       .winners-table td {
         padding: 0.6em; } }
@@ -2948,27 +3088,54 @@ section.printed {
 
 .quest .section {
   padding: 70px 8% 50px; }
+  @media (min-width: 1350px) {
+    .quest .section {
+      padding: 35px 16% 50px; } }
+  @media (min-width: 1450px) {
+    .quest .section {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .quest .section {
+      padding: 35px 22% 50px; } }
   @media (max-width: 650px) {
     .quest .section {
       padding-top: 30px; } }
 .quest-icon {
   z-index: -1;
-  position: absolute; }
-  @media (max-width: 650px) {
+  position: absolute;
+  max-width: 80px;
+  max-height: 80px; }
+  @media (max-width: 950px) {
     .quest-icon {
       display: none; } }
   .quest-icon:nth-of-type(1) {
-    left: 400px;
-    top: -40px; }
+    top: 10%;
+    margin-left: -100px; }
   .quest-icon:nth-of-type(2) {
-    bottom: 40px;
-    left: 10px; }
+    bottom: 10%;
+    margin-left: -90px; }
   .quest-icon:nth-of-type(3) {
-    right: 0; }
+    top: 30%;
+    right: 1%; }
+    @media (min-width: 1350px) {
+      .quest-icon:nth-of-type(3) {
+        right: 9%; } }
+    @media (min-width: 1450px) {
+      .quest-icon:nth-of-type(3) {
+        right: 12%; } }
+    @media (min-width: 1550px) {
+      .quest-icon:nth-of-type(3) {
+        right: 17%; } }
 .quest-section-first {
   padding: 70px 8% 0;
   position: relative;
   overflow: hidden; }
+  @media (min-width: 1450px) {
+    .quest-section-first {
+      padding: 35px 18% 50px; } }
+  @media (min-width: 1550px) {
+    .quest-section-first {
+      padding: 35px 22% 50px; } }
   @media (max-width: 950px) {
     .quest-section-first {
       padding-top: 30px; } }
