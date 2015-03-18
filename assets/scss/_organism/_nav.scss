@@ -71,20 +71,7 @@ i {
 .nav-days {
 	border-top: 1px solid #C4C4C4;
 	border-top-color: rgba(black, .1);
-	padding-left: 8%;
-	padding-right: 8%;
-	@include mq(ultrabigplus1350) {
-		padding-left: 16%;
-		padding-right: 16%;
-	}
-	@include mq(ultrabigplus1450) {
-		padding-left: 18%;
-		padding-right: 18%;
-	}
-	@include mq(ultrabigplus1550) {
-		padding-left: 22%;
-		padding-right: 22%;
-	}
+	padding-left: 50px;
 	background: white;
 	//overflow-x: auto;
 	//overflow-y: hidden;
@@ -98,14 +85,14 @@ i {
 		width: 100%;
 		min-width: 900px;
 		
-		//border-right: solid 80px rgba(0, 0, 0, 0);
+		border-right: solid 80px rgba(0, 0, 0, 0);
 	}
 
 	.nav-item {
 		display: table-cell;
 		text-align: center;
 		padding: 1em 0;
-		width: 1.5%;
+		width: 3%;
 
 		color: $medium-grey;
 		position: relative;
@@ -138,10 +125,8 @@ i {
 			white-space: nowrap;
 
 			span {
-				font-size: 14px;
+				font-size: 21px;
 				font-weight: bold;
-				color: $accent-color;
-				padding-right: 8px;
 			}
 		}
 	}

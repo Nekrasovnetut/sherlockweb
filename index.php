@@ -4,36 +4,26 @@
 
 
 <div class="fixed-top"><header class="page-cover _sherlock-about">
-	<div class="page-cover-bg prevideo">
+	<div class="page-cover-bg">
 		
-
-		<img class="js-imageFill index-video-hide" src="example-images/example-cover.jpg" alt="" style="width: 100%; height: auto;" >
+		<img class="js-imageFill" src="example-images/example-cover.png" alt="" />
+		<img class="js-imageFill" src="example-images/example-cover-2.png" alt="" />
 		
 		
 	</div>
 	<div class="page-cover-content">
 		<div class="section-logo logo logo--big">
-			<!-- Refact -->
-			
-			<div class="index-video-starter btn btn-outline">Посмотреть Видео о Шерлоке</div>
-			<!-- EndRefact -->
 			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
 			<a href="index.php"><img src="assets/img/front/logo-white.svg"
 				 onerror="this.onerror=null;
 				 this.src='assets/img/front/logo-white.png'" width="350" height="111"
 				 alt="Логотип Шерлок" /></a>
-			
-		
-			
 		</div>
 
 		<div class="description">
 			<p></p>
 		</div>
 	</div>
-	
-
-	
 </header>
 <div class="royalSlider js-text-slider">
 	<div class="rsContent">
@@ -82,11 +72,11 @@
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
 				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-snake-full.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-drink.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-skull.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
 				</div>
 			</article>
@@ -99,13 +89,13 @@
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
 				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-bat.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-bat.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-pyramid.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-pyramid.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-mask.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-mask.png'" />
 				</div>
 			</article>
@@ -118,11 +108,11 @@
 				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
 
 				<div class="collection-map-item-icons">
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-doors.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-cactus.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-torch.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
 				</div>
 			</article>

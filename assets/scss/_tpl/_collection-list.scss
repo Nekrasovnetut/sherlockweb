@@ -2,21 +2,7 @@
 	.section {
 		@extend %mcf;
 		padding: 70px 8% 50px;
-		
-
-		@include mq(ultrabigplus1350) {
-			padding: 35px 16% 50px;
-		}
-		@include mq(ultrabigplus1450) {
-			padding: 35px 18% 50px;
-		}
-		@include mq(ultrabigplus1550) {
-			padding: 35px 22% 50px;
-		}
-		
 	}
-	
-	
 	
 	&-bottomborder {
 		border-bottom: 1px solid $sexy-grey;
@@ -30,76 +16,37 @@
 		
 		&-center{
 			padding: 70px 8% 50px;
-			@include mq(ultrabig) {
-				padding: 35px 13% 50px;
-			}
-			@include mq(ultrabigplus1350) {
-				padding: 35px 16% 50px;
-			}
-			@include mq(ultrabigplus1450) {
-				padding: 35px 18% 50px;
-			}
-			@include mq(ultrabigplus1550) {
-				padding: 35px 22% 50px;
-			}
 		}
 		
 		img {
 			position: absolute;
-			max-width: 80px;
-			max-height: 80px;
-			
 		}
 		
-		
-		//Верхнии
-		
-		
 		img:nth-of-type(1) {
-			top: 13%;
-			right: 13%;
-			@include mq(medium){right: 2%;}
-			@include mq(ultrabigplus1450) {right:28%;}
-			
+			top: 10px;
 		}
 		
 		img:nth-of-type(2) {
-			top: 6%;
-			left: 21%;
-			@include mq(medium){left: 1%;}
-			@include mq(ultrabigplus1450) {left:29%;}
-		
+			bottom: -30px;
+			left: 120px;
 			
 		}
-		
-		//Средние
 		
 		img:nth-of-type(3) {
-			top: 65%;
-			left: 6%;
-			@include mq(medium){display: none;}
-			@include mq(normal){left: 0.3%;}
-			@include mq(ultrabigplus1450) {left:10%;}	
-			@include mq(ultrabigplus1550) {left:15%;}	
-			
+			bottom: -30px;
+			left: 800px;
+			@include mq(small){display: none;}
 		}
 		
-		img:nth-of-type(4) {		
-			top: 40%;
-			right: 4%;
-			@include mq(medium){display: none;}
-			@include mq(normal){right: 0.3%;}	
-			@include mq(ultrabigplus1450) {right:10%;}	
-			@include mq(ultrabigplus1550) {right:15%;}	
+		img:nth-of-type(4) {
+			right: 30px;
+			@include mq(small){display: none;}
 		}
-		
-		//Нижняя
 		
 		img:nth-of-type(5) {
-			bottom: -40px;
-			left: 50%;
-			@include mq(medium){display: none;}
-			
+			left: -15px;
+			top: 100px;
+			@include mq(small){display: none;}
 		}
 		
 		h4{
