@@ -1,0 +1,442 @@
+/* Main CSS */
+* {
+	margin:0;
+	padding:0;
+}
+input[type='radio'], label {
+	cursor:pointer;
+	vertical-align:middle;
+}
+label {
+	font-family:"Bliss Pro";
+	font-weight:bold;
+	font-size:15px;
+	color:#000222;
+	margin:0 0 0 10px;
+}
+.section, .section * {
+	box-sizing:initial;
+}
+.centered {
+	width:630px;
+	margin:0 auto;
+}
+.clear {
+	clear:both;
+}
+.m {
+	color:#bc6f00 !important;
+	font-family:"Bliss Pro" !important;
+	font-style:italic !important;
+	font-size:10px !important;
+}
+
+/* Content CSS */
+	/* Certificate page */
+	.content h2.description {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:21px;
+		color:#bc6f00;
+		text-align:justify;
+		margin:40px 0;
+	}
+	.certificate-photo {
+		width:630px;
+		height:300px;
+		margin:0 auto;
+		background-image:url('../../img/feedback_certificate/certificate.jpg');
+		background-position:center;
+		background-repeat:no-repeat;
+	}
+	.certificate-description {
+		margin:40px 0;
+	}
+	.certificate-description .left {
+		display:inline-block;
+		vertical-align:top;
+		width:65%;
+		font-family:"Bliss Pro";
+		font-size:15px;
+		color:#000222;
+		line-height:22px;
+	}
+	.certificate-description .right {
+		display:inline-block;
+		vertical-align:top;
+		width:30%;
+		margin:0 0 0 30px;
+	}
+	.certificate-description .right .cost {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		color:#666;
+		margin:4px 0 15px 0;
+	}
+	.certificate-description .right .price {
+		font-family:"Bliss Pro";
+		font-size:25px;
+		color:#000222;
+	}
+	.form {
+		background-color:#f4f4f4;
+		padding:40px 0 0;
+	}
+	.form-description {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		color:#2c3236;
+		text-transform:uppercase;
+		padding:0 0 20px 0;
+	}
+	.form-section {
+		border-bottom:1px solid #d0d0d0;
+		margin:40px 0 0;
+		padding:0 0 40px 0;
+	}
+	.form-section:last-of-type {
+		border:0;
+	}
+	.form-section ul, .form-section ol, .form-section dl {
+		list-style-position:inside;
+	}
+	.form-section .left {
+		float:left;
+		vertical-align:top;
+		width:65%;
+	}
+	.form-section .right {
+		float:right;
+		vertical-align:top;
+		margin:-10px 0 0 0;
+		width:30%;
+	}
+	.form-section .left .description {
+		padding:40px 0 0 25px;
+		font-family:"Bliss Pro";
+		font-size:15px;
+		line-height:22px;
+		color:#000222;
+	}
+	.form-section .right .price {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:25px;
+		color:#9e9e9e;
+	}
+	.form-section .right .price_active {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:25px;
+		color:#bc6f00;
+	}
+	.form-section .right .description {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		line-height:18px;
+		color:#898989;
+		margin:30px 0 0 0;
+	}
+	.form-bottom {
+		background-color:#FFF;
+		padding:40px 0 45px 0;
+	}
+	.form-contacts {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		text-transform:uppercase;
+		color:#505050;
+		padding:0 0 60px 0;
+	}
+	.form-bottom .left {
+		float:left;
+		vertical-align:top;
+		width:65%;
+	}
+	.form-bottom .right {
+		float:right;
+		vertical-align:top;
+		width:30%;
+	}
+	.var {
+		font-family:"Bliss Pro";
+		display:inline-block;
+		vertical-align:bottom;
+		width:75px;
+		height:20px;
+		padding:20px 0 0 0;
+		font-size:13px;
+		color:#bc6f00;
+	}
+	.form-bottom input[type='text'] {
+		border:0;
+		outline:none;
+		height:20px;
+		width:300px;
+		padding:15px 0 5px 0;
+		line-height:20px;
+		vertical-align:top;
+		font-family:"Bliss Pro";
+		font-size:18px;
+		color:#4c4c4c;
+		border-bottom:1px solid #cbcccd;
+	}
+	.form-bottom input[type='text']:focus {
+		border-bottom:1px solid #f2e4cf;
+	}
+	.form-bottom .right .description {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		color:#666;
+		padding:20px 0;
+	}
+	.form-bottom .right .price {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:25px;
+		color:#bc6f00;
+		padding:0 0 30px 0;
+	}
+	.form-bottom .right input[type='submit'] {
+		border:2px solid #d9ae70;
+		-webkit-border-radius:20px;
+		-moz-border-radius:20px;
+		border-radius:20px;
+		padding:8px 25px;
+		text-transform:uppercase;
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:10px;
+		color:#000222;
+		background:transparent;
+		cursor:pointer;
+	}
+
+	/* Player & Media page */
+	.middle-menu {
+		border-bottom:1px solid #d8d8d8;
+		list-style:none;
+		text-align:center;
+		vertical-align:middle;
+	}
+	.middle-menu li {
+		display:inline-block;
+		vertical-align:middle;
+		line-height:57px;
+	}
+	.middle-menu a {
+		cursor:pointer;
+	}
+	.players, .media {
+		background-image:url('../../img/feedback_certificate/tabs.png');
+		background-position:top left;
+		display:inline-block;
+		vertical-align:middle;
+		width:22px;
+		height:19px;
+	}
+	.players {
+		margin:0 5px 0 0;
+	}
+	.players.active {
+		background-position:0 -19px;
+	}
+	.media {
+		background-position:0 -38px;
+		margin:0 10px 0 0;
+	}
+	.media.active {
+		background-position:0 -57px;
+	}
+	.tabs-link {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:13px;
+		vertical-align:middle;
+		color:#000;
+		margin:0 20px 0 0;
+		text-transform:uppercase;
+		text-decoration:none;
+	}
+	.tabs-link:hover {
+		text-decoration:underline;
+	}
+	.tabs-link.active {
+		color:#bc6f00;
+	}
+	.tab-media {
+		display:none;
+	}
+	.tab-players .more-comments, .tab-media .more-comments {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:13px;
+		color:#000222;
+		text-decoration:none;
+		text-transform:uppercase;
+		background-image:url('../../img/feedback_certificate/comments.png');
+		background-repeat:no-repeat;
+		padding:0 0 0 30px;
+		display:block;
+		width:100px;
+		height:24px;
+		margin:0 auto;
+		line-height:24px;
+	}
+	.tab-players .more-comments:hover, .tab-media .more-comments:hover {
+		text-decoration:underline;
+	}
+	.player-block {
+		border-bottom:1px solid #d8d8d8;
+		margin:0 0 40px 0;
+	}
+	.player-block .avatar {
+		float:left;
+	}
+	.player-block .avatar img {
+		width:150px;
+		height:150px;
+	}
+	.player-block .player {
+		margin:0 0 0 180px;
+	}
+	.player-name {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		color:#000222;
+		text-transform:uppercase;
+	}
+	.player-fb {
+		float:right;
+	}
+	.player-fb a {
+		display:block;
+		width:26px;
+		height:28px;
+		background-image:url('../../img/feedback_certificate/player_fb.png');
+		background-repeat:no-repeat;
+	}
+	.player-special {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		line-height:26px;
+		color:#7c7c7c;
+	}
+	.player-text {
+		font-family:"Bliss Pro";
+		font-size:15px;
+		margin:20px 0 30px 0;
+		line-height:26px;
+		color:#000222;
+	}
+	.player-info {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:12px;
+		color:#bc6f00;
+		text-transform:uppercase;
+		margin:0 0 40px 0;
+	}
+	.player-info .game {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		color:#7c7c7c;
+		text-transform:capitalize;
+		text-decoration:underline;
+		margin:0 10px;
+	}
+	.media-block {
+		border-bottom:1px solid #d8d8d8;
+		margin:0 0 40px 0;
+	}
+	.media-block .avatar {
+		float:left;
+	}
+	.media-block .avatar img {
+		width:140px;
+		max-height:150px;
+	}
+	.media-block .context {
+		margin:0 0 0 170px;
+	}
+	.media-text {
+		font-family:"Bliss Pro";
+		font-size:15px;
+		line-height:26px;
+		color:#000222;
+		margin:0 0 30px 0;
+	}
+	.media-date {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		color:#7c7c7c;
+		margin:0 0 40px 0;
+	}
+	.bottom-social {
+		background-color:#f4f4f4;
+		text-align:center;
+	}
+	.bottom-social .can-also {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		color:#bc6f00;
+		text-transform:uppercase;
+		padding:40px 0;
+		line-height:26px;
+	}
+	.social-big {
+		list-style:none;
+		padding:0 0 50px 0;
+	}
+	.social-big li {
+		display:inline-block;
+		margin:0 20px;
+	}
+	.social-big a {
+		display:block;
+		width:48px;
+		height:48px;
+		background-image:url('../../img/feedback_certificate/social_big.png');
+		background-repeat:no-repeat;
+	}
+	.social-big .fb {
+		background-position:0 0;
+	}
+	.social-big .fb:hover {
+		background-position:0 -48px;
+	}
+	.social-big .ff {
+		background-position:-48px 0;
+	}
+	.social-big .ff:hover {
+		background-position:-48px -48px;
+	}
+	.social-big .ig {
+		background-position:-96px 0;
+	}
+	.social-big .ig:hover {
+		background-position:-96px -48px;
+	}
+	.social-big .ss {
+		width:47px;
+		background-position:-145px 0;
+	}
+	.social-big .ss:hover {
+		background-position:-145px -48px;
+	}
+	.social-big .vk {
+		background-position:-192px 0;
+	}
+	.social-big .vk:hover {
+		background-position:-192px -48px;
+	}

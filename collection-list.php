@@ -24,19 +24,19 @@
 
 	<section class="collection-list-description">
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-snake.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-snake.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-cactus.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-paper.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-paper.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-fire-extinguisher.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
 
-					<img src="series-icons/icon-black.svg"
+					<img src="series-icons/icon-cactus.svg"
 						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
 		<div class="collection-list-description-center">
 				<h5>Серия</h5>

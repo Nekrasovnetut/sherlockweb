@@ -1,9 +1,8 @@
-
 $scale-0: .9 !global;
 $scale-1: .95 !global;
 $scale-2: 1.0 !global;
 $scale-3: 1.05 !global;
-$mapHeight: 480px !global;
+$mapHeight: 450px !global;
 $item: ".collection-map-item";
 
 
@@ -96,9 +95,7 @@ $item: ".collection-map-item";
 
 			.btn {
 				border-color: white;
-				font-size: 10px !important;
-				padding:  9px 26px;
-				
+				margin-top: $magic-number * 2;
 			}
 
 			@media (max-width: 850px) {
@@ -133,13 +130,14 @@ $item: ".collection-map-item";
 			}
 
 
-	
+			/* ---
+				Типичные варианты расположения иконок:
+
+			---	*/
 
 			&-icons {
 				img {
 					position: absolute;
-					max-width: 80px;
-					max-height: 80px;
 
 					@media (max-width: 850px) {
 						display: none;
@@ -184,7 +182,7 @@ $item: ".collection-map-item";
 		&-content-bg {
 			z-index: 0;
 			position: absolute;
-			left: -50px; top: 0; right: -100px; bottom: -150px;
+			left: -50px; top: 0; right: -100px; bottom: -25px;
 
 			@media (max-width: 850px) {
 				background: none !important;
@@ -203,4 +201,3 @@ $item: ".collection-map-item";
 		}
 	}
 }
-
