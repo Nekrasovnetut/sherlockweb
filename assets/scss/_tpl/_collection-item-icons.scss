@@ -1,3 +1,4 @@
+
 %icon-after-title {
 	margin: 0;
 	right: auto;
@@ -5,7 +6,7 @@
 
 	bottom: 50%;
 	margin-bottom: 60px;
-	left: 250px;
+	left: 300px;
 }
 
 %icon-after-button {
@@ -15,7 +16,7 @@
 
 	bottom: 0;
 	margin-bottom: -22px;
-	left: 220px;
+	left: 270px;
 }
 
 %icon-over-title {
@@ -45,7 +46,7 @@
 		top: auto;
 
 		left: 0;
-		top: -15px;
+		top: 15px;
 	}
 
 	&-to-top {
@@ -54,7 +55,7 @@
 		bottom: auto;
 
 		left: -15px;
-		top: 30px;
+		top: 80px;
 	}
 
 	&-center {
@@ -76,7 +77,7 @@
 		top: auto;
 
 		right: 30px;
-		bottom: 5px;
+		bottom: -30px;
 //		margin-bottom: -70px;
 	}
 

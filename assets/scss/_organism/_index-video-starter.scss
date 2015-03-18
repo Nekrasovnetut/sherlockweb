@@ -1,0 +1,25 @@
+#index-video-file{
+z-index: 100000;
+width: 100%;
+height: auto;
+background-color: rgb(0, 0, 0);
+background-position: initial initial;
+background-repeat: initial initial;
+
+}
+
+
+.index-video-starter{
+
+cursor: pointer;
+position: absolute;
+width: 350px;
+margin-top: 12em;
+border-color: white;
+
+@include mq(small) {
+	margin-top: 11em;
+	width: 90%;
+	left: 5%;
+}
+}

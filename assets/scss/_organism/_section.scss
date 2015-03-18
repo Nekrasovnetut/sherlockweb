@@ -1,6 +1,16 @@
 .section {
 	padding: 35px 8% 50px;
 
+@include mq(ultrabigplus1350) {
+	padding: 35px 16% 50px;
+}
+@include mq(ultrabigplus1450) {
+	padding: 35px 18% 50px;
+}
+@include mq(ultrabigplus1550) {
+	padding: 35px 22% 50px;
+}
+
 	&-heading {
 		@extend %heading;
 	}

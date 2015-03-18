@@ -1,5 +1,7 @@
 (function($){
 	$('.tabs').on('click', '.tabs-item a', function(e){
+	//$(document).on('click', '.tabs-item a', function(e){
+	//AJAX FIX который  конфликтовал с фиксом в адишинл js от прогеров. Необходимо прорефакторить и раскоментить эту часть кода, удалив строку выше
 		var $t = $(this),
 			$tab = $(this).parent('.tabs-item');
 
@@ -30,6 +32,24 @@
 						display: 'block',
 						complete: function(){
 							$(this).addClass('is-active');
+							
+							$(this).find('.overWrapper').each(function(i, el){
+								if (el.iscroll) {
+									el.iscroll_instance.refresh();
+								} else {
+									el.iscroll_instance = new IScroll(el, {
+									    scrollbars: true,
+									    scrollX: true,
+									    scrollY: false,
+										mouseWheel: true,
+									    interactiveScrollbars: true,
+									    scrollbars: 'custom',
+										eventPassthrough: true
+									});
+									
+									el.iscroll = "true";
+								}
+							});
 						}
 					});
 				}
