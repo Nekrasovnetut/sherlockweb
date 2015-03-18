@@ -87,6 +87,10 @@
   font-size: 1.2em;
 }
 
+.icon-icon-checkmark:before, %icon-icon-checkmark {
+  content: "\e017";
+}
+
 .icon-arrow-right:before, %icon-arrow-right {
   content: "\e010";
 }
@@ -150,4 +154,18 @@
 }
 .icon-photo-fill:before {
   content: "\e012";
+}
+
+.icon-best-right:before, %icon-best-right{
+  content: "\e01c";
+}
+.icon-best-left:before, %icon-best-left{
+  content: "\e01d";
+}
+.icon-cubok:before, %icon-cubok{
+  content: "\e01e";
+}
+
+.icon-play:before, %icon-play{
+  content: ">";
 }

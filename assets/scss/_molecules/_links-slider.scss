@@ -60,8 +60,20 @@
 
 	.rsArrow {
 		position: absolute;
-		top: 42px;
-		right: 52px;
+		top: 1.8em;
+		right: 8%;
+		
+		@include mq(ultrabigplus1350) {
+				right: 16%;
+		}
+		@include mq(ultrabigplus1450) {
+				right: 18%;
+		}
+		@include mq(ultrabigplus1550) {
+				right:22%;
+		}
+		
+		
 		left: auto;
 		line-height: 21px;
 
@@ -71,7 +83,17 @@
 	}
 
 	.rsArrowLeft {
-		right: 80px;
+		right: 11%;
+		
+		@include mq(ultrabigplus1350) {
+				right: 18%;
+		}
+		@include mq(ultrabigplus1450) {
+				right: 20%;
+		}
+		@include mq(ultrabigplus1550) {
+				right:24%;
+		}
 
 		.rsArrowIcn:before {
 			@extend %icon-arrow-left, %icon;

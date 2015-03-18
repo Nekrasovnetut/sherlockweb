@@ -153,6 +153,7 @@
 			position: absolute;
 			right: 0;
 			bottom: .25em;
+			@include mq(small){top: 5em}
 		}
 	}
 
@@ -185,3 +186,31 @@
 	}
 }
 
+.other-games-slider{
+
+	position: absolute;
+	z-index: 100;
+	color: white;
+	font-size: 1em;
+	padding-top: 1.8em;
+	font-weight: bold;
+	padding-left: 8%;
+	
+	span{
+		font-size: 1.5em;
+	}
+	
+
+	 
+	@include mq(ultrabigplus1350) {
+			padding-left: 16%;
+	}
+	@include mq(ultrabigplus1450) {
+			padding-left: 18%;
+	}
+	@include mq(ultrabigplus1550) {
+			padding-left:22%;
+	}
+	
+
+}

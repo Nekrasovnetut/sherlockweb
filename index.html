@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<!--[if !IE]><!--> <html class="not-ie no-js"> <!--<![endif]-->
+<!--[if IE 8]>  <html class="ie8 lt-ie9 no-js"> <![endif]-->
+<!--[if IE 9]> <html class="ie9 no-js"> <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title> &mdash; Шерлок </title>
+
+	<meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/front/style.css" />
+	<link rel="stylesheet" href="assets/fonts/front/bliss-pro-font/font.css" />
+
+	<!--[if lt IE 9]>
+		<script src="assets/js/lib/html5shiv-printshiv.min.js"></script>
+		<script src="assets/js/lib/jquery-1.11.1.min.js"></script>
+		<script src="assets/js/lib/selectivizr.min.js"></script>
+		<script src="assets/js/lib/PIE_IE678.js"></script>
+	<![endif]-->
+
+	<script>
+		var root = document.documentElement;
+
+		root.className = root.className.replace(new RegExp('\\b no-js\\b'), '');
+
+		// Проверка на поддержку SVG:
+		if (document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#BasicStructure", "1.1"))
+			root.className += " svg";
+		else
+			root.className += " no-svg";
+	</script>
+</head><body ontouchstart="">
+
+<header class="header">
+	<a href="index.php" class="header-logo logo logo--sm">
+		<img src="assets/img/front/logo-sm.svg"
+			 onerror="this.onerror=null;
+			 this.src='/assets/img/front/logo-sm.png'" width="70" height="14" />
+	</a>
+
+	<button class="header-nav-toggle btn-simple on-mobile"> <i class="icon-burger"> <b></b> <b></b> <b></b> <b></b> </i> </button>
+
+	<nav class="header-nav nav">
+		<ul class="to-left">
+			<li class="nav-item dropdown on-mobile">
+				<a href="login-register.php"><i class="icon-key"></i> Вход</a>
+			</li>
+			<li class="nav-item dropdown">
+				<span class="dropdown-toggle"><i class="icon-star"></i> Москва</span>
+				<div class="dropdown-block">
+					<ul>
+						<li><a href="?city=paris" class="btn-simple"><i class="icon-circle"></i> Париж</span></a> </li>
+						<li><a href="?city=paris" class="btn-simple"><i class="icon-city-perm"></i> Пермь</span></a> </li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<ul class="header-nav--on-right">
+			<? 	function currentPage($page) {
+					$self =  preg_replace('/\\.[^.\\s]{3,4}$/', '', basename($_SERVER['PHP_SELF']));
+
+					return ($self == "$page") ? 'current' : '';
+				}
+			?>
+
+			<li class="nav-item <?= currentPage("about") ?>"><a href="text.php">О проекте</a></li>
+
+			<li class="nav-item <?= currentPage("sertificat") ?>"><a href="certificate.php">Сертификат</a></li>
+			<li class="nav-item  <?= currentPage("contacts") ?>"><a href="contacts.php">Контакты</a></li>
+			<li class="nav-item  <?= currentPage("user") ?>"><a href="user.php"><i class="icon-user"></i> Иван</a></li>
+
+			<div class="header-nav-triangle"></div>
+
+			<li class="nav-item dropdown on-desktop">
+				<span class="dropdown-toggle">
+					<i class="icon-key"></i> Вход
+				</span>
+				<div class="dropdown-block dropdown-block--right _login-dropdown">
+					<form class="form" action="">
+						<div class="form-row">
+							<div class="form-label">
+								<label class="label" for="dropdown-login-user-email"><i class="icon-user"></i> Логин </label>
+							</div>
+							<div class="form-item">
+								<input id="dropdown-login-user-email" type="email" class="input" name="email" placeholder="e-mail" />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-label">
+								<label class="label" for="dropdown-login-user-pass"><i class="icon-lock"></i> Пароль </label>
+							</div>
+							<div class="form-item">
+								<input id="dropdown-login-user-pass" type="password" class="input" name="password" placeholder="●●●●●●●●●" />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-item to-left">
+								<input id="remember-me2" type="checkbox" name="remember" value="true" class="checkbox-input" />
+								<label class="checkbox" for="remember-me2">Запомнить меня</label>
+							</div>
+							<div class="form-item to-right">
+								<a href="lost.php" class="label"> Я не помню пароль </a>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-item to-left">
+								<a href="register.php" class="btn-link"> Зарегистрироваться </a>
+							</div>
+							<div class="form-item to-right">
+								<button class="btn btn-white" type="submit" value="login"> Войти </button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</li>
+		</ul>
+	</nav>
+</header>
+
+
+
+<div class="fixed-top"><header class="page-cover _sherlock-about">
+	<div class="page-cover-bg prevideo">
+		
+
+		<img class="js-imageFill index-video-hide" src="example-images/example-cover.jpg" alt="" style="width: 100%; height: auto;" >
+		
+		
+	</div>
+	<div class="page-cover-content">
+		<div class="section-logo logo logo--big">
+			<!-- Refact -->
+			
+			<div class="index-video-starter btn btn-outline">Посмотреть Видео о Шерлоке</div>
+			<!-- EndRefact -->
+			<h1 class="is-hidden"> Шерлок &mdash; Квесты в реальности </h1>
+			<a href="index.php"><img src="assets/img/front/logo-white.svg"
+				 onerror="this.onerror=null;
+				 this.src='assets/img/front/logo-white.png'" width="350" height="111"
+				 alt="Логотип Шерлок" /></a>
+			
+		
+			
+		</div>
+
+		<div class="description">
+			<p></p>
+		</div>
+	</div>
+	
+
+	
+</header>
+<div class="royalSlider js-text-slider">
+	<div class="rsContent">
+		<div class="quote">
+			<div class="quote-image">
+				<img 	src="assets/img/front/quotes/groysman.png" alt="Автор" height="130" />
+			</div>
+			<div class="quote-text-container">
+				<q class="quote-text">
+				Мы хотим дать каждому возможность получать невероятные эмоции и при этом общаться друг с другом - вживую. Прелесть наших игр в том, что вы не сможете играть в них в одиночестве.
+					<small class="quote-author">Александра Гройсман</small>
+				</q>
+			</div>
+		</div>
+	</div>
+
+	
+
+	
+</div>
+</div><div class="js-ghost" style="position: relative; z-index: -2;"></div>
+
+<div class="page">
+	<nav class="section-nav nav sticky" >
+		<ul>
+			<li class="nav-item"><a href="index-reserve.php"><i class="icon-clock"></i>Забронировать</a></li>
+
+			<li class="nav-item current"><a href="index.php"><i class="icon-quest"></i>Квесты</a></li>
+			<li class="nav-item"><a href="index-map.php"><i class="icon-marker"></i>Карта</a></li>
+		</ul>
+	</nav>
+	<section class="section collection-map collection-0">
+		<header class="section-heading"><a href="collection-list.php">
+			<h3> Путешествия </h3>
+			<p> Все 10 квестов </p>
+		</a></header>
+
+		<div class="aligner">
+			<div class="collection-map-content-bg"></div>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Текила Бум </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-bat.png'" />
+
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-pyramid.png'" />
+
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-mask.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+					<img src="series-icons/icon-black.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
+				</div>
+			</article>
+		</div>
+	</section>
+	<section class="section collection-map collection-1">
+		<header class="section-heading"><a href="collection-list.php">
+			<h3> Сериалы </h3>
+			<p> Все 10 квестов </p>
+		</a></header>
+
+		<div class="collection-map-content aligner">
+			<div class="collection-map-content-bg"></div>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-bat.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-bat.png'" />
+
+					<img src="series-icons/icon-pyramid.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-pyramid.png'" />
+
+					<img src="series-icons/icon-mask.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-mask.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-snake-full.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
+					<img src="series-icons/icon-drink.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-drink.png'" />
+					<img src="series-icons/icon-skull.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Текила Бум </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+					<img src="series-icons/icon-torch.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-torch.png'" />
+					<img src="series-icons/icon-doors.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-doors.png'" />
+				</div>
+			</article>
+		</div>
+	</section>
+	<section class="section collection-map collection-0">
+		<header class="section-heading"><a href="collection-list.php">
+			<h3> Путешествия </h3>
+			<p> Все 10 квестов </p>
+		</a></header>
+
+		<div class="aligner">
+			<div class="collection-map-content-bg"></div>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Сибирский цирюльник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-snake-full.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-snake-full.png'" />
+
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+
+					<img src="series-icons/icon-paper.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-paper.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item">
+				<header class="collection-map-item-heading">
+					<h4><a href="quest.php"> Бермудский треугольник </a></h4>
+				</header>
+				<p>Проснувшись с больной головой в подвале бара постреди мексиканской пустыни, попытайтесь избежать встречи с грингос.</p>
+				<a href="quest.php" class="btn btn-outline">Записаться <i class="icon-arrow-right"></i></a>
+
+				<div class="collection-map-item-icons">
+					<img src="series-icons/icon-fire-extinguisher.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-extinguisher.png'" />
+					<img src="series-icons/icon-cactus.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-cactus.png'" />
+					<img src="series-icons/icon-skull.svg"
+						 onerror="this.onerror=null; this.src='series-icons/icon-skull.png'" />
+				</div>
+			</article>
+
+			<article class="collection-map-item is-empty">
+				<img src="assets/img/front/no-item.svg"
+					 onerror="this.onerror=null; this.src='assets/img/front/no-item.png'" />
+			</article>
+		</div>
+	</section>
+	<section class="section">
+		<header class="section-heading">
+			<h4> Наши партнёры </h4>
+		</header>
+
+		<ul class="centery centery--wider">
+			<li class="centery-item">
+				<a href="#"><img src="example-images/example-1.png" width="130" height="62" /></a>
+			</li>
+			<li class="centery-item">
+				<a href="#"><img src="example-images/example-2.png" width="109" height="40" /></a>
+			</li>
+			<li class="centery-item">
+				<a href="#"><img src="example-images/example-3.png" width="64" height="84" /></a>
+			</li>
+			<li class="centery-item">
+				<a href="#"><img src="example-images/example-4.png" width="64" height="94" /></a>
+			</li>
+		</ul>
+	</section>
+</div>
+
+<!--[if gt IE 9]>
+	<script src="assets/js/lib/jquery-2.1.1.min.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if IE]><!-->
+	<script src="assets/js/lib/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!--<![endif]-->
+
+<script src="assets/js/main.min.js" type="text/javascript"></script>
+
+<footer class="footer">
+	<nav class="footer-nav nav">
+		<ul>
+			<li class="nav-item"><a href="text.php">Франшиза</a></li> 
+			<li class="nav-item"><a href="text.php">Пресса о нас</a></li>
+		</ul>
+	</nav>
+	<ul class="centery">
+		<li class="centery-item">
+			<h4>8 894 345-54-34</h4>
+		</li>
+		<li class="centery-item">
+			<h4><a href="mailto:hello@sherlockgame.ru?subject=Hello">hello@sherlockgame.ru</a></h4>
+		</li>
+	</ul>
+	<ul class="centery">
+		<li class="centery-item">
+			<a href="http://instagram.com/"><i class="icon-instagram"></i></a>
+		</li>
+		<li class="centery-item">
+			<a href="https://www.facebook.com/"><i class="icon-facebook"></i></a>
+		</li>
+		<li class="centery-item">
+			<a href="https://twitter.com/"><i class="icon-social-vk"></i></a>
+		</li>
+	</ul>
+	
+	<ul class="centery">
+		<li class="centery-item">
+			<small class="signature"><a href="http://madebyfork.ru/">Made by Fork</a></small>
+		</li>
+	</ul>
+</footer>
+
+</body></html>
