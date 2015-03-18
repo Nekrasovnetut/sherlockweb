@@ -5,6 +5,9 @@
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
+	@include mq(small) {
+		height: auto;
+	}
 	
 	img {
 		width: 100%;

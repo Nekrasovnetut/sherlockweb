@@ -130,4 +130,19 @@
 			border-color: $color;
 		}
 	}
+	
+	.collection-#{$n} .btn {
+		&.bestplayersbtn:before {
+			color: $color;
+		}
+			
+		&.bestplayersbtn:after {
+			color: $color;
+		}	
+	}
+	
+	
+	
 }
+
+
