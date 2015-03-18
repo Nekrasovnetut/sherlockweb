@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="assets/css/front/style.css" />
-    <link rel="stylesheet" href="assets/css/front/feedback_certificate.css" />
 	<link rel="stylesheet" href="assets/fonts/front/bliss-pro-font/font.css" />
 
 	<!--[if lt IE 9]>

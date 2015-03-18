@@ -17,6 +17,20 @@ $MQs: true !default;
 		@else if $point == ultrabig {
 			@media (min-width: 1250px) { @content; }
 		}
+		
+		@else if $point == ultrabigplus1350 {
+			@media (min-width: 1350px) { @content; }
+		}
+		
+		
+		@else if $point == ultrabigplus1450 {
+			@media (min-width: 1450px) { @content; }
+		}
+		
+		@else if $point == ultrabigplus1550 {
+			@media (min-width: 1550px) { @content; }
+		}
+		
 		@else if $point == small {
 			@media (max-width: 650px)  { @content; }
 		} @else if $point == to-small {

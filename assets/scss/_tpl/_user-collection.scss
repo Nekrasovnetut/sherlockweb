@@ -49,7 +49,7 @@ $scale-3: 1.15;
 
 	.collection-map {
 
-		padding-bottom: 100px;
+
 		@mixin path($image, $width, $height, $left, $top){
 			$imageUrl: str-slice($image, 0, -5);
 

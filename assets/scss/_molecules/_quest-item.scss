@@ -1,10 +1,6 @@
 //Это основа для вывода листового айтема
 .quest-item{
 	@extend %mcf;
-	
-		@include mq(small) {
-			
-		}
 
 		h3 {
 			float: left;
@@ -33,14 +29,7 @@
 			height: 250px;
 			position: relative;
 			//Правая колонка для телефонов
-			@include mq(small){float: none;width: 100%; height: auto;}
-			
-			hr {
-			@include mq(small) {
-				display: none;
-			}
-			}
-			
+			@include mq(small){float: none;width: 100%;}
 
 		}
 
@@ -95,14 +84,10 @@
 			}
 		&-middle{
 		@extend %mcf;
-		@include mq(small) {padding-top: 20px;}
 		}
 		&-bottom{
-		@include mq(small) {padding-top: 20px;}
 		@extend %mcf;
 		height: 30px;
-		@include mq(small){height: auto;}
-		
 		color: $accent-color;
 		position: absolute;
 		bottom: 0;
@@ -200,15 +185,10 @@
 	.quest-item{
 		&-content{
 			height: 225px;
-			@include mq(small){
-			height: auto;
-			}
-			
 		}
 		&-bottom{
 			color: $medium-grey;
 			margin-bottom: 1em;
-			
 
 			i {
 				color: $medium-grey;

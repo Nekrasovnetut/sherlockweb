@@ -193,7 +193,7 @@
 
 	transition: all .2s;
 
-	@extend %icon-icon-checkmark, %icon;
+	@extend %icon-cross, %icon;
 }
 
 .input, .select {

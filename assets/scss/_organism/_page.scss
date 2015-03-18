@@ -26,26 +26,28 @@
 	}
 
 	&-cover {
-	
-		&-cssbackground{
-		background: center center no-repeat;
-		background-size: 100%;
-		
-					@include mq(small) {
-						background-size: 130%;
-					}
-			
-					@include mq(to-small) {
-						background-size: 200%;
-					}
-			
-		
-		}
-	
 		min-height: 350px;
 		overflow: hidden;
 		position: relative;
 		z-index: 0;
+		
+		@include mq(big) {
+			height: 360px;
+		}
+		@include mq(ultrabig) {
+			height: 380px;
+			
+		}
+		@include mq(ultrabigplus1350) {
+			height: 400px;
+		}
+		@include mq(ultrabigplus1450) {
+			height: 450px;
+		}
+		@include mq(ultrabigplus1550) {
+			height: 500px;
+		}
+		
 
 		@include mq(small) {
 			min-height: 250px;
@@ -67,23 +69,42 @@
 				left: -9999px; right: -9999px; top: 0; //top: -9999px; bottom: -9999px;
 				margin: auto;
 				z-index: -1;
-				bottom: -30%;
+				margin-top: -10%;
+				
+				
 						@include mq(medium) {
 							bottom: auto;
 							bottom: -15%;
-							margin-top: 0;
 						}
 						@include mq(small) {
 							bottom: 0;
-							margin-top: 0;
 						}
 			}
+			
+			video {
+							width: 100%;
+									@include mq(small) {
+										width: 155% !important; 
+									}
+							height: auto;
+			
+							position: absolute;
+							left: -9999px; right: -9999px; top: 0; //top: -9999px; bottom: -9999px;
+							margin: auto;
+							z-index: -1;
+							bottom: -30%;
+									@include mq(medium) {
+										bottom: auto;
+										bottom: -15%;
+									}
+									@include mq(small) {
+										bottom: 0;
+									}
+						}
 
 			+ .page-cover-content {
 				color: white;
 			}
-			
-			
 		}
 
 		&-content {

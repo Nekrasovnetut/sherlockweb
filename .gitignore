@@ -2,7 +2,3 @@
 .sass-cache
 config.codekit
 style.css.map
-assets/scss/_tpl/_collection-list.scss
-assets/scss/_tpl/_collection-mixins/_collection-color-mixin.scss
-assets/scss/_tpl/_collection-list.scss
-assets/scss/_tpl/_collection-mixins/_collection-color-mixin.scss

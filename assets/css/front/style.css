@@ -6,7 +6,7 @@
   font-weight: normal;
   font-style: normal; }
 [class^="icon-"]:before,
-[class*=" icon-"]:before, .btn-left:before, .btn-right:before, .btn-close:before, .bestplayersbtn:before, .bestplayersbtn:after, .not-ie .checkbox:before, .quote-text:before, .quote-text:after, .js-links-slider .rsArrowLeft .rsArrowIcn:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
+[class*=" icon-"]:before, .btn-left:before, .btn-right:before, .btn-close:before, .not-ie .checkbox:before, .quote-text:before, .quote-text:after, .js-links-slider .rsArrowLeft .rsArrowIcn:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
   font-family: "sherlock" !important;
   font-style: normal !important;
   font-weight: normal !important;
@@ -35,7 +35,7 @@
 .icon-city-perm:before {
   content: "\e003"; }
 
-.icon-cross:before, .btn-close:before {
+.icon-cross:before, .btn-close:before, .not-ie .checkbox:before {
   content: "\e004"; }
 
 .icon-facebook:before {
@@ -76,9 +76,6 @@
 .icon-social-vk:before {
   content: "\e014";
   font-size: 1.2em; }
-
-.icon-icon-checkmark:before, .not-ie .checkbox:before {
-  content: "\e017"; }
 
 .icon-arrow-right:before, .js-links-slider .rsArrowRight .rsArrowIcn:before {
   content: "\e010"; }
@@ -132,18 +129,6 @@
 
 .icon-photo-fill:before {
   content: "\e012"; }
-
-.icon-best-right:before, .bestplayersbtn:after {
-  content: "\e01c"; }
-
-.icon-best-left:before, .bestplayersbtn:before {
-  content: "\e01d"; }
-
-.icon-cubok:before {
-  content: "\e01e"; }
-
-.icon-play:before {
-  content: ">"; }
 
 /*------------------------------------*\
 	Resets:
@@ -919,32 +904,6 @@ html {
       display: block;
       top: -30px; } }
 
-.bestplayersbtn {
-  border-radius: 5px;
-  position: relative;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 50px; }
-  .bestplayersbtn:before {
-    position: absolute;
-    left: -23px;
-    color: #BC6F00;
-    font-size: 25px;
-    line-height: 33px; }
-  .bestplayersbtn:after {
-    position: absolute;
-    right: -23px;
-    color: #BC6F00;
-    font-size: 25px;
-    line-height: 33px; }
-  .bestplayersbtn .icon-cubok {
-    left: -65px;
-    width: 100%;
-    text-align: center;
-    top: 5px;
-    font-size: 23px;
-    position: absolute; }
-
 .form {
   text-align: left; }
   .splitter-item .form {
@@ -1331,9 +1290,6 @@ hr {
   position: relative;
   overflow: hidden;
   border-radius: 10px; }
-  @media (max-width: 650px) {
-    .covermini {
-      height: auto; } }
   .covermini img {
     width: 100%;
     border-radius: 10px; }
@@ -1454,31 +1410,13 @@ hr {
       background: white; }
   .js-links-slider .rsArrow {
     position: absolute;
-    top: 1.8em;
-    right: 8%;
+    top: 42px;
+    right: 52px;
     left: auto;
     line-height: 21px;
     color: white; }
-    @media (min-width: 1350px) {
-      .js-links-slider .rsArrow {
-        right: 16%; } }
-    @media (min-width: 1450px) {
-      .js-links-slider .rsArrow {
-        right: 18%; } }
-    @media (min-width: 1550px) {
-      .js-links-slider .rsArrow {
-        right: 22%; } }
   .js-links-slider .rsArrowLeft {
-    right: 11%; }
-    @media (min-width: 1350px) {
-      .js-links-slider .rsArrowLeft {
-        right: 18%; } }
-    @media (min-width: 1450px) {
-      .js-links-slider .rsArrowLeft {
-        right: 20%; } }
-    @media (min-width: 1550px) {
-      .js-links-slider .rsArrowLeft {
-        right: 24%; } }
+    right: 80px; }
 
 .popup {
   top: 0;
@@ -1545,11 +1483,7 @@ hr {
   @media (max-width: 650px) {
     .quest-item-content {
       float: none;
-      width: 100%;
-      height: auto; } }
-  @media (max-width: 650px) {
-    .quest-item-content hr {
-      display: none; } }
+      width: 100%; } }
 .quest-item-top h3 {
   padding: 0;
   margin: 0; }
@@ -1578,9 +1512,6 @@ hr {
         padding-top: 1em; }
         .quest-item-top-right .quest-info-label {
           display: none; } }
-@media (max-width: 650px) {
-  .quest-item-middle {
-    padding-top: 20px; } }
 .quest-item-bottom {
   height: 30px;
   color: #BC6F00;
@@ -1589,12 +1520,6 @@ hr {
   right: 0;
   left: 0;
   width: 100%; }
-  @media (max-width: 650px) {
-    .quest-item-bottom {
-      padding-top: 20px; } }
-  @media (max-width: 650px) {
-    .quest-item-bottom {
-      height: auto; } }
   @media (max-width: 950px) {
     .quest-item-bottom {
       position: static; } }
@@ -1656,9 +1581,6 @@ hr {
       display: block; } }
 .booking-final-item .quest-item-content {
   height: 225px; }
-  @media (max-width: 650px) {
-    .booking-final-item .quest-item-content {
-      height: auto; } }
 .booking-final-item .quest-item-bottom {
   color: #7F7F7F;
   margin-bottom: 1em; }
@@ -2340,15 +2262,6 @@ html, body {
     overflow: hidden;
     position: relative;
     z-index: 0; }
-    .page-cover-cssbackground {
-      background: center center no-repeat;
-      background-size: 100%; }
-      @media (max-width: 650px) {
-        .page-cover-cssbackground {
-          background-size: 130%; } }
-      @media (max-width: 400px) {
-        .page-cover-cssbackground {
-          background-size: 200%; } }
     @media (min-width: 1150px) {
       .page-cover {
         height: 360px; } }
@@ -2386,12 +2299,10 @@ html, body {
       @media (max-width: 950px) {
         .page-cover-bg img {
           bottom: auto;
-          bottom: -15%;
-          margin-top: 0; } }
+          bottom: -15%; } }
       @media (max-width: 650px) {
         .page-cover-bg img {
-          bottom: 0;
-          margin-top: 0; } }
+          bottom: 0; } }
     .page-cover-bg video {
       width: 100%;
       height: auto;
@@ -2448,10 +2359,6 @@ html, body {
   @media (min-width: 1550px) {
     .section {
       padding: 35px 22% 50px; } }
-  .section-heading h5 {
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 1.5em;
-    padding-bottom: 0.4em; }
   .section.collection-map {
     padding-left: 0;
     padding-right: 0; }
@@ -2588,11 +2495,6 @@ html, body {
 .collection-map-item.collection-0 .btn-outline {
   border-color: #26C0D5; }
 
-.collection-0 .btn.bestplayersbtn:before {
-  color: #26C0D5; }
-.collection-0 .btn.bestplayersbtn:after {
-  color: #26C0D5; }
-
 .svg section.collection-0 .collection-map-content-bg {
   background: url("../../img/front/layout/0/path-1.svg") no-repeat 460px 50px, url("../../img/front/layout/0/path-2.svg") no-repeat 655px 320px; }
 .no-svg section.collection-0 .collection-map-content-bg {
@@ -2663,11 +2565,6 @@ section.collection-0 .collection-map-item + .collection-map-item + .collection-m
   color: #89CC32; }
 .collection-map-item.collection-1 .btn-outline {
   border-color: #89CC32; }
-
-.collection-1 .btn.bestplayersbtn:before {
-  color: #89CC32; }
-.collection-1 .btn.bestplayersbtn:after {
-  color: #89CC32; }
 
 .svg section.collection-1 .collection-map-content-bg {
   background: url("../../img/front/layout/1/path-1.svg") no-repeat 190px 20px, url("../../img/front/layout/1/path-2.svg") no-repeat 695px 210px; }
@@ -2773,11 +2670,6 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
   color: #F66534; }
 .collection-map-item.collection-2 .btn-outline {
   border-color: #F66534; }
-
-.collection-2 .btn.bestplayersbtn:before {
-  color: #F66534; }
-.collection-2 .btn.bestplayersbtn:after {
-  color: #F66534; }
 
 section.collection-0 .collection-map-item .collection-map-item-icons img:nth-of-type(2), section.collection-0 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(2), section.collection-0 .collection-map-item + .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(2), section.collection-1 .collection-map-item .collection-map-item-icons img:nth-of-type(2), section.collection-1 .collection-map-item + .collection-map-item .collection-map-item-icons img:nth-of-type(2), .collection-user .collection-map-item .collection-map-item-icons img:nth-of-type(2), .collection-user .collection-map-item > .collection-map-item .collection-map-item-icons img:nth-of-type(2), .collection-user .collection-map-item > .collection-map-item
 > .collection-map-item .collection-map-item-icons img:nth-of-type(3), .collection-user .collection-map-item > .collection-map-item
@@ -2922,7 +2814,7 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
     right: 13%; }
     @media (max-width: 950px) {
       .collection-list-description img:nth-of-type(1) {
-        right: -4%; } }
+        right: 2%; } }
     @media (min-width: 1450px) {
       .collection-list-description img:nth-of-type(1) {
         right: 28%; } }
@@ -2931,7 +2823,7 @@ section.collection-1 .collection-map-item + .collection-map-item + .collection-m
     left: 21%; }
     @media (max-width: 950px) {
       .collection-list-description img:nth-of-type(2) {
-        left: -4%; } }
+        left: 1%; } }
     @media (min-width: 1450px) {
       .collection-list-description img:nth-of-type(2) {
         left: 29%; } }
@@ -3333,9 +3225,6 @@ section.printed {
     position: absolute;
     right: 0;
     bottom: .25em; }
-    @media (max-width: 650px) {
-      .quest-aside .age {
-        top: 5em; } }
 .quest-info {
   width: 45%;
   display: inline-block;
@@ -3354,26 +3243,6 @@ section.printed {
   @media (max-width: 950px) {
     .quest-contacts {
       margin: 1em 0 2.5em; } }
-
-.other-games-slider {
-  position: absolute;
-  z-index: 100;
-  color: white;
-  font-size: 1em;
-  padding-top: 1.8em;
-  font-weight: bold;
-  padding-left: 8%; }
-  .other-games-slider span {
-    font-size: 1.5em; }
-  @media (min-width: 1350px) {
-    .other-games-slider {
-      padding-left: 16%; } }
-  @media (min-width: 1450px) {
-    .other-games-slider {
-      padding-left: 18%; } }
-  @media (min-width: 1550px) {
-    .other-games-slider {
-      padding-left: 22%; } }
 
 ._sherlock-about {
   width: 100%;
@@ -3437,142 +3306,140 @@ section.printed {
       background: url("../../img/front/layout/user/path-6.svg") no-repeat left top; }
     .no-svg .collection-user .aligner + .aligner:before {
       background: url("../../img/front/layout/user/path-6.png") no-repeat left top; }
-  .collection-user .collection-map {
-    padding-bottom: 100px; }
-    .collection-user .collection-map-item {
-      color: #505050;
-      left: 70px;
-      top: 30px;
-      background: url("../../img/front/star-big.svg") no-repeat 60px 10px, url("../../img/front/star-small.svg") no-repeat 85px 0px, url("../../img/front/star-big.svg") no-repeat 40px 160px, url("../../img/front/star-small.svg") no-repeat 55px 170px, url("../../img/front/star-small.svg") no-repeat 290px 92px; }
-      .collection-user .collection-map-item > .collection-map-item {
-        left: 520px;
-        top: 100%;
-        background: url("../../img/front/star-small.svg") no-repeat 65px 0px, url("../../img/front/star-big.svg") no-repeat 40px 130px, url("../../img/front/star-big.svg") no-repeat 330px 72px, url("../../img/front/star-big.svg") no-repeat 290px 100%, url("../../img/front/star-small.svg") no-repeat 310px 92px; }
-        .collection-user .collection-map-item > .collection-map-item:before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 300px;
-          height: 139px;
-          top: -180px;
-          left: -100px;
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0); }
-          .svg .collection-user .collection-map-item > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-1.svg") no-repeat; }
-          .no-svg .collection-user .collection-map-item > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-1.png") no-repeat; }
+  .collection-user .collection-map-item {
+    color: #505050;
+    left: 70px;
+    top: 30px;
+    background: url("../../img/front/star-big.svg") no-repeat 60px 10px, url("../../img/front/star-small.svg") no-repeat 85px 0px, url("../../img/front/star-big.svg") no-repeat 40px 160px, url("../../img/front/star-small.svg") no-repeat 55px 170px, url("../../img/front/star-small.svg") no-repeat 290px 92px; }
+    .collection-user .collection-map-item > .collection-map-item {
+      left: 520px;
+      top: 100%;
+      background: url("../../img/front/star-small.svg") no-repeat 65px 0px, url("../../img/front/star-big.svg") no-repeat 40px 130px, url("../../img/front/star-big.svg") no-repeat 330px 72px, url("../../img/front/star-big.svg") no-repeat 290px 100%, url("../../img/front/star-small.svg") no-repeat 310px 92px; }
+      .collection-user .collection-map-item > .collection-map-item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 300px;
+        height: 139px;
+        top: -180px;
+        left: -100px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        .svg .collection-user .collection-map-item > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-1.svg") no-repeat; }
+        .no-svg .collection-user .collection-map-item > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-1.png") no-repeat; }
+    .collection-user .collection-map-item > .collection-map-item
+    > .collection-map-item {
+      top: 100%;
+      margin-top: 0;
+      left: -580px; }
       .collection-user .collection-map-item > .collection-map-item
-      > .collection-map-item {
-        top: 100%;
-        margin-top: 0;
-        left: -580px; }
-        .collection-user .collection-map-item > .collection-map-item
+      > .collection-map-item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 412px;
+        height: 160px;
+        top: -170px;
+        left: 220px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        .svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item:before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 412px;
-          height: 160px;
-          top: -170px;
-          left: 220px;
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0); }
-          .svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-2.svg") no-repeat; }
-          .no-svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-2.png") no-repeat; }
-      .collection-user .collection-map-item > .collection-map-item
-      > .collection-map-item
-      > .collection-map-item {
-        top: 100%;
-        left: 560px; }
-        .collection-user .collection-map-item > .collection-map-item
-        > .collection-map-item
+          background: url("../../img/front/layout/user/path-2.svg") no-repeat; }
+        .no-svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item:before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 507px;
-          height: 186px;
-          top: -220px;
-          left: -130px;
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0); }
-          .svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-3.svg") no-repeat; }
-          .no-svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-3.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-2.png") no-repeat; }
+    .collection-user .collection-map-item > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item {
+      top: 100%;
+      left: 560px; }
       .collection-user .collection-map-item > .collection-map-item
       > .collection-map-item
-      > .collection-map-item
-      > .collection-map-item {
-        top: 100%;
-        left: -500px; }
-        .collection-user .collection-map-item > .collection-map-item
-        > .collection-map-item
+      > .collection-map-item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 507px;
+        height: 186px;
+        top: -220px;
+        left: -130px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        .svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 244px;
-          height: 134px;
-          top: -130px;
-          left: 310px;
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0); }
-          .svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-4.svg") no-repeat; }
-          .no-svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-4.png") no-repeat; }
+          background: url("../../img/front/layout/user/path-3.svg") no-repeat; }
+        .no-svg .collection-user .collection-map-item > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-3.png") no-repeat; }
+    .collection-user .collection-map-item > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item {
+      top: 100%;
+      left: -500px; }
       .collection-user .collection-map-item > .collection-map-item
       > .collection-map-item
       > .collection-map-item
+      > .collection-map-item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 244px;
+        height: 134px;
+        top: -130px;
+        left: 310px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        .svg .collection-user .collection-map-item > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-4.svg") no-repeat; }
+        .no-svg .collection-user .collection-map-item > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-4.png") no-repeat; }
+    .collection-user .collection-map-item > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item
+    > .collection-map-item {
+      top: 100%;
+      left: 510px; }
+      .collection-user .collection-map-item > .collection-map-item
       > .collection-map-item
-      > .collection-map-item {
-        top: 100%;
-        left: 510px; }
-        .collection-user .collection-map-item > .collection-map-item
+      > .collection-map-item
+      > .collection-map-item
+      > .collection-map-item:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 303px;
+        height: 104px;
+        top: -130px;
+        left: -100px;
+        -webkit-transform: translateZ(0);
+                transform: translateZ(0); }
+        .svg .collection-user .collection-map-item > .collection-map-item
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item
         > .collection-map-item:before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 303px;
-          height: 104px;
-          top: -130px;
-          left: -100px;
-          -webkit-transform: translateZ(0);
-                  transform: translateZ(0); }
-          .svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-5.svg") no-repeat; }
-          .no-svg .collection-user .collection-map-item > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item
-          > .collection-map-item:before {
-            background: url("../../img/front/layout/user/path-5.png") no-repeat; }
-      .collection-user .collection-map-item .iconInfo-content {
-        font-size: 15px; }
+          background: url("../../img/front/layout/user/path-5.svg") no-repeat; }
+        .no-svg .collection-user .collection-map-item > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item
+        > .collection-map-item:before {
+          background: url("../../img/front/layout/user/path-5.png") no-repeat; }
+    .collection-user .collection-map-item .iconInfo-content {
+      font-size: 15px; }
 
 /*------------------------------------*\
 	Стили-помошники:
