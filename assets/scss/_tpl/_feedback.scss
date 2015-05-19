@@ -1,0 +1,348 @@
+.feedback {
+	font-family:"BlissPro";
+	padding:0;
+	.section {
+    padding:35px 0 40px 0;
+    width:630px;
+		margin:0 auto;
+		@media (max-width: 580px) {
+			padding-left: 20px;
+			padding-right: 20px;
+			padding-bottom: 0px;
+			width:100%;
+			box-sizing: border-box !important;
+		}
+	}
+
+	.section, .section * {
+		box-sizing:initial;
+	}
+
+	* {
+		margin:0;
+		padding:0;
+	}
+	input[type='radio'], label {
+		cursor:pointer;
+		vertical-align:middle;
+	}
+	label {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		color:#000222;
+		margin:0 0 0 10px;
+	}
+	.centered {
+		width:630px;
+		margin:0 auto;
+	}
+	.clear {
+		clear:both;
+	}
+	.m {
+		color:#bc6f00 !important;
+		font-family:"Bliss Pro" !important;
+		font-style:italic !important;
+		font-size:10px !important;
+	}
+
+
+	/* Player & Media page */
+	.middle-menu {
+		border-bottom:1px solid #d8d8d8;
+		list-style:none;
+		text-align:center;
+		vertical-align:middle;
+		li {
+			display:inline-block;
+			vertical-align:middle;
+			line-height:57px;
+		}
+		a {
+			cursor:pointer;
+		}
+	}
+	.players, .media {
+		background-image:url('../../img/feedback_certificate/tabs.png');
+		background-position:top left;
+		display:inline-block;
+		vertical-align:middle;
+		width:22px;
+		height:19px;
+	}
+	.players {
+		margin:0 5px 0 0;
+	}
+	.players.active {
+		background-position:0 -19px;
+	}
+	.media {
+		background-position:0 -38px;
+		margin:0 10px 0 0;
+	}
+	.media.active {
+		background-position:0 -57px;
+	}
+	.tabs-link {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:13px;
+		vertical-align:middle;
+		color:#000;
+		margin:0 20px 0 0;
+		text-transform:uppercase;
+		text-decoration:none;
+	}
+	.tabs-link:hover {
+		text-decoration:underline;
+	}
+	.tabs-link.active {
+		color:#bc6f00;
+	}
+	.tab-media {
+		display:none;
+	}
+	.tab-players .more-comments, .tab-media .more-comments {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:13px;
+		color:#000222;
+		text-decoration:none;
+		text-transform:uppercase;
+		background-image:url('../../img/feedback_certificate/comments.png');
+		background-repeat:no-repeat;
+		padding:0 0 0 30px;
+		display:block;
+		width:100px;
+		height:24px;
+		margin:0 auto;
+		line-height:24px;
+		@media (max-width: 580px) {
+			position:relative;
+			bottom:20px;
+		}
+	}
+	.tab-players .more-comments:hover, .tab-media .more-comments:hover {
+		text-decoration:underline;
+	}
+	.player-block {
+		border-bottom:1px solid #d8d8d8;
+		margin:0 0 40px 0;
+		@media (max-width: 580px) {
+		}
+		.avatar {
+			float:left;
+
+			@media (max-width: 580px) {
+				width:40%;
+			}
+			img {
+				width:150px;
+				height:150px;
+				@media (max-width: 580px) {
+					width:100%;
+					height:auto;
+				}
+			}
+		}
+		.player {
+			margin:0 0 0 180px;
+			@media (max-width: 580px) {
+				display: inline;
+			}
+		}
+	}
+	.player-name {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:15px;
+		color:#000222;
+		text-transform:uppercase;
+		@media (max-width: 580px) {
+			float:left;
+			margin: 0 0 0 3%;
+			width: 57%;
+			.words{
+				@media (max-width: 580px) {
+					width:50%;
+					display: block;
+					float:left;
+					margin:0 0 10px 0;
+				}
+			}
+		}
+
+		a {
+			display:block;
+			width:26px;
+			height:28px;
+			background-image:url('../../img/feedback_certificate/player_fb.png');
+			background-repeat:no-repeat;
+		}
+	}
+	.player-fb {
+		float:right;
+	}
+	.player-special {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		line-height:26px;
+		color:#7c7c7c;
+		@media (max-width: 580px) {
+			float:left;
+			margin: 0 0 0 3%;
+			width: 57%;
+			line-height: normal;
+		}
+	}
+	.player-text {
+		font-family:"Bliss Pro";
+		font-size:15px;
+		margin:20px 0 30px 0;
+		line-height:26px;
+		color:#000222;
+		@media (max-width: 580px) {
+			float:left;
+			margin:20px 0 20px 0;
+		}
+	}
+	.player-info {
+		font-family:"Bliss Pro";
+		font-weight:bold;
+		font-size:12px;
+		color:#bc6f00;
+		text-transform:uppercase;
+		margin:0 0 40px 0;
+		@media (max-width: 580px) {
+			float:left;
+			margin:0 0 20px;
+		}
+		.game {
+      font-weight:normal;
+			font-family:"Bliss Pro";
+			font-style:italic;
+			font-size:13px;
+			color:#7c7c7c;
+			text-transform:capitalize;
+			text-decoration:underline;
+			margin:0 10px;
+		}
+	}
+	.media-block {
+		border-bottom:1px solid #d8d8d8;
+		margin:0 0 40px 0;
+		.avatar {
+			float:left;
+			img {
+				width:140px;
+				max-height:150px;
+			}
+			@media (max-width: 580px) {
+				float: left;
+				width: 100%;
+			}
+		}
+		.context {
+			margin:0 0 0 170px;
+
+			@media (max-width: 580px) {
+				float: left;
+				margin: 20px 0 0;
+			}
+		}
+	}
+	.media-text {
+		font-family:"Bliss Pro";
+		font-size:15px;
+		line-height:26px;
+		color:#000222;
+		margin:0 0 30px 0;
+		@media (max-width: 580px) {
+			margin:0 0 12px;
+		}
+	}
+	.media-date {
+		font-family:"Bliss Pro";
+		font-style:italic;
+		font-size:13px;
+		color:#7c7c7c;
+		margin:0 0 40px 0;
+		@media (max-width: 580px) {
+			margin: 0 0 25px;
+		}
+	}
+	.bottom-social {
+		background-color:#f4f4f4;
+		text-align:center;
+		.can-also {
+			font-family:"Bliss Pro";
+			font-weight:bold;
+			font-size:15px;
+			color:#bc6f00;
+			text-transform:uppercase;
+			padding:40px 0;
+			line-height:26px;
+			br{
+				@media (max-width: 580px) {
+					display: none;
+				}
+			}
+		}
+	}
+	.social-big {
+		list-style:none;
+		padding:0 0 50px 0;
+		li {
+			display:inline-block;
+			margin:0 20px;
+			@media (max-width: 580px) {
+				margin: 0 2% 0 0;
+			}
+		}
+		li:last-child{
+			@media (max-width: 580px) {
+				margin:0 0px 0 0;
+			}
+		}
+		a {
+			display:block;
+			width:48px;
+			height:48px;
+			background-image:url('../../img/feedback_certificate/social_big.png');
+			background-repeat:no-repeat;
+		}
+		.fb {
+			background-position:0 0;
+		}
+		.fb:hover {
+			background-position:0 -48px;
+		}
+		.ff {
+			background-position:-48px 0;
+		}
+		.ff:hover {
+			background-position:-48px -48px;
+		}
+		.ig {
+			background-position:-96px 0;
+		}
+		.ig:hover {
+			background-position:-96px -48px;
+		}
+		.ss {
+			width:47px;
+			background-position:-145px 0;
+		}
+		.ss:hover {
+			background-position:-145px -48px;
+		}
+		.vk {
+			background-position:-192px 0;
+		}
+		.vk:hover {
+			background-position:-192px -48px;
+		}
+	}
+}

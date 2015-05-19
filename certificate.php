@@ -8,13 +8,13 @@
 		<img src="example-images/cover-sertificte.jpg" alt="" />
 	</div>
 	<div class="page-cover-content">
-	
+
 	</div>
 	</header>
 </div>
 <div class="js-ghost"></div>
 
-<div class="content page">
+<div class="content page certificate">
 	<!-- Certificate photo/description start -->
 	<section class="section">
 		<h2 class="description">
@@ -24,7 +24,7 @@
 				и близких, Шерлок — то, что нужно.
 			</p>
 		</h2>
-		<div class="certificate-photo"></div>
+		<div class="certificate-photo"><img src="/assets/img/feedback_certificate/certificate.jpg" /></div>
 		<div class="certificate-description">
 			<div class="left">
 				Сертификат активируется просто: его обладатель
@@ -33,13 +33,13 @@
 				Карту игрок оставляет себе — она подарит возможность пользоваться скидками, бонусами и привилегиями от наших друзей и партнёров.
 			</div>
 			<div class="right">
-				<div class="cost">Стоимость<br />сертификата</div>
+				<div class="cost">Стоимость сертификата</div>
 				<div class="price">4500 руб.</div>
 			</div>
 		</div>
 	</section>
 	<!-- Certificate photo/description end -->
-	
+
 	<!-- Form start -->
 	<form class="form" method="get">
 		<section class="section">
@@ -51,9 +51,9 @@
 					<input type="radio" name="price" id="type_1" value="4500" checked /><label for="type_1">Самовывоз из игровых точек Шерлока</label>
 					<div class="description">
 						<ul>
-							<li><span class="m">М</span> «Кропоткинская», Б. Афанасьевский пер., д. 15, стр.1</li>
-							<li><span class="m">М</span> «Кузнецкий Мост», ул. Петровка, д. 17, стр. 2</li>
-							<li><span class="m">М</span> «Проспект Мира», ул. Гиляровского, д. 10, стр. 3</li>
+							<li><span class="m">М</span> «Кропоткинская»,<br> Б. Афанасьевский пер., д. 15, стр.1</li>
+							<li><span class="m">М</span> «Кузнецкий Мост»,<br> ул. Петровка, д. 17, стр. 2</li>
+							<li><span class="m">М</span> «Проспект Мира»,<br> ул. Гиляровского, д. 10, стр. 3</li>
 						</ul>
 					</div>
 				</div>
@@ -68,7 +68,7 @@
 					<div class="description">
 						<ul>
 							<li>в пределах МКАД</li>
-							<li>за пределы МКАД в радиусе</li>
+							<li>за пределы МКАД</li>
 						</ul>
 					</div>
 				</div>
@@ -81,6 +81,13 @@
 							с момента принятия заказа
 						</p>
 					</div>
+				</div>
+				<div class="mobile-description">
+					<p>
+						Доставка осуществляется<br>
+						в течение 1-3  календарных дней<br>
+						с момента принятия заказа
+					</p>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -99,11 +106,18 @@
 					<div class="price">500 руб.</div>
 					<div class="description">
 						<p>
-							Доставка осуществляется<br>
-							в течение 1-3  календарных дней<br>
+							Доставка осуществляется
+							в течение 1-3  календарных дней
 							с момента принятия заказа
 						</p>
 					</div>
+				</div>
+				<div class="mobile-description">
+					<p>
+						Доставка осуществляется
+						в течение 1-3  календарных дней
+						с момента принятия заказа
+					</p>
 				</div>
 				<div class="clear"></div>
 			</div>
@@ -112,8 +126,8 @@
 					<input type="radio" name="price" id="type_4" value="14500" /><label for="type_4">VIP доставка </label>
 					<div class="description">
 						<p>
-							Специально для вас и вашего адресата мы придумаем<br>
-							то, что вы себе даже и представить не можете<br>
+							Специально для вас и вашего адресата мы придумаем
+							то, что вы себе даже и представить не можете
 							(и мы пока тоже). Точная стоимость VIP-доставки определяется после понимания ваших желаний.
 						</p>
 					</div>
@@ -152,6 +166,14 @@
 <div id="certificate-success"  class="popup-content-message">
 	<h3>Спасибо. Ваша заявка на сертификат принята. <br /> Скоро вам позвонят.</h3>
 </div>
-
 <? include "includes/scripts.php" ?>
+<script>
+$(document).ready(function(){
+	$("input[name='price']").click(function(){
+		$(".form-section .right .price, .form-section .right .price_active").attr("class","price");
+		$(this).parent().next().find(".price").attr("class","price_active");
+		$(".form-bottom .price").html(this.value + " руб.");
+	});
+});
+</script>
 <? include "includes/footer.php" ?>
